@@ -1,0 +1,33 @@
+{
+  "expo": {
+    "name": "TikTok Engine",
+    "slug": "tiktok-engine-mobile",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "scheme": "tiktokengine",
+    "userInterfaceStyle": "dark",
+    "newArchEnabled": true,
+    "splash": {
+      "backgroundColor": "#0a0a0f"
+    },
+    "ios": {
+      "supportsTablet": false,
+      "bundleIdentifier": "com.tiktokengine.mobile",
+      "infoPlist": {
+        "NSPhotoLibraryUsageDescription": "We need access to your photo library to select videos and images for editing.",
+        "NSCameraUsageDescription": "We need camera access to record videos.",
+        "NSMicrophoneUsageDescription": "We need microphone access to record audio."
+      }
+    },
+    "android": {
+      "adaptiveIcon": {
+        "backgroundColor": "#0a0a0f"
+      },
+      "package": "com.tiktokengine.mobile"
+    },
+    "plugins": [
+      "expo-router"
+    ]
+  }
+}
