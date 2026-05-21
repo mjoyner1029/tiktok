@@ -22,6 +22,39 @@ logger = logging.getLogger(__name__)
 settings = get_settings()
 
 
+# ── Visual analysis aggregation helper ───────────────────────────────────────
+
+def _aggregate_visual_analyses(analyses: List[Dict[str, Any]]) -> Dict[str, Any]:
+    """Average visual style metrics across multiple reference videos."""
+    if not analyses:
+        return {}
+    if len(analyses) == 1:
+        return analyses[0]
+
+    avg_cut = sum(a.get("avg_cut_duration_sec", 2.0) for a in analyses) / len(analyses)
+    all_cuts = []
+    for a in analyses:
+        all_cuts.extend(a.get("cut_timestamps", []))
+
+    grade_keys = ["brightness", "contrast", "saturation", "gamma", "luma_avg"]
+    aggregated_grade: Dict[str, float] = {}
+    for k in grade_keys:
+        values = [
+            a.get("color_grade", {}).get(k)
+            for a in analyses
+            if a.get("color_grade", {}).get(k) is not None
+        ]
+        if values:
+            aggregated_grade[k] = round(sum(values) / len(values), 3)
+
+    return {
+        "cut_timestamps": sorted(all_cuts),
+        "avg_cut_duration_sec": round(avg_cut, 2),
+        "num_cuts": sum(a.get("num_cuts", 0) for a in analyses),
+        "color_grade": aggregated_grade,
+    }
+
+
 # ── DB helpers (sync, for Celery workers) ────────────────────────────────────
 
 # Module-level sync engine — created once, reused across tasks.
@@ -154,7 +187,7 @@ def analyze_and_generate(self, project_id: str, job_id: str):
         project.status = ProjectStatus.analyzing
         session.commit()
 
-        # Gather reference transcripts
+        # Gather reference transcripts + visual style from each reference
         refs = session.execute(
             select(Asset).where(
                 Asset.project_id == project.id,
@@ -163,14 +196,33 @@ def analyze_and_generate(self, project_id: str, job_id: str):
         ).scalars().all()
 
         ref_transcripts = []
+        visual_analyses = []
         for r in refs:
             if r.transcript:
                 ref_transcripts.append(r.transcript)
             elif r.metadata_extra and "description" in r.metadata_extra:
                 ref_transcripts.append(r.metadata_extra["description"])
 
+            # Extract visual style if we have a local path for this reference
+            try:
+                from app.services.storage import get_storage
+                from app.services.media_analyzer import extract_visual_style
+                storage = get_storage()
+                local_path = storage.get_local_path(r.storage_url)
+                visual = extract_visual_style(local_path)
+                visual_analyses.append(visual)
+                logger.info("Visual style extracted for ref %s: cuts=%d, avg_cut=%.2fs",
+                            r.id, visual["num_cuts"], visual["avg_cut_duration_sec"])
+            except Exception as e:
+                logger.warning("Visual style extraction failed for ref %s: %s", r.id, e)
+
         if not ref_transcripts:
             raise ValueError("No reference transcripts available. Transcribe references first.")
+
+        # Aggregate visual data across all references
+        aggregated_visual: dict | None = None
+        if visual_analyses:
+            aggregated_visual = _aggregate_visual_analyses(visual_analyses)
 
         # Gather raw clip info
         raw_clips = session.execute(
@@ -201,13 +253,18 @@ def analyze_and_generate(self, project_id: str, job_id: str):
         project.status = ProjectStatus.generating
         session.commit()
 
-        style_profile, edit_spec = ai.run_full_pipeline(
+        style_profile, edit_spec = ai.run_full_pipeline_sync(
             reference_transcripts=ref_transcripts,
             clips=clips_data,
             project_id=str(project.id),
             goal=project.goal or "",
             max_duration=settings.max_output_duration_sec,
+            visual_data=aggregated_visual,
         )
+
+        # Ensure color_grade from visual analysis is preserved in the profile
+        if aggregated_visual and "color_grade" in aggregated_visual:
+            style_profile.setdefault("color_grade", aggregated_visual["color_grade"])
 
         # Save style profile
         sp = StyleProfile(
@@ -296,8 +353,18 @@ def render_project(self, render_id: str, job_id: str):
         render.status = RenderStatus.rendering
         session.commit()
 
+        # Look up the style profile to get color grade for this project
+        from app.models.db import StyleProfile
+        style_result = session.execute(
+            select(StyleProfile).where(
+                StyleProfile.project_id == render.project_id
+            ).order_by(StyleProfile.created_at.desc()).limit(1)
+        )
+        style = style_result.scalars().first()
+        color_grade = (style.profile_json or {}).get("color_grade") if style else None
+
         engine = RenderEngine(asset_resolver=resolve_asset)
-        result = engine.render(edit_spec.spec_json)
+        result = engine.render(edit_spec.spec_json, color_grade=color_grade)
 
         # Upload outputs to storage
         render.status = RenderStatus.postprocessing
@@ -428,17 +495,39 @@ def full_pipeline(self, project_id: str, job_id: str):
             for a in raw
         ]
 
+        # Extract visual style from each reference video
+        visual_analyses = []
+        for ref in refs:
+            try:
+                from app.services.storage import get_storage
+                from app.services.media_analyzer import extract_visual_style
+                storage = get_storage()
+                ref_path = storage.get_local_path(ref.storage_url)
+                visual = extract_visual_style(ref_path)
+                visual_analyses.append(visual)
+                logger.info("Visual style extracted for ref %s: cuts=%d, avg_cut=%.2fs",
+                            ref.id, visual["num_cuts"], visual["avg_cut_duration_sec"])
+            except Exception as e:
+                logger.warning("Visual style extraction failed for ref %s: %s", ref.id, e)
+
+        aggregated_visual = _aggregate_visual_analyses(visual_analyses) if visual_analyses else None
+
         ai = AIOrchestrator()
         from app.models.db import Project as ProjectModel
         project_obj = session.get(ProjectModel, uuid.UUID(project_id))
         project_goal = project_obj.goal if project_obj else ""
 
-        style_profile, edit_spec = ai.run_full_pipeline(
+        style_profile, edit_spec = ai.run_full_pipeline_sync(
             reference_transcripts=ref_transcripts,
             clips=clips_data,
             project_id=project_id,
             goal=project_goal or "",
+            visual_data=aggregated_visual,
         )
+
+        # Ensure measured color grade is preserved
+        if aggregated_visual and "color_grade" in aggregated_visual:
+            style_profile.setdefault("color_grade", aggregated_visual["color_grade"])
 
         from app.models.db import StyleProfile, EditSpecSource
         sp = StyleProfile(
@@ -479,7 +568,8 @@ def full_pipeline(self, project_id: str, job_id: str):
             return asset_id
 
         engine = RenderEngine(asset_resolver=resolve_asset)
-        result = engine.render(edit_spec)
+        color_grade = style_profile.get("color_grade")
+        result = engine.render(edit_spec, color_grade=color_grade)
 
         # Save outputs
         output_key = f"renders/{project_id}/{render.id}/final.mp4"

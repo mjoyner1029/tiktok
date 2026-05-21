@@ -28,9 +28,42 @@ class RevisionRequest(BaseModel):
     feedback: str = Field(..., min_length=1, description="Natural-language revision note")
 
 
-# ═══════════════════════════════════════════════════════════════════════════
-#  RESPONSE SCHEMAS
-# ═══════════════════════════════════════════════════════════════════════════
+# ── Chat Schemas ─────────────────────────────────────────────────────────────
+
+class CreateConversationRequest(BaseModel):
+    title: Optional[str] = None
+
+
+class ChatMessageCreate(BaseModel):
+    content: str = Field(..., min_length=1)
+    attachments: Optional[dict[str, Any]] = None
+
+
+class ChatMessageOut(BaseModel):
+    id: uuid.UUID
+    conversation_id: uuid.UUID
+    role: str
+    content: str
+    attachments: Optional[dict[str, Any]]
+    response_metadata: Optional[dict[str, Any]]
+    created_at: datetime
+
+    model_config = {"from_attributes": True}
+
+
+class ChatConversationOut(BaseModel):
+    id: uuid.UUID
+    user_id: uuid.UUID
+    project_id: Optional[uuid.UUID]
+    title: str
+    created_at: datetime
+    updated_at: datetime
+    messages: list[ChatMessageOut] = []
+
+    model_config = {"from_attributes": True}
+
+
+# ─────────────────────────────────────────────────────────────────────────────
 
 class UserOut(BaseModel):
     id: uuid.UUID

@@ -378,6 +378,56 @@ def burn_subtitles(
 
 
 # ═══════════════════════════════════════════════════════════════════════════
+#  COLOR GRADING
+# ═══════════════════════════════════════════════════════════════════════════
+
+def apply_color_grade(
+    input_path: str,
+    output_path: str,
+    grade: Dict[str, Any],
+) -> str:
+    """Apply a color grade profile extracted from the reference video.
+
+    grade dict keys (all optional, sensible defaults assumed):
+        brightness  float  -1.0 to 1.0  (default 0.0)
+        contrast    float   0.0 to 2.0  (default 1.0)
+        saturation  float   0.0 to 2.0  (default 1.0)
+        gamma       float   0.1 to 10.0 (default 1.0)
+    """
+    _ensure_dir(output_path)
+
+    brightness = float(grade.get("brightness", 0.0))
+    contrast = float(grade.get("contrast", 1.0))
+    saturation = float(grade.get("saturation", 1.0))
+    gamma = float(grade.get("gamma", 1.0))
+
+    # Clamp to safe FFmpeg eq ranges
+    brightness = max(-1.0, min(1.0, brightness))
+    contrast = max(0.0, min(2.0, contrast))
+    saturation = max(0.0, min(2.0, saturation))
+    gamma = max(0.1, min(10.0, gamma))
+
+    vf = (
+        f"eq=brightness={brightness:.3f}"
+        f":contrast={contrast:.3f}"
+        f":saturation={saturation:.3f}"
+        f":gamma={gamma:.3f}"
+    )
+
+    cmd = [
+        settings.ffmpeg_binary, "-y",
+        "-i", input_path,
+        "-vf", vf,
+        "-c:v", "libx264", "-preset", "fast", "-crf", "18",
+        "-c:a", "copy",
+        "-movflags", "+faststart",
+        output_path,
+    ]
+    _run(cmd)
+    return output_path
+
+
+# ═══════════════════════════════════════════════════════════════════════════
 #  THUMBNAIL
 # ═══════════════════════════════════════════════════════════════════════════
 
@@ -477,8 +527,13 @@ class RenderEngine:
         if self.work_dir.exists():
             shutil.rmtree(self.work_dir, ignore_errors=True)
 
-    def render(self, spec: Dict[str, Any]) -> Dict[str, str]:
+    def render(self, spec: Dict[str, Any], color_grade: Optional[Dict[str, Any]] = None) -> Dict[str, str]:
         """Execute the full render pipeline from an edit spec.
+
+        Args:
+            spec: RenderContract-style edit specification.
+            color_grade: Optional color grade profile extracted from the reference
+                video. Applied to every processed clip before concatenation.
 
         Returns:
             {
@@ -488,11 +543,11 @@ class RenderEngine:
             }
         """
         try:
-            return self._render_impl(spec)
+            return self._render_impl(spec, color_grade=color_grade)
         finally:
             self.cleanup()
 
-    def _render_impl(self, spec: Dict[str, Any]) -> Dict[str, str]:
+    def _render_impl(self, spec: Dict[str, Any], color_grade: Optional[Dict[str, Any]] = None) -> Dict[str, str]:
         project_id = spec.get("project_id", uuid.uuid4().hex[:8])
         output_cfg = spec.get("output", {})
         width = output_cfg.get("width", settings.export_width)
@@ -533,12 +588,18 @@ class RenderEngine:
             motion_type = motion.get("type", "static") if isinstance(motion, dict) else "static"
             motion_strength = motion.get("strength", 0.05) if isinstance(motion, dict) else 0.05
 
+            # Apply color grade from reference if provided
+            graded = normalised
+            if color_grade:
+                graded = str(self.work_dir / f"grade_{i:03d}.mp4")
+                apply_color_grade(normalised, graded, color_grade)
+
             if motion_type != "static":
                 motion_out = str(self.work_dir / f"motion_{i:03d}.mp4")
-                apply_motion(normalised, motion_out, motion_type, motion_strength, width, height)
+                apply_motion(graded, motion_out, motion_type, motion_strength, width, height)
                 processed_clips.append(motion_out)
             else:
-                processed_clips.append(normalised)
+                processed_clips.append(graded)
 
         # ── Step 2: Concatenate video clips ──────────────────────────────
         if len(processed_clips) == 0:

@@ -28,16 +28,22 @@ RULES:
 # ═══════════════════════════════════════════════════════════════════════════
 
 EXTRACT_STYLE = """\
-Analyze these reference TikTok transcripts / descriptions and extract a \
-reusable style profile.
+Analyze these reference video transcripts/descriptions and visual analysis data \
+to extract a reusable style profile.
 
-REFERENCES:
+REFERENCES (transcripts):
 {references}
 
-Return ONLY this JSON:
+VISUAL ANALYSIS (from FFmpeg frame analysis of the reference video):
+{visual_data}
+
+Return ONLY this JSON. Use the visual analysis data to set accurate values for \
+avg_cut_duration_sec, color_grade, and zoom_pattern. Do NOT invent values that \
+contradict the measured data.
+
 {{
   "hook_style": "<curiosity | controversial | storytelling | shock | question | stat>",
-  "avg_cut_duration_sec": <float>,
+  "avg_cut_duration_sec": <float — use measured value from visual_data if available>,
   "caption_style": "<description of caption formatting>",
   "caption_position": "<center | lower_third | upper_third>",
   "caption_max_words": <int 2-6>,
@@ -46,7 +52,13 @@ Return ONLY this JSON:
   "tone": "<casual | aggressive | educational | inspirational | conspiratorial>",
   "energy_curve": "<e.g. high_start → sustain → peak_end>",
   "ideal_duration_sec": <float>,
-  "music_style": "<description or empty>"
+  "music_style": "<description or empty>",
+  "color_grade": {{
+    "brightness": <float -1.0 to 1.0 — use measured value>,
+    "contrast": <float 0.0 to 2.0 — use measured value>,
+    "saturation": <float 0.0 to 2.0 — use measured value>,
+    "gamma": <float 0.1 to 10.0 — use measured value>
+  }}
 }}
 """
 

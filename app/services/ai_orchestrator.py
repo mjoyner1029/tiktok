@@ -2,6 +2,7 @@
 edit spec generation, revisions, and hook detection.
 
 Uses Anthropic's messages API with tool use + structured outputs.
+Includes caching, retry logic, and circuit breaker protection.
 """
 
 from __future__ import annotations
@@ -9,11 +10,15 @@ from __future__ import annotations
 import json
 import logging
 import re
+import time
 from typing import Any, Dict, List, Optional
 
 import anthropic
 
 from app.config import get_settings
+from app.cache import cached, cache_key, get_cached, set_cached
+from app.error_handling import retry_on_api_error, anthropic_circuit
+from app.metrics import track_ai_request
 from app.prompts import (
     EXTRACT_STYLE,
     FIND_HOOKS,
@@ -70,21 +75,37 @@ class AIOrchestrator:
 
     # ── low-level ────────────────────────────────────────────────────────
 
+    @retry_on_api_error(max_attempts=3)
     def _call(self, user_prompt: str, system: str = SYSTEM) -> str:
         """Send a chat message and return the assistant's text."""
-        resp = self.client.messages.create(
-            model=self.model,
-            max_tokens=self.max_tokens,
-            temperature=self.temperature,
-            system=system,
-            messages=[{"role": "user", "content": user_prompt}],
-        )
-        # Extract text from content blocks
-        parts = []
-        for block in resp.content:
-            if hasattr(block, "text"):
-                parts.append(block.text)
-        return "\n".join(parts)
+        start_time = time.time()
+        
+        try:
+            resp = anthropic_circuit.call(
+                self.client.messages.create,
+                model=self.model,
+                max_tokens=self.max_tokens,
+                temperature=self.temperature,
+                system=system,
+                messages=[{"role": "user", "content": user_prompt}],
+            )
+            
+            # Extract text from content blocks
+            parts = []
+            for block in resp.content:
+                if hasattr(block, "text"):
+                    parts.append(block.text)
+            
+            duration = time.time() - start_time
+            track_ai_request("anthropic", self.model, "success", duration)
+            
+            return "\n".join(parts)
+        
+        except Exception as exc:
+            duration = time.time() - start_time
+            track_ai_request("anthropic", self.model, "error", duration)
+            logger.error(f"Claude API call failed: {exc}")
+            raise
 
     def _call_json(self, user_prompt: str, system: str = SYSTEM) -> Any:
         raw = self._call(user_prompt, system)
@@ -96,14 +117,35 @@ class AIOrchestrator:
 
     # ── pipeline steps ───────────────────────────────────────────────────
 
-    def extract_style(self, reference_transcripts: List[str]) -> Dict[str, Any]:
-        """Step 1 — Analyse reference videos and extract style profile."""
+    async def extract_style(self, reference_transcripts: List[str], visual_data: Optional[Dict[str, Any]] = None) -> Dict[str, Any]:
+        """Step 1: Analyse reference videos and extract style profile.
+
+        Args:
+            reference_transcripts: Transcript text from each reference video.
+            visual_data: Aggregated visual style data from FFmpeg analysis
+                (cut timestamps, avg_cut_duration_sec, color_grade, etc.).
+
+        Cached by hash of reference transcripts for 1 hour.
+        """
+        # Check cache first
+        cache_id = cache_key("style", *reference_transcripts)
+        cached_result = await get_cached(cache_id)
+        if cached_result:
+            logger.info("Style profile cache hit")
+            return cached_result
+
         refs_block = "\n\n".join(
             f"--- Reference {i} ---\n{t}"
             for i, t in enumerate(reference_transcripts, 1)
         )
-        prompt = EXTRACT_STYLE.format(references=refs_block)
+
+        visual_block = json.dumps(visual_data, indent=2) if visual_data else "Not available — no video file provided for analysis."
+        prompt = EXTRACT_STYLE.format(references=refs_block, visual_data=visual_block)
         result = self._call_json(prompt)
+
+        # Cache for 1 hour
+        await set_cached(cache_id, result, ttl=3600)
+
         logger.info("Style extracted: hook=%s, tone=%s", result.get("hook_style"), result.get("tone"))
         return result
 
@@ -174,19 +216,20 @@ class AIOrchestrator:
 
     # ── convenience: full pipeline in one call ───────────────────────────
 
-    def run_full_pipeline(
+    async def run_full_pipeline(
         self,
         reference_transcripts: List[str],
         clips: List[Dict[str, Any]],
         project_id: str,
         goal: str = "",
         max_duration: float = 60.0,
+        visual_data: Optional[Dict[str, Any]] = None,
     ) -> tuple[Dict[str, Any], Dict[str, Any]]:
         """Run style extraction → edit spec generation.
 
         Returns (style_profile, edit_spec).
         """
-        style = self.extract_style(reference_transcripts)
+        style = await self.extract_style(reference_transcripts, visual_data=visual_data)
         spec = self.generate_edit_spec(
             style_json=style,
             clips_json=clips,
@@ -195,3 +238,21 @@ class AIOrchestrator:
             max_duration=max_duration,
         )
         return style, spec
+
+    def run_full_pipeline_sync(
+        self,
+        reference_transcripts: List[str],
+        clips: List[Dict[str, Any]],
+        project_id: str,
+        goal: str = "",
+        max_duration: float = 60.0,
+        visual_data: Optional[Dict[str, Any]] = None,
+    ) -> tuple[Dict[str, Any], Dict[str, Any]]:
+        """Synchronous wrapper for Celery tasks.
+
+        Returns (style_profile, edit_spec).
+        """
+        import asyncio
+        return asyncio.run(self.run_full_pipeline(
+            reference_transcripts, clips, project_id, goal, max_duration, visual_data=visual_data
+        ))

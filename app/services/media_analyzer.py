@@ -262,6 +262,151 @@ def find_sentence_boundaries(
 
 
 # ═══════════════════════════════════════════════════════════════════════════
+#  VISUAL STYLE EXTRACTION
+# ═══════════════════════════════════════════════════════════════════════════
+
+def extract_visual_style(video_path: str) -> Dict[str, Any]:
+    """Extract visual style dimensions from a video using FFmpeg.
+
+    Detects:
+    - Cut/scene change timestamps and average shot duration
+    - Color grade profile (brightness, contrast, saturation, gamma)
+
+    Returns:
+        {
+            "cut_timestamps": [float, ...],
+            "avg_cut_duration_sec": float,
+            "num_cuts": int,
+            "color_grade": {
+                "brightness": float,  # -1.0 to 1.0
+                "contrast": float,    # 0.0 to 2.0
+                "saturation": float,  # 0.0 to 2.0
+                "gamma": float,       # 0.1 to 10.0
+                "luma_avg": float,    # raw 0-255 for reference
+            }
+        }
+    """
+    # ── Scene / cut detection ─────────────────────────────────────────────
+    # Uses FFmpeg's scene filter to detect scene changes above threshold 0.3
+    scene_cmd = [
+        settings.ffmpeg_binary,
+        "-i", video_path,
+        "-vf", r"select=gt(scene\,0.3),showinfo",
+        "-vsync", "vfr",
+        "-f", "null", "-",
+    ]
+    scene_result = subprocess.run(scene_cmd, capture_output=True, text=True, timeout=120)
+    stderr = scene_result.stderr
+
+    cut_timestamps: List[float] = []
+    for line in stderr.split("\n"):
+        if "showinfo" in line and "pts_time:" in line:
+            try:
+                pts_part = line.split("pts_time:")[1].strip().split()[0]
+                cut_timestamps.append(round(float(pts_part), 3))
+            except (ValueError, IndexError):
+                pass
+
+    # Compute average cut duration from detected cuts + total duration
+    media_info = get_media_info(video_path)
+    total_duration = media_info["duration_sec"]
+
+    if len(cut_timestamps) > 1:
+        gaps = [
+            cut_timestamps[i + 1] - cut_timestamps[i]
+            for i in range(len(cut_timestamps) - 1)
+        ]
+        avg_cut_duration = round(sum(gaps) / len(gaps), 2)
+    elif total_duration > 0:
+        avg_cut_duration = round(total_duration, 2)
+    else:
+        avg_cut_duration = 2.0
+
+    # ── Color stats via signalstats filter ────────────────────────────────
+    # Samples 30 evenly-spaced frames for stable averages
+    color_cmd = [
+        settings.ffmpeg_binary,
+        "-i", video_path,
+        "-vf", "select='not(mod(n,10))',signalstats",
+        "-f", "null", "-",
+    ]
+    color_result = subprocess.run(color_cmd, capture_output=True, text=True, timeout=120)
+    color_stderr = color_result.stderr
+
+    yavg_values: List[float] = []
+    yhigh_values: List[float] = []
+    ylow_values: List[float] = []
+    uavg_values: List[float] = []
+    vavg_values: List[float] = []
+
+    for line in color_stderr.split("\n"):
+        if "YAVG" in line:
+            try:
+                for token in line.split():
+                    if token.startswith("YAVG:"):
+                        yavg_values.append(float(token.split(":")[1]))
+                    elif token.startswith("YHIGH:"):
+                        yhigh_values.append(float(token.split(":")[1]))
+                    elif token.startswith("YLOW:"):
+                        ylow_values.append(float(token.split(":")[1]))
+                    elif token.startswith("UAVG:"):
+                        uavg_values.append(float(token.split(":")[1]))
+                    elif token.startswith("VAVG:"):
+                        vavg_values.append(float(token.split(":")[1]))
+            except (ValueError, IndexError):
+                pass
+
+    # Derive eq-filter-compatible parameters from raw stats
+    if yavg_values:
+        luma_avg = sum(yavg_values) / len(yavg_values)
+        # brightness: scale 0-255 → -0.3 to +0.3 offset from neutral (128)
+        brightness = round((luma_avg - 128.0) / 255.0 * 0.6, 3)
+
+        if yhigh_values and ylow_values:
+            dynamic_range = (sum(yhigh_values) / len(yhigh_values)) - (sum(ylow_values) / len(ylow_values))
+            # contrast: 80 = flat, 180 = punchy. Map 80-200 → 0.7-1.4
+            contrast = round(max(0.7, min(1.4, dynamic_range / 140.0)), 3)
+        else:
+            contrast = 1.0
+
+        if uavg_values and vavg_values:
+            chroma_u = abs(sum(uavg_values) / len(uavg_values) - 128.0)
+            chroma_v = abs(sum(vavg_values) / len(vavg_values) - 128.0)
+            chroma_strength = (chroma_u + chroma_v) / 2.0
+            # saturation: 0 chroma = 1.0, 40+ chroma = 1.4
+            saturation = round(max(0.8, min(1.5, 1.0 + chroma_strength / 100.0)), 3)
+        else:
+            saturation = 1.0
+
+        # gamma: lifted shadows = < 1.0, crushed = > 1.0
+        # If average brightness is high and lows are elevated → lifted look (gamma < 1)
+        gamma = 1.0
+        if ylow_values:
+            low_avg = sum(ylow_values) / len(ylow_values)
+            if low_avg > 20:  # lifted blacks
+                gamma = round(max(0.7, 1.0 - (low_avg - 20) / 200.0), 3)
+    else:
+        luma_avg = 128.0
+        brightness = 0.0
+        contrast = 1.0
+        saturation = 1.0
+        gamma = 1.0
+
+    return {
+        "cut_timestamps": cut_timestamps,
+        "avg_cut_duration_sec": avg_cut_duration,
+        "num_cuts": len(cut_timestamps),
+        "color_grade": {
+            "brightness": brightness,
+            "contrast": contrast,
+            "saturation": saturation,
+            "gamma": gamma,
+            "luma_avg": round(luma_avg, 1),
+        },
+    }
+
+
+# ═══════════════════════════════════════════════════════════════════════════
 #  FULL ANALYSIS
 # ═══════════════════════════════════════════════════════════════════════════
 

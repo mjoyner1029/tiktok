@@ -19,10 +19,16 @@ class Settings(BaseSettings):
     # ── app ──────────────────────────────────────────────────────────────
     app_name: str = "TikTok Style Engine"
     debug: bool = False
-    environment: Literal["development", "staging", "production"] = "development"
-    secret_key: str = "change-me-in-production"  # MUST override in production
-    allowed_origins: list[str] = ["http://localhost:3000"]
-
+    environment: Literal["development", "staging", "production", "testing"] = "development"
+    secret_key: str = "CHANGE_ME_IN_PRODUCTION_OR_APP_WILL_NOT_START"  # MUST override
+    allowed_origins: list[str] = ["http://localhost:3000", "http://localhost:5173"]
+    
+    # ── security ─────────────────────────────────────────────────────────
+    require_https: bool = False  # Enable in production
+    cors_allow_credentials: bool = True
+    rate_limit_per_minute: int = 60
+    url_signing_key: str = ""  # For signed download URLs (should be different from secret_key)
+    
     # ── database ─────────────────────────────────────────────────────────
     database_url: str = "postgresql+asyncpg://postgres:postgres@localhost:5432/tiktok_engine"
     database_echo: bool = False
@@ -44,6 +50,19 @@ class Settings(BaseSettings):
     anthropic_model: str = "claude-sonnet-4-20250514"
     anthropic_max_tokens: int = 8192
     anthropic_temperature: float = 0.7
+    anthropic_timeout: int = 120  # seconds
+    
+    # ── stripe billing ───────────────────────────────────────────────────
+    stripe_secret_key: str = ""
+    stripe_publishable_key: str = ""
+    stripe_webhook_secret: str = ""
+    stripe_price_ids: dict[str, str] = {}  # {"starter": "price_xxx", ...}
+    
+    # ── observability ────────────────────────────────────────────────────
+    sentry_dsn: str = ""
+    enable_metrics: bool = True
+    log_level: str = "INFO"
+    json_logs: bool = False  # Enable in production
 
     # ── ffmpeg ───────────────────────────────────────────────────────────
     ffmpeg_binary: str = "ffmpeg"
@@ -71,11 +90,32 @@ class Settings(BaseSettings):
     export_fps: int = 30
     export_video_bitrate: str = "8M"
     export_audio_bitrate: str = "192k"
+    
+    # ── content safety ───────────────────────────────────────────────────
+    enable_content_moderation: bool = False
+    max_video_duration_sec: int = 600  # 10 minutes
+    allowed_video_formats: list[str] = ["mp4", "mov", "avi", "mkv", "webm"]
+    
+    # ── performance ──────────────────────────────────────────────────────
+    enable_cache: bool = True
+    cache_ttl_seconds: int = 3600
+    max_concurrent_renders: int = 3
+    whisper_cache_models: bool = True
 
     # ── derived helpers ──────────────────────────────────────────────────
     @property
     def max_upload_size_bytes(self) -> int:
         return self.max_upload_size_mb * 1024 * 1024
+    
+    def validate_production_settings(self):
+        """Validate critical settings for production deployment."""
+        if self.environment == "production":
+            assert self.secret_key != "CHANGE_ME_IN_PRODUCTION_OR_APP_WILL_NOT_START", "CRITICAL: Must set SECRET_KEY in production!"
+            assert self.anthropic_api_key, "Must set ANTHROPIC_API_KEY"
+            assert self.require_https, "Must enable HTTPS in production"
+            assert self.json_logs, "Must enable JSON logs in production"
+            if self.storage_backend == "s3":
+                assert self.s3_bucket, "Must set S3_BUCKET when using S3 storage"
 
 
 @lru_cache

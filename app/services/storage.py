@@ -5,6 +5,7 @@ from __future__ import annotations
 import os
 import shutil
 import uuid
+from abc import ABC, abstractmethod
 from pathlib import Path
 from typing import BinaryIO, Optional
 
@@ -14,21 +15,28 @@ from botocore.config import Config as BotoConfig
 from app.config import get_settings
 
 
-class StorageBackend:
+class StorageBackend(ABC):
     """Abstract interface for file storage."""
 
+    @abstractmethod
     def save(self, data: BinaryIO, key: str, content_type: str = "") -> str:
-        raise NotImplementedError
+        """Save file data and return storage URL/path."""
+        pass
 
+    @abstractmethod
     def get_url(self, key: str) -> str:
-        raise NotImplementedError
+        """Get URL for accessing the file."""
+        pass
 
+    @abstractmethod
     def delete(self, key: str) -> None:
-        raise NotImplementedError
+        """Delete a file from storage."""
+        pass
 
+    @abstractmethod
     def get_local_path(self, key: str) -> str:
         """Return a local filesystem path — downloads from S3 if needed."""
-        raise NotImplementedError
+        pass
 
 
 class LocalStorage(StorageBackend):
@@ -46,7 +54,13 @@ class LocalStorage(StorageBackend):
         return str(dest)
 
     def get_url(self, key: str) -> str:
-        return str(self.root / key)
+        """Return signed URL for secure download."""
+        from itsdangerous import URLSafeTimedSerializer
+        settings = get_settings()
+        signing_key = settings.url_signing_key or settings.secret_key
+        serializer = URLSafeTimedSerializer(signing_key)
+        token = serializer.dumps({"key": key})
+        return f"/api/v1/download/{token}"
 
     def delete(self, key: str) -> None:
         path = self.root / key

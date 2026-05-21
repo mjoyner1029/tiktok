@@ -14,11 +14,13 @@ from sqlalchemy import (
     Float,
     ForeignKey,
     Integer,
+    JSON,
     String,
     Text,
 )
-from sqlalchemy.dialects.postgresql import JSONB, UUID
+from sqlalchemy.dialects.postgresql import JSONB, UUID as PostgresUUID
 from sqlalchemy.orm import Mapped, mapped_column, relationship
+from sqlalchemy.types import TypeDecorator, CHAR
 
 from app.database import Base
 
@@ -31,6 +33,44 @@ def _utcnow() -> datetime:
 
 def _uuid() -> uuid.UUID:
     return uuid.uuid4()
+
+
+# ── database-agnostic types ──────────────────────────────────────────────────
+
+# Use JSON for SQLite, JSONB for PostgreSQL
+JSONType = JSON().with_variant(JSONB(), "postgresql")
+
+
+# UUID type that works with both PostgreSQL and SQLite
+class GUID(TypeDecorator):
+    """Platform-independent GUID type. Uses PostgreSQL's UUID or CHAR(32) for SQLite."""
+    impl = CHAR
+    cache_ok = True
+
+    def load_dialect_impl(self, dialect):
+        if dialect.name == "postgresql":
+            return dialect.type_descriptor(PostgresUUID(as_uuid=True))
+        else:
+            return dialect.type_descriptor(CHAR(32))
+
+    def process_bind_param(self, value, dialect):
+        if value is None:
+            return value
+        elif dialect.name == "postgresql":
+            return str(value) if isinstance(value, uuid.UUID) else value
+        else:
+            if isinstance(value, uuid.UUID):
+                return value.hex
+            return value
+
+    def process_result_value(self, value, dialect):
+        if value is None:
+            return value
+        if isinstance(value, uuid.UUID):
+            return value
+        if isinstance(value, str):
+            return uuid.UUID(value) if len(value) == 36 else uuid.UUID(hex=value)
+        return value
 
 
 # ── enums ────────────────────────────────────────────────────────────────────
@@ -107,7 +147,7 @@ class SubscriptionStatus(str, enum.Enum):
 class User(Base):
     __tablename__ = "users"
 
-    id: Mapped[uuid.UUID] = mapped_column(UUID(as_uuid=True), primary_key=True, default=_uuid)
+    id: Mapped[uuid.UUID] = mapped_column(GUID(), primary_key=True, default=_uuid)
     email: Mapped[str] = mapped_column(String(320), unique=True, nullable=False, index=True)
     name: Mapped[Optional[str]] = mapped_column(String(255))
     plan: Mapped[str] = mapped_column(String(50), default="starter")
@@ -116,12 +156,13 @@ class User(Base):
     # relationships
     workspaces: Mapped[list["Workspace"]] = relationship(back_populates="owner", cascade="all, delete-orphan")
     subscription: Mapped[Optional["Subscription"]] = relationship(back_populates="user", uselist=False)
+    conversations: Mapped[list["ChatConversation"]] = relationship(back_populates="user")
 
 
 class Workspace(Base):
     __tablename__ = "workspaces"
 
-    id: Mapped[uuid.UUID] = mapped_column(UUID(as_uuid=True), primary_key=True, default=_uuid)
+    id: Mapped[uuid.UUID] = mapped_column(GUID(), primary_key=True, default=_uuid)
     owner_id: Mapped[uuid.UUID] = mapped_column(ForeignKey("users.id", ondelete="CASCADE"), nullable=False)
     name: Mapped[str] = mapped_column(String(255), nullable=False)
     created_at: Mapped[datetime] = mapped_column(DateTime(timezone=True), default=_utcnow)
@@ -133,7 +174,7 @@ class Workspace(Base):
 class Project(Base):
     __tablename__ = "projects"
 
-    id: Mapped[uuid.UUID] = mapped_column(UUID(as_uuid=True), primary_key=True, default=_uuid)
+    id: Mapped[uuid.UUID] = mapped_column(GUID(), primary_key=True, default=_uuid)
     workspace_id: Mapped[uuid.UUID] = mapped_column(ForeignKey("workspaces.id", ondelete="CASCADE"), nullable=False)
     title: Mapped[str] = mapped_column(String(255), nullable=False, default="Untitled")
     status: Mapped[ProjectStatus] = mapped_column(Enum(ProjectStatus), default=ProjectStatus.draft)
@@ -148,12 +189,13 @@ class Project(Base):
     edit_specs: Mapped[list["EditSpec"]] = relationship(back_populates="project", cascade="all, delete-orphan")
     renders: Mapped[list["Render"]] = relationship(back_populates="project", cascade="all, delete-orphan")
     jobs: Mapped[list["Job"]] = relationship(back_populates="project", cascade="all, delete-orphan")
+    conversations: Mapped[list["ChatConversation"]] = relationship(back_populates="project")
 
 
 class Asset(Base):
     __tablename__ = "assets"
 
-    id: Mapped[uuid.UUID] = mapped_column(UUID(as_uuid=True), primary_key=True, default=_uuid)
+    id: Mapped[uuid.UUID] = mapped_column(GUID(), primary_key=True, default=_uuid)
     project_id: Mapped[uuid.UUID] = mapped_column(ForeignKey("projects.id", ondelete="CASCADE"), nullable=False)
     type: Mapped[AssetType] = mapped_column(Enum(AssetType), nullable=False)
     filename: Mapped[str] = mapped_column(String(512), nullable=False)
@@ -164,12 +206,12 @@ class Asset(Base):
     width: Mapped[Optional[int]] = mapped_column(Integer)
     height: Mapped[Optional[int]] = mapped_column(Integer)
     transcript: Mapped[Optional[str]] = mapped_column(Text)
-    transcript_segments: Mapped[Optional[dict]] = mapped_column(JSONB)  # word-level timing
+    transcript_segments: Mapped[Optional[dict]] = mapped_column(JSONType)  # word-level timing
     transcript_status: Mapped[TranscriptStatus] = mapped_column(
         Enum(TranscriptStatus), default=TranscriptStatus.pending
     )
-    silence_map: Mapped[Optional[dict]] = mapped_column(JSONB)  # detected silence ranges
-    metadata_extra: Mapped[Optional[dict]] = mapped_column(JSONB)
+    silence_map: Mapped[Optional[dict]] = mapped_column(JSONType)  # detected silence ranges
+    metadata_extra: Mapped[Optional[dict]] = mapped_column(JSONType)
     created_at: Mapped[datetime] = mapped_column(DateTime(timezone=True), default=_utcnow)
 
     project: Mapped["Project"] = relationship(back_populates="assets")
@@ -178,10 +220,10 @@ class Asset(Base):
 class StyleProfile(Base):
     __tablename__ = "style_profiles"
 
-    id: Mapped[uuid.UUID] = mapped_column(UUID(as_uuid=True), primary_key=True, default=_uuid)
+    id: Mapped[uuid.UUID] = mapped_column(GUID(), primary_key=True, default=_uuid)
     project_id: Mapped[uuid.UUID] = mapped_column(ForeignKey("projects.id", ondelete="CASCADE"), nullable=False)
     name: Mapped[Optional[str]] = mapped_column(String(255))
-    profile_json: Mapped[dict] = mapped_column(JSONB, nullable=False)
+    profile_json: Mapped[dict] = mapped_column(JSONType, nullable=False)
     model_name: Mapped[str] = mapped_column(String(128), nullable=False)
     created_at: Mapped[datetime] = mapped_column(DateTime(timezone=True), default=_utcnow)
 
@@ -191,10 +233,10 @@ class StyleProfile(Base):
 class EditSpec(Base):
     __tablename__ = "edit_specs"
 
-    id: Mapped[uuid.UUID] = mapped_column(UUID(as_uuid=True), primary_key=True, default=_uuid)
+    id: Mapped[uuid.UUID] = mapped_column(GUID(), primary_key=True, default=_uuid)
     project_id: Mapped[uuid.UUID] = mapped_column(ForeignKey("projects.id", ondelete="CASCADE"), nullable=False)
     version: Mapped[int] = mapped_column(Integer, default=1)
-    spec_json: Mapped[dict] = mapped_column(JSONB, nullable=False)
+    spec_json: Mapped[dict] = mapped_column(JSONType, nullable=False)
     source: Mapped[EditSpecSource] = mapped_column(Enum(EditSpecSource), default=EditSpecSource.ai)
     revision_note: Mapped[Optional[str]] = mapped_column(Text)
     created_at: Mapped[datetime] = mapped_column(DateTime(timezone=True), default=_utcnow)
@@ -206,7 +248,7 @@ class EditSpec(Base):
 class Render(Base):
     __tablename__ = "renders"
 
-    id: Mapped[uuid.UUID] = mapped_column(UUID(as_uuid=True), primary_key=True, default=_uuid)
+    id: Mapped[uuid.UUID] = mapped_column(GUID(), primary_key=True, default=_uuid)
     project_id: Mapped[uuid.UUID] = mapped_column(ForeignKey("projects.id", ondelete="CASCADE"), nullable=False)
     edit_spec_id: Mapped[uuid.UUID] = mapped_column(ForeignKey("edit_specs.id", ondelete="CASCADE"), nullable=False)
     status: Mapped[RenderStatus] = mapped_column(Enum(RenderStatus), default=RenderStatus.queued)
@@ -216,7 +258,7 @@ class Render(Base):
     duration_sec: Mapped[Optional[float]] = mapped_column(Float)
     file_size_bytes: Mapped[Optional[int]] = mapped_column(Integer)
     error_message: Mapped[Optional[str]] = mapped_column(Text)
-    render_log: Mapped[Optional[dict]] = mapped_column(JSONB)
+    render_log: Mapped[Optional[dict]] = mapped_column(JSONType)
     created_at: Mapped[datetime] = mapped_column(DateTime(timezone=True), default=_utcnow)
     finished_at: Mapped[Optional[datetime]] = mapped_column(DateTime(timezone=True))
 
@@ -227,12 +269,12 @@ class Render(Base):
 class Job(Base):
     __tablename__ = "jobs"
 
-    id: Mapped[uuid.UUID] = mapped_column(UUID(as_uuid=True), primary_key=True, default=_uuid)
+    id: Mapped[uuid.UUID] = mapped_column(GUID(), primary_key=True, default=_uuid)
     project_id: Mapped[uuid.UUID] = mapped_column(ForeignKey("projects.id", ondelete="CASCADE"), nullable=False)
     type: Mapped[JobType] = mapped_column(Enum(JobType), nullable=False)
     status: Mapped[JobStatus] = mapped_column(Enum(JobStatus), default=JobStatus.pending)
-    payload: Mapped[Optional[dict]] = mapped_column(JSONB)
-    result: Mapped[Optional[dict]] = mapped_column(JSONB)
+    payload: Mapped[Optional[dict]] = mapped_column(JSONType)
+    result: Mapped[Optional[dict]] = mapped_column(JSONType)
     error_message: Mapped[Optional[str]] = mapped_column(Text)
     celery_task_id: Mapped[Optional[str]] = mapped_column(String(255))
     started_at: Mapped[Optional[datetime]] = mapped_column(DateTime(timezone=True))
@@ -245,7 +287,7 @@ class Job(Base):
 class Subscription(Base):
     __tablename__ = "subscriptions"
 
-    id: Mapped[uuid.UUID] = mapped_column(UUID(as_uuid=True), primary_key=True, default=_uuid)
+    id: Mapped[uuid.UUID] = mapped_column(GUID(), primary_key=True, default=_uuid)
     user_id: Mapped[uuid.UUID] = mapped_column(ForeignKey("users.id", ondelete="CASCADE"), unique=True, nullable=False)
     stripe_customer_id: Mapped[Optional[str]] = mapped_column(String(255))
     stripe_subscription_id: Mapped[Optional[str]] = mapped_column(String(255))
@@ -257,3 +299,42 @@ class Subscription(Base):
     created_at: Mapped[datetime] = mapped_column(DateTime(timezone=True), default=_utcnow)
 
     user: Mapped["User"] = relationship(back_populates="subscription")
+
+
+# ── Chat System ──────────────────────────────────────────────────────────────
+
+
+class ChatConversation(Base):
+    __tablename__ = "chat_conversations"
+
+    id: Mapped[uuid.UUID] = mapped_column(GUID(), primary_key=True, default=_uuid)
+    user_id: Mapped[uuid.UUID] = mapped_column(ForeignKey("users.id", ondelete="CASCADE"), nullable=False)
+    project_id: Mapped[Optional[uuid.UUID]] = mapped_column(ForeignKey("projects.id", ondelete="SET NULL"))
+    title: Mapped[str] = mapped_column(String(255), default="New Conversation")
+    created_at: Mapped[datetime] = mapped_column(DateTime(timezone=True), default=_utcnow)
+    updated_at: Mapped[datetime] = mapped_column(DateTime(timezone=True), default=_utcnow, onupdate=_utcnow)
+
+    user: Mapped["User"] = relationship(back_populates="conversations")
+    project: Mapped[Optional["Project"]] = relationship(back_populates="conversations")
+    messages: Mapped[list["ChatMessage"]] = relationship(back_populates="conversation", order_by="ChatMessage.created_at")
+
+
+class MessageRole(str, enum.Enum):
+    user = "user"
+    assistant = "assistant"
+    system = "system"
+
+
+class ChatMessage(Base):
+    __tablename__ = "chat_messages"
+
+    id: Mapped[uuid.UUID] = mapped_column(GUID(), primary_key=True, default=_uuid)
+    conversation_id: Mapped[uuid.UUID] = mapped_column(ForeignKey("chat_conversations.id", ondelete="CASCADE"), nullable=False)
+    role: Mapped[MessageRole] = mapped_column(Enum(MessageRole), nullable=False)
+    content: Mapped[str] = mapped_column(Text, nullable=False)
+    attachments: Mapped[Optional[dict]] = mapped_column(JSONType)  # uploaded files/URLs
+    response_metadata: Mapped[Optional[dict]] = mapped_column(JSONType)  # AI response metadata
+    created_at: Mapped[datetime] = mapped_column(DateTime(timezone=True), default=_utcnow)
+
+    conversation: Mapped["ChatConversation"] = relationship(back_populates="messages")
+

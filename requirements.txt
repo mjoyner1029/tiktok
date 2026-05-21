@@ -26,7 +26,28 @@ openai-whisper>=20231117   # speech transcription
 # ── Storage ──────────────────────────────────────────────────────────────
 boto3>=1.34
 
+# ── Authentication ───────────────────────────────────────────────────────
+python-jose[cryptography]>=3.3    # JWT tokens
+passlib[bcrypt]>=1.7              # Password hashing
+python-multipart>=0.0.6           # OAuth2 form data
+itsdangerous>=2.1                 # Signed URLs and tokens
+
 # ── Utilities ────────────────────────────────────────────────────────────
-python-multipart>=0.0.6   # file uploads in FastAPI
 yt-dlp>=2024.1            # download videos from TikTok/YouTube/etc URLs
 python-dotenv>=1.0
+tenacity>=8.2             # Retry logic with exponential backoff
+structlog>=24.1           # Structured logging
+prometheus-client>=0.19   # Metrics
+sentry-sdk[fastapi]>=1.40 # Error tracking
+
+# ── Billing ──────────────────────────────────────────────────────────────
+stripe>=7.0               # Payment processing
+
+# ── Testing ──────────────────────────────────────────────────────────────
+pytest>=7.4
+pytest-asyncio>=0.21
+pytest-cov>=4.1
+pytest-mock>=3.12
+pytest-timeout>=2.2
+httpx>=0.25               # AsyncClient for FastAPI testing
+faker>=22.0               # Fake data generation

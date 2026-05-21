@@ -11,6 +11,8 @@ from sqlalchemy.ext.asyncio import AsyncSession
 
 from app.database import get_db
 from app.models.db import (
+    Asset,
+    AssetType,
     EditSpec,
     Job,
     JobStatus,
@@ -112,6 +114,7 @@ async def delete_project(project_id: uuid.UUID, db: AsyncSession = Depends(get_d
     if not project:
         raise HTTPException(404, "Project not found")
     await db.delete(project)
+    await db.commit()
 
 
 # ── Pipeline triggers ────────────────────────────────────────────────────
@@ -122,6 +125,17 @@ async def start_analysis(project_id: uuid.UUID, db: AsyncSession = Depends(get_d
     project = await db.get(Project, project_id)
     if not project:
         raise HTTPException(404, "Project not found")
+    
+    # Check for references
+    from sqlalchemy import select
+    ref_result = await db.execute(
+        select(Asset).where(
+            Asset.project_id == project.id,
+            Asset.type == AssetType.reference_video
+        ).limit(1)
+    )
+    if not ref_result.scalar_one_or_none():
+        raise HTTPException(400, "Project must have at least one reference asset")
 
     job = Job(
         project_id=project.id,

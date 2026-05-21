@@ -1,12 +1,12 @@
 import React from 'react';
-import { View, Text, StyleSheet, TouchableOpacity, ViewStyle } from 'react-native';
+import { View, Text, StyleSheet, TouchableOpacity, ViewStyle, StyleProp } from 'react-native';
 import { Colors, Radius, Spacing, FontSize } from '../theme';
 
 interface Props {
   children: React.ReactNode;
   title?: string;
   onPress?: () => void;
-  style?: ViewStyle;
+  style?: StyleProp<ViewStyle>;
   headerRight?: React.ReactNode;
 }
 

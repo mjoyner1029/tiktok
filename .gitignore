@@ -32,3 +32,12 @@ Thumbs.db
 dist/
 build/
 *.egg-info/
+
+# Node modules
+node_modules/
+
+# Test coverage artifacts
+htmlcov/
+.coverage
+coverage.xml
+*.coveragerc
