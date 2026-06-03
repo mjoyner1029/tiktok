@@ -21,6 +21,12 @@ env/
 storage/
 renders/
 
+# Generated local data (machine-specific paths / per-run artifacts)
+footage_index.json
+ref_fingerprint.json
+edit_timeline.json
+projects/
+
 # Whisper model cache
 *.pt
 
