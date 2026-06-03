@@ -113,6 +113,7 @@ class JobType(str, enum.Enum):
     generate_edit_spec = "generate_edit_spec"
     render = "render"
     export = "export"
+    import_url = "import_url"
 
 
 class JobStatus(str, enum.Enum):
@@ -221,13 +222,13 @@ class StyleProfile(Base):
     __tablename__ = "style_profiles"
 
     id: Mapped[uuid.UUID] = mapped_column(GUID(), primary_key=True, default=_uuid)
-    project_id: Mapped[uuid.UUID] = mapped_column(ForeignKey("projects.id", ondelete="CASCADE"), nullable=False)
+    project_id: Mapped[Optional[uuid.UUID]] = mapped_column(ForeignKey("projects.id", ondelete="CASCADE"), nullable=True)
     name: Mapped[Optional[str]] = mapped_column(String(255))
     profile_json: Mapped[dict] = mapped_column(JSONType, nullable=False)
     model_name: Mapped[str] = mapped_column(String(128), nullable=False)
     created_at: Mapped[datetime] = mapped_column(DateTime(timezone=True), default=_utcnow)
 
-    project: Mapped["Project"] = relationship(back_populates="style_profiles")
+    project: Mapped[Optional["Project"]] = relationship(back_populates="style_profiles")
 
 
 class EditSpec(Base):
@@ -316,7 +317,7 @@ class ChatConversation(Base):
 
     user: Mapped["User"] = relationship(back_populates="conversations")
     project: Mapped[Optional["Project"]] = relationship(back_populates="conversations")
-    messages: Mapped[list["ChatMessage"]] = relationship(back_populates="conversation", order_by="ChatMessage.created_at")
+    messages: Mapped[list["ChatMessage"]] = relationship(back_populates="conversation", order_by="ChatMessage.created_at", cascade="all, delete-orphan")
 
 
 class MessageRole(str, enum.Enum):

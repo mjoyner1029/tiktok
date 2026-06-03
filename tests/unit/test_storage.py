@@ -97,3 +97,46 @@ class TestS3Storage:
         
         assert url.startswith("https://")
         assert mock_s3_client.generate_presigned_url.called
+
+    def test_delete_s3(self, mock_s3_client, tmp_path):
+        """Test deleting from S3."""
+        storage = S3Storage(bucket="test-bucket")
+        storage.delete("test/file.txt")
+        mock_s3_client.delete_object.assert_called_once_with(
+            Bucket="test-bucket", Key="test/file.txt"
+        )
+
+    def test_get_local_path_downloads_from_s3(self, mock_s3_client, tmp_path):
+        """S3 get_local_path downloads file if not cached."""
+        import os
+        storage = S3Storage(bucket="test-bucket")
+        # Patch tmp dir to use tmp_path
+        storage._tmp_dir = tmp_path
+
+        key = "folder/file.mp4"
+        local_path = storage.get_local_path(key)
+        assert mock_s3_client.download_file.called
+
+
+class TestLocalStorageDeleteNotExist:
+    def test_delete_nonexistent_file(self, tmp_path):
+        """Deleting a file that doesn't exist should not raise."""
+        from app.services.storage import LocalStorage
+        storage = LocalStorage(root=tmp_path)
+        storage.delete("nonexistent/file.txt")  # Should not raise
+
+
+class TestGetStorageFactory:
+    def test_returns_local_storage_by_default(self):
+        """get_storage returns LocalStorage by default."""
+        from app.services.storage import get_storage, LocalStorage
+        storage = get_storage()
+        assert isinstance(storage, LocalStorage)
+
+    def test_make_asset_key_sanitizes_filename(self):
+        """make_asset_key sanitizes dangerous filenames."""
+        from app.services.storage import make_asset_key
+        key = make_asset_key("proj-123", "raw_video", "../../../etc/passwd")
+        assert ".." not in key
+        assert "etc" not in key or "passwd" in key  # basename used
+        assert key.startswith("projects/proj-123/raw_video/")

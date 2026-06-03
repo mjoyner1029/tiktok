@@ -6,7 +6,8 @@ pydantic-settings>=2.1
 
 # ── Database ─────────────────────────────────────────────────────────────
 sqlalchemy[asyncio]>=2.0
-asyncpg>=0.29
+aiosqlite>=0.19            # async SQLite driver for local development
+asyncpg>=0.29              # async Postgres driver for production
 psycopg2-binary>=2.9      # sync driver for Celery workers
 alembic>=1.13
 
@@ -21,6 +22,10 @@ openai>=1.0                # keep as alternative LLM client
 
 # ── Media ────────────────────────────────────────────────────────────────
 openai-whisper>=20231117   # speech transcription
+Pillow>=10.0               # frame sharpness scoring, thumbnail extraction
+opencv-python-headless>=4.8  # optical flow motion scoring (no GUI deps)
+librosa>=0.10              # beat detection from reference audio
+soundfile>=0.12            # required by librosa for audio I/O
 # ffmpeg-python>=0.2      # optional python bindings (we shell out directly)
 
 # ── Storage ──────────────────────────────────────────────────────────────

@@ -106,6 +106,22 @@ def client(override_get_db) -> TestClient:
     return TestClient(app)
 
 
+@pytest.fixture
+def auth_headers(test_user: User) -> dict:
+    """Auth headers for a logged-in test user."""
+    from app.auth import create_access_token
+    token = create_access_token(test_user)
+    return {"Authorization": f"Bearer {token}"}
+
+
+@pytest.fixture
+def auth_client(override_get_db, auth_headers) -> TestClient:
+    """FastAPI test client pre-loaded with auth headers."""
+    c = TestClient(app)
+    c.headers.update(auth_headers)
+    return c
+
+
 # ── Database Seeds ───────────────────────────────────────────────────────────
 
 

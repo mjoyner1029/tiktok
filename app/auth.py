@@ -173,7 +173,7 @@ def require_plan(
 ) -> callable:
     """Dependency factory to require specific subscription plans."""
     async def _check_plan(user: User = Depends(require_user)) -> User:
-        if user.subscription_plan.value not in plans:
+        if user.plan not in plans:
             raise HTTPException(
                 status_code=status.HTTP_403_FORBIDDEN,
                 detail=f"This feature requires one of: {', '.join(plans)}",

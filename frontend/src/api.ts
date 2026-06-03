@@ -12,6 +12,85 @@ const api = axios.create({
 
 // ── Types ────────────────────────────────────────────────────────────────
 
+export type AudioMode = "uploaded_audio" | "reference_audio" | "original_audio" | "silent";
+export type RhythmPreset = "tight_sync" | "loose_sync" | "cinematic" | "chaotic";
+
+export interface PipelineStartOptions {
+  /** TikTok / video URLs to use as style reference */
+  referenceUrls: string[];
+  /** Optional uploaded reference video files */
+  referenceFiles: File[];
+  /** Raw footage clips to edit */
+  footageFiles: File[];
+  /** Optional music/audio file for uploaded_audio mode */
+  musicFile: File | null;
+  audioMode: AudioMode;
+  /** Music track level in dBFS, e.g. -18.0 */
+  audioVolume: number;
+  /** Original clip audio level 0–1 */
+  originalAudioVolume: number;
+  rhythmPreset: RhythmPreset;
+  contentHint: string;
+  preview?: boolean;
+  // ── Batch / large-footage options ──────────────────────────────────────
+  /** Target output duration in seconds (15 | 30 | 45 | 60) */
+  targetDurationSec?: number;
+  /** Max number of segments fed to the planner (advanced) */
+  maxSelectedSegments?: number;
+  /** Minimum distinct source clips in the final edit */
+  minClipVariety?: number;
+}
+
+export interface BatchRejection {
+  asset_id: string;
+  start: number | null;
+  score: number | null;
+  reason: string;
+}
+
+export interface BatchReport {
+  total_clips: number;
+  total_segments_before_dedup: number;
+  total_segments_after_cap: number;
+  total_segments_after_dedup: number;
+  total_selected: number;
+  rejection_log: BatchRejection[];
+}
+
+export interface PipelineClipResult {
+  asset_id: string;
+  start: number;
+  end: number;
+  duration: number;
+  score: number;
+  score_breakdown: Record<string, number>;
+  description?: string;
+}
+
+export interface PipelineResult {
+  project_id: string;
+  /** Relative URL to stream the video — fetch from /api/v1/pipeline/video/... */
+  video_url: string;
+  audio_mode: AudioMode;
+  rhythm_preset: RhythmPreset;
+  bpm?: number | null;
+  beat_count?: number | null;
+  timeline_duration: number;
+  clip_count: number;
+  render_style?: string | null;
+  ranking_profile?: string | null;
+  escalation_score?: number | null;
+  pacing_curve?: number[];
+  top_clips?: PipelineClipResult[];
+  embedding_status?: {
+    clip_available: boolean;
+    reference_embedded: boolean;
+    footage_segments_embedded: number;
+    fallback_used: boolean;
+  };
+  batch_report?: BatchReport;
+}
+
 export interface Project {
   id: string;
   workspace_id: string;
@@ -149,10 +228,62 @@ export const startRender = (projectId: string) =>
     .post<Render>(`/projects/${projectId}/render`)
     .then((r) => r.data);
 
-export const startFullPipeline = (projectId: string) =>
+export const startFullPipeline = (
+  projectId: string,
+  options?: {
+    audio_mode?: AudioMode;
+    music_asset_id?: string;
+    audio_volume?: number;
+    original_audio_volume?: number;
+    rhythm_preset?: RhythmPreset;
+    content_hint?: string;
+  }
+) =>
   api
-    .post<Job>(`/projects/${projectId}/pipeline`)
+    .post<Job>(`/projects/${projectId}/pipeline`, options ?? {})
     .then((r) => r.data);
+
+/**
+ * Beat-aware standalone pipeline — multipart/form-data.
+ * Returns PipelineResult with metadata and a video_url to stream.
+ */
+export const startPipeline = async (
+  opts: PipelineStartOptions,
+  onStage?: (stage: string) => void,
+): Promise<PipelineResult> => {
+  const form = new FormData();
+
+  opts.referenceUrls.filter(u => u.trim().startsWith("http"))
+    .forEach(u => form.append("reference_url", u));
+
+  opts.referenceFiles.forEach(f => form.append("reference_file", f));
+  opts.footageFiles.forEach(f => form.append("footage", f));
+
+  if (opts.musicFile) form.append("music_file", opts.musicFile);
+
+  form.append("content_hint", opts.contentHint);
+  form.append("audio_mode", opts.audioMode);
+  form.append("audio_volume", String(opts.audioVolume));
+  form.append("original_audio_volume", String(opts.originalAudioVolume));
+  form.append("rhythm_preset", opts.rhythmPreset);
+  form.append("preview", String(opts.preview ?? true));
+
+  if (opts.targetDurationSec != null)
+    form.append("target_duration_sec", String(opts.targetDurationSec));
+  if (opts.maxSelectedSegments != null)
+    form.append("max_selected_segments", String(opts.maxSelectedSegments));
+  if (opts.minClipVariety != null)
+    form.append("min_clip_variety", String(opts.minClipVariety));
+
+  onStage?.("analyzing_style");
+
+  const response = await axios.post<PipelineResult>(
+    `${API_BASE}/api/v1/pipeline/start`,
+    form,
+    { headers: { "Content-Type": "multipart/form-data" }, timeout: 1200000 },
+  );
+  return response.data;
+};
 
 export const reviseEditSpec = (projectId: string, feedback: string) =>
   api

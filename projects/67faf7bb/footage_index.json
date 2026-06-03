@@ -1,0 +1,4643 @@
+[
+  {
+    "asset_id": "footage_00",
+    "path": "/var/folders/z9/43k359757f55k0ptrt9w6tnr0000gn/T/tiktok_start_4qt1kxm_/footage_00.mov",
+    "file_path": "/var/folders/z9/43k359757f55k0ptrt9w6tnr0000gn/T/tiktok_start_4qt1kxm_/footage_00.mov",
+    "duration_sec": 1.96,
+    "duration": 1.96,
+    "resolution": [
+      1080,
+      1920
+    ],
+    "usable_segments": [
+      {
+        "start": 0.0,
+        "end": 1.963333,
+        "score": 9.59,
+        "reason": "high sharpness, speech present",
+        "tags": [
+          "sharp_detail",
+          "static",
+          "speech"
+        ],
+        "duration": 1.963,
+        "type": "sharp_detail",
+        "description": "footage_00 [0.0s\u20132.0s] sharp_detail",
+        "sharpness": 35.2,
+        "motion": 0.0,
+        "face_present": false,
+        "face_hash": null,
+        "dominant_color": [
+          145,
+          148,
+          159
+        ],
+        "intensity": 3.0,
+        "clip_quality": {
+          "blur_score": 0.0,
+          "brightness": "normal",
+          "stability": "stable"
+        }
+      }
+    ],
+    "moments": [
+      {
+        "start": 0.0,
+        "end": 1.963333,
+        "score": 9.59,
+        "reason": "high sharpness, speech present",
+        "tags": [
+          "sharp_detail",
+          "static",
+          "speech"
+        ],
+        "duration": 1.963,
+        "type": "sharp_detail",
+        "description": "footage_00 [0.0s\u20132.0s] sharp_detail",
+        "sharpness": 35.2,
+        "motion": 0.0,
+        "face_present": false,
+        "face_hash": null,
+        "dominant_color": [
+          145,
+          148,
+          159
+        ],
+        "intensity": 3.0,
+        "clip_quality": {
+          "blur_score": 0.0,
+          "brightness": "normal",
+          "stability": "stable"
+        }
+      }
+    ],
+    "quality": {
+      "blur_score": 0.0,
+      "brightness": "normal",
+      "stability": "stable"
+    },
+    "has_speech": true,
+    "speech_segments": [
+      {
+        "start": 0.828,
+        "end": 1.963
+      }
+    ],
+    "scene_changes": []
+  },
+  {
+    "asset_id": "footage_01",
+    "path": "/var/folders/z9/43k359757f55k0ptrt9w6tnr0000gn/T/tiktok_start_4qt1kxm_/footage_01.MOV",
+    "file_path": "/var/folders/z9/43k359757f55k0ptrt9w6tnr0000gn/T/tiktok_start_4qt1kxm_/footage_01.MOV",
+    "duration_sec": 3.37,
+    "duration": 3.37,
+    "resolution": [
+      1920,
+      1080
+    ],
+    "usable_segments": [
+      {
+        "start": 0.0,
+        "end": 3.3667,
+        "score": 9.33,
+        "reason": "high sharpness, speech present",
+        "tags": [
+          "sharp_detail",
+          "static",
+          "speech"
+        ],
+        "duration": 3.367,
+        "type": "sharp_detail",
+        "description": "footage_01 [0.0s\u20133.4s] sharp_detail",
+        "sharpness": 41.89,
+        "motion": 0.0,
+        "face_present": false,
+        "face_hash": null,
+        "dominant_color": [
+          119,
+          123,
+          117
+        ],
+        "intensity": 3.0,
+        "clip_quality": {
+          "blur_score": 0.0,
+          "brightness": "normal",
+          "stability": "stable"
+        }
+      }
+    ],
+    "moments": [
+      {
+        "start": 0.0,
+        "end": 3.3667,
+        "score": 9.33,
+        "reason": "high sharpness, speech present",
+        "tags": [
+          "sharp_detail",
+          "static",
+          "speech"
+        ],
+        "duration": 3.367,
+        "type": "sharp_detail",
+        "description": "footage_01 [0.0s\u20133.4s] sharp_detail",
+        "sharpness": 41.89,
+        "motion": 0.0,
+        "face_present": false,
+        "face_hash": null,
+        "dominant_color": [
+          119,
+          123,
+          117
+        ],
+        "intensity": 3.0,
+        "clip_quality": {
+          "blur_score": 0.0,
+          "brightness": "normal",
+          "stability": "stable"
+        }
+      }
+    ],
+    "quality": {
+      "blur_score": 0.0,
+      "brightness": "normal",
+      "stability": "stable"
+    },
+    "has_speech": true,
+    "speech_segments": [
+      {
+        "start": 0.0,
+        "end": 3.367
+      }
+    ],
+    "scene_changes": []
+  },
+  {
+    "asset_id": "footage_02",
+    "path": "/var/folders/z9/43k359757f55k0ptrt9w6tnr0000gn/T/tiktok_start_4qt1kxm_/footage_02.MOV",
+    "file_path": "/var/folders/z9/43k359757f55k0ptrt9w6tnr0000gn/T/tiktok_start_4qt1kxm_/footage_02.MOV",
+    "duration_sec": 9.0,
+    "duration": 9.0,
+    "resolution": [
+      1920,
+      1080
+    ],
+    "usable_segments": [
+      {
+        "start": 1.5,
+        "end": 3.5,
+        "score": 9.6,
+        "reason": "high sharpness, speech present",
+        "tags": [
+          "sharp_detail",
+          "static",
+          "speech"
+        ],
+        "duration": 2.0,
+        "type": "sharp_detail",
+        "description": "footage_02 [1.5s\u20133.5s] sharp_detail",
+        "sharpness": 20.12,
+        "motion": 0.0,
+        "face_present": false,
+        "face_hash": null,
+        "dominant_color": [
+          187,
+          189,
+          189
+        ],
+        "intensity": 3.0,
+        "clip_quality": {
+          "blur_score": 0.031,
+          "brightness": "normal",
+          "stability": "stable"
+        }
+      },
+      {
+        "start": 3.0,
+        "end": 5.0,
+        "score": 9.6,
+        "reason": "high sharpness, speech present",
+        "tags": [
+          "sharp_detail",
+          "static",
+          "speech"
+        ],
+        "duration": 2.0,
+        "type": "sharp_detail",
+        "description": "footage_02 [3.0s\u20135.0s] sharp_detail",
+        "sharpness": 21.15,
+        "motion": 0.0,
+        "face_present": false,
+        "face_hash": null,
+        "dominant_color": [
+          175,
+          176,
+          175
+        ],
+        "intensity": 3.0,
+        "clip_quality": {
+          "blur_score": 0.031,
+          "brightness": "normal",
+          "stability": "stable"
+        }
+      },
+      {
+        "start": 4.5,
+        "end": 6.5,
+        "score": 9.6,
+        "reason": "high sharpness, speech present",
+        "tags": [
+          "sharp_detail",
+          "static",
+          "speech"
+        ],
+        "duration": 2.0,
+        "type": "sharp_detail",
+        "description": "footage_02 [4.5s\u20136.5s] sharp_detail",
+        "sharpness": 16.02,
+        "motion": 0.0,
+        "face_present": false,
+        "face_hash": null,
+        "dominant_color": [
+          179,
+          181,
+          183
+        ],
+        "intensity": 3.0,
+        "clip_quality": {
+          "blur_score": 0.031,
+          "brightness": "normal",
+          "stability": "stable"
+        }
+      },
+      {
+        "start": 6.0,
+        "end": 8.0,
+        "score": 8.19,
+        "reason": "high sharpness, speech present",
+        "tags": [
+          "sharp_detail",
+          "static",
+          "speech"
+        ],
+        "duration": 2.0,
+        "type": "sharp_detail",
+        "description": "footage_02 [6.0s\u20138.0s] sharp_detail",
+        "sharpness": 12.66,
+        "motion": 0.0,
+        "face_present": false,
+        "face_hash": null,
+        "dominant_color": [
+          191,
+          193,
+          194
+        ],
+        "intensity": 2.53,
+        "clip_quality": {
+          "blur_score": 0.031,
+          "brightness": "normal",
+          "stability": "stable"
+        }
+      }
+    ],
+    "moments": [
+      {
+        "start": 1.5,
+        "end": 3.5,
+        "score": 9.6,
+        "reason": "high sharpness, speech present",
+        "tags": [
+          "sharp_detail",
+          "static",
+          "speech"
+        ],
+        "duration": 2.0,
+        "type": "sharp_detail",
+        "description": "footage_02 [1.5s\u20133.5s] sharp_detail",
+        "sharpness": 20.12,
+        "motion": 0.0,
+        "face_present": false,
+        "face_hash": null,
+        "dominant_color": [
+          187,
+          189,
+          189
+        ],
+        "intensity": 3.0,
+        "clip_quality": {
+          "blur_score": 0.031,
+          "brightness": "normal",
+          "stability": "stable"
+        }
+      },
+      {
+        "start": 3.0,
+        "end": 5.0,
+        "score": 9.6,
+        "reason": "high sharpness, speech present",
+        "tags": [
+          "sharp_detail",
+          "static",
+          "speech"
+        ],
+        "duration": 2.0,
+        "type": "sharp_detail",
+        "description": "footage_02 [3.0s\u20135.0s] sharp_detail",
+        "sharpness": 21.15,
+        "motion": 0.0,
+        "face_present": false,
+        "face_hash": null,
+        "dominant_color": [
+          175,
+          176,
+          175
+        ],
+        "intensity": 3.0,
+        "clip_quality": {
+          "blur_score": 0.031,
+          "brightness": "normal",
+          "stability": "stable"
+        }
+      },
+      {
+        "start": 4.5,
+        "end": 6.5,
+        "score": 9.6,
+        "reason": "high sharpness, speech present",
+        "tags": [
+          "sharp_detail",
+          "static",
+          "speech"
+        ],
+        "duration": 2.0,
+        "type": "sharp_detail",
+        "description": "footage_02 [4.5s\u20136.5s] sharp_detail",
+        "sharpness": 16.02,
+        "motion": 0.0,
+        "face_present": false,
+        "face_hash": null,
+        "dominant_color": [
+          179,
+          181,
+          183
+        ],
+        "intensity": 3.0,
+        "clip_quality": {
+          "blur_score": 0.031,
+          "brightness": "normal",
+          "stability": "stable"
+        }
+      },
+      {
+        "start": 6.0,
+        "end": 8.0,
+        "score": 8.19,
+        "reason": "high sharpness, speech present",
+        "tags": [
+          "sharp_detail",
+          "static",
+          "speech"
+        ],
+        "duration": 2.0,
+        "type": "sharp_detail",
+        "description": "footage_02 [6.0s\u20138.0s] sharp_detail",
+        "sharpness": 12.66,
+        "motion": 0.0,
+        "face_present": false,
+        "face_hash": null,
+        "dominant_color": [
+          191,
+          193,
+          194
+        ],
+        "intensity": 2.53,
+        "clip_quality": {
+          "blur_score": 0.031,
+          "brightness": "normal",
+          "stability": "stable"
+        }
+      }
+    ],
+    "quality": {
+      "blur_score": 0.031,
+      "brightness": "normal",
+      "stability": "stable"
+    },
+    "has_speech": true,
+    "speech_segments": [
+      {
+        "start": 0.0,
+        "end": 8.998
+      }
+    ],
+    "scene_changes": []
+  },
+  {
+    "asset_id": "footage_03",
+    "path": "/var/folders/z9/43k359757f55k0ptrt9w6tnr0000gn/T/tiktok_start_4qt1kxm_/footage_03.MOV",
+    "file_path": "/var/folders/z9/43k359757f55k0ptrt9w6tnr0000gn/T/tiktok_start_4qt1kxm_/footage_03.MOV",
+    "duration_sec": 2.63,
+    "duration": 2.63,
+    "resolution": [
+      1920,
+      1080
+    ],
+    "usable_segments": [
+      {
+        "start": 0.0,
+        "end": 2.6317,
+        "score": 9.47,
+        "reason": "high sharpness, speech present",
+        "tags": [
+          "sharp_detail",
+          "static",
+          "speech"
+        ],
+        "duration": 2.632,
+        "type": "sharp_detail",
+        "description": "footage_03 [0.0s\u20132.6s] sharp_detail",
+        "sharpness": 44.75,
+        "motion": 0.0,
+        "face_present": false,
+        "face_hash": null,
+        "dominant_color": [
+          134,
+          125,
+          108
+        ],
+        "intensity": 3.0,
+        "clip_quality": {
+          "blur_score": 0.0,
+          "brightness": "normal",
+          "stability": "stable"
+        }
+      }
+    ],
+    "moments": [
+      {
+        "start": 0.0,
+        "end": 2.6317,
+        "score": 9.47,
+        "reason": "high sharpness, speech present",
+        "tags": [
+          "sharp_detail",
+          "static",
+          "speech"
+        ],
+        "duration": 2.632,
+        "type": "sharp_detail",
+        "description": "footage_03 [0.0s\u20132.6s] sharp_detail",
+        "sharpness": 44.75,
+        "motion": 0.0,
+        "face_present": false,
+        "face_hash": null,
+        "dominant_color": [
+          134,
+          125,
+          108
+        ],
+        "intensity": 3.0,
+        "clip_quality": {
+          "blur_score": 0.0,
+          "brightness": "normal",
+          "stability": "stable"
+        }
+      }
+    ],
+    "quality": {
+      "blur_score": 0.0,
+      "brightness": "normal",
+      "stability": "stable"
+    },
+    "has_speech": true,
+    "speech_segments": [
+      {
+        "start": 0.0,
+        "end": 2.632
+      }
+    ],
+    "scene_changes": []
+  },
+  {
+    "asset_id": "footage_04",
+    "path": "/var/folders/z9/43k359757f55k0ptrt9w6tnr0000gn/T/tiktok_start_4qt1kxm_/footage_04.MOV",
+    "file_path": "/var/folders/z9/43k359757f55k0ptrt9w6tnr0000gn/T/tiktok_start_4qt1kxm_/footage_04.MOV",
+    "duration_sec": 1.3,
+    "duration": 1.3,
+    "resolution": [
+      1920,
+      1080
+    ],
+    "usable_segments": [
+      {
+        "start": 0.0,
+        "end": 1.298333,
+        "score": 9.46,
+        "reason": "high sharpness",
+        "tags": [
+          "sharp_detail",
+          "static"
+        ],
+        "duration": 1.298,
+        "type": "sharp_detail",
+        "description": "footage_04 [0.0s\u20131.3s] sharp_detail",
+        "sharpness": 47.93,
+        "motion": 0.0,
+        "face_present": false,
+        "face_hash": null,
+        "dominant_color": [
+          144,
+          138,
+          129
+        ],
+        "intensity": 3.0,
+        "clip_quality": {
+          "blur_score": 0.0,
+          "brightness": "normal",
+          "stability": "stable"
+        }
+      }
+    ],
+    "moments": [
+      {
+        "start": 0.0,
+        "end": 1.298333,
+        "score": 9.46,
+        "reason": "high sharpness",
+        "tags": [
+          "sharp_detail",
+          "static"
+        ],
+        "duration": 1.298,
+        "type": "sharp_detail",
+        "description": "footage_04 [0.0s\u20131.3s] sharp_detail",
+        "sharpness": 47.93,
+        "motion": 0.0,
+        "face_present": false,
+        "face_hash": null,
+        "dominant_color": [
+          144,
+          138,
+          129
+        ],
+        "intensity": 3.0,
+        "clip_quality": {
+          "blur_score": 0.0,
+          "brightness": "normal",
+          "stability": "stable"
+        }
+      }
+    ],
+    "quality": {
+      "blur_score": 0.0,
+      "brightness": "normal",
+      "stability": "stable"
+    },
+    "has_speech": false,
+    "speech_segments": [],
+    "scene_changes": []
+  },
+  {
+    "asset_id": "footage_05",
+    "path": "/var/folders/z9/43k359757f55k0ptrt9w6tnr0000gn/T/tiktok_start_4qt1kxm_/footage_05.MOV",
+    "file_path": "/var/folders/z9/43k359757f55k0ptrt9w6tnr0000gn/T/tiktok_start_4qt1kxm_/footage_05.MOV",
+    "duration_sec": 2.2,
+    "duration": 2.2,
+    "resolution": [
+      1920,
+      1080
+    ],
+    "usable_segments": [
+      {
+        "start": 0.0,
+        "end": 2.2,
+        "score": 9.56,
+        "reason": "high sharpness, speech present",
+        "tags": [
+          "sharp_detail",
+          "static",
+          "speech"
+        ],
+        "duration": 2.2,
+        "type": "sharp_detail",
+        "description": "footage_05 [0.0s\u20132.2s] sharp_detail",
+        "sharpness": 38.2,
+        "motion": 0.0,
+        "face_present": false,
+        "face_hash": null,
+        "dominant_color": [
+          148,
+          147,
+          143
+        ],
+        "intensity": 3.0,
+        "clip_quality": {
+          "blur_score": 0.0,
+          "brightness": "normal",
+          "stability": "stable"
+        }
+      }
+    ],
+    "moments": [
+      {
+        "start": 0.0,
+        "end": 2.2,
+        "score": 9.56,
+        "reason": "high sharpness, speech present",
+        "tags": [
+          "sharp_detail",
+          "static",
+          "speech"
+        ],
+        "duration": 2.2,
+        "type": "sharp_detail",
+        "description": "footage_05 [0.0s\u20132.2s] sharp_detail",
+        "sharpness": 38.2,
+        "motion": 0.0,
+        "face_present": false,
+        "face_hash": null,
+        "dominant_color": [
+          148,
+          147,
+          143
+        ],
+        "intensity": 3.0,
+        "clip_quality": {
+          "blur_score": 0.0,
+          "brightness": "normal",
+          "stability": "stable"
+        }
+      }
+    ],
+    "quality": {
+      "blur_score": 0.0,
+      "brightness": "normal",
+      "stability": "stable"
+    },
+    "has_speech": true,
+    "speech_segments": [
+      {
+        "start": 0.0,
+        "end": 2.2
+      }
+    ],
+    "scene_changes": []
+  },
+  {
+    "asset_id": "footage_06",
+    "path": "/var/folders/z9/43k359757f55k0ptrt9w6tnr0000gn/T/tiktok_start_4qt1kxm_/footage_06.MOV",
+    "file_path": "/var/folders/z9/43k359757f55k0ptrt9w6tnr0000gn/T/tiktok_start_4qt1kxm_/footage_06.MOV",
+    "duration_sec": 6.43,
+    "duration": 6.43,
+    "resolution": [
+      1920,
+      1080
+    ],
+    "usable_segments": [
+      {
+        "start": 0.0,
+        "end": 2.0,
+        "score": 9.6,
+        "reason": "high sharpness, speech present",
+        "tags": [
+          "sharp_detail",
+          "static",
+          "speech"
+        ],
+        "duration": 2.0,
+        "type": "sharp_detail",
+        "description": "footage_06 [0.0s\u20132.0s] sharp_detail",
+        "sharpness": 26.9,
+        "motion": 0.0,
+        "face_present": false,
+        "face_hash": null,
+        "dominant_color": [
+          159,
+          155,
+          143
+        ],
+        "intensity": 3.0,
+        "clip_quality": {
+          "blur_score": 0.0,
+          "brightness": "normal",
+          "stability": "stable"
+        }
+      }
+    ],
+    "moments": [
+      {
+        "start": 0.0,
+        "end": 2.0,
+        "score": 9.6,
+        "reason": "high sharpness, speech present",
+        "tags": [
+          "sharp_detail",
+          "static",
+          "speech"
+        ],
+        "duration": 2.0,
+        "type": "sharp_detail",
+        "description": "footage_06 [0.0s\u20132.0s] sharp_detail",
+        "sharpness": 26.9,
+        "motion": 0.0,
+        "face_present": false,
+        "face_hash": null,
+        "dominant_color": [
+          159,
+          155,
+          143
+        ],
+        "intensity": 3.0,
+        "clip_quality": {
+          "blur_score": 0.0,
+          "brightness": "normal",
+          "stability": "stable"
+        }
+      }
+    ],
+    "quality": {
+      "blur_score": 0.0,
+      "brightness": "normal",
+      "stability": "stable"
+    },
+    "has_speech": true,
+    "speech_segments": [
+      {
+        "start": 0.0,
+        "end": 6.432
+      }
+    ],
+    "scene_changes": []
+  },
+  {
+    "asset_id": "footage_07",
+    "path": "/var/folders/z9/43k359757f55k0ptrt9w6tnr0000gn/T/tiktok_start_4qt1kxm_/footage_07.MOV",
+    "file_path": "/var/folders/z9/43k359757f55k0ptrt9w6tnr0000gn/T/tiktok_start_4qt1kxm_/footage_07.MOV",
+    "duration_sec": 1.06,
+    "duration": 1.06,
+    "resolution": [
+      1920,
+      1080
+    ],
+    "usable_segments": [
+      {
+        "start": 0.0,
+        "end": 1.065,
+        "score": 9.41,
+        "reason": "high sharpness, speech present",
+        "tags": [
+          "sharp_detail",
+          "static",
+          "speech"
+        ],
+        "duration": 1.065,
+        "type": "sharp_detail",
+        "description": "footage_07 [0.0s\u20131.1s] sharp_detail",
+        "sharpness": 34.15,
+        "motion": 0.0,
+        "face_present": false,
+        "face_hash": null,
+        "dominant_color": [
+          134,
+          129,
+          125
+        ],
+        "intensity": 3.0,
+        "clip_quality": {
+          "blur_score": 0.0,
+          "brightness": "normal",
+          "stability": "stable"
+        }
+      }
+    ],
+    "moments": [
+      {
+        "start": 0.0,
+        "end": 1.065,
+        "score": 9.41,
+        "reason": "high sharpness, speech present",
+        "tags": [
+          "sharp_detail",
+          "static",
+          "speech"
+        ],
+        "duration": 1.065,
+        "type": "sharp_detail",
+        "description": "footage_07 [0.0s\u20131.1s] sharp_detail",
+        "sharpness": 34.15,
+        "motion": 0.0,
+        "face_present": false,
+        "face_hash": null,
+        "dominant_color": [
+          134,
+          129,
+          125
+        ],
+        "intensity": 3.0,
+        "clip_quality": {
+          "blur_score": 0.0,
+          "brightness": "normal",
+          "stability": "stable"
+        }
+      }
+    ],
+    "quality": {
+      "blur_score": 0.0,
+      "brightness": "normal",
+      "stability": "stable"
+    },
+    "has_speech": true,
+    "speech_segments": [
+      {
+        "start": 0.0,
+        "end": 1.065
+      }
+    ],
+    "scene_changes": []
+  },
+  {
+    "asset_id": "footage_08",
+    "path": "/var/folders/z9/43k359757f55k0ptrt9w6tnr0000gn/T/tiktok_start_4qt1kxm_/footage_08.MOV",
+    "file_path": "/var/folders/z9/43k359757f55k0ptrt9w6tnr0000gn/T/tiktok_start_4qt1kxm_/footage_08.MOV",
+    "duration_sec": 6.03,
+    "duration": 6.03,
+    "resolution": [
+      1920,
+      1080
+    ],
+    "usable_segments": [
+      {
+        "start": 0.0,
+        "end": 2.0,
+        "score": 9.6,
+        "reason": "high sharpness, speech present",
+        "tags": [
+          "sharp_detail",
+          "static",
+          "speech"
+        ],
+        "duration": 2.0,
+        "type": "sharp_detail",
+        "description": "footage_08 [0.0s\u20132.0s] sharp_detail",
+        "sharpness": 24.97,
+        "motion": 0.0,
+        "face_present": false,
+        "face_hash": null,
+        "dominant_color": [
+          68,
+          59,
+          43
+        ],
+        "intensity": 3.0,
+        "clip_quality": {
+          "blur_score": 0.023,
+          "brightness": "underexposed",
+          "stability": "stable"
+        }
+      }
+    ],
+    "moments": [
+      {
+        "start": 0.0,
+        "end": 2.0,
+        "score": 9.6,
+        "reason": "high sharpness, speech present",
+        "tags": [
+          "sharp_detail",
+          "static",
+          "speech"
+        ],
+        "duration": 2.0,
+        "type": "sharp_detail",
+        "description": "footage_08 [0.0s\u20132.0s] sharp_detail",
+        "sharpness": 24.97,
+        "motion": 0.0,
+        "face_present": false,
+        "face_hash": null,
+        "dominant_color": [
+          68,
+          59,
+          43
+        ],
+        "intensity": 3.0,
+        "clip_quality": {
+          "blur_score": 0.023,
+          "brightness": "underexposed",
+          "stability": "stable"
+        }
+      }
+    ],
+    "quality": {
+      "blur_score": 0.023,
+      "brightness": "underexposed",
+      "stability": "stable"
+    },
+    "has_speech": true,
+    "speech_segments": [
+      {
+        "start": 0.0,
+        "end": 6.033
+      }
+    ],
+    "scene_changes": []
+  },
+  {
+    "asset_id": "footage_09",
+    "path": "/var/folders/z9/43k359757f55k0ptrt9w6tnr0000gn/T/tiktok_start_4qt1kxm_/footage_09.MOV",
+    "file_path": "/var/folders/z9/43k359757f55k0ptrt9w6tnr0000gn/T/tiktok_start_4qt1kxm_/footage_09.MOV",
+    "duration_sec": 2.13,
+    "duration": 2.13,
+    "resolution": [
+      1920,
+      1080
+    ],
+    "usable_segments": [
+      {
+        "start": 0.0,
+        "end": 2.1317,
+        "score": 9.57,
+        "reason": "high sharpness, speech present",
+        "tags": [
+          "sharp_detail",
+          "static",
+          "speech"
+        ],
+        "duration": 2.132,
+        "type": "sharp_detail",
+        "description": "footage_09 [0.0s\u20132.1s] sharp_detail",
+        "sharpness": 43.82,
+        "motion": 0.0,
+        "face_present": false,
+        "face_hash": null,
+        "dominant_color": [
+          121,
+          112,
+          94
+        ],
+        "intensity": 3.0,
+        "clip_quality": {
+          "blur_score": 0.0,
+          "brightness": "normal",
+          "stability": "stable"
+        }
+      }
+    ],
+    "moments": [
+      {
+        "start": 0.0,
+        "end": 2.1317,
+        "score": 9.57,
+        "reason": "high sharpness, speech present",
+        "tags": [
+          "sharp_detail",
+          "static",
+          "speech"
+        ],
+        "duration": 2.132,
+        "type": "sharp_detail",
+        "description": "footage_09 [0.0s\u20132.1s] sharp_detail",
+        "sharpness": 43.82,
+        "motion": 0.0,
+        "face_present": false,
+        "face_hash": null,
+        "dominant_color": [
+          121,
+          112,
+          94
+        ],
+        "intensity": 3.0,
+        "clip_quality": {
+          "blur_score": 0.0,
+          "brightness": "normal",
+          "stability": "stable"
+        }
+      }
+    ],
+    "quality": {
+      "blur_score": 0.0,
+      "brightness": "normal",
+      "stability": "stable"
+    },
+    "has_speech": true,
+    "speech_segments": [
+      {
+        "start": 0.0,
+        "end": 2.132
+      }
+    ],
+    "scene_changes": []
+  },
+  {
+    "asset_id": "footage_10",
+    "path": "/var/folders/z9/43k359757f55k0ptrt9w6tnr0000gn/T/tiktok_start_4qt1kxm_/footage_10.mov",
+    "file_path": "/var/folders/z9/43k359757f55k0ptrt9w6tnr0000gn/T/tiktok_start_4qt1kxm_/footage_10.mov",
+    "duration_sec": 3.08,
+    "duration": 3.08,
+    "resolution": [
+      1920,
+      1080
+    ],
+    "usable_segments": [
+      {
+        "start": 0.0,
+        "end": 3.083333,
+        "score": 9.38,
+        "reason": "high sharpness, speech present",
+        "tags": [
+          "sharp_detail",
+          "static",
+          "speech"
+        ],
+        "duration": 3.083,
+        "type": "sharp_detail",
+        "description": "footage_10 [0.0s\u20133.1s] sharp_detail",
+        "sharpness": 28.55,
+        "motion": 0.0,
+        "face_present": false,
+        "face_hash": null,
+        "dominant_color": [
+          157,
+          143,
+          114
+        ],
+        "intensity": 3.0,
+        "clip_quality": {
+          "blur_score": 0.0,
+          "brightness": "normal",
+          "stability": "stable"
+        }
+      }
+    ],
+    "moments": [
+      {
+        "start": 0.0,
+        "end": 3.083333,
+        "score": 9.38,
+        "reason": "high sharpness, speech present",
+        "tags": [
+          "sharp_detail",
+          "static",
+          "speech"
+        ],
+        "duration": 3.083,
+        "type": "sharp_detail",
+        "description": "footage_10 [0.0s\u20133.1s] sharp_detail",
+        "sharpness": 28.55,
+        "motion": 0.0,
+        "face_present": false,
+        "face_hash": null,
+        "dominant_color": [
+          157,
+          143,
+          114
+        ],
+        "intensity": 3.0,
+        "clip_quality": {
+          "blur_score": 0.0,
+          "brightness": "normal",
+          "stability": "stable"
+        }
+      }
+    ],
+    "quality": {
+      "blur_score": 0.0,
+      "brightness": "normal",
+      "stability": "stable"
+    },
+    "has_speech": true,
+    "speech_segments": [
+      {
+        "start": 0.0,
+        "end": 3.083
+      }
+    ],
+    "scene_changes": []
+  },
+  {
+    "asset_id": "footage_11",
+    "path": "/var/folders/z9/43k359757f55k0ptrt9w6tnr0000gn/T/tiktok_start_4qt1kxm_/footage_11.MOV",
+    "file_path": "/var/folders/z9/43k359757f55k0ptrt9w6tnr0000gn/T/tiktok_start_4qt1kxm_/footage_11.MOV",
+    "duration_sec": 1.6,
+    "duration": 1.6,
+    "resolution": [
+      1920,
+      1080
+    ],
+    "usable_segments": [
+      {
+        "start": 0.0,
+        "end": 1.6,
+        "score": 9.52,
+        "reason": "high sharpness, speech present",
+        "tags": [
+          "sharp_detail",
+          "static",
+          "speech"
+        ],
+        "duration": 1.6,
+        "type": "sharp_detail",
+        "description": "footage_11 [0.0s\u20131.6s] sharp_detail",
+        "sharpness": 25.71,
+        "motion": 0.0,
+        "face_present": false,
+        "face_hash": null,
+        "dominant_color": [
+          161,
+          164,
+          172
+        ],
+        "intensity": 3.0,
+        "clip_quality": {
+          "blur_score": 0.0,
+          "brightness": "normal",
+          "stability": "stable"
+        }
+      }
+    ],
+    "moments": [
+      {
+        "start": 0.0,
+        "end": 1.6,
+        "score": 9.52,
+        "reason": "high sharpness, speech present",
+        "tags": [
+          "sharp_detail",
+          "static",
+          "speech"
+        ],
+        "duration": 1.6,
+        "type": "sharp_detail",
+        "description": "footage_11 [0.0s\u20131.6s] sharp_detail",
+        "sharpness": 25.71,
+        "motion": 0.0,
+        "face_present": false,
+        "face_hash": null,
+        "dominant_color": [
+          161,
+          164,
+          172
+        ],
+        "intensity": 3.0,
+        "clip_quality": {
+          "blur_score": 0.0,
+          "brightness": "normal",
+          "stability": "stable"
+        }
+      }
+    ],
+    "quality": {
+      "blur_score": 0.0,
+      "brightness": "normal",
+      "stability": "stable"
+    },
+    "has_speech": true,
+    "speech_segments": [
+      {
+        "start": 0.0,
+        "end": 1.6
+      }
+    ],
+    "scene_changes": []
+  },
+  {
+    "asset_id": "footage_12",
+    "path": "/var/folders/z9/43k359757f55k0ptrt9w6tnr0000gn/T/tiktok_start_4qt1kxm_/footage_12.MOV",
+    "file_path": "/var/folders/z9/43k359757f55k0ptrt9w6tnr0000gn/T/tiktok_start_4qt1kxm_/footage_12.MOV",
+    "duration_sec": 1.67,
+    "duration": 1.67,
+    "resolution": [
+      1920,
+      1080
+    ],
+    "usable_segments": [
+      {
+        "start": 0.0,
+        "end": 1.665,
+        "score": 9.53,
+        "reason": "high sharpness, speech present",
+        "tags": [
+          "sharp_detail",
+          "static",
+          "speech"
+        ],
+        "duration": 1.665,
+        "type": "sharp_detail",
+        "description": "footage_12 [0.0s\u20131.7s] sharp_detail",
+        "sharpness": 45.22,
+        "motion": 0.0,
+        "face_present": false,
+        "face_hash": null,
+        "dominant_color": [
+          136,
+          134,
+          123
+        ],
+        "intensity": 3.0,
+        "clip_quality": {
+          "blur_score": 0.0,
+          "brightness": "normal",
+          "stability": "stable"
+        }
+      }
+    ],
+    "moments": [
+      {
+        "start": 0.0,
+        "end": 1.665,
+        "score": 9.53,
+        "reason": "high sharpness, speech present",
+        "tags": [
+          "sharp_detail",
+          "static",
+          "speech"
+        ],
+        "duration": 1.665,
+        "type": "sharp_detail",
+        "description": "footage_12 [0.0s\u20131.7s] sharp_detail",
+        "sharpness": 45.22,
+        "motion": 0.0,
+        "face_present": false,
+        "face_hash": null,
+        "dominant_color": [
+          136,
+          134,
+          123
+        ],
+        "intensity": 3.0,
+        "clip_quality": {
+          "blur_score": 0.0,
+          "brightness": "normal",
+          "stability": "stable"
+        }
+      }
+    ],
+    "quality": {
+      "blur_score": 0.0,
+      "brightness": "normal",
+      "stability": "stable"
+    },
+    "has_speech": true,
+    "speech_segments": [
+      {
+        "start": 0.0,
+        "end": 1.665
+      }
+    ],
+    "scene_changes": []
+  },
+  {
+    "asset_id": "footage_13",
+    "path": "/var/folders/z9/43k359757f55k0ptrt9w6tnr0000gn/T/tiktok_start_4qt1kxm_/footage_13.MOV",
+    "file_path": "/var/folders/z9/43k359757f55k0ptrt9w6tnr0000gn/T/tiktok_start_4qt1kxm_/footage_13.MOV",
+    "duration_sec": 1.47,
+    "duration": 1.47,
+    "resolution": [
+      1920,
+      1080
+    ],
+    "usable_segments": [
+      {
+        "start": 0.0,
+        "end": 1.465,
+        "score": 9.49,
+        "reason": "high sharpness, speech present",
+        "tags": [
+          "sharp_detail",
+          "static",
+          "speech"
+        ],
+        "duration": 1.465,
+        "type": "sharp_detail",
+        "description": "footage_13 [0.0s\u20131.5s] sharp_detail",
+        "sharpness": 17.67,
+        "motion": 0.0,
+        "face_present": false,
+        "face_hash": null,
+        "dominant_color": [
+          187,
+          191,
+          193
+        ],
+        "intensity": 3.0,
+        "clip_quality": {
+          "blur_score": 0.0,
+          "brightness": "normal",
+          "stability": "stable"
+        }
+      }
+    ],
+    "moments": [
+      {
+        "start": 0.0,
+        "end": 1.465,
+        "score": 9.49,
+        "reason": "high sharpness, speech present",
+        "tags": [
+          "sharp_detail",
+          "static",
+          "speech"
+        ],
+        "duration": 1.465,
+        "type": "sharp_detail",
+        "description": "footage_13 [0.0s\u20131.5s] sharp_detail",
+        "sharpness": 17.67,
+        "motion": 0.0,
+        "face_present": false,
+        "face_hash": null,
+        "dominant_color": [
+          187,
+          191,
+          193
+        ],
+        "intensity": 3.0,
+        "clip_quality": {
+          "blur_score": 0.0,
+          "brightness": "normal",
+          "stability": "stable"
+        }
+      }
+    ],
+    "quality": {
+      "blur_score": 0.0,
+      "brightness": "normal",
+      "stability": "stable"
+    },
+    "has_speech": true,
+    "speech_segments": [
+      {
+        "start": 0.0,
+        "end": 1.465
+      }
+    ],
+    "scene_changes": []
+  },
+  {
+    "asset_id": "footage_14",
+    "path": "/var/folders/z9/43k359757f55k0ptrt9w6tnr0000gn/T/tiktok_start_4qt1kxm_/footage_14.MOV",
+    "file_path": "/var/folders/z9/43k359757f55k0ptrt9w6tnr0000gn/T/tiktok_start_4qt1kxm_/footage_14.MOV",
+    "duration_sec": 4.7,
+    "duration": 4.7,
+    "resolution": [
+      1920,
+      1080
+    ],
+    "usable_segments": [
+      {
+        "start": 0.0,
+        "end": 2.0,
+        "score": 9.6,
+        "reason": "high sharpness, speech present",
+        "tags": [
+          "sharp_detail",
+          "static",
+          "speech"
+        ],
+        "duration": 2.0,
+        "type": "sharp_detail",
+        "description": "footage_14 [0.0s\u20132.0s] sharp_detail",
+        "sharpness": 22.46,
+        "motion": 0.0,
+        "face_present": false,
+        "face_hash": null,
+        "dominant_color": [
+          161,
+          168,
+          180
+        ],
+        "intensity": 3.0,
+        "clip_quality": {
+          "blur_score": 0.0,
+          "brightness": "normal",
+          "stability": "stable"
+        }
+      }
+    ],
+    "moments": [
+      {
+        "start": 0.0,
+        "end": 2.0,
+        "score": 9.6,
+        "reason": "high sharpness, speech present",
+        "tags": [
+          "sharp_detail",
+          "static",
+          "speech"
+        ],
+        "duration": 2.0,
+        "type": "sharp_detail",
+        "description": "footage_14 [0.0s\u20132.0s] sharp_detail",
+        "sharpness": 22.46,
+        "motion": 0.0,
+        "face_present": false,
+        "face_hash": null,
+        "dominant_color": [
+          161,
+          168,
+          180
+        ],
+        "intensity": 3.0,
+        "clip_quality": {
+          "blur_score": 0.0,
+          "brightness": "normal",
+          "stability": "stable"
+        }
+      }
+    ],
+    "quality": {
+      "blur_score": 0.0,
+      "brightness": "normal",
+      "stability": "stable"
+    },
+    "has_speech": true,
+    "speech_segments": [
+      {
+        "start": 0.0,
+        "end": 4.7
+      }
+    ],
+    "scene_changes": []
+  },
+  {
+    "asset_id": "footage_15",
+    "path": "/var/folders/z9/43k359757f55k0ptrt9w6tnr0000gn/T/tiktok_start_4qt1kxm_/footage_15.MOV",
+    "file_path": "/var/folders/z9/43k359757f55k0ptrt9w6tnr0000gn/T/tiktok_start_4qt1kxm_/footage_15.MOV",
+    "duration_sec": 3.37,
+    "duration": 3.37,
+    "resolution": [
+      1920,
+      1080
+    ],
+    "usable_segments": [
+      {
+        "start": 0.0,
+        "end": 3.366667,
+        "score": 8.79,
+        "reason": "high sharpness, speech present",
+        "tags": [
+          "sharp_detail",
+          "static",
+          "speech"
+        ],
+        "duration": 3.367,
+        "type": "sharp_detail",
+        "description": "footage_15 [0.0s\u20133.4s] sharp_detail",
+        "sharpness": 14.11,
+        "motion": 0.0,
+        "face_present": false,
+        "face_hash": null,
+        "dominant_color": [
+          160,
+          171,
+          193
+        ],
+        "intensity": 2.82,
+        "clip_quality": {
+          "blur_score": 0.059,
+          "brightness": "normal",
+          "stability": "stable"
+        }
+      }
+    ],
+    "moments": [
+      {
+        "start": 0.0,
+        "end": 3.366667,
+        "score": 8.79,
+        "reason": "high sharpness, speech present",
+        "tags": [
+          "sharp_detail",
+          "static",
+          "speech"
+        ],
+        "duration": 3.367,
+        "type": "sharp_detail",
+        "description": "footage_15 [0.0s\u20133.4s] sharp_detail",
+        "sharpness": 14.11,
+        "motion": 0.0,
+        "face_present": false,
+        "face_hash": null,
+        "dominant_color": [
+          160,
+          171,
+          193
+        ],
+        "intensity": 2.82,
+        "clip_quality": {
+          "blur_score": 0.059,
+          "brightness": "normal",
+          "stability": "stable"
+        }
+      }
+    ],
+    "quality": {
+      "blur_score": 0.059,
+      "brightness": "normal",
+      "stability": "stable"
+    },
+    "has_speech": true,
+    "speech_segments": [
+      {
+        "start": 0.0,
+        "end": 3.367
+      }
+    ],
+    "scene_changes": []
+  },
+  {
+    "asset_id": "footage_16",
+    "path": "/var/folders/z9/43k359757f55k0ptrt9w6tnr0000gn/T/tiktok_start_4qt1kxm_/footage_16.MOV",
+    "file_path": "/var/folders/z9/43k359757f55k0ptrt9w6tnr0000gn/T/tiktok_start_4qt1kxm_/footage_16.MOV",
+    "duration_sec": 3.73,
+    "duration": 3.73,
+    "resolution": [
+      1920,
+      1080
+    ],
+    "usable_segments": [
+      {
+        "start": 0.0,
+        "end": 2.0,
+        "score": 9.6,
+        "reason": "high sharpness, speech present",
+        "tags": [
+          "sharp_detail",
+          "static",
+          "speech"
+        ],
+        "duration": 2.0,
+        "type": "sharp_detail",
+        "description": "footage_16 [0.0s\u20132.0s] sharp_detail",
+        "sharpness": 28.3,
+        "motion": 0.0,
+        "face_present": false,
+        "face_hash": null,
+        "dominant_color": [
+          155,
+          159,
+          158
+        ],
+        "intensity": 3.0,
+        "clip_quality": {
+          "blur_score": 0.0,
+          "brightness": "normal",
+          "stability": "stable"
+        }
+      }
+    ],
+    "moments": [
+      {
+        "start": 0.0,
+        "end": 2.0,
+        "score": 9.6,
+        "reason": "high sharpness, speech present",
+        "tags": [
+          "sharp_detail",
+          "static",
+          "speech"
+        ],
+        "duration": 2.0,
+        "type": "sharp_detail",
+        "description": "footage_16 [0.0s\u20132.0s] sharp_detail",
+        "sharpness": 28.3,
+        "motion": 0.0,
+        "face_present": false,
+        "face_hash": null,
+        "dominant_color": [
+          155,
+          159,
+          158
+        ],
+        "intensity": 3.0,
+        "clip_quality": {
+          "blur_score": 0.0,
+          "brightness": "normal",
+          "stability": "stable"
+        }
+      }
+    ],
+    "quality": {
+      "blur_score": 0.0,
+      "brightness": "normal",
+      "stability": "stable"
+    },
+    "has_speech": true,
+    "speech_segments": [
+      {
+        "start": 0.0,
+        "end": 1.243
+      }
+    ],
+    "scene_changes": []
+  },
+  {
+    "asset_id": "footage_17",
+    "path": "/var/folders/z9/43k359757f55k0ptrt9w6tnr0000gn/T/tiktok_start_4qt1kxm_/footage_17.MOV",
+    "file_path": "/var/folders/z9/43k359757f55k0ptrt9w6tnr0000gn/T/tiktok_start_4qt1kxm_/footage_17.MOV",
+    "duration_sec": 3.17,
+    "duration": 3.17,
+    "resolution": [
+      1920,
+      1080
+    ],
+    "usable_segments": [
+      {
+        "start": 0.0,
+        "end": 3.166667,
+        "score": 9.37,
+        "reason": "high sharpness, speech present",
+        "tags": [
+          "sharp_detail",
+          "static",
+          "speech"
+        ],
+        "duration": 3.167,
+        "type": "sharp_detail",
+        "description": "footage_17 [0.0s\u20133.2s] sharp_detail",
+        "sharpness": 42.97,
+        "motion": 0.0,
+        "face_present": false,
+        "face_hash": null,
+        "dominant_color": [
+          113,
+          112,
+          113
+        ],
+        "intensity": 3.0,
+        "clip_quality": {
+          "blur_score": 0.0,
+          "brightness": "normal",
+          "stability": "stable"
+        }
+      }
+    ],
+    "moments": [
+      {
+        "start": 0.0,
+        "end": 3.166667,
+        "score": 9.37,
+        "reason": "high sharpness, speech present",
+        "tags": [
+          "sharp_detail",
+          "static",
+          "speech"
+        ],
+        "duration": 3.167,
+        "type": "sharp_detail",
+        "description": "footage_17 [0.0s\u20133.2s] sharp_detail",
+        "sharpness": 42.97,
+        "motion": 0.0,
+        "face_present": false,
+        "face_hash": null,
+        "dominant_color": [
+          113,
+          112,
+          113
+        ],
+        "intensity": 3.0,
+        "clip_quality": {
+          "blur_score": 0.0,
+          "brightness": "normal",
+          "stability": "stable"
+        }
+      }
+    ],
+    "quality": {
+      "blur_score": 0.0,
+      "brightness": "normal",
+      "stability": "stable"
+    },
+    "has_speech": true,
+    "speech_segments": [
+      {
+        "start": 0.0,
+        "end": 3.167
+      }
+    ],
+    "scene_changes": []
+  },
+  {
+    "asset_id": "footage_18",
+    "path": "/var/folders/z9/43k359757f55k0ptrt9w6tnr0000gn/T/tiktok_start_4qt1kxm_/footage_18.MOV",
+    "file_path": "/var/folders/z9/43k359757f55k0ptrt9w6tnr0000gn/T/tiktok_start_4qt1kxm_/footage_18.MOV",
+    "duration_sec": 2.37,
+    "duration": 2.37,
+    "resolution": [
+      1920,
+      1080
+    ],
+    "usable_segments": [
+      {
+        "start": 0.0,
+        "end": 2.3667,
+        "score": 9.53,
+        "reason": "high sharpness, speech present",
+        "tags": [
+          "sharp_detail",
+          "static",
+          "speech"
+        ],
+        "duration": 2.367,
+        "type": "sharp_detail",
+        "description": "footage_18 [0.0s\u20132.4s] sharp_detail",
+        "sharpness": 24.41,
+        "motion": 0.0,
+        "face_present": false,
+        "face_hash": null,
+        "dominant_color": [
+          103,
+          90,
+          70
+        ],
+        "intensity": 3.0,
+        "clip_quality": {
+          "blur_score": 0.0,
+          "brightness": "normal",
+          "stability": "stable"
+        }
+      }
+    ],
+    "moments": [
+      {
+        "start": 0.0,
+        "end": 2.3667,
+        "score": 9.53,
+        "reason": "high sharpness, speech present",
+        "tags": [
+          "sharp_detail",
+          "static",
+          "speech"
+        ],
+        "duration": 2.367,
+        "type": "sharp_detail",
+        "description": "footage_18 [0.0s\u20132.4s] sharp_detail",
+        "sharpness": 24.41,
+        "motion": 0.0,
+        "face_present": false,
+        "face_hash": null,
+        "dominant_color": [
+          103,
+          90,
+          70
+        ],
+        "intensity": 3.0,
+        "clip_quality": {
+          "blur_score": 0.0,
+          "brightness": "normal",
+          "stability": "stable"
+        }
+      }
+    ],
+    "quality": {
+      "blur_score": 0.0,
+      "brightness": "normal",
+      "stability": "stable"
+    },
+    "has_speech": true,
+    "speech_segments": [
+      {
+        "start": 0.0,
+        "end": 2.367
+      }
+    ],
+    "scene_changes": []
+  },
+  {
+    "asset_id": "footage_19",
+    "path": "/var/folders/z9/43k359757f55k0ptrt9w6tnr0000gn/T/tiktok_start_4qt1kxm_/footage_19.MOV",
+    "file_path": "/var/folders/z9/43k359757f55k0ptrt9w6tnr0000gn/T/tiktok_start_4qt1kxm_/footage_19.MOV",
+    "duration_sec": 7.57,
+    "duration": 7.57,
+    "resolution": [
+      1920,
+      1080
+    ],
+    "usable_segments": [
+      {
+        "start": 0.0,
+        "end": 2.0,
+        "score": 9.6,
+        "reason": "high sharpness, speech present",
+        "tags": [
+          "sharp_detail",
+          "static",
+          "speech"
+        ],
+        "duration": 2.0,
+        "type": "sharp_detail",
+        "description": "footage_19 [0.0s\u20132.0s] sharp_detail",
+        "sharpness": 43.29,
+        "motion": 0.0,
+        "face_present": false,
+        "face_hash": null,
+        "dominant_color": [
+          145,
+          144,
+          138
+        ],
+        "intensity": 3.0,
+        "clip_quality": {
+          "blur_score": 0.0,
+          "brightness": "normal",
+          "stability": "stable"
+        }
+      }
+    ],
+    "moments": [
+      {
+        "start": 0.0,
+        "end": 2.0,
+        "score": 9.6,
+        "reason": "high sharpness, speech present",
+        "tags": [
+          "sharp_detail",
+          "static",
+          "speech"
+        ],
+        "duration": 2.0,
+        "type": "sharp_detail",
+        "description": "footage_19 [0.0s\u20132.0s] sharp_detail",
+        "sharpness": 43.29,
+        "motion": 0.0,
+        "face_present": false,
+        "face_hash": null,
+        "dominant_color": [
+          145,
+          144,
+          138
+        ],
+        "intensity": 3.0,
+        "clip_quality": {
+          "blur_score": 0.0,
+          "brightness": "normal",
+          "stability": "stable"
+        }
+      }
+    ],
+    "quality": {
+      "blur_score": 0.0,
+      "brightness": "normal",
+      "stability": "stable"
+    },
+    "has_speech": true,
+    "speech_segments": [
+      {
+        "start": 0.0,
+        "end": 7.565
+      }
+    ],
+    "scene_changes": []
+  },
+  {
+    "asset_id": "footage_20",
+    "path": "/var/folders/z9/43k359757f55k0ptrt9w6tnr0000gn/T/tiktok_start_4qt1kxm_/footage_20.MOV",
+    "file_path": "/var/folders/z9/43k359757f55k0ptrt9w6tnr0000gn/T/tiktok_start_4qt1kxm_/footage_20.MOV",
+    "duration_sec": 2.13,
+    "duration": 2.13,
+    "resolution": [
+      1920,
+      1080
+    ],
+    "usable_segments": [
+      {
+        "start": 0.0,
+        "end": 2.1317,
+        "score": 9.57,
+        "reason": "high sharpness, speech present",
+        "tags": [
+          "sharp_detail",
+          "static",
+          "speech"
+        ],
+        "duration": 2.132,
+        "type": "sharp_detail",
+        "description": "footage_20 [0.0s\u20132.1s] sharp_detail",
+        "sharpness": 28.52,
+        "motion": 0.0,
+        "face_present": false,
+        "face_hash": null,
+        "dominant_color": [
+          133,
+          142,
+          161
+        ],
+        "intensity": 3.0,
+        "clip_quality": {
+          "blur_score": 0.0,
+          "brightness": "normal",
+          "stability": "stable"
+        }
+      }
+    ],
+    "moments": [
+      {
+        "start": 0.0,
+        "end": 2.1317,
+        "score": 9.57,
+        "reason": "high sharpness, speech present",
+        "tags": [
+          "sharp_detail",
+          "static",
+          "speech"
+        ],
+        "duration": 2.132,
+        "type": "sharp_detail",
+        "description": "footage_20 [0.0s\u20132.1s] sharp_detail",
+        "sharpness": 28.52,
+        "motion": 0.0,
+        "face_present": false,
+        "face_hash": null,
+        "dominant_color": [
+          133,
+          142,
+          161
+        ],
+        "intensity": 3.0,
+        "clip_quality": {
+          "blur_score": 0.0,
+          "brightness": "normal",
+          "stability": "stable"
+        }
+      }
+    ],
+    "quality": {
+      "blur_score": 0.0,
+      "brightness": "normal",
+      "stability": "stable"
+    },
+    "has_speech": true,
+    "speech_segments": [
+      {
+        "start": 0.0,
+        "end": 2.132
+      }
+    ],
+    "scene_changes": []
+  },
+  {
+    "asset_id": "footage_21",
+    "path": "/var/folders/z9/43k359757f55k0ptrt9w6tnr0000gn/T/tiktok_start_4qt1kxm_/footage_21.MOV",
+    "file_path": "/var/folders/z9/43k359757f55k0ptrt9w6tnr0000gn/T/tiktok_start_4qt1kxm_/footage_21.MOV",
+    "duration_sec": 3.83,
+    "duration": 3.83,
+    "resolution": [
+      1080,
+      1920
+    ],
+    "usable_segments": [
+      {
+        "start": 0.0,
+        "end": 2.0,
+        "score": 9.6,
+        "reason": "high sharpness, speech present",
+        "tags": [
+          "sharp_detail",
+          "static",
+          "speech"
+        ],
+        "duration": 2.0,
+        "type": "sharp_detail",
+        "description": "footage_21 [0.0s\u20132.0s] sharp_detail",
+        "sharpness": 31.74,
+        "motion": 0.0,
+        "face_present": false,
+        "face_hash": null,
+        "dominant_color": [
+          100,
+          93,
+          87
+        ],
+        "intensity": 3.0,
+        "clip_quality": {
+          "blur_score": 0.0,
+          "brightness": "normal",
+          "stability": "stable"
+        }
+      }
+    ],
+    "moments": [
+      {
+        "start": 0.0,
+        "end": 2.0,
+        "score": 9.6,
+        "reason": "high sharpness, speech present",
+        "tags": [
+          "sharp_detail",
+          "static",
+          "speech"
+        ],
+        "duration": 2.0,
+        "type": "sharp_detail",
+        "description": "footage_21 [0.0s\u20132.0s] sharp_detail",
+        "sharpness": 31.74,
+        "motion": 0.0,
+        "face_present": false,
+        "face_hash": null,
+        "dominant_color": [
+          100,
+          93,
+          87
+        ],
+        "intensity": 3.0,
+        "clip_quality": {
+          "blur_score": 0.0,
+          "brightness": "normal",
+          "stability": "stable"
+        }
+      }
+    ],
+    "quality": {
+      "blur_score": 0.0,
+      "brightness": "normal",
+      "stability": "stable"
+    },
+    "has_speech": true,
+    "speech_segments": [
+      {
+        "start": 0.0,
+        "end": 3.833
+      }
+    ],
+    "scene_changes": []
+  },
+  {
+    "asset_id": "footage_22",
+    "path": "/var/folders/z9/43k359757f55k0ptrt9w6tnr0000gn/T/tiktok_start_4qt1kxm_/footage_22.MOV",
+    "file_path": "/var/folders/z9/43k359757f55k0ptrt9w6tnr0000gn/T/tiktok_start_4qt1kxm_/footage_22.MOV",
+    "duration_sec": 1.07,
+    "duration": 1.07,
+    "resolution": [
+      1920,
+      1080
+    ],
+    "usable_segments": [
+      {
+        "start": 0.0,
+        "end": 1.066667,
+        "score": 9.41,
+        "reason": "high sharpness, speech present",
+        "tags": [
+          "sharp_detail",
+          "static",
+          "speech"
+        ],
+        "duration": 1.067,
+        "type": "sharp_detail",
+        "description": "footage_22 [0.0s\u20131.1s] sharp_detail",
+        "sharpness": 38.76,
+        "motion": 0.0,
+        "face_present": false,
+        "face_hash": null,
+        "dominant_color": [
+          130,
+          127,
+          124
+        ],
+        "intensity": 3.0,
+        "clip_quality": {
+          "blur_score": 0.0,
+          "brightness": "normal",
+          "stability": "stable"
+        }
+      }
+    ],
+    "moments": [
+      {
+        "start": 0.0,
+        "end": 1.066667,
+        "score": 9.41,
+        "reason": "high sharpness, speech present",
+        "tags": [
+          "sharp_detail",
+          "static",
+          "speech"
+        ],
+        "duration": 1.067,
+        "type": "sharp_detail",
+        "description": "footage_22 [0.0s\u20131.1s] sharp_detail",
+        "sharpness": 38.76,
+        "motion": 0.0,
+        "face_present": false,
+        "face_hash": null,
+        "dominant_color": [
+          130,
+          127,
+          124
+        ],
+        "intensity": 3.0,
+        "clip_quality": {
+          "blur_score": 0.0,
+          "brightness": "normal",
+          "stability": "stable"
+        }
+      }
+    ],
+    "quality": {
+      "blur_score": 0.0,
+      "brightness": "normal",
+      "stability": "stable"
+    },
+    "has_speech": true,
+    "speech_segments": [
+      {
+        "start": 0.0,
+        "end": 1.067
+      }
+    ],
+    "scene_changes": []
+  },
+  {
+    "asset_id": "footage_23",
+    "path": "/var/folders/z9/43k359757f55k0ptrt9w6tnr0000gn/T/tiktok_start_4qt1kxm_/footage_23.MOV",
+    "file_path": "/var/folders/z9/43k359757f55k0ptrt9w6tnr0000gn/T/tiktok_start_4qt1kxm_/footage_23.MOV",
+    "duration_sec": 1.6,
+    "duration": 1.6,
+    "resolution": [
+      1920,
+      1080
+    ],
+    "usable_segments": [
+      {
+        "start": 0.0,
+        "end": 1.6,
+        "score": 9.52,
+        "reason": "high sharpness, speech present",
+        "tags": [
+          "sharp_detail",
+          "static",
+          "speech"
+        ],
+        "duration": 1.6,
+        "type": "sharp_detail",
+        "description": "footage_23 [0.0s\u20131.6s] sharp_detail",
+        "sharpness": 26.22,
+        "motion": 0.0,
+        "face_present": false,
+        "face_hash": null,
+        "dominant_color": [
+          142,
+          132,
+          122
+        ],
+        "intensity": 3.0,
+        "clip_quality": {
+          "blur_score": 0.0,
+          "brightness": "normal",
+          "stability": "stable"
+        }
+      }
+    ],
+    "moments": [
+      {
+        "start": 0.0,
+        "end": 1.6,
+        "score": 9.52,
+        "reason": "high sharpness, speech present",
+        "tags": [
+          "sharp_detail",
+          "static",
+          "speech"
+        ],
+        "duration": 1.6,
+        "type": "sharp_detail",
+        "description": "footage_23 [0.0s\u20131.6s] sharp_detail",
+        "sharpness": 26.22,
+        "motion": 0.0,
+        "face_present": false,
+        "face_hash": null,
+        "dominant_color": [
+          142,
+          132,
+          122
+        ],
+        "intensity": 3.0,
+        "clip_quality": {
+          "blur_score": 0.0,
+          "brightness": "normal",
+          "stability": "stable"
+        }
+      }
+    ],
+    "quality": {
+      "blur_score": 0.0,
+      "brightness": "normal",
+      "stability": "stable"
+    },
+    "has_speech": true,
+    "speech_segments": [
+      {
+        "start": 0.0,
+        "end": 1.6
+      }
+    ],
+    "scene_changes": []
+  },
+  {
+    "asset_id": "footage_24",
+    "path": "/var/folders/z9/43k359757f55k0ptrt9w6tnr0000gn/T/tiktok_start_4qt1kxm_/footage_24.MOV",
+    "file_path": "/var/folders/z9/43k359757f55k0ptrt9w6tnr0000gn/T/tiktok_start_4qt1kxm_/footage_24.MOV",
+    "duration_sec": 2.13,
+    "duration": 2.13,
+    "resolution": [
+      1920,
+      1080
+    ],
+    "usable_segments": [
+      {
+        "start": 0.0,
+        "end": 2.1317,
+        "score": 8.89,
+        "reason": "high sharpness, speech present",
+        "tags": [
+          "sharp_detail",
+          "static",
+          "speech"
+        ],
+        "duration": 2.132,
+        "type": "sharp_detail",
+        "description": "footage_24 [0.0s\u20132.1s] sharp_detail",
+        "sharpness": 13.86,
+        "motion": 0.0,
+        "face_present": false,
+        "face_hash": null,
+        "dominant_color": [
+          104,
+          85,
+          61
+        ],
+        "intensity": 2.77,
+        "clip_quality": {
+          "blur_score": 0.076,
+          "brightness": "underexposed",
+          "stability": "stable"
+        }
+      }
+    ],
+    "moments": [
+      {
+        "start": 0.0,
+        "end": 2.1317,
+        "score": 8.89,
+        "reason": "high sharpness, speech present",
+        "tags": [
+          "sharp_detail",
+          "static",
+          "speech"
+        ],
+        "duration": 2.132,
+        "type": "sharp_detail",
+        "description": "footage_24 [0.0s\u20132.1s] sharp_detail",
+        "sharpness": 13.86,
+        "motion": 0.0,
+        "face_present": false,
+        "face_hash": null,
+        "dominant_color": [
+          104,
+          85,
+          61
+        ],
+        "intensity": 2.77,
+        "clip_quality": {
+          "blur_score": 0.076,
+          "brightness": "underexposed",
+          "stability": "stable"
+        }
+      }
+    ],
+    "quality": {
+      "blur_score": 0.076,
+      "brightness": "underexposed",
+      "stability": "stable"
+    },
+    "has_speech": true,
+    "speech_segments": [
+      {
+        "start": 0.0,
+        "end": 2.132
+      }
+    ],
+    "scene_changes": []
+  },
+  {
+    "asset_id": "footage_25",
+    "path": "/var/folders/z9/43k359757f55k0ptrt9w6tnr0000gn/T/tiktok_start_4qt1kxm_/footage_25.MOV",
+    "file_path": "/var/folders/z9/43k359757f55k0ptrt9w6tnr0000gn/T/tiktok_start_4qt1kxm_/footage_25.MOV",
+    "duration_sec": 4.53,
+    "duration": 4.53,
+    "resolution": [
+      1920,
+      1080
+    ],
+    "usable_segments": [
+      {
+        "start": 0.0,
+        "end": 2.0,
+        "score": 9.6,
+        "reason": "high sharpness, speech present",
+        "tags": [
+          "sharp_detail",
+          "static",
+          "speech"
+        ],
+        "duration": 2.0,
+        "type": "sharp_detail",
+        "description": "footage_25 [0.0s\u20132.0s] sharp_detail",
+        "sharpness": 15.59,
+        "motion": 0.0,
+        "face_present": false,
+        "face_hash": null,
+        "dominant_color": [
+          73,
+          60,
+          39
+        ],
+        "intensity": 3.0,
+        "clip_quality": {
+          "blur_score": 0.0,
+          "brightness": "underexposed",
+          "stability": "stable"
+        }
+      }
+    ],
+    "moments": [
+      {
+        "start": 0.0,
+        "end": 2.0,
+        "score": 9.6,
+        "reason": "high sharpness, speech present",
+        "tags": [
+          "sharp_detail",
+          "static",
+          "speech"
+        ],
+        "duration": 2.0,
+        "type": "sharp_detail",
+        "description": "footage_25 [0.0s\u20132.0s] sharp_detail",
+        "sharpness": 15.59,
+        "motion": 0.0,
+        "face_present": false,
+        "face_hash": null,
+        "dominant_color": [
+          73,
+          60,
+          39
+        ],
+        "intensity": 3.0,
+        "clip_quality": {
+          "blur_score": 0.0,
+          "brightness": "underexposed",
+          "stability": "stable"
+        }
+      }
+    ],
+    "quality": {
+      "blur_score": 0.0,
+      "brightness": "underexposed",
+      "stability": "stable"
+    },
+    "has_speech": true,
+    "speech_segments": [
+      {
+        "start": 0.0,
+        "end": 4.532
+      }
+    ],
+    "scene_changes": []
+  },
+  {
+    "asset_id": "footage_26",
+    "path": "/var/folders/z9/43k359757f55k0ptrt9w6tnr0000gn/T/tiktok_start_4qt1kxm_/footage_26.MOV",
+    "file_path": "/var/folders/z9/43k359757f55k0ptrt9w6tnr0000gn/T/tiktok_start_4qt1kxm_/footage_26.MOV",
+    "duration_sec": 1.73,
+    "duration": 1.73,
+    "resolution": [
+      1920,
+      1080
+    ],
+    "usable_segments": [
+      {
+        "start": 0.0,
+        "end": 1.733333,
+        "score": 9.55,
+        "reason": "high sharpness, speech present",
+        "tags": [
+          "sharp_detail",
+          "static",
+          "speech"
+        ],
+        "duration": 1.733,
+        "type": "sharp_detail",
+        "description": "footage_26 [0.0s\u20131.7s] sharp_detail",
+        "sharpness": 24.59,
+        "motion": 0.0,
+        "face_present": false,
+        "face_hash": null,
+        "dominant_color": [
+          140,
+          144,
+          147
+        ],
+        "intensity": 3.0,
+        "clip_quality": {
+          "blur_score": 0.0,
+          "brightness": "normal",
+          "stability": "stable"
+        }
+      }
+    ],
+    "moments": [
+      {
+        "start": 0.0,
+        "end": 1.733333,
+        "score": 9.55,
+        "reason": "high sharpness, speech present",
+        "tags": [
+          "sharp_detail",
+          "static",
+          "speech"
+        ],
+        "duration": 1.733,
+        "type": "sharp_detail",
+        "description": "footage_26 [0.0s\u20131.7s] sharp_detail",
+        "sharpness": 24.59,
+        "motion": 0.0,
+        "face_present": false,
+        "face_hash": null,
+        "dominant_color": [
+          140,
+          144,
+          147
+        ],
+        "intensity": 3.0,
+        "clip_quality": {
+          "blur_score": 0.0,
+          "brightness": "normal",
+          "stability": "stable"
+        }
+      }
+    ],
+    "quality": {
+      "blur_score": 0.0,
+      "brightness": "normal",
+      "stability": "stable"
+    },
+    "has_speech": true,
+    "speech_segments": [
+      {
+        "start": 0.0,
+        "end": 1.733
+      }
+    ],
+    "scene_changes": []
+  },
+  {
+    "asset_id": "footage_27",
+    "path": "/var/folders/z9/43k359757f55k0ptrt9w6tnr0000gn/T/tiktok_start_4qt1kxm_/footage_27.MOV",
+    "file_path": "/var/folders/z9/43k359757f55k0ptrt9w6tnr0000gn/T/tiktok_start_4qt1kxm_/footage_27.MOV",
+    "duration_sec": 7.03,
+    "duration": 7.03,
+    "resolution": [
+      1920,
+      1080
+    ],
+    "usable_segments": [
+      {
+        "start": 0.0,
+        "end": 2.0,
+        "score": 9.6,
+        "reason": "high sharpness, speech present",
+        "tags": [
+          "sharp_detail",
+          "static",
+          "speech"
+        ],
+        "duration": 2.0,
+        "type": "sharp_detail",
+        "description": "footage_27 [0.0s\u20132.0s] sharp_detail",
+        "sharpness": 18.24,
+        "motion": 0.0,
+        "face_present": false,
+        "face_hash": null,
+        "dominant_color": [
+          151,
+          129,
+          75
+        ],
+        "intensity": 3.0,
+        "clip_quality": {
+          "blur_score": 0.0,
+          "brightness": "normal",
+          "stability": "stable"
+        }
+      }
+    ],
+    "moments": [
+      {
+        "start": 0.0,
+        "end": 2.0,
+        "score": 9.6,
+        "reason": "high sharpness, speech present",
+        "tags": [
+          "sharp_detail",
+          "static",
+          "speech"
+        ],
+        "duration": 2.0,
+        "type": "sharp_detail",
+        "description": "footage_27 [0.0s\u20132.0s] sharp_detail",
+        "sharpness": 18.24,
+        "motion": 0.0,
+        "face_present": false,
+        "face_hash": null,
+        "dominant_color": [
+          151,
+          129,
+          75
+        ],
+        "intensity": 3.0,
+        "clip_quality": {
+          "blur_score": 0.0,
+          "brightness": "normal",
+          "stability": "stable"
+        }
+      }
+    ],
+    "quality": {
+      "blur_score": 0.0,
+      "brightness": "normal",
+      "stability": "stable"
+    },
+    "has_speech": true,
+    "speech_segments": [
+      {
+        "start": 0.0,
+        "end": 7.032
+      }
+    ],
+    "scene_changes": []
+  },
+  {
+    "asset_id": "footage_28",
+    "path": "/var/folders/z9/43k359757f55k0ptrt9w6tnr0000gn/T/tiktok_start_4qt1kxm_/footage_28.MOV",
+    "file_path": "/var/folders/z9/43k359757f55k0ptrt9w6tnr0000gn/T/tiktok_start_4qt1kxm_/footage_28.MOV",
+    "duration_sec": 2.37,
+    "duration": 2.37,
+    "resolution": [
+      1920,
+      1080
+    ],
+    "usable_segments": [
+      {
+        "start": 0.0,
+        "end": 2.365,
+        "score": 9.53,
+        "reason": "high sharpness, speech present",
+        "tags": [
+          "sharp_detail",
+          "static",
+          "speech"
+        ],
+        "duration": 2.365,
+        "type": "sharp_detail",
+        "description": "footage_28 [0.0s\u20132.4s] sharp_detail",
+        "sharpness": 24.11,
+        "motion": 0.0,
+        "face_present": false,
+        "face_hash": null,
+        "dominant_color": [
+          138,
+          132,
+          118
+        ],
+        "intensity": 3.0,
+        "clip_quality": {
+          "blur_score": 0.0,
+          "brightness": "normal",
+          "stability": "stable"
+        }
+      }
+    ],
+    "moments": [
+      {
+        "start": 0.0,
+        "end": 2.365,
+        "score": 9.53,
+        "reason": "high sharpness, speech present",
+        "tags": [
+          "sharp_detail",
+          "static",
+          "speech"
+        ],
+        "duration": 2.365,
+        "type": "sharp_detail",
+        "description": "footage_28 [0.0s\u20132.4s] sharp_detail",
+        "sharpness": 24.11,
+        "motion": 0.0,
+        "face_present": false,
+        "face_hash": null,
+        "dominant_color": [
+          138,
+          132,
+          118
+        ],
+        "intensity": 3.0,
+        "clip_quality": {
+          "blur_score": 0.0,
+          "brightness": "normal",
+          "stability": "stable"
+        }
+      }
+    ],
+    "quality": {
+      "blur_score": 0.0,
+      "brightness": "normal",
+      "stability": "stable"
+    },
+    "has_speech": true,
+    "speech_segments": [
+      {
+        "start": 0.0,
+        "end": 2.365
+      }
+    ],
+    "scene_changes": []
+  },
+  {
+    "asset_id": "footage_29",
+    "path": "/var/folders/z9/43k359757f55k0ptrt9w6tnr0000gn/T/tiktok_start_4qt1kxm_/footage_29.MOV",
+    "file_path": "/var/folders/z9/43k359757f55k0ptrt9w6tnr0000gn/T/tiktok_start_4qt1kxm_/footage_29.MOV",
+    "duration_sec": 4.2,
+    "duration": 4.2,
+    "resolution": [
+      1920,
+      1080
+    ],
+    "usable_segments": [
+      {
+        "start": 0.0,
+        "end": 2.0,
+        "score": 9.6,
+        "reason": "high sharpness, speech present",
+        "tags": [
+          "sharp_detail",
+          "static",
+          "speech"
+        ],
+        "duration": 2.0,
+        "type": "sharp_detail",
+        "description": "footage_29 [0.0s\u20132.0s] sharp_detail",
+        "sharpness": 44.08,
+        "motion": 0.0,
+        "face_present": false,
+        "face_hash": null,
+        "dominant_color": [
+          132,
+          128,
+          121
+        ],
+        "intensity": 3.0,
+        "clip_quality": {
+          "blur_score": 0.0,
+          "brightness": "normal",
+          "stability": "stable"
+        }
+      }
+    ],
+    "moments": [
+      {
+        "start": 0.0,
+        "end": 2.0,
+        "score": 9.6,
+        "reason": "high sharpness, speech present",
+        "tags": [
+          "sharp_detail",
+          "static",
+          "speech"
+        ],
+        "duration": 2.0,
+        "type": "sharp_detail",
+        "description": "footage_29 [0.0s\u20132.0s] sharp_detail",
+        "sharpness": 44.08,
+        "motion": 0.0,
+        "face_present": false,
+        "face_hash": null,
+        "dominant_color": [
+          132,
+          128,
+          121
+        ],
+        "intensity": 3.0,
+        "clip_quality": {
+          "blur_score": 0.0,
+          "brightness": "normal",
+          "stability": "stable"
+        }
+      }
+    ],
+    "quality": {
+      "blur_score": 0.0,
+      "brightness": "normal",
+      "stability": "stable"
+    },
+    "has_speech": true,
+    "speech_segments": [
+      {
+        "start": 0.0,
+        "end": 4.198
+      }
+    ],
+    "scene_changes": []
+  },
+  {
+    "asset_id": "footage_30",
+    "path": "/var/folders/z9/43k359757f55k0ptrt9w6tnr0000gn/T/tiktok_start_4qt1kxm_/footage_30.MOV",
+    "file_path": "/var/folders/z9/43k359757f55k0ptrt9w6tnr0000gn/T/tiktok_start_4qt1kxm_/footage_30.MOV",
+    "duration_sec": 4.26,
+    "duration": 4.26,
+    "resolution": [
+      1920,
+      1080
+    ],
+    "usable_segments": [
+      {
+        "start": 0.0,
+        "end": 2.0,
+        "score": 9.6,
+        "reason": "high sharpness, speech present",
+        "tags": [
+          "sharp_detail",
+          "static",
+          "speech"
+        ],
+        "duration": 2.0,
+        "type": "sharp_detail",
+        "description": "footage_30 [0.0s\u20132.0s] sharp_detail",
+        "sharpness": 31.88,
+        "motion": 0.0,
+        "face_present": false,
+        "face_hash": null,
+        "dominant_color": [
+          156,
+          142,
+          113
+        ],
+        "intensity": 3.0,
+        "clip_quality": {
+          "blur_score": 0.0,
+          "brightness": "normal",
+          "stability": "stable"
+        }
+      }
+    ],
+    "moments": [
+      {
+        "start": 0.0,
+        "end": 2.0,
+        "score": 9.6,
+        "reason": "high sharpness, speech present",
+        "tags": [
+          "sharp_detail",
+          "static",
+          "speech"
+        ],
+        "duration": 2.0,
+        "type": "sharp_detail",
+        "description": "footage_30 [0.0s\u20132.0s] sharp_detail",
+        "sharpness": 31.88,
+        "motion": 0.0,
+        "face_present": false,
+        "face_hash": null,
+        "dominant_color": [
+          156,
+          142,
+          113
+        ],
+        "intensity": 3.0,
+        "clip_quality": {
+          "blur_score": 0.0,
+          "brightness": "normal",
+          "stability": "stable"
+        }
+      }
+    ],
+    "quality": {
+      "blur_score": 0.0,
+      "brightness": "normal",
+      "stability": "stable"
+    },
+    "has_speech": true,
+    "speech_segments": [
+      {
+        "start": 0.0,
+        "end": 4.265
+      }
+    ],
+    "scene_changes": []
+  },
+  {
+    "asset_id": "footage_31",
+    "path": "/var/folders/z9/43k359757f55k0ptrt9w6tnr0000gn/T/tiktok_start_4qt1kxm_/footage_31.MOV",
+    "file_path": "/var/folders/z9/43k359757f55k0ptrt9w6tnr0000gn/T/tiktok_start_4qt1kxm_/footage_31.MOV",
+    "duration_sec": 3.5,
+    "duration": 3.5,
+    "resolution": [
+      1920,
+      1080
+    ],
+    "usable_segments": [
+      {
+        "start": 0.0,
+        "end": 3.5,
+        "score": 9.3,
+        "reason": "high sharpness, speech present",
+        "tags": [
+          "sharp_detail",
+          "static",
+          "speech"
+        ],
+        "duration": 3.5,
+        "type": "sharp_detail",
+        "description": "footage_31 [0.0s\u20133.5s] sharp_detail",
+        "sharpness": 32.76,
+        "motion": 0.0,
+        "face_present": false,
+        "face_hash": null,
+        "dominant_color": [
+          130,
+          117,
+          101
+        ],
+        "intensity": 3.0,
+        "clip_quality": {
+          "blur_score": 0.0,
+          "brightness": "normal",
+          "stability": "stable"
+        }
+      }
+    ],
+    "moments": [
+      {
+        "start": 0.0,
+        "end": 3.5,
+        "score": 9.3,
+        "reason": "high sharpness, speech present",
+        "tags": [
+          "sharp_detail",
+          "static",
+          "speech"
+        ],
+        "duration": 3.5,
+        "type": "sharp_detail",
+        "description": "footage_31 [0.0s\u20133.5s] sharp_detail",
+        "sharpness": 32.76,
+        "motion": 0.0,
+        "face_present": false,
+        "face_hash": null,
+        "dominant_color": [
+          130,
+          117,
+          101
+        ],
+        "intensity": 3.0,
+        "clip_quality": {
+          "blur_score": 0.0,
+          "brightness": "normal",
+          "stability": "stable"
+        }
+      }
+    ],
+    "quality": {
+      "blur_score": 0.0,
+      "brightness": "normal",
+      "stability": "stable"
+    },
+    "has_speech": true,
+    "speech_segments": [
+      {
+        "start": 0.0,
+        "end": 3.5
+      }
+    ],
+    "scene_changes": []
+  },
+  {
+    "asset_id": "footage_32",
+    "path": "/var/folders/z9/43k359757f55k0ptrt9w6tnr0000gn/T/tiktok_start_4qt1kxm_/footage_32.MOV",
+    "file_path": "/var/folders/z9/43k359757f55k0ptrt9w6tnr0000gn/T/tiktok_start_4qt1kxm_/footage_32.MOV",
+    "duration_sec": 2.63,
+    "duration": 2.63,
+    "resolution": [
+      1920,
+      1080
+    ],
+    "usable_segments": [
+      {
+        "start": 0.0,
+        "end": 2.6317,
+        "score": 9.47,
+        "reason": "high sharpness, speech present",
+        "tags": [
+          "sharp_detail",
+          "static",
+          "speech"
+        ],
+        "duration": 2.632,
+        "type": "sharp_detail",
+        "description": "footage_32 [0.0s\u20132.6s] sharp_detail",
+        "sharpness": 33.33,
+        "motion": 0.0,
+        "face_present": false,
+        "face_hash": null,
+        "dominant_color": [
+          146,
+          139,
+          120
+        ],
+        "intensity": 3.0,
+        "clip_quality": {
+          "blur_score": 0.0,
+          "brightness": "normal",
+          "stability": "stable"
+        }
+      }
+    ],
+    "moments": [
+      {
+        "start": 0.0,
+        "end": 2.6317,
+        "score": 9.47,
+        "reason": "high sharpness, speech present",
+        "tags": [
+          "sharp_detail",
+          "static",
+          "speech"
+        ],
+        "duration": 2.632,
+        "type": "sharp_detail",
+        "description": "footage_32 [0.0s\u20132.6s] sharp_detail",
+        "sharpness": 33.33,
+        "motion": 0.0,
+        "face_present": false,
+        "face_hash": null,
+        "dominant_color": [
+          146,
+          139,
+          120
+        ],
+        "intensity": 3.0,
+        "clip_quality": {
+          "blur_score": 0.0,
+          "brightness": "normal",
+          "stability": "stable"
+        }
+      }
+    ],
+    "quality": {
+      "blur_score": 0.0,
+      "brightness": "normal",
+      "stability": "stable"
+    },
+    "has_speech": true,
+    "speech_segments": [
+      {
+        "start": 0.0,
+        "end": 2.632
+      }
+    ],
+    "scene_changes": []
+  },
+  {
+    "asset_id": "footage_33",
+    "path": "/var/folders/z9/43k359757f55k0ptrt9w6tnr0000gn/T/tiktok_start_4qt1kxm_/footage_33.MOV",
+    "file_path": "/var/folders/z9/43k359757f55k0ptrt9w6tnr0000gn/T/tiktok_start_4qt1kxm_/footage_33.MOV",
+    "duration_sec": 2.87,
+    "duration": 2.87,
+    "resolution": [
+      1920,
+      1080
+    ],
+    "usable_segments": [
+      {
+        "start": 0.0,
+        "end": 2.866667,
+        "score": 9.43,
+        "reason": "high sharpness, speech present",
+        "tags": [
+          "sharp_detail",
+          "static",
+          "speech"
+        ],
+        "duration": 2.867,
+        "type": "sharp_detail",
+        "description": "footage_33 [0.0s\u20132.9s] sharp_detail",
+        "sharpness": 32.79,
+        "motion": 0.0,
+        "face_present": false,
+        "face_hash": null,
+        "dominant_color": [
+          160,
+          148,
+          126
+        ],
+        "intensity": 3.0,
+        "clip_quality": {
+          "blur_score": 0.0,
+          "brightness": "normal",
+          "stability": "stable"
+        }
+      }
+    ],
+    "moments": [
+      {
+        "start": 0.0,
+        "end": 2.866667,
+        "score": 9.43,
+        "reason": "high sharpness, speech present",
+        "tags": [
+          "sharp_detail",
+          "static",
+          "speech"
+        ],
+        "duration": 2.867,
+        "type": "sharp_detail",
+        "description": "footage_33 [0.0s\u20132.9s] sharp_detail",
+        "sharpness": 32.79,
+        "motion": 0.0,
+        "face_present": false,
+        "face_hash": null,
+        "dominant_color": [
+          160,
+          148,
+          126
+        ],
+        "intensity": 3.0,
+        "clip_quality": {
+          "blur_score": 0.0,
+          "brightness": "normal",
+          "stability": "stable"
+        }
+      }
+    ],
+    "quality": {
+      "blur_score": 0.0,
+      "brightness": "normal",
+      "stability": "stable"
+    },
+    "has_speech": true,
+    "speech_segments": [
+      {
+        "start": 0.0,
+        "end": 2.867
+      }
+    ],
+    "scene_changes": []
+  },
+  {
+    "asset_id": "footage_34",
+    "path": "/var/folders/z9/43k359757f55k0ptrt9w6tnr0000gn/T/tiktok_start_4qt1kxm_/footage_34.MOV",
+    "file_path": "/var/folders/z9/43k359757f55k0ptrt9w6tnr0000gn/T/tiktok_start_4qt1kxm_/footage_34.MOV",
+    "duration_sec": 2.77,
+    "duration": 2.77,
+    "resolution": [
+      1920,
+      1080
+    ],
+    "usable_segments": [
+      {
+        "start": 0.0,
+        "end": 2.765,
+        "score": 9.45,
+        "reason": "high sharpness, speech present",
+        "tags": [
+          "sharp_detail",
+          "static",
+          "speech"
+        ],
+        "duration": 2.765,
+        "type": "sharp_detail",
+        "description": "footage_34 [0.0s\u20132.8s] sharp_detail",
+        "sharpness": 37.7,
+        "motion": 0.0,
+        "face_present": false,
+        "face_hash": null,
+        "dominant_color": [
+          157,
+          157,
+          151
+        ],
+        "intensity": 3.0,
+        "clip_quality": {
+          "blur_score": 0.0,
+          "brightness": "normal",
+          "stability": "stable"
+        }
+      }
+    ],
+    "moments": [
+      {
+        "start": 0.0,
+        "end": 2.765,
+        "score": 9.45,
+        "reason": "high sharpness, speech present",
+        "tags": [
+          "sharp_detail",
+          "static",
+          "speech"
+        ],
+        "duration": 2.765,
+        "type": "sharp_detail",
+        "description": "footage_34 [0.0s\u20132.8s] sharp_detail",
+        "sharpness": 37.7,
+        "motion": 0.0,
+        "face_present": false,
+        "face_hash": null,
+        "dominant_color": [
+          157,
+          157,
+          151
+        ],
+        "intensity": 3.0,
+        "clip_quality": {
+          "blur_score": 0.0,
+          "brightness": "normal",
+          "stability": "stable"
+        }
+      }
+    ],
+    "quality": {
+      "blur_score": 0.0,
+      "brightness": "normal",
+      "stability": "stable"
+    },
+    "has_speech": true,
+    "speech_segments": [
+      {
+        "start": 0.0,
+        "end": 2.765
+      }
+    ],
+    "scene_changes": []
+  },
+  {
+    "asset_id": "footage_35",
+    "path": "/var/folders/z9/43k359757f55k0ptrt9w6tnr0000gn/T/tiktok_start_4qt1kxm_/footage_35.MOV",
+    "file_path": "/var/folders/z9/43k359757f55k0ptrt9w6tnr0000gn/T/tiktok_start_4qt1kxm_/footage_35.MOV",
+    "duration_sec": 6.63,
+    "duration": 6.63,
+    "resolution": [
+      1920,
+      1080
+    ],
+    "usable_segments": [
+      {
+        "start": 0.0,
+        "end": 2.0,
+        "score": 9.6,
+        "reason": "high sharpness, speech present",
+        "tags": [
+          "sharp_detail",
+          "static",
+          "speech"
+        ],
+        "duration": 2.0,
+        "type": "sharp_detail",
+        "description": "footage_35 [0.0s\u20132.0s] sharp_detail",
+        "sharpness": 26.77,
+        "motion": 0.0,
+        "face_present": false,
+        "face_hash": null,
+        "dominant_color": [
+          123,
+          135,
+          157
+        ],
+        "intensity": 3.0,
+        "clip_quality": {
+          "blur_score": 0.0,
+          "brightness": "normal",
+          "stability": "stable"
+        }
+      }
+    ],
+    "moments": [
+      {
+        "start": 0.0,
+        "end": 2.0,
+        "score": 9.6,
+        "reason": "high sharpness, speech present",
+        "tags": [
+          "sharp_detail",
+          "static",
+          "speech"
+        ],
+        "duration": 2.0,
+        "type": "sharp_detail",
+        "description": "footage_35 [0.0s\u20132.0s] sharp_detail",
+        "sharpness": 26.77,
+        "motion": 0.0,
+        "face_present": false,
+        "face_hash": null,
+        "dominant_color": [
+          123,
+          135,
+          157
+        ],
+        "intensity": 3.0,
+        "clip_quality": {
+          "blur_score": 0.0,
+          "brightness": "normal",
+          "stability": "stable"
+        }
+      }
+    ],
+    "quality": {
+      "blur_score": 0.0,
+      "brightness": "normal",
+      "stability": "stable"
+    },
+    "has_speech": true,
+    "speech_segments": [
+      {
+        "start": 0.0,
+        "end": 6.632
+      }
+    ],
+    "scene_changes": []
+  },
+  {
+    "asset_id": "footage_36",
+    "path": "/var/folders/z9/43k359757f55k0ptrt9w6tnr0000gn/T/tiktok_start_4qt1kxm_/footage_36.MOV",
+    "file_path": "/var/folders/z9/43k359757f55k0ptrt9w6tnr0000gn/T/tiktok_start_4qt1kxm_/footage_36.MOV",
+    "duration_sec": 3.0,
+    "duration": 3.0,
+    "resolution": [
+      1920,
+      1080
+    ],
+    "usable_segments": [
+      {
+        "start": 0.0,
+        "end": 2.998333,
+        "score": 9.4,
+        "reason": "high sharpness, speech present",
+        "tags": [
+          "sharp_detail",
+          "static",
+          "speech"
+        ],
+        "duration": 2.998,
+        "type": "sharp_detail",
+        "description": "footage_36 [0.0s\u20133.0s] sharp_detail",
+        "sharpness": 31.42,
+        "motion": 0.0,
+        "face_present": false,
+        "face_hash": null,
+        "dominant_color": [
+          148,
+          149,
+          161
+        ],
+        "intensity": 3.0,
+        "clip_quality": {
+          "blur_score": 0.0,
+          "brightness": "normal",
+          "stability": "stable"
+        }
+      }
+    ],
+    "moments": [
+      {
+        "start": 0.0,
+        "end": 2.998333,
+        "score": 9.4,
+        "reason": "high sharpness, speech present",
+        "tags": [
+          "sharp_detail",
+          "static",
+          "speech"
+        ],
+        "duration": 2.998,
+        "type": "sharp_detail",
+        "description": "footage_36 [0.0s\u20133.0s] sharp_detail",
+        "sharpness": 31.42,
+        "motion": 0.0,
+        "face_present": false,
+        "face_hash": null,
+        "dominant_color": [
+          148,
+          149,
+          161
+        ],
+        "intensity": 3.0,
+        "clip_quality": {
+          "blur_score": 0.0,
+          "brightness": "normal",
+          "stability": "stable"
+        }
+      }
+    ],
+    "quality": {
+      "blur_score": 0.0,
+      "brightness": "normal",
+      "stability": "stable"
+    },
+    "has_speech": true,
+    "speech_segments": [
+      {
+        "start": 0.0,
+        "end": 2.998
+      }
+    ],
+    "scene_changes": []
+  },
+  {
+    "asset_id": "footage_37",
+    "path": "/var/folders/z9/43k359757f55k0ptrt9w6tnr0000gn/T/tiktok_start_4qt1kxm_/footage_37.MOV",
+    "file_path": "/var/folders/z9/43k359757f55k0ptrt9w6tnr0000gn/T/tiktok_start_4qt1kxm_/footage_37.MOV",
+    "duration_sec": 7.8,
+    "duration": 7.8,
+    "resolution": [
+      1920,
+      1080
+    ],
+    "usable_segments": [
+      {
+        "start": 0.0,
+        "end": 2.0,
+        "score": 9.6,
+        "reason": "high sharpness, speech present",
+        "tags": [
+          "sharp_detail",
+          "static",
+          "speech"
+        ],
+        "duration": 2.0,
+        "type": "sharp_detail",
+        "description": "footage_37 [0.0s\u20132.0s] sharp_detail",
+        "sharpness": 32.82,
+        "motion": 0.0,
+        "face_present": false,
+        "face_hash": null,
+        "dominant_color": [
+          165,
+          163,
+          156
+        ],
+        "intensity": 3.0,
+        "clip_quality": {
+          "blur_score": 0.0,
+          "brightness": "normal",
+          "stability": "stable"
+        }
+      }
+    ],
+    "moments": [
+      {
+        "start": 0.0,
+        "end": 2.0,
+        "score": 9.6,
+        "reason": "high sharpness, speech present",
+        "tags": [
+          "sharp_detail",
+          "static",
+          "speech"
+        ],
+        "duration": 2.0,
+        "type": "sharp_detail",
+        "description": "footage_37 [0.0s\u20132.0s] sharp_detail",
+        "sharpness": 32.82,
+        "motion": 0.0,
+        "face_present": false,
+        "face_hash": null,
+        "dominant_color": [
+          165,
+          163,
+          156
+        ],
+        "intensity": 3.0,
+        "clip_quality": {
+          "blur_score": 0.0,
+          "brightness": "normal",
+          "stability": "stable"
+        }
+      }
+    ],
+    "quality": {
+      "blur_score": 0.0,
+      "brightness": "normal",
+      "stability": "stable"
+    },
+    "has_speech": true,
+    "speech_segments": [
+      {
+        "start": 0.0,
+        "end": 7.8
+      }
+    ],
+    "scene_changes": []
+  },
+  {
+    "asset_id": "footage_38",
+    "path": "/var/folders/z9/43k359757f55k0ptrt9w6tnr0000gn/T/tiktok_start_4qt1kxm_/footage_38.MOV",
+    "file_path": "/var/folders/z9/43k359757f55k0ptrt9w6tnr0000gn/T/tiktok_start_4qt1kxm_/footage_38.MOV",
+    "duration_sec": 2.73,
+    "duration": 2.73,
+    "resolution": [
+      1920,
+      1080
+    ],
+    "usable_segments": [
+      {
+        "start": 0.0,
+        "end": 2.7317,
+        "score": 9.45,
+        "reason": "high sharpness, speech present",
+        "tags": [
+          "sharp_detail",
+          "static",
+          "speech"
+        ],
+        "duration": 2.732,
+        "type": "sharp_detail",
+        "description": "footage_38 [0.0s\u20132.7s] sharp_detail",
+        "sharpness": 35.05,
+        "motion": 0.0,
+        "face_present": false,
+        "face_hash": null,
+        "dominant_color": [
+          114,
+          117,
+          130
+        ],
+        "intensity": 3.0,
+        "clip_quality": {
+          "blur_score": 0.0,
+          "brightness": "normal",
+          "stability": "stable"
+        }
+      }
+    ],
+    "moments": [
+      {
+        "start": 0.0,
+        "end": 2.7317,
+        "score": 9.45,
+        "reason": "high sharpness, speech present",
+        "tags": [
+          "sharp_detail",
+          "static",
+          "speech"
+        ],
+        "duration": 2.732,
+        "type": "sharp_detail",
+        "description": "footage_38 [0.0s\u20132.7s] sharp_detail",
+        "sharpness": 35.05,
+        "motion": 0.0,
+        "face_present": false,
+        "face_hash": null,
+        "dominant_color": [
+          114,
+          117,
+          130
+        ],
+        "intensity": 3.0,
+        "clip_quality": {
+          "blur_score": 0.0,
+          "brightness": "normal",
+          "stability": "stable"
+        }
+      }
+    ],
+    "quality": {
+      "blur_score": 0.0,
+      "brightness": "normal",
+      "stability": "stable"
+    },
+    "has_speech": true,
+    "speech_segments": [
+      {
+        "start": 0.0,
+        "end": 2.732
+      }
+    ],
+    "scene_changes": []
+  },
+  {
+    "asset_id": "footage_39",
+    "path": "/var/folders/z9/43k359757f55k0ptrt9w6tnr0000gn/T/tiktok_start_4qt1kxm_/footage_39.MOV",
+    "file_path": "/var/folders/z9/43k359757f55k0ptrt9w6tnr0000gn/T/tiktok_start_4qt1kxm_/footage_39.MOV",
+    "duration_sec": 2.3,
+    "duration": 2.3,
+    "resolution": [
+      1920,
+      1080
+    ],
+    "usable_segments": [
+      {
+        "start": 0.0,
+        "end": 2.3,
+        "score": 9.54,
+        "reason": "high sharpness, speech present",
+        "tags": [
+          "sharp_detail",
+          "static",
+          "speech"
+        ],
+        "duration": 2.3,
+        "type": "sharp_detail",
+        "description": "footage_39 [0.0s\u20132.3s] sharp_detail",
+        "sharpness": 23.59,
+        "motion": 0.0,
+        "face_present": false,
+        "face_hash": null,
+        "dominant_color": [
+          127,
+          137,
+          157
+        ],
+        "intensity": 3.0,
+        "clip_quality": {
+          "blur_score": 0.0,
+          "brightness": "normal",
+          "stability": "stable"
+        }
+      }
+    ],
+    "moments": [
+      {
+        "start": 0.0,
+        "end": 2.3,
+        "score": 9.54,
+        "reason": "high sharpness, speech present",
+        "tags": [
+          "sharp_detail",
+          "static",
+          "speech"
+        ],
+        "duration": 2.3,
+        "type": "sharp_detail",
+        "description": "footage_39 [0.0s\u20132.3s] sharp_detail",
+        "sharpness": 23.59,
+        "motion": 0.0,
+        "face_present": false,
+        "face_hash": null,
+        "dominant_color": [
+          127,
+          137,
+          157
+        ],
+        "intensity": 3.0,
+        "clip_quality": {
+          "blur_score": 0.0,
+          "brightness": "normal",
+          "stability": "stable"
+        }
+      }
+    ],
+    "quality": {
+      "blur_score": 0.0,
+      "brightness": "normal",
+      "stability": "stable"
+    },
+    "has_speech": true,
+    "speech_segments": [
+      {
+        "start": 0.0,
+        "end": 2.3
+      }
+    ],
+    "scene_changes": []
+  },
+  {
+    "asset_id": "footage_40",
+    "path": "/var/folders/z9/43k359757f55k0ptrt9w6tnr0000gn/T/tiktok_start_4qt1kxm_/footage_40.MOV",
+    "file_path": "/var/folders/z9/43k359757f55k0ptrt9w6tnr0000gn/T/tiktok_start_4qt1kxm_/footage_40.MOV",
+    "duration_sec": 3.8,
+    "duration": 3.8,
+    "resolution": [
+      1920,
+      1080
+    ],
+    "usable_segments": [
+      {
+        "start": 0.0,
+        "end": 2.0,
+        "score": 9.6,
+        "reason": "high sharpness, speech present",
+        "tags": [
+          "sharp_detail",
+          "static",
+          "speech"
+        ],
+        "duration": 2.0,
+        "type": "sharp_detail",
+        "description": "footage_40 [0.0s\u20132.0s] sharp_detail",
+        "sharpness": 20.71,
+        "motion": 0.0,
+        "face_present": false,
+        "face_hash": null,
+        "dominant_color": [
+          60,
+          55,
+          45
+        ],
+        "intensity": 3.0,
+        "clip_quality": {
+          "blur_score": 0.0,
+          "brightness": "dark",
+          "stability": "stable"
+        }
+      }
+    ],
+    "moments": [
+      {
+        "start": 0.0,
+        "end": 2.0,
+        "score": 9.6,
+        "reason": "high sharpness, speech present",
+        "tags": [
+          "sharp_detail",
+          "static",
+          "speech"
+        ],
+        "duration": 2.0,
+        "type": "sharp_detail",
+        "description": "footage_40 [0.0s\u20132.0s] sharp_detail",
+        "sharpness": 20.71,
+        "motion": 0.0,
+        "face_present": false,
+        "face_hash": null,
+        "dominant_color": [
+          60,
+          55,
+          45
+        ],
+        "intensity": 3.0,
+        "clip_quality": {
+          "blur_score": 0.0,
+          "brightness": "dark",
+          "stability": "stable"
+        }
+      }
+    ],
+    "quality": {
+      "blur_score": 0.0,
+      "brightness": "dark",
+      "stability": "stable"
+    },
+    "has_speech": true,
+    "speech_segments": [
+      {
+        "start": 0.0,
+        "end": 3.798
+      }
+    ],
+    "scene_changes": []
+  },
+  {
+    "asset_id": "footage_41",
+    "path": "/var/folders/z9/43k359757f55k0ptrt9w6tnr0000gn/T/tiktok_start_4qt1kxm_/footage_41.MOV",
+    "file_path": "/var/folders/z9/43k359757f55k0ptrt9w6tnr0000gn/T/tiktok_start_4qt1kxm_/footage_41.MOV",
+    "duration_sec": 4.53,
+    "duration": 4.53,
+    "resolution": [
+      1920,
+      1080
+    ],
+    "usable_segments": [
+      {
+        "start": 0.0,
+        "end": 2.0,
+        "score": 9.6,
+        "reason": "high sharpness, speech present",
+        "tags": [
+          "sharp_detail",
+          "static",
+          "speech"
+        ],
+        "duration": 2.0,
+        "type": "sharp_detail",
+        "description": "footage_41 [0.0s\u20132.0s] sharp_detail",
+        "sharpness": 30.77,
+        "motion": 0.0,
+        "face_present": false,
+        "face_hash": null,
+        "dominant_color": [
+          125,
+          138,
+          145
+        ],
+        "intensity": 3.0,
+        "clip_quality": {
+          "blur_score": 0.0,
+          "brightness": "normal",
+          "stability": "stable"
+        }
+      }
+    ],
+    "moments": [
+      {
+        "start": 0.0,
+        "end": 2.0,
+        "score": 9.6,
+        "reason": "high sharpness, speech present",
+        "tags": [
+          "sharp_detail",
+          "static",
+          "speech"
+        ],
+        "duration": 2.0,
+        "type": "sharp_detail",
+        "description": "footage_41 [0.0s\u20132.0s] sharp_detail",
+        "sharpness": 30.77,
+        "motion": 0.0,
+        "face_present": false,
+        "face_hash": null,
+        "dominant_color": [
+          125,
+          138,
+          145
+        ],
+        "intensity": 3.0,
+        "clip_quality": {
+          "blur_score": 0.0,
+          "brightness": "normal",
+          "stability": "stable"
+        }
+      }
+    ],
+    "quality": {
+      "blur_score": 0.0,
+      "brightness": "normal",
+      "stability": "stable"
+    },
+    "has_speech": true,
+    "speech_segments": [
+      {
+        "start": 0.0,
+        "end": 4.532
+      }
+    ],
+    "scene_changes": []
+  },
+  {
+    "asset_id": "footage_42",
+    "path": "/var/folders/z9/43k359757f55k0ptrt9w6tnr0000gn/T/tiktok_start_4qt1kxm_/footage_42.MOV",
+    "file_path": "/var/folders/z9/43k359757f55k0ptrt9w6tnr0000gn/T/tiktok_start_4qt1kxm_/footage_42.MOV",
+    "duration_sec": 7.83,
+    "duration": 7.83,
+    "resolution": [
+      1080,
+      1920
+    ],
+    "usable_segments": [
+      {
+        "start": 0.0,
+        "end": 2.0,
+        "score": 9.6,
+        "reason": "high sharpness, speech present",
+        "tags": [
+          "sharp_detail",
+          "static",
+          "speech"
+        ],
+        "duration": 2.0,
+        "type": "sharp_detail",
+        "description": "footage_42 [0.0s\u20132.0s] sharp_detail",
+        "sharpness": 22.12,
+        "motion": 0.0,
+        "face_present": false,
+        "face_hash": null,
+        "dominant_color": [
+          173,
+          172,
+          176
+        ],
+        "intensity": 3.0,
+        "clip_quality": {
+          "blur_score": 0.0,
+          "brightness": "normal",
+          "stability": "stable"
+        }
+      }
+    ],
+    "moments": [
+      {
+        "start": 0.0,
+        "end": 2.0,
+        "score": 9.6,
+        "reason": "high sharpness, speech present",
+        "tags": [
+          "sharp_detail",
+          "static",
+          "speech"
+        ],
+        "duration": 2.0,
+        "type": "sharp_detail",
+        "description": "footage_42 [0.0s\u20132.0s] sharp_detail",
+        "sharpness": 22.12,
+        "motion": 0.0,
+        "face_present": false,
+        "face_hash": null,
+        "dominant_color": [
+          173,
+          172,
+          176
+        ],
+        "intensity": 3.0,
+        "clip_quality": {
+          "blur_score": 0.0,
+          "brightness": "normal",
+          "stability": "stable"
+        }
+      }
+    ],
+    "quality": {
+      "blur_score": 0.0,
+      "brightness": "normal",
+      "stability": "stable"
+    },
+    "has_speech": true,
+    "speech_segments": [
+      {
+        "start": 0.0,
+        "end": 7.835
+      }
+    ],
+    "scene_changes": []
+  },
+  {
+    "asset_id": "footage_43",
+    "path": "/var/folders/z9/43k359757f55k0ptrt9w6tnr0000gn/T/tiktok_start_4qt1kxm_/footage_43.MOV",
+    "file_path": "/var/folders/z9/43k359757f55k0ptrt9w6tnr0000gn/T/tiktok_start_4qt1kxm_/footage_43.MOV",
+    "duration_sec": 10.83,
+    "duration": 10.83,
+    "resolution": [
+      1920,
+      1080
+    ],
+    "usable_segments": [
+      {
+        "start": 0.0,
+        "end": 2.0,
+        "score": 9.6,
+        "reason": "high sharpness, speech present",
+        "tags": [
+          "sharp_detail",
+          "static",
+          "speech"
+        ],
+        "duration": 2.0,
+        "type": "sharp_detail",
+        "description": "footage_43 [0.0s\u20132.0s] sharp_detail",
+        "sharpness": 15.36,
+        "motion": 0.0,
+        "face_present": false,
+        "face_hash": null,
+        "dominant_color": [
+          165,
+          156,
+          132
+        ],
+        "intensity": 3.0,
+        "clip_quality": {
+          "blur_score": 0.0,
+          "brightness": "normal",
+          "stability": "stable"
+        }
+      }
+    ],
+    "moments": [
+      {
+        "start": 0.0,
+        "end": 2.0,
+        "score": 9.6,
+        "reason": "high sharpness, speech present",
+        "tags": [
+          "sharp_detail",
+          "static",
+          "speech"
+        ],
+        "duration": 2.0,
+        "type": "sharp_detail",
+        "description": "footage_43 [0.0s\u20132.0s] sharp_detail",
+        "sharpness": 15.36,
+        "motion": 0.0,
+        "face_present": false,
+        "face_hash": null,
+        "dominant_color": [
+          165,
+          156,
+          132
+        ],
+        "intensity": 3.0,
+        "clip_quality": {
+          "blur_score": 0.0,
+          "brightness": "normal",
+          "stability": "stable"
+        }
+      }
+    ],
+    "quality": {
+      "blur_score": 0.0,
+      "brightness": "normal",
+      "stability": "stable"
+    },
+    "has_speech": true,
+    "speech_segments": [
+      {
+        "start": 0.0,
+        "end": 10.833
+      }
+    ],
+    "scene_changes": []
+  },
+  {
+    "asset_id": "footage_44",
+    "path": "/var/folders/z9/43k359757f55k0ptrt9w6tnr0000gn/T/tiktok_start_4qt1kxm_/footage_44.MOV",
+    "file_path": "/var/folders/z9/43k359757f55k0ptrt9w6tnr0000gn/T/tiktok_start_4qt1kxm_/footage_44.MOV",
+    "duration_sec": 3.43,
+    "duration": 3.43,
+    "resolution": [
+      1920,
+      1080
+    ],
+    "usable_segments": [
+      {
+        "start": 0.0,
+        "end": 3.433333,
+        "score": 9.31,
+        "reason": "high sharpness, speech present",
+        "tags": [
+          "sharp_detail",
+          "static",
+          "speech"
+        ],
+        "duration": 3.433,
+        "type": "sharp_detail",
+        "description": "footage_44 [0.0s\u20133.4s] sharp_detail",
+        "sharpness": 27.23,
+        "motion": 0.0,
+        "face_present": false,
+        "face_hash": null,
+        "dominant_color": [
+          162,
+          162,
+          155
+        ],
+        "intensity": 3.0,
+        "clip_quality": {
+          "blur_score": 0.0,
+          "brightness": "normal",
+          "stability": "stable"
+        }
+      }
+    ],
+    "moments": [
+      {
+        "start": 0.0,
+        "end": 3.433333,
+        "score": 9.31,
+        "reason": "high sharpness, speech present",
+        "tags": [
+          "sharp_detail",
+          "static",
+          "speech"
+        ],
+        "duration": 3.433,
+        "type": "sharp_detail",
+        "description": "footage_44 [0.0s\u20133.4s] sharp_detail",
+        "sharpness": 27.23,
+        "motion": 0.0,
+        "face_present": false,
+        "face_hash": null,
+        "dominant_color": [
+          162,
+          162,
+          155
+        ],
+        "intensity": 3.0,
+        "clip_quality": {
+          "blur_score": 0.0,
+          "brightness": "normal",
+          "stability": "stable"
+        }
+      }
+    ],
+    "quality": {
+      "blur_score": 0.0,
+      "brightness": "normal",
+      "stability": "stable"
+    },
+    "has_speech": true,
+    "speech_segments": [
+      {
+        "start": 0.0,
+        "end": 3.433
+      }
+    ],
+    "scene_changes": []
+  },
+  {
+    "asset_id": "footage_45",
+    "path": "/var/folders/z9/43k359757f55k0ptrt9w6tnr0000gn/T/tiktok_start_4qt1kxm_/footage_45.MOV",
+    "file_path": "/var/folders/z9/43k359757f55k0ptrt9w6tnr0000gn/T/tiktok_start_4qt1kxm_/footage_45.MOV",
+    "duration_sec": 8.43,
+    "duration": 8.43,
+    "resolution": [
+      1920,
+      1080
+    ],
+    "usable_segments": [
+      {
+        "start": 0.0,
+        "end": 2.0,
+        "score": 9.6,
+        "reason": "high sharpness, speech present",
+        "tags": [
+          "sharp_detail",
+          "static",
+          "speech"
+        ],
+        "duration": 2.0,
+        "type": "sharp_detail",
+        "description": "footage_45 [0.0s\u20132.0s] sharp_detail",
+        "sharpness": 20.54,
+        "motion": 0.0,
+        "face_present": false,
+        "face_hash": null,
+        "dominant_color": [
+          187,
+          189,
+          191
+        ],
+        "intensity": 3.0,
+        "clip_quality": {
+          "blur_score": 0.0,
+          "brightness": "normal",
+          "stability": "stable"
+        }
+      }
+    ],
+    "moments": [
+      {
+        "start": 0.0,
+        "end": 2.0,
+        "score": 9.6,
+        "reason": "high sharpness, speech present",
+        "tags": [
+          "sharp_detail",
+          "static",
+          "speech"
+        ],
+        "duration": 2.0,
+        "type": "sharp_detail",
+        "description": "footage_45 [0.0s\u20132.0s] sharp_detail",
+        "sharpness": 20.54,
+        "motion": 0.0,
+        "face_present": false,
+        "face_hash": null,
+        "dominant_color": [
+          187,
+          189,
+          191
+        ],
+        "intensity": 3.0,
+        "clip_quality": {
+          "blur_score": 0.0,
+          "brightness": "normal",
+          "stability": "stable"
+        }
+      }
+    ],
+    "quality": {
+      "blur_score": 0.0,
+      "brightness": "normal",
+      "stability": "stable"
+    },
+    "has_speech": true,
+    "speech_segments": [
+      {
+        "start": 0.0,
+        "end": 8.432
+      }
+    ],
+    "scene_changes": []
+  },
+  {
+    "asset_id": "footage_46",
+    "path": "/var/folders/z9/43k359757f55k0ptrt9w6tnr0000gn/T/tiktok_start_4qt1kxm_/footage_46.MOV",
+    "file_path": "/var/folders/z9/43k359757f55k0ptrt9w6tnr0000gn/T/tiktok_start_4qt1kxm_/footage_46.MOV",
+    "duration_sec": 2.77,
+    "duration": 2.77,
+    "resolution": [
+      1920,
+      1080
+    ],
+    "usable_segments": [
+      {
+        "start": 0.0,
+        "end": 2.766667,
+        "score": 9.45,
+        "reason": "high sharpness, speech present",
+        "tags": [
+          "sharp_detail",
+          "static",
+          "speech"
+        ],
+        "duration": 2.767,
+        "type": "sharp_detail",
+        "description": "footage_46 [0.0s\u20132.8s] sharp_detail",
+        "sharpness": 27.26,
+        "motion": 0.0,
+        "face_present": false,
+        "face_hash": null,
+        "dominant_color": [
+          147,
+          147,
+          144
+        ],
+        "intensity": 3.0,
+        "clip_quality": {
+          "blur_score": 0.0,
+          "brightness": "normal",
+          "stability": "stable"
+        }
+      }
+    ],
+    "moments": [
+      {
+        "start": 0.0,
+        "end": 2.766667,
+        "score": 9.45,
+        "reason": "high sharpness, speech present",
+        "tags": [
+          "sharp_detail",
+          "static",
+          "speech"
+        ],
+        "duration": 2.767,
+        "type": "sharp_detail",
+        "description": "footage_46 [0.0s\u20132.8s] sharp_detail",
+        "sharpness": 27.26,
+        "motion": 0.0,
+        "face_present": false,
+        "face_hash": null,
+        "dominant_color": [
+          147,
+          147,
+          144
+        ],
+        "intensity": 3.0,
+        "clip_quality": {
+          "blur_score": 0.0,
+          "brightness": "normal",
+          "stability": "stable"
+        }
+      }
+    ],
+    "quality": {
+      "blur_score": 0.0,
+      "brightness": "normal",
+      "stability": "stable"
+    },
+    "has_speech": true,
+    "speech_segments": [
+      {
+        "start": 0.0,
+        "end": 2.767
+      }
+    ],
+    "scene_changes": []
+  },
+  {
+    "asset_id": "footage_47",
+    "path": "/var/folders/z9/43k359757f55k0ptrt9w6tnr0000gn/T/tiktok_start_4qt1kxm_/footage_47.mov",
+    "file_path": "/var/folders/z9/43k359757f55k0ptrt9w6tnr0000gn/T/tiktok_start_4qt1kxm_/footage_47.mov",
+    "duration_sec": 1.98,
+    "duration": 1.98,
+    "resolution": [
+      1920,
+      1080
+    ],
+    "usable_segments": [
+      {
+        "start": 0.0,
+        "end": 1.9817,
+        "score": 9.6,
+        "reason": "high sharpness, speech present",
+        "tags": [
+          "sharp_detail",
+          "static",
+          "speech"
+        ],
+        "duration": 1.982,
+        "type": "sharp_detail",
+        "description": "footage_47 [0.0s\u20132.0s] sharp_detail",
+        "sharpness": 25.54,
+        "motion": 0.0,
+        "face_present": false,
+        "face_hash": null,
+        "dominant_color": [
+          162,
+          162,
+          158
+        ],
+        "intensity": 3.0,
+        "clip_quality": {
+          "blur_score": 0.0,
+          "brightness": "normal",
+          "stability": "stable"
+        }
+      }
+    ],
+    "moments": [
+      {
+        "start": 0.0,
+        "end": 1.9817,
+        "score": 9.6,
+        "reason": "high sharpness, speech present",
+        "tags": [
+          "sharp_detail",
+          "static",
+          "speech"
+        ],
+        "duration": 1.982,
+        "type": "sharp_detail",
+        "description": "footage_47 [0.0s\u20132.0s] sharp_detail",
+        "sharpness": 25.54,
+        "motion": 0.0,
+        "face_present": false,
+        "face_hash": null,
+        "dominant_color": [
+          162,
+          162,
+          158
+        ],
+        "intensity": 3.0,
+        "clip_quality": {
+          "blur_score": 0.0,
+          "brightness": "normal",
+          "stability": "stable"
+        }
+      }
+    ],
+    "quality": {
+      "blur_score": 0.0,
+      "brightness": "normal",
+      "stability": "stable"
+    },
+    "has_speech": true,
+    "speech_segments": [
+      {
+        "start": 0.0,
+        "end": 1.982
+      }
+    ],
+    "scene_changes": []
+  },
+  {
+    "asset_id": "__batch_report__",
+    "total_clips": 48,
+    "total_segments_before_dedup": 107,
+    "total_segments_after_cap": 107,
+    "total_segments_after_dedup": 51,
+    "total_selected": 51,
+    "rejection_log": [
+      {
+        "asset_id": "footage_02",
+        "start": 0.0,
+        "score": 9.31,
+        "reason": "near-duplicate of footage_00@0.00s (sim=0.983\u22650.92)"
+      },
+      {
+        "asset_id": "footage_06",
+        "start": 1.5,
+        "score": 9.6,
+        "reason": "near-duplicate of footage_02@1.50s (sim=0.974\u22650.92)"
+      },
+      {
+        "asset_id": "footage_06",
+        "start": 3.0,
+        "score": 9.6,
+        "reason": "near-duplicate of footage_02@1.50s (sim=0.982\u22650.92)"
+      },
+      {
+        "asset_id": "footage_06",
+        "start": 4.5,
+        "score": 9.59,
+        "reason": "near-duplicate of footage_02@1.50s (sim=0.986\u22650.92)"
+      },
+      {
+        "asset_id": "footage_06",
+        "start": 6.0,
+        "score": 9.29,
+        "reason": "near-duplicate of footage_02@1.50s (sim=0.984\u22650.92)"
+      },
+      {
+        "asset_id": "footage_08",
+        "start": 1.5,
+        "score": 8.77,
+        "reason": "near-duplicate of footage_02@1.50s (sim=0.922\u22650.92)"
+      },
+      {
+        "asset_id": "footage_08",
+        "start": 3.0,
+        "score": 9.6,
+        "reason": "near-duplicate of footage_02@1.50s (sim=0.920\u22650.92)"
+      },
+      {
+        "asset_id": "footage_08",
+        "start": 4.5,
+        "score": 9.51,
+        "reason": "near-duplicate of footage_02@1.50s (sim=0.920\u22650.92)"
+      },
+      {
+        "asset_id": "footage_14",
+        "start": 1.5,
+        "score": 9.6,
+        "reason": "near-duplicate of footage_02@1.50s (sim=0.986\u22650.92)"
+      },
+      {
+        "asset_id": "footage_14",
+        "start": 3.0,
+        "score": 9.54,
+        "reason": "near-duplicate of footage_02@1.50s (sim=0.988\u22650.92)"
+      },
+      {
+        "asset_id": "footage_16",
+        "start": 1.5,
+        "score": 9.6,
+        "reason": "near-duplicate of footage_02@1.50s (sim=1.000\u22650.92)"
+      },
+      {
+        "asset_id": "footage_16",
+        "start": 3.0,
+        "score": 9.35,
+        "reason": "near-duplicate of footage_02@1.50s (sim=0.999\u22650.92)"
+      },
+      {
+        "asset_id": "footage_19",
+        "start": 1.5,
+        "score": 9.6,
+        "reason": "near-duplicate of footage_02@1.50s (sim=0.991\u22650.92)"
+      },
+      {
+        "asset_id": "footage_19",
+        "start": 3.0,
+        "score": 9.6,
+        "reason": "near-duplicate of footage_02@1.50s (sim=0.985\u22650.92)"
+      },
+      {
+        "asset_id": "footage_19",
+        "start": 4.5,
+        "score": 9.6,
+        "reason": "near-duplicate of footage_02@1.50s (sim=0.990\u22650.92)"
+      },
+      {
+        "asset_id": "footage_19",
+        "start": 6.0,
+        "score": 9.51,
+        "reason": "near-duplicate of footage_02@1.50s (sim=0.990\u22650.92)"
+      },
+      {
+        "asset_id": "footage_21",
+        "start": 1.5,
+        "score": 9.6,
+        "reason": "near-duplicate of footage_02@1.50s (sim=0.951\u22650.92)"
+      },
+      {
+        "asset_id": "footage_21",
+        "start": 3.0,
+        "score": 9.37,
+        "reason": "near-duplicate of footage_02@3.00s (sim=0.930\u22650.92)"
+      },
+      {
+        "asset_id": "footage_25",
+        "start": 1.5,
+        "score": 9.6,
+        "reason": "near-duplicate of footage_08@0.00s (sim=0.999\u22650.92)"
+      },
+      {
+        "asset_id": "footage_02",
+        "start": 7.5,
+        "score": 9.5,
+        "reason": "near-duplicate of footage_25@3.00s (sim=0.924\u22650.92); replaced by higher-scored segment"
+      },
+      {
+        "asset_id": "footage_27",
+        "start": 1.5,
+        "score": 9.6,
+        "reason": "near-duplicate of footage_02@1.50s (sim=0.978\u22650.92)"
+      },
+      {
+        "asset_id": "footage_27",
+        "start": 3.0,
+        "score": 9.6,
+        "reason": "near-duplicate of footage_02@1.50s (sim=0.983\u22650.92)"
+      },
+      {
+        "asset_id": "footage_27",
+        "start": 4.5,
+        "score": 9.6,
+        "reason": "near-duplicate of footage_02@1.50s (sim=0.991\u22650.92)"
+      },
+      {
+        "asset_id": "footage_27",
+        "start": 6.0,
+        "score": 9.41,
+        "reason": "near-duplicate of footage_02@1.50s (sim=0.995\u22650.92)"
+      },
+      {
+        "asset_id": "footage_29",
+        "start": 1.5,
+        "score": 9.6,
+        "reason": "near-duplicate of footage_02@1.50s (sim=0.989\u22650.92)"
+      },
+      {
+        "asset_id": "footage_29",
+        "start": 3.0,
+        "score": 9.44,
+        "reason": "near-duplicate of footage_02@1.50s (sim=0.988\u22650.92)"
+      },
+      {
+        "asset_id": "footage_30",
+        "start": 1.5,
+        "score": 9.6,
+        "reason": "near-duplicate of footage_02@1.50s (sim=0.984\u22650.92)"
+      },
+      {
+        "asset_id": "footage_30",
+        "start": 3.0,
+        "score": 9.45,
+        "reason": "near-duplicate of footage_02@1.50s (sim=0.984\u22650.92)"
+      },
+      {
+        "asset_id": "footage_35",
+        "start": 1.5,
+        "score": 9.6,
+        "reason": "near-duplicate of footage_02@1.50s (sim=0.987\u22650.92)"
+      },
+      {
+        "asset_id": "footage_35",
+        "start": 3.0,
+        "score": 9.6,
+        "reason": "near-duplicate of footage_02@1.50s (sim=0.990\u22650.92)"
+      },
+      {
+        "asset_id": "footage_35",
+        "start": 4.5,
+        "score": 9.6,
+        "reason": "near-duplicate of footage_02@1.50s (sim=0.992\u22650.92)"
+      },
+      {
+        "asset_id": "footage_35",
+        "start": 6.0,
+        "score": 9.33,
+        "reason": "near-duplicate of footage_02@1.50s (sim=0.992\u22650.92)"
+      },
+      {
+        "asset_id": "footage_37",
+        "start": 1.5,
+        "score": 9.6,
+        "reason": "near-duplicate of footage_02@1.50s (sim=0.999\u22650.92)"
+      },
+      {
+        "asset_id": "footage_37",
+        "start": 3.0,
+        "score": 9.6,
+        "reason": "near-duplicate of footage_02@1.50s (sim=0.997\u22650.92)"
+      },
+      {
+        "asset_id": "footage_37",
+        "start": 4.5,
+        "score": 9.6,
+        "reason": "near-duplicate of footage_02@1.50s (sim=0.996\u22650.92)"
+      },
+      {
+        "asset_id": "footage_37",
+        "start": 6.0,
+        "score": 9.56,
+        "reason": "near-duplicate of footage_02@1.50s (sim=0.994\u22650.92)"
+      },
+      {
+        "asset_id": "footage_25",
+        "start": 3.0,
+        "score": 9.51,
+        "reason": "near-duplicate of footage_40@0.00s (sim=0.997\u22650.92); replaced by higher-scored segment"
+      },
+      {
+        "asset_id": "footage_40",
+        "start": 1.5,
+        "score": 9.6,
+        "reason": "near-duplicate of footage_08@0.00s (sim=1.000\u22650.92)"
+      },
+      {
+        "asset_id": "footage_40",
+        "start": 3.0,
+        "score": 9.36,
+        "reason": "near-duplicate of footage_08@0.00s (sim=1.000\u22650.92)"
+      },
+      {
+        "asset_id": "footage_41",
+        "start": 1.5,
+        "score": 9.6,
+        "reason": "near-duplicate of footage_02@1.50s (sim=0.989\u22650.92)"
+      },
+      {
+        "asset_id": "footage_41",
+        "start": 3.0,
+        "score": 9.51,
+        "reason": "near-duplicate of footage_02@1.50s (sim=0.995\u22650.92)"
+      },
+      {
+        "asset_id": "footage_42",
+        "start": 1.5,
+        "score": 9.6,
+        "reason": "near-duplicate of footage_02@1.50s (sim=0.998\u22650.92)"
+      },
+      {
+        "asset_id": "footage_42",
+        "start": 3.0,
+        "score": 9.6,
+        "reason": "near-duplicate of footage_02@1.50s (sim=0.999\u22650.92)"
+      },
+      {
+        "asset_id": "footage_42",
+        "start": 4.5,
+        "score": 9.6,
+        "reason": "near-duplicate of footage_02@1.50s (sim=1.000\u22650.92)"
+      },
+      {
+        "asset_id": "footage_42",
+        "start": 6.0,
+        "score": 9.57,
+        "reason": "near-duplicate of footage_02@1.50s (sim=1.000\u22650.92)"
+      },
+      {
+        "asset_id": "footage_43",
+        "start": 1.5,
+        "score": 9.6,
+        "reason": "near-duplicate of footage_02@1.50s (sim=0.997\u22650.92)"
+      },
+      {
+        "asset_id": "footage_43",
+        "start": 3.0,
+        "score": 9.6,
+        "reason": "near-duplicate of footage_02@1.50s (sim=0.997\u22650.92)"
+      },
+      {
+        "asset_id": "footage_43",
+        "start": 4.5,
+        "score": 9.6,
+        "reason": "near-duplicate of footage_02@1.50s (sim=0.989\u22650.92)"
+      },
+      {
+        "asset_id": "footage_43",
+        "start": 6.0,
+        "score": 9.6,
+        "reason": "near-duplicate of footage_02@1.50s (sim=0.983\u22650.92)"
+      },
+      {
+        "asset_id": "footage_43",
+        "start": 7.5,
+        "score": 9.6,
+        "reason": "near-duplicate of footage_02@1.50s (sim=0.999\u22650.92)"
+      },
+      {
+        "asset_id": "footage_43",
+        "start": 9.0,
+        "score": 9.57,
+        "reason": "near-duplicate of footage_02@1.50s (sim=0.992\u22650.92)"
+      },
+      {
+        "asset_id": "footage_45",
+        "start": 1.5,
+        "score": 9.6,
+        "reason": "near-duplicate of footage_02@1.50s (sim=1.000\u22650.92)"
+      },
+      {
+        "asset_id": "footage_45",
+        "start": 3.0,
+        "score": 9.6,
+        "reason": "near-duplicate of footage_02@1.50s (sim=1.000\u22650.92)"
+      },
+      {
+        "asset_id": "footage_45",
+        "start": 4.5,
+        "score": 9.6,
+        "reason": "near-duplicate of footage_02@1.50s (sim=0.999\u22650.92)"
+      },
+      {
+        "asset_id": "footage_45",
+        "start": 6.0,
+        "score": 9.6,
+        "reason": "near-duplicate of footage_02@1.50s (sim=1.000\u22650.92)"
+      },
+      {
+        "asset_id": "footage_45",
+        "start": 7.5,
+        "score": 9.39,
+        "reason": "near-duplicate of footage_02@1.50s (sim=1.000\u22650.92)"
+      }
+    ]
+  }
+]

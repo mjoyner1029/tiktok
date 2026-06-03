@@ -70,7 +70,7 @@ async def create_batch(
     
     **Requires**: Creator Pro plan or higher
     """
-    if len(req.content_items) > 20 and current_user.subscription_plan != SubscriptionPlan.agency:
+    if len(req.content_items) > 20 and current_user.plan != SubscriptionPlan.agency.value:
         raise HTTPException(
             status_code=403,
             detail="Enterprise plan required for batches > 20 items",

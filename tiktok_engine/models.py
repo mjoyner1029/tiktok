@@ -36,6 +36,7 @@ class TimelineSegment:
     visual: str = ""
     caption: str = ""
     motion: str = ""
+    transition: str = "cut"  # transition INTO this segment: cut | fade | flash | swipe_left | swipe_right | whip_pan | dissolve | zoom
 
 
 @dataclass

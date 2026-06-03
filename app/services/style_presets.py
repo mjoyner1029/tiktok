@@ -61,16 +61,19 @@ class StylePresetService:
         Returns global presets + user's personal presets.
         """
         query = select(StyleProfile).where(StyleProfile.project_id.is_(None))
-        
-        if user_id:
-            # Filter to user's presets or public ones
-            query = query.where(
-                (StyleProfile.profile_json["created_by"].astext == str(user_id))
-                | (StyleProfile.profile_json["is_public"].astext == "true")
-            )
-        
         result = await db.execute(query.order_by(StyleProfile.created_at.desc()))
-        return result.scalars().all()
+        presets = result.scalars().all()
+
+        if user_id:
+            # Filter in Python to avoid DB-engine-specific JSON operators
+            user_id_str = str(user_id)
+            presets = [
+                p for p in presets
+                if p.profile_json.get("created_by") == user_id_str
+                or p.profile_json.get("is_public") is True
+            ]
+
+        return presets
     
     @staticmethod
     async def get_preset(preset_id: uuid.UUID, db: AsyncSession) -> Optional[StyleProfile]:

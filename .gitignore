@@ -41,3 +41,9 @@ htmlcov/
 .coverage
 coverage.xml
 *.coveragerc
+.pytest_cache/
+
+# Local dev database & run artifacts
+local.db
+*.db
+output.json

@@ -1,0 +1,577 @@
+{
+  "project_id": "67faf7bb",
+  "audio_mode": "silent",
+  "rhythm_preset": "tight_sync",
+  "bpm": null,
+  "beat_count": 0,
+  "timeline_duration": 60.0,
+  "clip_count": 120,
+  "render_style": "ultra-fast",
+  "ranking_profile": "talking_head",
+  "escalation_score": 0.5,
+  "pacing_curve": [
+    0.5,
+    0.5,
+    0.5,
+    0.5,
+    0.5,
+    0.5,
+    0.5,
+    0.5,
+    0.5,
+    0.5,
+    0.5,
+    0.5,
+    0.5,
+    0.5,
+    0.5,
+    0.5,
+    0.5,
+    0.5,
+    0.5,
+    0.5,
+    0.5,
+    0.5,
+    0.5,
+    0.5,
+    0.5,
+    0.5,
+    0.5,
+    0.5,
+    0.5,
+    0.5,
+    0.5,
+    0.5,
+    0.5,
+    0.5,
+    0.5,
+    0.5,
+    0.5,
+    0.5,
+    0.5,
+    0.5,
+    0.5,
+    0.5,
+    0.5,
+    0.5,
+    0.5,
+    0.5,
+    0.5,
+    0.5,
+    0.5,
+    0.5,
+    0.5,
+    0.5,
+    0.5,
+    0.5,
+    0.5,
+    0.5,
+    0.5,
+    0.5,
+    0.5,
+    0.5,
+    0.5,
+    0.5,
+    0.5,
+    0.5,
+    0.5,
+    0.5,
+    0.5,
+    0.5,
+    0.5,
+    0.5,
+    0.5,
+    0.5,
+    0.5,
+    0.5,
+    0.5,
+    0.5,
+    0.5,
+    0.5,
+    0.5,
+    0.5,
+    0.5,
+    0.5,
+    0.5,
+    0.5,
+    0.5,
+    0.5,
+    0.5,
+    0.5,
+    0.5,
+    0.5,
+    0.5,
+    0.5,
+    0.5,
+    0.5,
+    0.5,
+    0.5,
+    0.5,
+    0.5,
+    0.5,
+    0.5,
+    0.5,
+    0.5,
+    0.5,
+    0.5,
+    0.5,
+    0.5,
+    0.5,
+    0.5,
+    0.5,
+    0.5,
+    0.5,
+    0.5,
+    0.5,
+    0.5,
+    0.5,
+    0.5,
+    0.5,
+    0.5,
+    0.5,
+    0.5
+  ],
+  "top_clips": [
+    {
+      "asset_id": "footage_04",
+      "start": 0.0,
+      "end": 0.5,
+      "duration": 0.5,
+      "score": 0,
+      "score_breakdown": {},
+      "description": ""
+    },
+    {
+      "asset_id": "footage_21",
+      "start": 0.5,
+      "end": 1.0,
+      "duration": 0.5,
+      "score": 0,
+      "score_breakdown": {},
+      "description": ""
+    },
+    {
+      "asset_id": "footage_18",
+      "start": 1.0,
+      "end": 1.5,
+      "duration": 0.5,
+      "score": 0,
+      "score_breakdown": {},
+      "description": ""
+    },
+    {
+      "asset_id": "footage_09",
+      "start": 1.5,
+      "end": 2.0,
+      "duration": 0.5,
+      "score": 0,
+      "score_breakdown": {},
+      "description": ""
+    },
+    {
+      "asset_id": "footage_29",
+      "start": 2.0,
+      "end": 2.5,
+      "duration": 0.5,
+      "score": 0,
+      "score_breakdown": {},
+      "description": ""
+    },
+    {
+      "asset_id": "footage_27",
+      "start": 2.5,
+      "end": 3.0,
+      "duration": 0.5,
+      "score": 0,
+      "score_breakdown": {},
+      "description": ""
+    },
+    {
+      "asset_id": "footage_35",
+      "start": 3.0,
+      "end": 3.5,
+      "duration": 0.5,
+      "score": 0,
+      "score_breakdown": {},
+      "description": ""
+    },
+    {
+      "asset_id": "footage_41",
+      "start": 3.5,
+      "end": 4.0,
+      "duration": 0.5,
+      "score": 0,
+      "score_breakdown": {},
+      "description": ""
+    },
+    {
+      "asset_id": "footage_38",
+      "start": 4.0,
+      "end": 4.5,
+      "duration": 0.5,
+      "score": 0,
+      "score_breakdown": {},
+      "description": ""
+    },
+    {
+      "asset_id": "footage_28",
+      "start": 4.5,
+      "end": 5.0,
+      "duration": 0.5,
+      "score": 0,
+      "score_breakdown": {},
+      "description": ""
+    }
+  ],
+  "embedding_status": {
+    "clip_available": false,
+    "reference_embedded": false,
+    "footage_segments_embedded": 0,
+    "fallback_used": true
+  },
+  "batch_report": {
+    "total_clips": 48,
+    "total_segments_before_dedup": 107,
+    "total_segments_after_cap": 107,
+    "total_segments_after_dedup": 51,
+    "total_selected": 51,
+    "rejection_log": [
+      {
+        "asset_id": "footage_02",
+        "start": 0.0,
+        "score": 9.31,
+        "reason": "near-duplicate of footage_00@0.00s (sim=0.983\u22650.92)"
+      },
+      {
+        "asset_id": "footage_06",
+        "start": 1.5,
+        "score": 9.6,
+        "reason": "near-duplicate of footage_02@1.50s (sim=0.974\u22650.92)"
+      },
+      {
+        "asset_id": "footage_06",
+        "start": 3.0,
+        "score": 9.6,
+        "reason": "near-duplicate of footage_02@1.50s (sim=0.982\u22650.92)"
+      },
+      {
+        "asset_id": "footage_06",
+        "start": 4.5,
+        "score": 9.59,
+        "reason": "near-duplicate of footage_02@1.50s (sim=0.986\u22650.92)"
+      },
+      {
+        "asset_id": "footage_06",
+        "start": 6.0,
+        "score": 9.29,
+        "reason": "near-duplicate of footage_02@1.50s (sim=0.984\u22650.92)"
+      },
+      {
+        "asset_id": "footage_08",
+        "start": 1.5,
+        "score": 8.77,
+        "reason": "near-duplicate of footage_02@1.50s (sim=0.922\u22650.92)"
+      },
+      {
+        "asset_id": "footage_08",
+        "start": 3.0,
+        "score": 9.6,
+        "reason": "near-duplicate of footage_02@1.50s (sim=0.920\u22650.92)"
+      },
+      {
+        "asset_id": "footage_08",
+        "start": 4.5,
+        "score": 9.51,
+        "reason": "near-duplicate of footage_02@1.50s (sim=0.920\u22650.92)"
+      },
+      {
+        "asset_id": "footage_14",
+        "start": 1.5,
+        "score": 9.6,
+        "reason": "near-duplicate of footage_02@1.50s (sim=0.986\u22650.92)"
+      },
+      {
+        "asset_id": "footage_14",
+        "start": 3.0,
+        "score": 9.54,
+        "reason": "near-duplicate of footage_02@1.50s (sim=0.988\u22650.92)"
+      },
+      {
+        "asset_id": "footage_16",
+        "start": 1.5,
+        "score": 9.6,
+        "reason": "near-duplicate of footage_02@1.50s (sim=1.000\u22650.92)"
+      },
+      {
+        "asset_id": "footage_16",
+        "start": 3.0,
+        "score": 9.35,
+        "reason": "near-duplicate of footage_02@1.50s (sim=0.999\u22650.92)"
+      },
+      {
+        "asset_id": "footage_19",
+        "start": 1.5,
+        "score": 9.6,
+        "reason": "near-duplicate of footage_02@1.50s (sim=0.991\u22650.92)"
+      },
+      {
+        "asset_id": "footage_19",
+        "start": 3.0,
+        "score": 9.6,
+        "reason": "near-duplicate of footage_02@1.50s (sim=0.985\u22650.92)"
+      },
+      {
+        "asset_id": "footage_19",
+        "start": 4.5,
+        "score": 9.6,
+        "reason": "near-duplicate of footage_02@1.50s (sim=0.990\u22650.92)"
+      },
+      {
+        "asset_id": "footage_19",
+        "start": 6.0,
+        "score": 9.51,
+        "reason": "near-duplicate of footage_02@1.50s (sim=0.990\u22650.92)"
+      },
+      {
+        "asset_id": "footage_21",
+        "start": 1.5,
+        "score": 9.6,
+        "reason": "near-duplicate of footage_02@1.50s (sim=0.951\u22650.92)"
+      },
+      {
+        "asset_id": "footage_21",
+        "start": 3.0,
+        "score": 9.37,
+        "reason": "near-duplicate of footage_02@3.00s (sim=0.930\u22650.92)"
+      },
+      {
+        "asset_id": "footage_25",
+        "start": 1.5,
+        "score": 9.6,
+        "reason": "near-duplicate of footage_08@0.00s (sim=0.999\u22650.92)"
+      },
+      {
+        "asset_id": "footage_02",
+        "start": 7.5,
+        "score": 9.5,
+        "reason": "near-duplicate of footage_25@3.00s (sim=0.924\u22650.92); replaced by higher-scored segment"
+      },
+      {
+        "asset_id": "footage_27",
+        "start": 1.5,
+        "score": 9.6,
+        "reason": "near-duplicate of footage_02@1.50s (sim=0.978\u22650.92)"
+      },
+      {
+        "asset_id": "footage_27",
+        "start": 3.0,
+        "score": 9.6,
+        "reason": "near-duplicate of footage_02@1.50s (sim=0.983\u22650.92)"
+      },
+      {
+        "asset_id": "footage_27",
+        "start": 4.5,
+        "score": 9.6,
+        "reason": "near-duplicate of footage_02@1.50s (sim=0.991\u22650.92)"
+      },
+      {
+        "asset_id": "footage_27",
+        "start": 6.0,
+        "score": 9.41,
+        "reason": "near-duplicate of footage_02@1.50s (sim=0.995\u22650.92)"
+      },
+      {
+        "asset_id": "footage_29",
+        "start": 1.5,
+        "score": 9.6,
+        "reason": "near-duplicate of footage_02@1.50s (sim=0.989\u22650.92)"
+      },
+      {
+        "asset_id": "footage_29",
+        "start": 3.0,
+        "score": 9.44,
+        "reason": "near-duplicate of footage_02@1.50s (sim=0.988\u22650.92)"
+      },
+      {
+        "asset_id": "footage_30",
+        "start": 1.5,
+        "score": 9.6,
+        "reason": "near-duplicate of footage_02@1.50s (sim=0.984\u22650.92)"
+      },
+      {
+        "asset_id": "footage_30",
+        "start": 3.0,
+        "score": 9.45,
+        "reason": "near-duplicate of footage_02@1.50s (sim=0.984\u22650.92)"
+      },
+      {
+        "asset_id": "footage_35",
+        "start": 1.5,
+        "score": 9.6,
+        "reason": "near-duplicate of footage_02@1.50s (sim=0.987\u22650.92)"
+      },
+      {
+        "asset_id": "footage_35",
+        "start": 3.0,
+        "score": 9.6,
+        "reason": "near-duplicate of footage_02@1.50s (sim=0.990\u22650.92)"
+      },
+      {
+        "asset_id": "footage_35",
+        "start": 4.5,
+        "score": 9.6,
+        "reason": "near-duplicate of footage_02@1.50s (sim=0.992\u22650.92)"
+      },
+      {
+        "asset_id": "footage_35",
+        "start": 6.0,
+        "score": 9.33,
+        "reason": "near-duplicate of footage_02@1.50s (sim=0.992\u22650.92)"
+      },
+      {
+        "asset_id": "footage_37",
+        "start": 1.5,
+        "score": 9.6,
+        "reason": "near-duplicate of footage_02@1.50s (sim=0.999\u22650.92)"
+      },
+      {
+        "asset_id": "footage_37",
+        "start": 3.0,
+        "score": 9.6,
+        "reason": "near-duplicate of footage_02@1.50s (sim=0.997\u22650.92)"
+      },
+      {
+        "asset_id": "footage_37",
+        "start": 4.5,
+        "score": 9.6,
+        "reason": "near-duplicate of footage_02@1.50s (sim=0.996\u22650.92)"
+      },
+      {
+        "asset_id": "footage_37",
+        "start": 6.0,
+        "score": 9.56,
+        "reason": "near-duplicate of footage_02@1.50s (sim=0.994\u22650.92)"
+      },
+      {
+        "asset_id": "footage_25",
+        "start": 3.0,
+        "score": 9.51,
+        "reason": "near-duplicate of footage_40@0.00s (sim=0.997\u22650.92); replaced by higher-scored segment"
+      },
+      {
+        "asset_id": "footage_40",
+        "start": 1.5,
+        "score": 9.6,
+        "reason": "near-duplicate of footage_08@0.00s (sim=1.000\u22650.92)"
+      },
+      {
+        "asset_id": "footage_40",
+        "start": 3.0,
+        "score": 9.36,
+        "reason": "near-duplicate of footage_08@0.00s (sim=1.000\u22650.92)"
+      },
+      {
+        "asset_id": "footage_41",
+        "start": 1.5,
+        "score": 9.6,
+        "reason": "near-duplicate of footage_02@1.50s (sim=0.989\u22650.92)"
+      },
+      {
+        "asset_id": "footage_41",
+        "start": 3.0,
+        "score": 9.51,
+        "reason": "near-duplicate of footage_02@1.50s (sim=0.995\u22650.92)"
+      },
+      {
+        "asset_id": "footage_42",
+        "start": 1.5,
+        "score": 9.6,
+        "reason": "near-duplicate of footage_02@1.50s (sim=0.998\u22650.92)"
+      },
+      {
+        "asset_id": "footage_42",
+        "start": 3.0,
+        "score": 9.6,
+        "reason": "near-duplicate of footage_02@1.50s (sim=0.999\u22650.92)"
+      },
+      {
+        "asset_id": "footage_42",
+        "start": 4.5,
+        "score": 9.6,
+        "reason": "near-duplicate of footage_02@1.50s (sim=1.000\u22650.92)"
+      },
+      {
+        "asset_id": "footage_42",
+        "start": 6.0,
+        "score": 9.57,
+        "reason": "near-duplicate of footage_02@1.50s (sim=1.000\u22650.92)"
+      },
+      {
+        "asset_id": "footage_43",
+        "start": 1.5,
+        "score": 9.6,
+        "reason": "near-duplicate of footage_02@1.50s (sim=0.997\u22650.92)"
+      },
+      {
+        "asset_id": "footage_43",
+        "start": 3.0,
+        "score": 9.6,
+        "reason": "near-duplicate of footage_02@1.50s (sim=0.997\u22650.92)"
+      },
+      {
+        "asset_id": "footage_43",
+        "start": 4.5,
+        "score": 9.6,
+        "reason": "near-duplicate of footage_02@1.50s (sim=0.989\u22650.92)"
+      },
+      {
+        "asset_id": "footage_43",
+        "start": 6.0,
+        "score": 9.6,
+        "reason": "near-duplicate of footage_02@1.50s (sim=0.983\u22650.92)"
+      },
+      {
+        "asset_id": "footage_43",
+        "start": 7.5,
+        "score": 9.6,
+        "reason": "near-duplicate of footage_02@1.50s (sim=0.999\u22650.92)"
+      },
+      {
+        "asset_id": "footage_43",
+        "start": 9.0,
+        "score": 9.57,
+        "reason": "near-duplicate of footage_02@1.50s (sim=0.992\u22650.92)"
+      },
+      {
+        "asset_id": "footage_45",
+        "start": 1.5,
+        "score": 9.6,
+        "reason": "near-duplicate of footage_02@1.50s (sim=1.000\u22650.92)"
+      },
+      {
+        "asset_id": "footage_45",
+        "start": 3.0,
+        "score": 9.6,
+        "reason": "near-duplicate of footage_02@1.50s (sim=1.000\u22650.92)"
+      },
+      {
+        "asset_id": "footage_45",
+        "start": 4.5,
+        "score": 9.6,
+        "reason": "near-duplicate of footage_02@1.50s (sim=0.999\u22650.92)"
+      },
+      {
+        "asset_id": "footage_45",
+        "start": 6.0,
+        "score": 9.6,
+        "reason": "near-duplicate of footage_02@1.50s (sim=1.000\u22650.92)"
+      },
+      {
+        "asset_id": "footage_45",
+        "start": 7.5,
+        "score": 9.39,
+        "reason": "near-duplicate of footage_02@1.50s (sim=1.000\u22650.92)"
+      }
+    ]
+  }
+}

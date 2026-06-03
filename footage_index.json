@@ -1,0 +1,3370 @@
+[
+  {
+    "asset_id": "footage_00",
+    "file_path": "/Users/mmj13/Downloads/IMG_0395.MOV",
+    "duration": 8.43,
+    "moments": [
+      {
+        "start": 0.0,
+        "end": 2.0,
+        "duration": 2.0,
+        "type": "sharp_detail",
+        "description": "footage_00 [0.0s–2.0s] sharp_detail",
+        "score": 12.0,
+        "sharpness": 20.54
+      },
+      {
+        "start": 1.5,
+        "end": 3.5,
+        "duration": 2.0,
+        "type": "sharp_detail",
+        "description": "footage_00 [1.5s–3.5s] sharp_detail",
+        "score": 12.0,
+        "sharpness": 18.25
+      },
+      {
+        "start": 3.0,
+        "end": 5.0,
+        "duration": 2.0,
+        "type": "sharp_detail",
+        "description": "footage_00 [3.0s–5.0s] sharp_detail",
+        "score": 12.0,
+        "sharpness": 24.96
+      },
+      {
+        "start": 4.5,
+        "end": 6.5,
+        "duration": 2.0,
+        "type": "sharp_detail",
+        "description": "footage_00 [4.5s–6.5s] sharp_detail",
+        "score": 12.0,
+        "sharpness": 34.34
+      },
+      {
+        "start": 6.0,
+        "end": 8.0,
+        "duration": 2.0,
+        "type": "sharp_detail",
+        "description": "footage_00 [6.0s–8.0s] sharp_detail",
+        "score": 12.0,
+        "sharpness": 21.89
+      },
+      {
+        "start": 7.5,
+        "end": 8.432,
+        "duration": 0.932,
+        "type": "sharp_detail",
+        "description": "footage_00 [7.5s–8.4s] sharp_detail",
+        "score": 10.93,
+        "sharpness": 24.22
+      }
+    ],
+    "scene_changes": [],
+    "has_speech": true,
+    "speech_segments": [
+      {
+        "start": 0.0,
+        "end": 8.432
+      }
+    ],
+    "_summary": {
+      "clip": "footage_00",
+      "duration_sec": 8.43,
+      "total_moments": 6,
+      "sharp_moments": 6,
+      "has_speech": true,
+      "speech_segments": [
+        {
+          "start": 0.0,
+          "end": 8.432
+        }
+      ],
+      "scene_change_count": 0,
+      "top_moments": [
+        {
+          "start": 0.0,
+          "end": 2.0,
+          "duration": 2.0,
+          "type": "sharp_detail",
+          "description": "footage_00 [0.0s–2.0s] sharp_detail",
+          "score": 12.0,
+          "sharpness": 20.54
+        },
+        {
+          "start": 1.5,
+          "end": 3.5,
+          "duration": 2.0,
+          "type": "sharp_detail",
+          "description": "footage_00 [1.5s–3.5s] sharp_detail",
+          "score": 12.0,
+          "sharpness": 18.25
+        },
+        {
+          "start": 3.0,
+          "end": 5.0,
+          "duration": 2.0,
+          "type": "sharp_detail",
+          "description": "footage_00 [3.0s–5.0s] sharp_detail",
+          "score": 12.0,
+          "sharpness": 24.96
+        },
+        {
+          "start": 4.5,
+          "end": 6.5,
+          "duration": 2.0,
+          "type": "sharp_detail",
+          "description": "footage_00 [4.5s–6.5s] sharp_detail",
+          "score": 12.0,
+          "sharpness": 34.34
+        },
+        {
+          "start": 6.0,
+          "end": 8.0,
+          "duration": 2.0,
+          "type": "sharp_detail",
+          "description": "footage_00 [6.0s–8.0s] sharp_detail",
+          "score": 12.0,
+          "sharpness": 21.89
+        }
+      ]
+    }
+  },
+  {
+    "asset_id": "footage_01",
+    "file_path": "/Users/mmj13/Downloads/IMG_0398.MOV",
+    "duration": 2.77,
+    "moments": [
+      {
+        "start": 0.0,
+        "end": 2.766667,
+        "duration": 2.767,
+        "type": "sharp_detail",
+        "description": "footage_01 [0.0s–2.8s] sharp_detail",
+        "score": 11.23,
+        "sharpness": 27.26
+      }
+    ],
+    "scene_changes": [],
+    "has_speech": true,
+    "speech_segments": [
+      {
+        "start": 0.0,
+        "end": 2.767
+      }
+    ],
+    "_summary": {
+      "clip": "footage_01",
+      "duration_sec": 2.77,
+      "total_moments": 1,
+      "sharp_moments": 1,
+      "has_speech": true,
+      "speech_segments": [
+        {
+          "start": 0.0,
+          "end": 2.767
+        }
+      ],
+      "scene_change_count": 0,
+      "top_moments": [
+        {
+          "start": 0.0,
+          "end": 2.766667,
+          "duration": 2.767,
+          "type": "sharp_detail",
+          "description": "footage_01 [0.0s–2.8s] sharp_detail",
+          "score": 11.23,
+          "sharpness": 27.26
+        }
+      ]
+    }
+  },
+  {
+    "asset_id": "footage_02",
+    "file_path": "/Users/mmj13/Downloads/IMG_0403.MOV",
+    "duration": 3.43,
+    "moments": [
+      {
+        "start": 0.0,
+        "end": 3.433333,
+        "duration": 3.433,
+        "type": "sharp_detail",
+        "description": "footage_02 [0.0s–3.4s] sharp_detail",
+        "score": 10.57,
+        "sharpness": 27.23
+      }
+    ],
+    "scene_changes": [],
+    "has_speech": true,
+    "speech_segments": [
+      {
+        "start": 0.0,
+        "end": 3.433
+      }
+    ],
+    "_summary": {
+      "clip": "footage_02",
+      "duration_sec": 3.43,
+      "total_moments": 1,
+      "sharp_moments": 1,
+      "has_speech": true,
+      "speech_segments": [
+        {
+          "start": 0.0,
+          "end": 3.433
+        }
+      ],
+      "scene_change_count": 0,
+      "top_moments": [
+        {
+          "start": 0.0,
+          "end": 3.433333,
+          "duration": 3.433,
+          "type": "sharp_detail",
+          "description": "footage_02 [0.0s–3.4s] sharp_detail",
+          "score": 10.57,
+          "sharpness": 27.23
+        }
+      ]
+    }
+  },
+  {
+    "asset_id": "footage_03",
+    "file_path": "/Users/mmj13/Downloads/IMG_0405.MOV",
+    "duration": 10.83,
+    "moments": [
+      {
+        "start": 0.0,
+        "end": 2.0,
+        "duration": 2.0,
+        "type": "sharp_detail",
+        "description": "footage_03 [0.0s–2.0s] sharp_detail",
+        "score": 12.0,
+        "sharpness": 15.36
+      },
+      {
+        "start": 1.5,
+        "end": 3.5,
+        "duration": 2.0,
+        "type": "sharp_detail",
+        "description": "footage_03 [1.5s–3.5s] sharp_detail",
+        "score": 12.0,
+        "sharpness": 24.49
+      },
+      {
+        "start": 3.0,
+        "end": 5.0,
+        "duration": 2.0,
+        "type": "sharp_detail",
+        "description": "footage_03 [3.0s–5.0s] sharp_detail",
+        "score": 12.0,
+        "sharpness": 39.55
+      },
+      {
+        "start": 4.5,
+        "end": 6.5,
+        "duration": 2.0,
+        "type": "sharp_detail",
+        "description": "footage_03 [4.5s–6.5s] sharp_detail",
+        "score": 12.0,
+        "sharpness": 41.98
+      },
+      {
+        "start": 6.0,
+        "end": 8.0,
+        "duration": 2.0,
+        "type": "sharp_detail",
+        "description": "footage_03 [6.0s–8.0s] sharp_detail",
+        "score": 12.0,
+        "sharpness": 35.04
+      },
+      {
+        "start": 7.5,
+        "end": 9.5,
+        "duration": 2.0,
+        "type": "sharp_detail",
+        "description": "footage_03 [7.5s–9.5s] sharp_detail",
+        "score": 12.0,
+        "sharpness": 44.56
+      },
+      {
+        "start": 9.0,
+        "end": 10.833,
+        "duration": 1.833,
+        "type": "sharp_detail",
+        "description": "footage_03 [9.0s–10.8s] sharp_detail",
+        "score": 11.83,
+        "sharpness": 34.95
+      }
+    ],
+    "scene_changes": [],
+    "has_speech": true,
+    "speech_segments": [
+      {
+        "start": 0.0,
+        "end": 10.833
+      }
+    ],
+    "_summary": {
+      "clip": "footage_03",
+      "duration_sec": 10.83,
+      "total_moments": 7,
+      "sharp_moments": 7,
+      "has_speech": true,
+      "speech_segments": [
+        {
+          "start": 0.0,
+          "end": 10.833
+        }
+      ],
+      "scene_change_count": 0,
+      "top_moments": [
+        {
+          "start": 0.0,
+          "end": 2.0,
+          "duration": 2.0,
+          "type": "sharp_detail",
+          "description": "footage_03 [0.0s–2.0s] sharp_detail",
+          "score": 12.0,
+          "sharpness": 15.36
+        },
+        {
+          "start": 1.5,
+          "end": 3.5,
+          "duration": 2.0,
+          "type": "sharp_detail",
+          "description": "footage_03 [1.5s–3.5s] sharp_detail",
+          "score": 12.0,
+          "sharpness": 24.49
+        },
+        {
+          "start": 3.0,
+          "end": 5.0,
+          "duration": 2.0,
+          "type": "sharp_detail",
+          "description": "footage_03 [3.0s–5.0s] sharp_detail",
+          "score": 12.0,
+          "sharpness": 39.55
+        },
+        {
+          "start": 4.5,
+          "end": 6.5,
+          "duration": 2.0,
+          "type": "sharp_detail",
+          "description": "footage_03 [4.5s–6.5s] sharp_detail",
+          "score": 12.0,
+          "sharpness": 41.98
+        },
+        {
+          "start": 6.0,
+          "end": 8.0,
+          "duration": 2.0,
+          "type": "sharp_detail",
+          "description": "footage_03 [6.0s–8.0s] sharp_detail",
+          "score": 12.0,
+          "sharpness": 35.04
+        }
+      ]
+    }
+  },
+  {
+    "asset_id": "footage_04",
+    "file_path": "/Users/mmj13/Downloads/IMG_0408.mov",
+    "duration": 1.98,
+    "moments": [
+      {
+        "start": 0.0,
+        "end": 1.9817,
+        "duration": 1.982,
+        "type": "sharp_detail",
+        "description": "footage_04 [0.0s–2.0s] sharp_detail",
+        "score": 11.98,
+        "sharpness": 25.54
+      }
+    ],
+    "scene_changes": [],
+    "has_speech": true,
+    "speech_segments": [
+      {
+        "start": 0.0,
+        "end": 1.982
+      }
+    ],
+    "_summary": {
+      "clip": "footage_04",
+      "duration_sec": 1.98,
+      "total_moments": 1,
+      "sharp_moments": 1,
+      "has_speech": true,
+      "speech_segments": [
+        {
+          "start": 0.0,
+          "end": 1.982
+        }
+      ],
+      "scene_change_count": 0,
+      "top_moments": [
+        {
+          "start": 0.0,
+          "end": 1.9817,
+          "duration": 1.982,
+          "type": "sharp_detail",
+          "description": "footage_04 [0.0s–2.0s] sharp_detail",
+          "score": 11.98,
+          "sharpness": 25.54
+        }
+      ]
+    }
+  },
+  {
+    "asset_id": "footage_05",
+    "file_path": "/Users/mmj13/Downloads/IMG_0409.MOV",
+    "duration": 2.2,
+    "moments": [
+      {
+        "start": 0.0,
+        "end": 2.2,
+        "duration": 2.2,
+        "type": "sharp_detail",
+        "description": "footage_05 [0.0s–2.2s] sharp_detail",
+        "score": 11.8,
+        "sharpness": 38.2
+      }
+    ],
+    "scene_changes": [],
+    "has_speech": true,
+    "speech_segments": [
+      {
+        "start": 0.0,
+        "end": 2.2
+      }
+    ],
+    "_summary": {
+      "clip": "footage_05",
+      "duration_sec": 2.2,
+      "total_moments": 1,
+      "sharp_moments": 1,
+      "has_speech": true,
+      "speech_segments": [
+        {
+          "start": 0.0,
+          "end": 2.2
+        }
+      ],
+      "scene_change_count": 0,
+      "top_moments": [
+        {
+          "start": 0.0,
+          "end": 2.2,
+          "duration": 2.2,
+          "type": "sharp_detail",
+          "description": "footage_05 [0.0s–2.2s] sharp_detail",
+          "score": 11.8,
+          "sharpness": 38.2
+        }
+      ]
+    }
+  },
+  {
+    "asset_id": "footage_06",
+    "file_path": "/Users/mmj13/Downloads/IMG_0411.MOV",
+    "duration": 6.43,
+    "moments": [
+      {
+        "start": 0.0,
+        "end": 2.0,
+        "duration": 2.0,
+        "type": "sharp_detail",
+        "description": "footage_06 [0.0s–2.0s] sharp_detail",
+        "score": 12.0,
+        "sharpness": 26.9
+      },
+      {
+        "start": 1.5,
+        "end": 3.5,
+        "duration": 2.0,
+        "type": "sharp_detail",
+        "description": "footage_06 [1.5s–3.5s] sharp_detail",
+        "score": 12.0,
+        "sharpness": 36.87
+      },
+      {
+        "start": 3.0,
+        "end": 5.0,
+        "duration": 2.0,
+        "type": "sharp_detail",
+        "description": "footage_06 [3.0s–5.0s] sharp_detail",
+        "score": 12.0,
+        "sharpness": 46.91
+      },
+      {
+        "start": 4.5,
+        "end": 6.432,
+        "duration": 1.932,
+        "type": "sharp_detail",
+        "description": "footage_06 [4.5s–6.4s] sharp_detail",
+        "score": 11.93,
+        "sharpness": 45.42
+      },
+      {
+        "start": 6.0,
+        "end": 6.432,
+        "duration": 0.432,
+        "type": "sharp_detail",
+        "description": "footage_06 [6.0s–6.4s] sharp_detail",
+        "score": 10.43,
+        "sharpness": 47.7
+      }
+    ],
+    "scene_changes": [],
+    "has_speech": true,
+    "speech_segments": [
+      {
+        "start": 0.0,
+        "end": 6.432
+      }
+    ],
+    "_summary": {
+      "clip": "footage_06",
+      "duration_sec": 6.43,
+      "total_moments": 5,
+      "sharp_moments": 5,
+      "has_speech": true,
+      "speech_segments": [
+        {
+          "start": 0.0,
+          "end": 6.432
+        }
+      ],
+      "scene_change_count": 0,
+      "top_moments": [
+        {
+          "start": 0.0,
+          "end": 2.0,
+          "duration": 2.0,
+          "type": "sharp_detail",
+          "description": "footage_06 [0.0s–2.0s] sharp_detail",
+          "score": 12.0,
+          "sharpness": 26.9
+        },
+        {
+          "start": 1.5,
+          "end": 3.5,
+          "duration": 2.0,
+          "type": "sharp_detail",
+          "description": "footage_06 [1.5s–3.5s] sharp_detail",
+          "score": 12.0,
+          "sharpness": 36.87
+        },
+        {
+          "start": 3.0,
+          "end": 5.0,
+          "duration": 2.0,
+          "type": "sharp_detail",
+          "description": "footage_06 [3.0s–5.0s] sharp_detail",
+          "score": 12.0,
+          "sharpness": 46.91
+        },
+        {
+          "start": 4.5,
+          "end": 6.432,
+          "duration": 1.932,
+          "type": "sharp_detail",
+          "description": "footage_06 [4.5s–6.4s] sharp_detail",
+          "score": 11.93,
+          "sharpness": 45.42
+        },
+        {
+          "start": 6.0,
+          "end": 6.432,
+          "duration": 0.432,
+          "type": "sharp_detail",
+          "description": "footage_06 [6.0s–6.4s] sharp_detail",
+          "score": 10.43,
+          "sharpness": 47.7
+        }
+      ]
+    }
+  },
+  {
+    "asset_id": "footage_07",
+    "file_path": "/Users/mmj13/Downloads/IMG_0413.MOV",
+    "duration": 1.06,
+    "moments": [
+      {
+        "start": 0.0,
+        "end": 1.065,
+        "duration": 1.065,
+        "type": "sharp_detail",
+        "description": "footage_07 [0.0s–1.1s] sharp_detail",
+        "score": 11.06,
+        "sharpness": 34.15
+      }
+    ],
+    "scene_changes": [],
+    "has_speech": true,
+    "speech_segments": [
+      {
+        "start": 0.0,
+        "end": 1.065
+      }
+    ],
+    "_summary": {
+      "clip": "footage_07",
+      "duration_sec": 1.06,
+      "total_moments": 1,
+      "sharp_moments": 1,
+      "has_speech": true,
+      "speech_segments": [
+        {
+          "start": 0.0,
+          "end": 1.065
+        }
+      ],
+      "scene_change_count": 0,
+      "top_moments": [
+        {
+          "start": 0.0,
+          "end": 1.065,
+          "duration": 1.065,
+          "type": "sharp_detail",
+          "description": "footage_07 [0.0s–1.1s] sharp_detail",
+          "score": 11.06,
+          "sharpness": 34.15
+        }
+      ]
+    }
+  },
+  {
+    "asset_id": "footage_08",
+    "file_path": "/Users/mmj13/Downloads/IMG_0419.MOV",
+    "duration": 6.03,
+    "moments": [
+      {
+        "start": 0.0,
+        "end": 2.0,
+        "duration": 2.0,
+        "type": "sharp_detail",
+        "description": "footage_08 [0.0s–2.0s] sharp_detail",
+        "score": 12.0,
+        "sharpness": 24.97
+      },
+      {
+        "start": 1.5,
+        "end": 3.5,
+        "duration": 2.0,
+        "type": "sharp_detail",
+        "description": "footage_08 [1.5s–3.5s] sharp_detail",
+        "score": 11.17,
+        "sharpness": 13.62
+      },
+      {
+        "start": 3.0,
+        "end": 5.0,
+        "duration": 2.0,
+        "type": "sharp_detail",
+        "description": "footage_08 [3.0s–5.0s] sharp_detail",
+        "score": 12.0,
+        "sharpness": 26.36
+      },
+      {
+        "start": 4.5,
+        "end": 6.033,
+        "duration": 1.533,
+        "type": "sharp_detail",
+        "description": "footage_08 [4.5s–6.0s] sharp_detail",
+        "score": 11.53,
+        "sharpness": 34.89
+      }
+    ],
+    "scene_changes": [],
+    "has_speech": true,
+    "speech_segments": [
+      {
+        "start": 0.0,
+        "end": 6.033
+      }
+    ],
+    "_summary": {
+      "clip": "footage_08",
+      "duration_sec": 6.03,
+      "total_moments": 4,
+      "sharp_moments": 4,
+      "has_speech": true,
+      "speech_segments": [
+        {
+          "start": 0.0,
+          "end": 6.033
+        }
+      ],
+      "scene_change_count": 0,
+      "top_moments": [
+        {
+          "start": 0.0,
+          "end": 2.0,
+          "duration": 2.0,
+          "type": "sharp_detail",
+          "description": "footage_08 [0.0s–2.0s] sharp_detail",
+          "score": 12.0,
+          "sharpness": 24.97
+        },
+        {
+          "start": 3.0,
+          "end": 5.0,
+          "duration": 2.0,
+          "type": "sharp_detail",
+          "description": "footage_08 [3.0s–5.0s] sharp_detail",
+          "score": 12.0,
+          "sharpness": 26.36
+        },
+        {
+          "start": 4.5,
+          "end": 6.033,
+          "duration": 1.533,
+          "type": "sharp_detail",
+          "description": "footage_08 [4.5s–6.0s] sharp_detail",
+          "score": 11.53,
+          "sharpness": 34.89
+        },
+        {
+          "start": 1.5,
+          "end": 3.5,
+          "duration": 2.0,
+          "type": "sharp_detail",
+          "description": "footage_08 [1.5s–3.5s] sharp_detail",
+          "score": 11.17,
+          "sharpness": 13.62
+        }
+      ]
+    }
+  },
+  {
+    "asset_id": "footage_09",
+    "file_path": "/Users/mmj13/Downloads/IMG_0422.MOV",
+    "duration": 2.13,
+    "moments": [
+      {
+        "start": 0.0,
+        "end": 2.1317,
+        "duration": 2.132,
+        "type": "sharp_detail",
+        "description": "footage_09 [0.0s–2.1s] sharp_detail",
+        "score": 11.87,
+        "sharpness": 43.82
+      }
+    ],
+    "scene_changes": [],
+    "has_speech": true,
+    "speech_segments": [
+      {
+        "start": 0.0,
+        "end": 2.132
+      }
+    ],
+    "_summary": {
+      "clip": "footage_09",
+      "duration_sec": 2.13,
+      "total_moments": 1,
+      "sharp_moments": 1,
+      "has_speech": true,
+      "speech_segments": [
+        {
+          "start": 0.0,
+          "end": 2.132
+        }
+      ],
+      "scene_change_count": 0,
+      "top_moments": [
+        {
+          "start": 0.0,
+          "end": 2.1317,
+          "duration": 2.132,
+          "type": "sharp_detail",
+          "description": "footage_09 [0.0s–2.1s] sharp_detail",
+          "score": 11.87,
+          "sharpness": 43.82
+        }
+      ]
+    }
+  },
+  {
+    "asset_id": "footage_10",
+    "file_path": "/Users/mmj13/Downloads/IMG_0431.mov",
+    "duration": 3.08,
+    "moments": [
+      {
+        "start": 0.0,
+        "end": 3.083333,
+        "duration": 3.083,
+        "type": "sharp_detail",
+        "description": "footage_10 [0.0s–3.1s] sharp_detail",
+        "score": 10.92,
+        "sharpness": 28.55
+      }
+    ],
+    "scene_changes": [],
+    "has_speech": true,
+    "speech_segments": [
+      {
+        "start": 0.0,
+        "end": 3.083
+      }
+    ],
+    "_summary": {
+      "clip": "footage_10",
+      "duration_sec": 3.08,
+      "total_moments": 1,
+      "sharp_moments": 1,
+      "has_speech": true,
+      "speech_segments": [
+        {
+          "start": 0.0,
+          "end": 3.083
+        }
+      ],
+      "scene_change_count": 0,
+      "top_moments": [
+        {
+          "start": 0.0,
+          "end": 3.083333,
+          "duration": 3.083,
+          "type": "sharp_detail",
+          "description": "footage_10 [0.0s–3.1s] sharp_detail",
+          "score": 10.92,
+          "sharpness": 28.55
+        }
+      ]
+    }
+  },
+  {
+    "asset_id": "footage_11",
+    "file_path": "/Users/mmj13/Downloads/IMG_0443.MOV",
+    "duration": 1.6,
+    "moments": [
+      {
+        "start": 0.0,
+        "end": 1.6,
+        "duration": 1.6,
+        "type": "sharp_detail",
+        "description": "footage_11 [0.0s–1.6s] sharp_detail",
+        "score": 11.6,
+        "sharpness": 25.71
+      }
+    ],
+    "scene_changes": [],
+    "has_speech": true,
+    "speech_segments": [
+      {
+        "start": 0.0,
+        "end": 1.6
+      }
+    ],
+    "_summary": {
+      "clip": "footage_11",
+      "duration_sec": 1.6,
+      "total_moments": 1,
+      "sharp_moments": 1,
+      "has_speech": true,
+      "speech_segments": [
+        {
+          "start": 0.0,
+          "end": 1.6
+        }
+      ],
+      "scene_change_count": 0,
+      "top_moments": [
+        {
+          "start": 0.0,
+          "end": 1.6,
+          "duration": 1.6,
+          "type": "sharp_detail",
+          "description": "footage_11 [0.0s–1.6s] sharp_detail",
+          "score": 11.6,
+          "sharpness": 25.71
+        }
+      ]
+    }
+  },
+  {
+    "asset_id": "footage_12",
+    "file_path": "/Users/mmj13/Downloads/IMG_0445.MOV",
+    "duration": 1.67,
+    "moments": [
+      {
+        "start": 0.0,
+        "end": 1.665,
+        "duration": 1.665,
+        "type": "sharp_detail",
+        "description": "footage_12 [0.0s–1.7s] sharp_detail",
+        "score": 11.66,
+        "sharpness": 45.22
+      }
+    ],
+    "scene_changes": [],
+    "has_speech": true,
+    "speech_segments": [
+      {
+        "start": 0.0,
+        "end": 1.665
+      }
+    ],
+    "_summary": {
+      "clip": "footage_12",
+      "duration_sec": 1.67,
+      "total_moments": 1,
+      "sharp_moments": 1,
+      "has_speech": true,
+      "speech_segments": [
+        {
+          "start": 0.0,
+          "end": 1.665
+        }
+      ],
+      "scene_change_count": 0,
+      "top_moments": [
+        {
+          "start": 0.0,
+          "end": 1.665,
+          "duration": 1.665,
+          "type": "sharp_detail",
+          "description": "footage_12 [0.0s–1.7s] sharp_detail",
+          "score": 11.66,
+          "sharpness": 45.22
+        }
+      ]
+    }
+  },
+  {
+    "asset_id": "footage_13",
+    "file_path": "/Users/mmj13/Downloads/IMG_0452.MOV",
+    "duration": 1.3,
+    "moments": [
+      {
+        "start": 0.0,
+        "end": 1.298333,
+        "duration": 1.298,
+        "type": "sharp_detail",
+        "description": "footage_13 [0.0s–1.3s] sharp_detail",
+        "score": 11.3,
+        "sharpness": 47.93
+      }
+    ],
+    "scene_changes": [],
+    "has_speech": false,
+    "speech_segments": [],
+    "_summary": {
+      "clip": "footage_13",
+      "duration_sec": 1.3,
+      "total_moments": 1,
+      "sharp_moments": 1,
+      "has_speech": false,
+      "speech_segments": [],
+      "scene_change_count": 0,
+      "top_moments": [
+        {
+          "start": 0.0,
+          "end": 1.298333,
+          "duration": 1.298,
+          "type": "sharp_detail",
+          "description": "footage_13 [0.0s–1.3s] sharp_detail",
+          "score": 11.3,
+          "sharpness": 47.93
+        }
+      ]
+    }
+  },
+  {
+    "asset_id": "footage_14",
+    "file_path": "/Users/mmj13/Downloads/IMG_0525.MOV",
+    "duration": 4.7,
+    "moments": [
+      {
+        "start": 0.0,
+        "end": 2.0,
+        "duration": 2.0,
+        "type": "sharp_detail",
+        "description": "footage_14 [0.0s–2.0s] sharp_detail",
+        "score": 12.0,
+        "sharpness": 22.46
+      },
+      {
+        "start": 1.5,
+        "end": 3.5,
+        "duration": 2.0,
+        "type": "sharp_detail",
+        "description": "footage_14 [1.5s–3.5s] sharp_detail",
+        "score": 12.0,
+        "sharpness": 26.85
+      },
+      {
+        "start": 3.0,
+        "end": 4.7,
+        "duration": 1.7,
+        "type": "sharp_detail",
+        "description": "footage_14 [3.0s–4.7s] sharp_detail",
+        "score": 11.7,
+        "sharpness": 31.73
+      }
+    ],
+    "scene_changes": [],
+    "has_speech": true,
+    "speech_segments": [
+      {
+        "start": 0.0,
+        "end": 4.7
+      }
+    ],
+    "_summary": {
+      "clip": "footage_14",
+      "duration_sec": 4.7,
+      "total_moments": 3,
+      "sharp_moments": 3,
+      "has_speech": true,
+      "speech_segments": [
+        {
+          "start": 0.0,
+          "end": 4.7
+        }
+      ],
+      "scene_change_count": 0,
+      "top_moments": [
+        {
+          "start": 0.0,
+          "end": 2.0,
+          "duration": 2.0,
+          "type": "sharp_detail",
+          "description": "footage_14 [0.0s–2.0s] sharp_detail",
+          "score": 12.0,
+          "sharpness": 22.46
+        },
+        {
+          "start": 1.5,
+          "end": 3.5,
+          "duration": 2.0,
+          "type": "sharp_detail",
+          "description": "footage_14 [1.5s–3.5s] sharp_detail",
+          "score": 12.0,
+          "sharpness": 26.85
+        },
+        {
+          "start": 3.0,
+          "end": 4.7,
+          "duration": 1.7,
+          "type": "sharp_detail",
+          "description": "footage_14 [3.0s–4.7s] sharp_detail",
+          "score": 11.7,
+          "sharpness": 31.73
+        }
+      ]
+    }
+  },
+  {
+    "asset_id": "footage_15",
+    "file_path": "/Users/mmj13/Downloads/IMG_0544.MOV",
+    "duration": 3.37,
+    "moments": [
+      {
+        "start": 0.0,
+        "end": 3.366667,
+        "duration": 3.367,
+        "type": "sharp_detail",
+        "description": "footage_15 [0.0s–3.4s] sharp_detail",
+        "score": 10.1,
+        "sharpness": 14.11
+      }
+    ],
+    "scene_changes": [],
+    "has_speech": true,
+    "speech_segments": [
+      {
+        "start": 0.0,
+        "end": 3.367
+      }
+    ],
+    "_summary": {
+      "clip": "footage_15",
+      "duration_sec": 3.37,
+      "total_moments": 1,
+      "sharp_moments": 1,
+      "has_speech": true,
+      "speech_segments": [
+        {
+          "start": 0.0,
+          "end": 3.367
+        }
+      ],
+      "scene_change_count": 0,
+      "top_moments": [
+        {
+          "start": 0.0,
+          "end": 3.366667,
+          "duration": 3.367,
+          "type": "sharp_detail",
+          "description": "footage_15 [0.0s–3.4s] sharp_detail",
+          "score": 10.1,
+          "sharpness": 14.11
+        }
+      ]
+    }
+  },
+  {
+    "asset_id": "footage_16",
+    "file_path": "/Users/mmj13/Downloads/IMG_0549.MOV",
+    "duration": 3.73,
+    "moments": [
+      {
+        "start": 0.0,
+        "end": 2.0,
+        "duration": 2.0,
+        "type": "sharp_detail",
+        "description": "footage_16 [0.0s–2.0s] sharp_detail",
+        "score": 12.0,
+        "sharpness": 28.3
+      },
+      {
+        "start": 1.5,
+        "end": 3.5,
+        "duration": 2.0,
+        "type": "sharp_detail",
+        "description": "footage_16 [1.5s–3.5s] sharp_detail",
+        "score": 12.0,
+        "sharpness": 20.7
+      },
+      {
+        "start": 3.0,
+        "end": 3.733,
+        "duration": 0.733,
+        "type": "sharp_detail",
+        "description": "footage_16 [3.0s–3.7s] sharp_detail",
+        "score": 10.73,
+        "sharpness": 21.22
+      }
+    ],
+    "scene_changes": [],
+    "has_speech": true,
+    "speech_segments": [
+      {
+        "start": 0.0,
+        "end": 1.243
+      }
+    ],
+    "_summary": {
+      "clip": "footage_16",
+      "duration_sec": 3.73,
+      "total_moments": 3,
+      "sharp_moments": 3,
+      "has_speech": true,
+      "speech_segments": [
+        {
+          "start": 0.0,
+          "end": 1.243
+        }
+      ],
+      "scene_change_count": 0,
+      "top_moments": [
+        {
+          "start": 0.0,
+          "end": 2.0,
+          "duration": 2.0,
+          "type": "sharp_detail",
+          "description": "footage_16 [0.0s–2.0s] sharp_detail",
+          "score": 12.0,
+          "sharpness": 28.3
+        },
+        {
+          "start": 1.5,
+          "end": 3.5,
+          "duration": 2.0,
+          "type": "sharp_detail",
+          "description": "footage_16 [1.5s–3.5s] sharp_detail",
+          "score": 12.0,
+          "sharpness": 20.7
+        },
+        {
+          "start": 3.0,
+          "end": 3.733,
+          "duration": 0.733,
+          "type": "sharp_detail",
+          "description": "footage_16 [3.0s–3.7s] sharp_detail",
+          "score": 10.73,
+          "sharpness": 21.22
+        }
+      ]
+    }
+  },
+  {
+    "asset_id": "footage_17",
+    "file_path": "/Users/mmj13/Downloads/IMG_0550.MOV",
+    "duration": 9.0,
+    "moments": [
+      {
+        "start": 0.0,
+        "end": 2.0,
+        "duration": 2.0,
+        "type": "sharp_detail",
+        "description": "footage_17 [0.0s–2.0s] sharp_detail",
+        "score": 11.71,
+        "sharpness": 14.52
+      },
+      {
+        "start": 1.5,
+        "end": 3.5,
+        "duration": 2.0,
+        "type": "sharp_detail",
+        "description": "footage_17 [1.5s–3.5s] sharp_detail",
+        "score": 12.0,
+        "sharpness": 20.12
+      },
+      {
+        "start": 3.0,
+        "end": 5.0,
+        "duration": 2.0,
+        "type": "sharp_detail",
+        "description": "footage_17 [3.0s–5.0s] sharp_detail",
+        "score": 12.0,
+        "sharpness": 21.15
+      },
+      {
+        "start": 4.5,
+        "end": 6.5,
+        "duration": 2.0,
+        "type": "sharp_detail",
+        "description": "footage_17 [4.5s–6.5s] sharp_detail",
+        "score": 12.0,
+        "sharpness": 16.02
+      },
+      {
+        "start": 6.0,
+        "end": 8.0,
+        "duration": 2.0,
+        "type": "sharp_detail",
+        "description": "footage_17 [6.0s–8.0s] sharp_detail",
+        "score": 10.59,
+        "sharpness": 12.66
+      },
+      {
+        "start": 7.5,
+        "end": 8.998,
+        "duration": 1.498,
+        "type": "sharp_detail",
+        "description": "footage_17 [7.5s–9.0s] sharp_detail",
+        "score": 11.5,
+        "sharpness": 20.29
+      }
+    ],
+    "scene_changes": [],
+    "has_speech": true,
+    "speech_segments": [
+      {
+        "start": 0.0,
+        "end": 8.998
+      }
+    ],
+    "_summary": {
+      "clip": "footage_17",
+      "duration_sec": 9.0,
+      "total_moments": 6,
+      "sharp_moments": 6,
+      "has_speech": true,
+      "speech_segments": [
+        {
+          "start": 0.0,
+          "end": 8.998
+        }
+      ],
+      "scene_change_count": 0,
+      "top_moments": [
+        {
+          "start": 1.5,
+          "end": 3.5,
+          "duration": 2.0,
+          "type": "sharp_detail",
+          "description": "footage_17 [1.5s–3.5s] sharp_detail",
+          "score": 12.0,
+          "sharpness": 20.12
+        },
+        {
+          "start": 3.0,
+          "end": 5.0,
+          "duration": 2.0,
+          "type": "sharp_detail",
+          "description": "footage_17 [3.0s–5.0s] sharp_detail",
+          "score": 12.0,
+          "sharpness": 21.15
+        },
+        {
+          "start": 4.5,
+          "end": 6.5,
+          "duration": 2.0,
+          "type": "sharp_detail",
+          "description": "footage_17 [4.5s–6.5s] sharp_detail",
+          "score": 12.0,
+          "sharpness": 16.02
+        },
+        {
+          "start": 0.0,
+          "end": 2.0,
+          "duration": 2.0,
+          "type": "sharp_detail",
+          "description": "footage_17 [0.0s–2.0s] sharp_detail",
+          "score": 11.71,
+          "sharpness": 14.52
+        },
+        {
+          "start": 7.5,
+          "end": 8.998,
+          "duration": 1.498,
+          "type": "sharp_detail",
+          "description": "footage_17 [7.5s–9.0s] sharp_detail",
+          "score": 11.5,
+          "sharpness": 20.29
+        }
+      ]
+    }
+  },
+  {
+    "asset_id": "footage_18",
+    "file_path": "/Users/mmj13/Downloads/IMG_0551.mov",
+    "duration": 1.96,
+    "moments": [
+      {
+        "start": 0.0,
+        "end": 1.963333,
+        "duration": 1.963,
+        "type": "sharp_detail",
+        "description": "footage_18 [0.0s–2.0s] sharp_detail",
+        "score": 11.96,
+        "sharpness": 35.2
+      }
+    ],
+    "scene_changes": [],
+    "has_speech": true,
+    "speech_segments": [
+      {
+        "start": 0.828,
+        "end": 1.963
+      }
+    ],
+    "_summary": {
+      "clip": "footage_18",
+      "duration_sec": 1.96,
+      "total_moments": 1,
+      "sharp_moments": 1,
+      "has_speech": true,
+      "speech_segments": [
+        {
+          "start": 0.828,
+          "end": 1.963
+        }
+      ],
+      "scene_change_count": 0,
+      "top_moments": [
+        {
+          "start": 0.0,
+          "end": 1.963333,
+          "duration": 1.963,
+          "type": "sharp_detail",
+          "description": "footage_18 [0.0s–2.0s] sharp_detail",
+          "score": 11.96,
+          "sharpness": 35.2
+        }
+      ]
+    }
+  },
+  {
+    "asset_id": "footage_19",
+    "file_path": "/Users/mmj13/Downloads/IMG_0560.MOV",
+    "duration": 1.47,
+    "moments": [
+      {
+        "start": 0.0,
+        "end": 1.465,
+        "duration": 1.465,
+        "type": "sharp_detail",
+        "description": "footage_19 [0.0s–1.5s] sharp_detail",
+        "score": 11.46,
+        "sharpness": 17.67
+      }
+    ],
+    "scene_changes": [],
+    "has_speech": true,
+    "speech_segments": [
+      {
+        "start": 0.0,
+        "end": 1.465
+      }
+    ],
+    "_summary": {
+      "clip": "footage_19",
+      "duration_sec": 1.47,
+      "total_moments": 1,
+      "sharp_moments": 1,
+      "has_speech": true,
+      "speech_segments": [
+        {
+          "start": 0.0,
+          "end": 1.465
+        }
+      ],
+      "scene_change_count": 0,
+      "top_moments": [
+        {
+          "start": 0.0,
+          "end": 1.465,
+          "duration": 1.465,
+          "type": "sharp_detail",
+          "description": "footage_19 [0.0s–1.5s] sharp_detail",
+          "score": 11.46,
+          "sharpness": 17.67
+        }
+      ]
+    }
+  },
+  {
+    "asset_id": "footage_20",
+    "file_path": "/Users/mmj13/Downloads/IMG_0564.MOV",
+    "duration": 3.37,
+    "moments": [
+      {
+        "start": 0.0,
+        "end": 3.3667,
+        "duration": 3.367,
+        "type": "sharp_detail",
+        "description": "footage_20 [0.0s–3.4s] sharp_detail",
+        "score": 10.63,
+        "sharpness": 41.89
+      }
+    ],
+    "scene_changes": [],
+    "has_speech": true,
+    "speech_segments": [
+      {
+        "start": 0.0,
+        "end": 3.367
+      }
+    ],
+    "_summary": {
+      "clip": "footage_20",
+      "duration_sec": 3.37,
+      "total_moments": 1,
+      "sharp_moments": 1,
+      "has_speech": true,
+      "speech_segments": [
+        {
+          "start": 0.0,
+          "end": 3.367
+        }
+      ],
+      "scene_change_count": 0,
+      "top_moments": [
+        {
+          "start": 0.0,
+          "end": 3.3667,
+          "duration": 3.367,
+          "type": "sharp_detail",
+          "description": "footage_20 [0.0s–3.4s] sharp_detail",
+          "score": 10.63,
+          "sharpness": 41.89
+        }
+      ]
+    }
+  },
+  {
+    "asset_id": "footage_21",
+    "file_path": "/Users/mmj13/Downloads/IMG_0565.MOV",
+    "duration": 3.83,
+    "moments": [
+      {
+        "start": 0.0,
+        "end": 2.0,
+        "duration": 2.0,
+        "type": "sharp_detail",
+        "description": "footage_21 [0.0s–2.0s] sharp_detail",
+        "score": 12.0,
+        "sharpness": 31.74
+      },
+      {
+        "start": 1.5,
+        "end": 3.5,
+        "duration": 2.0,
+        "type": "sharp_detail",
+        "description": "footage_21 [1.5s–3.5s] sharp_detail",
+        "score": 12.0,
+        "sharpness": 36.31
+      },
+      {
+        "start": 3.0,
+        "end": 3.833,
+        "duration": 0.833,
+        "type": "sharp_detail",
+        "description": "footage_21 [3.0s–3.8s] sharp_detail",
+        "score": 10.83,
+        "sharpness": 33.29
+      }
+    ],
+    "scene_changes": [],
+    "has_speech": true,
+    "speech_segments": [
+      {
+        "start": 0.0,
+        "end": 3.833
+      }
+    ],
+    "_summary": {
+      "clip": "footage_21",
+      "duration_sec": 3.83,
+      "total_moments": 3,
+      "sharp_moments": 3,
+      "has_speech": true,
+      "speech_segments": [
+        {
+          "start": 0.0,
+          "end": 3.833
+        }
+      ],
+      "scene_change_count": 0,
+      "top_moments": [
+        {
+          "start": 0.0,
+          "end": 2.0,
+          "duration": 2.0,
+          "type": "sharp_detail",
+          "description": "footage_21 [0.0s–2.0s] sharp_detail",
+          "score": 12.0,
+          "sharpness": 31.74
+        },
+        {
+          "start": 1.5,
+          "end": 3.5,
+          "duration": 2.0,
+          "type": "sharp_detail",
+          "description": "footage_21 [1.5s–3.5s] sharp_detail",
+          "score": 12.0,
+          "sharpness": 36.31
+        },
+        {
+          "start": 3.0,
+          "end": 3.833,
+          "duration": 0.833,
+          "type": "sharp_detail",
+          "description": "footage_21 [3.0s–3.8s] sharp_detail",
+          "score": 10.83,
+          "sharpness": 33.29
+        }
+      ]
+    }
+  },
+  {
+    "asset_id": "footage_22",
+    "file_path": "/Users/mmj13/Downloads/IMG_0574.MOV",
+    "duration": 1.07,
+    "moments": [
+      {
+        "start": 0.0,
+        "end": 1.066667,
+        "duration": 1.067,
+        "type": "sharp_detail",
+        "description": "footage_22 [0.0s–1.1s] sharp_detail",
+        "score": 11.07,
+        "sharpness": 38.76
+      }
+    ],
+    "scene_changes": [],
+    "has_speech": true,
+    "speech_segments": [
+      {
+        "start": 0.0,
+        "end": 1.067
+      }
+    ],
+    "_summary": {
+      "clip": "footage_22",
+      "duration_sec": 1.07,
+      "total_moments": 1,
+      "sharp_moments": 1,
+      "has_speech": true,
+      "speech_segments": [
+        {
+          "start": 0.0,
+          "end": 1.067
+        }
+      ],
+      "scene_change_count": 0,
+      "top_moments": [
+        {
+          "start": 0.0,
+          "end": 1.066667,
+          "duration": 1.067,
+          "type": "sharp_detail",
+          "description": "footage_22 [0.0s–1.1s] sharp_detail",
+          "score": 11.07,
+          "sharpness": 38.76
+        }
+      ]
+    }
+  },
+  {
+    "asset_id": "footage_23",
+    "file_path": "/Users/mmj13/Downloads/IMG_0593.MOV",
+    "duration": 7.57,
+    "moments": [
+      {
+        "start": 0.0,
+        "end": 2.0,
+        "duration": 2.0,
+        "type": "sharp_detail",
+        "description": "footage_23 [0.0s–2.0s] sharp_detail",
+        "score": 12.0,
+        "sharpness": 43.29
+      },
+      {
+        "start": 1.5,
+        "end": 3.5,
+        "duration": 2.0,
+        "type": "sharp_detail",
+        "description": "footage_23 [1.5s–3.5s] sharp_detail",
+        "score": 12.0,
+        "sharpness": 42.16
+      },
+      {
+        "start": 3.0,
+        "end": 5.0,
+        "duration": 2.0,
+        "type": "sharp_detail",
+        "description": "footage_23 [3.0s–5.0s] sharp_detail",
+        "score": 12.0,
+        "sharpness": 47.58
+      },
+      {
+        "start": 4.5,
+        "end": 6.5,
+        "duration": 2.0,
+        "type": "sharp_detail",
+        "description": "footage_23 [4.5s–6.5s] sharp_detail",
+        "score": 12.0,
+        "sharpness": 45.95
+      },
+      {
+        "start": 6.0,
+        "end": 7.565,
+        "duration": 1.565,
+        "type": "sharp_detail",
+        "description": "footage_23 [6.0s–7.6s] sharp_detail",
+        "score": 11.57,
+        "sharpness": 43.32
+      }
+    ],
+    "scene_changes": [],
+    "has_speech": true,
+    "speech_segments": [
+      {
+        "start": 0.0,
+        "end": 7.565
+      }
+    ],
+    "_summary": {
+      "clip": "footage_23",
+      "duration_sec": 7.57,
+      "total_moments": 5,
+      "sharp_moments": 5,
+      "has_speech": true,
+      "speech_segments": [
+        {
+          "start": 0.0,
+          "end": 7.565
+        }
+      ],
+      "scene_change_count": 0,
+      "top_moments": [
+        {
+          "start": 0.0,
+          "end": 2.0,
+          "duration": 2.0,
+          "type": "sharp_detail",
+          "description": "footage_23 [0.0s–2.0s] sharp_detail",
+          "score": 12.0,
+          "sharpness": 43.29
+        },
+        {
+          "start": 1.5,
+          "end": 3.5,
+          "duration": 2.0,
+          "type": "sharp_detail",
+          "description": "footage_23 [1.5s–3.5s] sharp_detail",
+          "score": 12.0,
+          "sharpness": 42.16
+        },
+        {
+          "start": 3.0,
+          "end": 5.0,
+          "duration": 2.0,
+          "type": "sharp_detail",
+          "description": "footage_23 [3.0s–5.0s] sharp_detail",
+          "score": 12.0,
+          "sharpness": 47.58
+        },
+        {
+          "start": 4.5,
+          "end": 6.5,
+          "duration": 2.0,
+          "type": "sharp_detail",
+          "description": "footage_23 [4.5s–6.5s] sharp_detail",
+          "score": 12.0,
+          "sharpness": 45.95
+        },
+        {
+          "start": 6.0,
+          "end": 7.565,
+          "duration": 1.565,
+          "type": "sharp_detail",
+          "description": "footage_23 [6.0s–7.6s] sharp_detail",
+          "score": 11.57,
+          "sharpness": 43.32
+        }
+      ]
+    }
+  },
+  {
+    "asset_id": "footage_24",
+    "file_path": "/Users/mmj13/Downloads/IMG_0604.MOV",
+    "duration": 2.13,
+    "moments": [
+      {
+        "start": 0.0,
+        "end": 2.1317,
+        "duration": 2.132,
+        "type": "sharp_detail",
+        "description": "footage_24 [0.0s–2.1s] sharp_detail",
+        "score": 11.19,
+        "sharpness": 13.86
+      }
+    ],
+    "scene_changes": [],
+    "has_speech": true,
+    "speech_segments": [
+      {
+        "start": 0.0,
+        "end": 2.132
+      }
+    ],
+    "_summary": {
+      "clip": "footage_24",
+      "duration_sec": 2.13,
+      "total_moments": 1,
+      "sharp_moments": 1,
+      "has_speech": true,
+      "speech_segments": [
+        {
+          "start": 0.0,
+          "end": 2.132
+        }
+      ],
+      "scene_change_count": 0,
+      "top_moments": [
+        {
+          "start": 0.0,
+          "end": 2.1317,
+          "duration": 2.132,
+          "type": "sharp_detail",
+          "description": "footage_24 [0.0s–2.1s] sharp_detail",
+          "score": 11.19,
+          "sharpness": 13.86
+        }
+      ]
+    }
+  },
+  {
+    "asset_id": "footage_25",
+    "file_path": "/Users/mmj13/Downloads/IMG_0605.MOV",
+    "duration": 4.53,
+    "moments": [
+      {
+        "start": 0.0,
+        "end": 2.0,
+        "duration": 2.0,
+        "type": "sharp_detail",
+        "description": "footage_25 [0.0s–2.0s] sharp_detail",
+        "score": 12.0,
+        "sharpness": 15.59
+      },
+      {
+        "start": 1.5,
+        "end": 3.5,
+        "duration": 2.0,
+        "type": "sharp_detail",
+        "description": "footage_25 [1.5s–3.5s] sharp_detail",
+        "score": 12.0,
+        "sharpness": 21.04
+      },
+      {
+        "start": 3.0,
+        "end": 4.532,
+        "duration": 1.532,
+        "type": "sharp_detail",
+        "description": "footage_25 [3.0s–4.5s] sharp_detail",
+        "score": 11.53,
+        "sharpness": 21.77
+      }
+    ],
+    "scene_changes": [],
+    "has_speech": true,
+    "speech_segments": [
+      {
+        "start": 0.0,
+        "end": 4.532
+      }
+    ],
+    "_summary": {
+      "clip": "footage_25",
+      "duration_sec": 4.53,
+      "total_moments": 3,
+      "sharp_moments": 3,
+      "has_speech": true,
+      "speech_segments": [
+        {
+          "start": 0.0,
+          "end": 4.532
+        }
+      ],
+      "scene_change_count": 0,
+      "top_moments": [
+        {
+          "start": 0.0,
+          "end": 2.0,
+          "duration": 2.0,
+          "type": "sharp_detail",
+          "description": "footage_25 [0.0s–2.0s] sharp_detail",
+          "score": 12.0,
+          "sharpness": 15.59
+        },
+        {
+          "start": 1.5,
+          "end": 3.5,
+          "duration": 2.0,
+          "type": "sharp_detail",
+          "description": "footage_25 [1.5s–3.5s] sharp_detail",
+          "score": 12.0,
+          "sharpness": 21.04
+        },
+        {
+          "start": 3.0,
+          "end": 4.532,
+          "duration": 1.532,
+          "type": "sharp_detail",
+          "description": "footage_25 [3.0s–4.5s] sharp_detail",
+          "score": 11.53,
+          "sharpness": 21.77
+        }
+      ]
+    }
+  },
+  {
+    "asset_id": "footage_26",
+    "file_path": "/Users/mmj13/Downloads/IMG_0610.MOV",
+    "duration": 2.37,
+    "moments": [
+      {
+        "start": 0.0,
+        "end": 2.3667,
+        "duration": 2.367,
+        "type": "sharp_detail",
+        "description": "footage_26 [0.0s–2.4s] sharp_detail",
+        "score": 11.63,
+        "sharpness": 24.41
+      }
+    ],
+    "scene_changes": [],
+    "has_speech": true,
+    "speech_segments": [
+      {
+        "start": 0.0,
+        "end": 2.367
+      }
+    ],
+    "_summary": {
+      "clip": "footage_26",
+      "duration_sec": 2.37,
+      "total_moments": 1,
+      "sharp_moments": 1,
+      "has_speech": true,
+      "speech_segments": [
+        {
+          "start": 0.0,
+          "end": 2.367
+        }
+      ],
+      "scene_change_count": 0,
+      "top_moments": [
+        {
+          "start": 0.0,
+          "end": 2.3667,
+          "duration": 2.367,
+          "type": "sharp_detail",
+          "description": "footage_26 [0.0s–2.4s] sharp_detail",
+          "score": 11.63,
+          "sharpness": 24.41
+        }
+      ]
+    }
+  },
+  {
+    "asset_id": "footage_27",
+    "file_path": "/Users/mmj13/Downloads/IMG_0613.MOV",
+    "duration": 2.63,
+    "moments": [
+      {
+        "start": 0.0,
+        "end": 2.6317,
+        "duration": 2.632,
+        "type": "sharp_detail",
+        "description": "footage_27 [0.0s–2.6s] sharp_detail",
+        "score": 11.37,
+        "sharpness": 44.75
+      }
+    ],
+    "scene_changes": [],
+    "has_speech": true,
+    "speech_segments": [
+      {
+        "start": 0.0,
+        "end": 2.632
+      }
+    ],
+    "_summary": {
+      "clip": "footage_27",
+      "duration_sec": 2.63,
+      "total_moments": 1,
+      "sharp_moments": 1,
+      "has_speech": true,
+      "speech_segments": [
+        {
+          "start": 0.0,
+          "end": 2.632
+        }
+      ],
+      "scene_change_count": 0,
+      "top_moments": [
+        {
+          "start": 0.0,
+          "end": 2.6317,
+          "duration": 2.632,
+          "type": "sharp_detail",
+          "description": "footage_27 [0.0s–2.6s] sharp_detail",
+          "score": 11.37,
+          "sharpness": 44.75
+        }
+      ]
+    }
+  },
+  {
+    "asset_id": "footage_28",
+    "file_path": "/Users/mmj13/Downloads/IMG_0614.MOV",
+    "duration": 3.17,
+    "moments": [
+      {
+        "start": 0.0,
+        "end": 3.166667,
+        "duration": 3.167,
+        "type": "sharp_detail",
+        "description": "footage_28 [0.0s–3.2s] sharp_detail",
+        "score": 10.83,
+        "sharpness": 42.97
+      }
+    ],
+    "scene_changes": [],
+    "has_speech": true,
+    "speech_segments": [
+      {
+        "start": 0.0,
+        "end": 3.167
+      }
+    ],
+    "_summary": {
+      "clip": "footage_28",
+      "duration_sec": 3.17,
+      "total_moments": 1,
+      "sharp_moments": 1,
+      "has_speech": true,
+      "speech_segments": [
+        {
+          "start": 0.0,
+          "end": 3.167
+        }
+      ],
+      "scene_change_count": 0,
+      "top_moments": [
+        {
+          "start": 0.0,
+          "end": 3.166667,
+          "duration": 3.167,
+          "type": "sharp_detail",
+          "description": "footage_28 [0.0s–3.2s] sharp_detail",
+          "score": 10.83,
+          "sharpness": 42.97
+        }
+      ]
+    }
+  },
+  {
+    "asset_id": "footage_29",
+    "file_path": "/Users/mmj13/Downloads/IMG_0618.MOV",
+    "duration": 4.2,
+    "moments": [
+      {
+        "start": 0.0,
+        "end": 2.0,
+        "duration": 2.0,
+        "type": "sharp_detail",
+        "description": "footage_29 [0.0s–2.0s] sharp_detail",
+        "score": 12.0,
+        "sharpness": 44.08
+      },
+      {
+        "start": 1.5,
+        "end": 3.5,
+        "duration": 2.0,
+        "type": "sharp_detail",
+        "description": "footage_29 [1.5s–3.5s] sharp_detail",
+        "score": 12.0,
+        "sharpness": 37.27
+      },
+      {
+        "start": 3.0,
+        "end": 4.198,
+        "duration": 1.198,
+        "type": "sharp_detail",
+        "description": "footage_29 [3.0s–4.2s] sharp_detail",
+        "score": 11.2,
+        "sharpness": 43.04
+      }
+    ],
+    "scene_changes": [],
+    "has_speech": true,
+    "speech_segments": [
+      {
+        "start": 0.0,
+        "end": 4.198
+      }
+    ],
+    "_summary": {
+      "clip": "footage_29",
+      "duration_sec": 4.2,
+      "total_moments": 3,
+      "sharp_moments": 3,
+      "has_speech": true,
+      "speech_segments": [
+        {
+          "start": 0.0,
+          "end": 4.198
+        }
+      ],
+      "scene_change_count": 0,
+      "top_moments": [
+        {
+          "start": 0.0,
+          "end": 2.0,
+          "duration": 2.0,
+          "type": "sharp_detail",
+          "description": "footage_29 [0.0s–2.0s] sharp_detail",
+          "score": 12.0,
+          "sharpness": 44.08
+        },
+        {
+          "start": 1.5,
+          "end": 3.5,
+          "duration": 2.0,
+          "type": "sharp_detail",
+          "description": "footage_29 [1.5s–3.5s] sharp_detail",
+          "score": 12.0,
+          "sharpness": 37.27
+        },
+        {
+          "start": 3.0,
+          "end": 4.198,
+          "duration": 1.198,
+          "type": "sharp_detail",
+          "description": "footage_29 [3.0s–4.2s] sharp_detail",
+          "score": 11.2,
+          "sharpness": 43.04
+        }
+      ]
+    }
+  },
+  {
+    "asset_id": "footage_30",
+    "file_path": "/Users/mmj13/Downloads/IMG_0619.MOV",
+    "duration": 4.26,
+    "moments": [
+      {
+        "start": 0.0,
+        "end": 2.0,
+        "duration": 2.0,
+        "type": "sharp_detail",
+        "description": "footage_30 [0.0s–2.0s] sharp_detail",
+        "score": 12.0,
+        "sharpness": 31.88
+      },
+      {
+        "start": 1.5,
+        "end": 3.5,
+        "duration": 2.0,
+        "type": "sharp_detail",
+        "description": "footage_30 [1.5s–3.5s] sharp_detail",
+        "score": 12.0,
+        "sharpness": 37.08
+      },
+      {
+        "start": 3.0,
+        "end": 4.265,
+        "duration": 1.265,
+        "type": "sharp_detail",
+        "description": "footage_30 [3.0s–4.3s] sharp_detail",
+        "score": 11.27,
+        "sharpness": 38.16
+      }
+    ],
+    "scene_changes": [],
+    "has_speech": true,
+    "speech_segments": [
+      {
+        "start": 0.0,
+        "end": 4.265
+      }
+    ],
+    "_summary": {
+      "clip": "footage_30",
+      "duration_sec": 4.26,
+      "total_moments": 3,
+      "sharp_moments": 3,
+      "has_speech": true,
+      "speech_segments": [
+        {
+          "start": 0.0,
+          "end": 4.265
+        }
+      ],
+      "scene_change_count": 0,
+      "top_moments": [
+        {
+          "start": 0.0,
+          "end": 2.0,
+          "duration": 2.0,
+          "type": "sharp_detail",
+          "description": "footage_30 [0.0s–2.0s] sharp_detail",
+          "score": 12.0,
+          "sharpness": 31.88
+        },
+        {
+          "start": 1.5,
+          "end": 3.5,
+          "duration": 2.0,
+          "type": "sharp_detail",
+          "description": "footage_30 [1.5s–3.5s] sharp_detail",
+          "score": 12.0,
+          "sharpness": 37.08
+        },
+        {
+          "start": 3.0,
+          "end": 4.265,
+          "duration": 1.265,
+          "type": "sharp_detail",
+          "description": "footage_30 [3.0s–4.3s] sharp_detail",
+          "score": 11.27,
+          "sharpness": 38.16
+        }
+      ]
+    }
+  },
+  {
+    "asset_id": "footage_31",
+    "file_path": "/Users/mmj13/Downloads/IMG_0631.MOV",
+    "duration": 3.5,
+    "moments": [
+      {
+        "start": 0.0,
+        "end": 3.5,
+        "duration": 3.5,
+        "type": "sharp_detail",
+        "description": "footage_31 [0.0s–3.5s] sharp_detail",
+        "score": 10.5,
+        "sharpness": 32.76
+      }
+    ],
+    "scene_changes": [],
+    "has_speech": true,
+    "speech_segments": [
+      {
+        "start": 0.0,
+        "end": 3.5
+      }
+    ],
+    "_summary": {
+      "clip": "footage_31",
+      "duration_sec": 3.5,
+      "total_moments": 1,
+      "sharp_moments": 1,
+      "has_speech": true,
+      "speech_segments": [
+        {
+          "start": 0.0,
+          "end": 3.5
+        }
+      ],
+      "scene_change_count": 0,
+      "top_moments": [
+        {
+          "start": 0.0,
+          "end": 3.5,
+          "duration": 3.5,
+          "type": "sharp_detail",
+          "description": "footage_31 [0.0s–3.5s] sharp_detail",
+          "score": 10.5,
+          "sharpness": 32.76
+        }
+      ]
+    }
+  },
+  {
+    "asset_id": "footage_32",
+    "file_path": "/Users/mmj13/Downloads/IMG_0676.MOV",
+    "duration": 2.63,
+    "moments": [
+      {
+        "start": 0.0,
+        "end": 2.6317,
+        "duration": 2.632,
+        "type": "sharp_detail",
+        "description": "footage_32 [0.0s–2.6s] sharp_detail",
+        "score": 11.37,
+        "sharpness": 33.33
+      }
+    ],
+    "scene_changes": [],
+    "has_speech": true,
+    "speech_segments": [
+      {
+        "start": 0.0,
+        "end": 2.632
+      }
+    ],
+    "_summary": {
+      "clip": "footage_32",
+      "duration_sec": 2.63,
+      "total_moments": 1,
+      "sharp_moments": 1,
+      "has_speech": true,
+      "speech_segments": [
+        {
+          "start": 0.0,
+          "end": 2.632
+        }
+      ],
+      "scene_change_count": 0,
+      "top_moments": [
+        {
+          "start": 0.0,
+          "end": 2.6317,
+          "duration": 2.632,
+          "type": "sharp_detail",
+          "description": "footage_32 [0.0s–2.6s] sharp_detail",
+          "score": 11.37,
+          "sharpness": 33.33
+        }
+      ]
+    }
+  },
+  {
+    "asset_id": "footage_33",
+    "file_path": "/Users/mmj13/Downloads/IMG_0678.MOV",
+    "duration": 2.87,
+    "moments": [
+      {
+        "start": 0.0,
+        "end": 2.866667,
+        "duration": 2.867,
+        "type": "sharp_detail",
+        "description": "footage_33 [0.0s–2.9s] sharp_detail",
+        "score": 11.13,
+        "sharpness": 32.79
+      }
+    ],
+    "scene_changes": [],
+    "has_speech": true,
+    "speech_segments": [
+      {
+        "start": 0.0,
+        "end": 2.867
+      }
+    ],
+    "_summary": {
+      "clip": "footage_33",
+      "duration_sec": 2.87,
+      "total_moments": 1,
+      "sharp_moments": 1,
+      "has_speech": true,
+      "speech_segments": [
+        {
+          "start": 0.0,
+          "end": 2.867
+        }
+      ],
+      "scene_change_count": 0,
+      "top_moments": [
+        {
+          "start": 0.0,
+          "end": 2.866667,
+          "duration": 2.867,
+          "type": "sharp_detail",
+          "description": "footage_33 [0.0s–2.9s] sharp_detail",
+          "score": 11.13,
+          "sharpness": 32.79
+        }
+      ]
+    }
+  },
+  {
+    "asset_id": "footage_34",
+    "file_path": "/Users/mmj13/Downloads/IMG_0679.MOV",
+    "duration": 2.77,
+    "moments": [
+      {
+        "start": 0.0,
+        "end": 2.765,
+        "duration": 2.765,
+        "type": "sharp_detail",
+        "description": "footage_34 [0.0s–2.8s] sharp_detail",
+        "score": 11.23,
+        "sharpness": 37.7
+      }
+    ],
+    "scene_changes": [],
+    "has_speech": true,
+    "speech_segments": [
+      {
+        "start": 0.0,
+        "end": 2.765
+      }
+    ],
+    "_summary": {
+      "clip": "footage_34",
+      "duration_sec": 2.77,
+      "total_moments": 1,
+      "sharp_moments": 1,
+      "has_speech": true,
+      "speech_segments": [
+        {
+          "start": 0.0,
+          "end": 2.765
+        }
+      ],
+      "scene_change_count": 0,
+      "top_moments": [
+        {
+          "start": 0.0,
+          "end": 2.765,
+          "duration": 2.765,
+          "type": "sharp_detail",
+          "description": "footage_34 [0.0s–2.8s] sharp_detail",
+          "score": 11.23,
+          "sharpness": 37.7
+        }
+      ]
+    }
+  },
+  {
+    "asset_id": "footage_35",
+    "file_path": "/Users/mmj13/Downloads/IMG_0682.MOV",
+    "duration": 7.03,
+    "moments": [
+      {
+        "start": 0.0,
+        "end": 2.0,
+        "duration": 2.0,
+        "type": "sharp_detail",
+        "description": "footage_35 [0.0s–2.0s] sharp_detail",
+        "score": 12.0,
+        "sharpness": 18.24
+      },
+      {
+        "start": 1.5,
+        "end": 3.5,
+        "duration": 2.0,
+        "type": "sharp_detail",
+        "description": "footage_35 [1.5s–3.5s] sharp_detail",
+        "score": 12.0,
+        "sharpness": 18.11
+      },
+      {
+        "start": 3.0,
+        "end": 5.0,
+        "duration": 2.0,
+        "type": "sharp_detail",
+        "description": "footage_35 [3.0s–5.0s] sharp_detail",
+        "score": 12.0,
+        "sharpness": 23.79
+      },
+      {
+        "start": 4.5,
+        "end": 6.5,
+        "duration": 2.0,
+        "type": "sharp_detail",
+        "description": "footage_35 [4.5s–6.5s] sharp_detail",
+        "score": 12.0,
+        "sharpness": 21.53
+      },
+      {
+        "start": 6.0,
+        "end": 7.032,
+        "duration": 1.032,
+        "type": "sharp_detail",
+        "description": "footage_35 [6.0s–7.0s] sharp_detail",
+        "score": 11.03,
+        "sharpness": 21.25
+      }
+    ],
+    "scene_changes": [],
+    "has_speech": true,
+    "speech_segments": [
+      {
+        "start": 0.0,
+        "end": 7.032
+      }
+    ],
+    "_summary": {
+      "clip": "footage_35",
+      "duration_sec": 7.03,
+      "total_moments": 5,
+      "sharp_moments": 5,
+      "has_speech": true,
+      "speech_segments": [
+        {
+          "start": 0.0,
+          "end": 7.032
+        }
+      ],
+      "scene_change_count": 0,
+      "top_moments": [
+        {
+          "start": 0.0,
+          "end": 2.0,
+          "duration": 2.0,
+          "type": "sharp_detail",
+          "description": "footage_35 [0.0s–2.0s] sharp_detail",
+          "score": 12.0,
+          "sharpness": 18.24
+        },
+        {
+          "start": 1.5,
+          "end": 3.5,
+          "duration": 2.0,
+          "type": "sharp_detail",
+          "description": "footage_35 [1.5s–3.5s] sharp_detail",
+          "score": 12.0,
+          "sharpness": 18.11
+        },
+        {
+          "start": 3.0,
+          "end": 5.0,
+          "duration": 2.0,
+          "type": "sharp_detail",
+          "description": "footage_35 [3.0s–5.0s] sharp_detail",
+          "score": 12.0,
+          "sharpness": 23.79
+        },
+        {
+          "start": 4.5,
+          "end": 6.5,
+          "duration": 2.0,
+          "type": "sharp_detail",
+          "description": "footage_35 [4.5s–6.5s] sharp_detail",
+          "score": 12.0,
+          "sharpness": 21.53
+        },
+        {
+          "start": 6.0,
+          "end": 7.032,
+          "duration": 1.032,
+          "type": "sharp_detail",
+          "description": "footage_35 [6.0s–7.0s] sharp_detail",
+          "score": 11.03,
+          "sharpness": 21.25
+        }
+      ]
+    }
+  },
+  {
+    "asset_id": "footage_36",
+    "file_path": "/Users/mmj13/Downloads/IMG_0687.MOV",
+    "duration": 1.6,
+    "moments": [
+      {
+        "start": 0.0,
+        "end": 1.6,
+        "duration": 1.6,
+        "type": "sharp_detail",
+        "description": "footage_36 [0.0s–1.6s] sharp_detail",
+        "score": 11.6,
+        "sharpness": 26.22
+      }
+    ],
+    "scene_changes": [],
+    "has_speech": true,
+    "speech_segments": [
+      {
+        "start": 0.0,
+        "end": 1.6
+      }
+    ],
+    "_summary": {
+      "clip": "footage_36",
+      "duration_sec": 1.6,
+      "total_moments": 1,
+      "sharp_moments": 1,
+      "has_speech": true,
+      "speech_segments": [
+        {
+          "start": 0.0,
+          "end": 1.6
+        }
+      ],
+      "scene_change_count": 0,
+      "top_moments": [
+        {
+          "start": 0.0,
+          "end": 1.6,
+          "duration": 1.6,
+          "type": "sharp_detail",
+          "description": "footage_36 [0.0s–1.6s] sharp_detail",
+          "score": 11.6,
+          "sharpness": 26.22
+        }
+      ]
+    }
+  },
+  {
+    "asset_id": "footage_37",
+    "file_path": "/Users/mmj13/Downloads/IMG_0688.MOV",
+    "duration": 7.8,
+    "moments": [
+      {
+        "start": 0.0,
+        "end": 2.0,
+        "duration": 2.0,
+        "type": "sharp_detail",
+        "description": "footage_37 [0.0s–2.0s] sharp_detail",
+        "score": 12.0,
+        "sharpness": 32.82
+      },
+      {
+        "start": 1.5,
+        "end": 3.5,
+        "duration": 2.0,
+        "type": "sharp_detail",
+        "description": "footage_37 [1.5s–3.5s] sharp_detail",
+        "score": 12.0,
+        "sharpness": 33.4
+      },
+      {
+        "start": 3.0,
+        "end": 5.0,
+        "duration": 2.0,
+        "type": "sharp_detail",
+        "description": "footage_37 [3.0s–5.0s] sharp_detail",
+        "score": 12.0,
+        "sharpness": 27.74
+      },
+      {
+        "start": 4.5,
+        "end": 6.5,
+        "duration": 2.0,
+        "type": "sharp_detail",
+        "description": "footage_37 [4.5s–6.5s] sharp_detail",
+        "score": 12.0,
+        "sharpness": 27.58
+      },
+      {
+        "start": 6.0,
+        "end": 7.8,
+        "duration": 1.8,
+        "type": "sharp_detail",
+        "description": "footage_37 [6.0s–7.8s] sharp_detail",
+        "score": 11.8,
+        "sharpness": 27.16
+      }
+    ],
+    "scene_changes": [],
+    "has_speech": true,
+    "speech_segments": [
+      {
+        "start": 0.0,
+        "end": 7.8
+      }
+    ],
+    "_summary": {
+      "clip": "footage_37",
+      "duration_sec": 7.8,
+      "total_moments": 5,
+      "sharp_moments": 5,
+      "has_speech": true,
+      "speech_segments": [
+        {
+          "start": 0.0,
+          "end": 7.8
+        }
+      ],
+      "scene_change_count": 0,
+      "top_moments": [
+        {
+          "start": 0.0,
+          "end": 2.0,
+          "duration": 2.0,
+          "type": "sharp_detail",
+          "description": "footage_37 [0.0s–2.0s] sharp_detail",
+          "score": 12.0,
+          "sharpness": 32.82
+        },
+        {
+          "start": 1.5,
+          "end": 3.5,
+          "duration": 2.0,
+          "type": "sharp_detail",
+          "description": "footage_37 [1.5s–3.5s] sharp_detail",
+          "score": 12.0,
+          "sharpness": 33.4
+        },
+        {
+          "start": 3.0,
+          "end": 5.0,
+          "duration": 2.0,
+          "type": "sharp_detail",
+          "description": "footage_37 [3.0s–5.0s] sharp_detail",
+          "score": 12.0,
+          "sharpness": 27.74
+        },
+        {
+          "start": 4.5,
+          "end": 6.5,
+          "duration": 2.0,
+          "type": "sharp_detail",
+          "description": "footage_37 [4.5s–6.5s] sharp_detail",
+          "score": 12.0,
+          "sharpness": 27.58
+        },
+        {
+          "start": 6.0,
+          "end": 7.8,
+          "duration": 1.8,
+          "type": "sharp_detail",
+          "description": "footage_37 [6.0s–7.8s] sharp_detail",
+          "score": 11.8,
+          "sharpness": 27.16
+        }
+      ]
+    }
+  },
+  {
+    "asset_id": "footage_38",
+    "file_path": "/Users/mmj13/Downloads/IMG_0692.MOV",
+    "duration": 2.13,
+    "moments": [
+      {
+        "start": 0.0,
+        "end": 2.1317,
+        "duration": 2.132,
+        "type": "sharp_detail",
+        "description": "footage_38 [0.0s–2.1s] sharp_detail",
+        "score": 11.87,
+        "sharpness": 28.52
+      }
+    ],
+    "scene_changes": [],
+    "has_speech": true,
+    "speech_segments": [
+      {
+        "start": 0.0,
+        "end": 2.132
+      }
+    ],
+    "_summary": {
+      "clip": "footage_38",
+      "duration_sec": 2.13,
+      "total_moments": 1,
+      "sharp_moments": 1,
+      "has_speech": true,
+      "speech_segments": [
+        {
+          "start": 0.0,
+          "end": 2.132
+        }
+      ],
+      "scene_change_count": 0,
+      "top_moments": [
+        {
+          "start": 0.0,
+          "end": 2.1317,
+          "duration": 2.132,
+          "type": "sharp_detail",
+          "description": "footage_38 [0.0s–2.1s] sharp_detail",
+          "score": 11.87,
+          "sharpness": 28.52
+        }
+      ]
+    }
+  },
+  {
+    "asset_id": "footage_39",
+    "file_path": "/Users/mmj13/Downloads/IMG_0736.MOV",
+    "duration": 2.37,
+    "moments": [
+      {
+        "start": 0.0,
+        "end": 2.365,
+        "duration": 2.365,
+        "type": "sharp_detail",
+        "description": "footage_39 [0.0s–2.4s] sharp_detail",
+        "score": 11.63,
+        "sharpness": 24.11
+      }
+    ],
+    "scene_changes": [],
+    "has_speech": true,
+    "speech_segments": [
+      {
+        "start": 0.0,
+        "end": 2.365
+      }
+    ],
+    "_summary": {
+      "clip": "footage_39",
+      "duration_sec": 2.37,
+      "total_moments": 1,
+      "sharp_moments": 1,
+      "has_speech": true,
+      "speech_segments": [
+        {
+          "start": 0.0,
+          "end": 2.365
+        }
+      ],
+      "scene_change_count": 0,
+      "top_moments": [
+        {
+          "start": 0.0,
+          "end": 2.365,
+          "duration": 2.365,
+          "type": "sharp_detail",
+          "description": "footage_39 [0.0s–2.4s] sharp_detail",
+          "score": 11.63,
+          "sharpness": 24.11
+        }
+      ]
+    }
+  },
+  {
+    "asset_id": "footage_40",
+    "file_path": "/Users/mmj13/Downloads/IMG_0804.MOV",
+    "duration": 6.63,
+    "moments": [
+      {
+        "start": 0.0,
+        "end": 2.0,
+        "duration": 2.0,
+        "type": "sharp_detail",
+        "description": "footage_40 [0.0s–2.0s] sharp_detail",
+        "score": 12.0,
+        "sharpness": 26.77
+      },
+      {
+        "start": 1.5,
+        "end": 3.5,
+        "duration": 2.0,
+        "type": "sharp_detail",
+        "description": "footage_40 [1.5s–3.5s] sharp_detail",
+        "score": 12.0,
+        "sharpness": 26.45
+      },
+      {
+        "start": 3.0,
+        "end": 5.0,
+        "duration": 2.0,
+        "type": "sharp_detail",
+        "description": "footage_40 [3.0s–5.0s] sharp_detail",
+        "score": 12.0,
+        "sharpness": 25.17
+      },
+      {
+        "start": 4.5,
+        "end": 6.5,
+        "duration": 2.0,
+        "type": "sharp_detail",
+        "description": "footage_40 [4.5s–6.5s] sharp_detail",
+        "score": 12.0,
+        "sharpness": 24.6
+      },
+      {
+        "start": 6.0,
+        "end": 6.632,
+        "duration": 0.632,
+        "type": "sharp_detail",
+        "description": "footage_40 [6.0s–6.6s] sharp_detail",
+        "score": 10.63,
+        "sharpness": 23.04
+      }
+    ],
+    "scene_changes": [],
+    "has_speech": true,
+    "speech_segments": [
+      {
+        "start": 0.0,
+        "end": 6.632
+      }
+    ],
+    "_summary": {
+      "clip": "footage_40",
+      "duration_sec": 6.63,
+      "total_moments": 5,
+      "sharp_moments": 5,
+      "has_speech": true,
+      "speech_segments": [
+        {
+          "start": 0.0,
+          "end": 6.632
+        }
+      ],
+      "scene_change_count": 0,
+      "top_moments": [
+        {
+          "start": 0.0,
+          "end": 2.0,
+          "duration": 2.0,
+          "type": "sharp_detail",
+          "description": "footage_40 [0.0s–2.0s] sharp_detail",
+          "score": 12.0,
+          "sharpness": 26.77
+        },
+        {
+          "start": 1.5,
+          "end": 3.5,
+          "duration": 2.0,
+          "type": "sharp_detail",
+          "description": "footage_40 [1.5s–3.5s] sharp_detail",
+          "score": 12.0,
+          "sharpness": 26.45
+        },
+        {
+          "start": 3.0,
+          "end": 5.0,
+          "duration": 2.0,
+          "type": "sharp_detail",
+          "description": "footage_40 [3.0s–5.0s] sharp_detail",
+          "score": 12.0,
+          "sharpness": 25.17
+        },
+        {
+          "start": 4.5,
+          "end": 6.5,
+          "duration": 2.0,
+          "type": "sharp_detail",
+          "description": "footage_40 [4.5s–6.5s] sharp_detail",
+          "score": 12.0,
+          "sharpness": 24.6
+        },
+        {
+          "start": 6.0,
+          "end": 6.632,
+          "duration": 0.632,
+          "type": "sharp_detail",
+          "description": "footage_40 [6.0s–6.6s] sharp_detail",
+          "score": 10.63,
+          "sharpness": 23.04
+        }
+      ]
+    }
+  },
+  {
+    "asset_id": "footage_41",
+    "file_path": "/Users/mmj13/Downloads/IMG_0815.MOV",
+    "duration": 3.0,
+    "moments": [
+      {
+        "start": 0.0,
+        "end": 2.998333,
+        "duration": 2.998,
+        "type": "sharp_detail",
+        "description": "footage_41 [0.0s–3.0s] sharp_detail",
+        "score": 11.0,
+        "sharpness": 31.42
+      }
+    ],
+    "scene_changes": [],
+    "has_speech": true,
+    "speech_segments": [
+      {
+        "start": 0.0,
+        "end": 2.998
+      }
+    ],
+    "_summary": {
+      "clip": "footage_41",
+      "duration_sec": 3.0,
+      "total_moments": 1,
+      "sharp_moments": 1,
+      "has_speech": true,
+      "speech_segments": [
+        {
+          "start": 0.0,
+          "end": 2.998
+        }
+      ],
+      "scene_change_count": 0,
+      "top_moments": [
+        {
+          "start": 0.0,
+          "end": 2.998333,
+          "duration": 2.998,
+          "type": "sharp_detail",
+          "description": "footage_41 [0.0s–3.0s] sharp_detail",
+          "score": 11.0,
+          "sharpness": 31.42
+        }
+      ]
+    }
+  },
+  {
+    "asset_id": "footage_42",
+    "file_path": "/Users/mmj13/Downloads/IMG_0843.MOV",
+    "duration": 4.53,
+    "moments": [
+      {
+        "start": 0.0,
+        "end": 2.0,
+        "duration": 2.0,
+        "type": "sharp_detail",
+        "description": "footage_42 [0.0s–2.0s] sharp_detail",
+        "score": 12.0,
+        "sharpness": 30.77
+      },
+      {
+        "start": 1.5,
+        "end": 3.5,
+        "duration": 2.0,
+        "type": "sharp_detail",
+        "description": "footage_42 [1.5s–3.5s] sharp_detail",
+        "score": 12.0,
+        "sharpness": 31.15
+      },
+      {
+        "start": 3.0,
+        "end": 4.532,
+        "duration": 1.532,
+        "type": "sharp_detail",
+        "description": "footage_42 [3.0s–4.5s] sharp_detail",
+        "score": 11.53,
+        "sharpness": 27.91
+      }
+    ],
+    "scene_changes": [],
+    "has_speech": true,
+    "speech_segments": [
+      {
+        "start": 0.0,
+        "end": 4.532
+      }
+    ],
+    "_summary": {
+      "clip": "footage_42",
+      "duration_sec": 4.53,
+      "total_moments": 3,
+      "sharp_moments": 3,
+      "has_speech": true,
+      "speech_segments": [
+        {
+          "start": 0.0,
+          "end": 4.532
+        }
+      ],
+      "scene_change_count": 0,
+      "top_moments": [
+        {
+          "start": 0.0,
+          "end": 2.0,
+          "duration": 2.0,
+          "type": "sharp_detail",
+          "description": "footage_42 [0.0s–2.0s] sharp_detail",
+          "score": 12.0,
+          "sharpness": 30.77
+        },
+        {
+          "start": 1.5,
+          "end": 3.5,
+          "duration": 2.0,
+          "type": "sharp_detail",
+          "description": "footage_42 [1.5s–3.5s] sharp_detail",
+          "score": 12.0,
+          "sharpness": 31.15
+        },
+        {
+          "start": 3.0,
+          "end": 4.532,
+          "duration": 1.532,
+          "type": "sharp_detail",
+          "description": "footage_42 [3.0s–4.5s] sharp_detail",
+          "score": 11.53,
+          "sharpness": 27.91
+        }
+      ]
+    }
+  },
+  {
+    "asset_id": "footage_43",
+    "file_path": "/Users/mmj13/Downloads/IMG_0846.MOV",
+    "duration": 2.73,
+    "moments": [
+      {
+        "start": 0.0,
+        "end": 2.7317,
+        "duration": 2.732,
+        "type": "sharp_detail",
+        "description": "footage_43 [0.0s–2.7s] sharp_detail",
+        "score": 11.27,
+        "sharpness": 35.05
+      }
+    ],
+    "scene_changes": [],
+    "has_speech": true,
+    "speech_segments": [
+      {
+        "start": 0.0,
+        "end": 2.732
+      }
+    ],
+    "_summary": {
+      "clip": "footage_43",
+      "duration_sec": 2.73,
+      "total_moments": 1,
+      "sharp_moments": 1,
+      "has_speech": true,
+      "speech_segments": [
+        {
+          "start": 0.0,
+          "end": 2.732
+        }
+      ],
+      "scene_change_count": 0,
+      "top_moments": [
+        {
+          "start": 0.0,
+          "end": 2.7317,
+          "duration": 2.732,
+          "type": "sharp_detail",
+          "description": "footage_43 [0.0s–2.7s] sharp_detail",
+          "score": 11.27,
+          "sharpness": 35.05
+        }
+      ]
+    }
+  },
+  {
+    "asset_id": "footage_44",
+    "file_path": "/Users/mmj13/Downloads/IMG_0850.MOV",
+    "duration": 1.73,
+    "moments": [
+      {
+        "start": 0.0,
+        "end": 1.733333,
+        "duration": 1.733,
+        "type": "sharp_detail",
+        "description": "footage_44 [0.0s–1.7s] sharp_detail",
+        "score": 11.73,
+        "sharpness": 24.59
+      }
+    ],
+    "scene_changes": [],
+    "has_speech": true,
+    "speech_segments": [
+      {
+        "start": 0.0,
+        "end": 1.733
+      }
+    ],
+    "_summary": {
+      "clip": "footage_44",
+      "duration_sec": 1.73,
+      "total_moments": 1,
+      "sharp_moments": 1,
+      "has_speech": true,
+      "speech_segments": [
+        {
+          "start": 0.0,
+          "end": 1.733
+        }
+      ],
+      "scene_change_count": 0,
+      "top_moments": [
+        {
+          "start": 0.0,
+          "end": 1.733333,
+          "duration": 1.733,
+          "type": "sharp_detail",
+          "description": "footage_44 [0.0s–1.7s] sharp_detail",
+          "score": 11.73,
+          "sharpness": 24.59
+        }
+      ]
+    }
+  },
+  {
+    "asset_id": "footage_45",
+    "file_path": "/Users/mmj13/Downloads/IMG_0851.MOV",
+    "duration": 2.3,
+    "moments": [
+      {
+        "start": 0.0,
+        "end": 2.3,
+        "duration": 2.3,
+        "type": "sharp_detail",
+        "description": "footage_45 [0.0s–2.3s] sharp_detail",
+        "score": 11.7,
+        "sharpness": 23.59
+      }
+    ],
+    "scene_changes": [],
+    "has_speech": true,
+    "speech_segments": [
+      {
+        "start": 0.0,
+        "end": 2.3
+      }
+    ],
+    "_summary": {
+      "clip": "footage_45",
+      "duration_sec": 2.3,
+      "total_moments": 1,
+      "sharp_moments": 1,
+      "has_speech": true,
+      "speech_segments": [
+        {
+          "start": 0.0,
+          "end": 2.3
+        }
+      ],
+      "scene_change_count": 0,
+      "top_moments": [
+        {
+          "start": 0.0,
+          "end": 2.3,
+          "duration": 2.3,
+          "type": "sharp_detail",
+          "description": "footage_45 [0.0s–2.3s] sharp_detail",
+          "score": 11.7,
+          "sharpness": 23.59
+        }
+      ]
+    }
+  },
+  {
+    "asset_id": "footage_46",
+    "file_path": "/Users/mmj13/Downloads/IMG_0863.MOV",
+    "duration": 3.8,
+    "moments": [
+      {
+        "start": 0.0,
+        "end": 2.0,
+        "duration": 2.0,
+        "type": "sharp_detail",
+        "description": "footage_46 [0.0s–2.0s] sharp_detail",
+        "score": 12.0,
+        "sharpness": 20.71
+      },
+      {
+        "start": 1.5,
+        "end": 3.5,
+        "duration": 2.0,
+        "type": "sharp_detail",
+        "description": "footage_46 [1.5s–3.5s] sharp_detail",
+        "score": 12.0,
+        "sharpness": 20.18
+      },
+      {
+        "start": 3.0,
+        "end": 3.798,
+        "duration": 0.798,
+        "type": "sharp_detail",
+        "description": "footage_46 [3.0s–3.8s] sharp_detail",
+        "score": 10.8,
+        "sharpness": 20.94
+      }
+    ],
+    "scene_changes": [],
+    "has_speech": true,
+    "speech_segments": [
+      {
+        "start": 0.0,
+        "end": 3.798
+      }
+    ],
+    "_summary": {
+      "clip": "footage_46",
+      "duration_sec": 3.8,
+      "total_moments": 3,
+      "sharp_moments": 3,
+      "has_speech": true,
+      "speech_segments": [
+        {
+          "start": 0.0,
+          "end": 3.798
+        }
+      ],
+      "scene_change_count": 0,
+      "top_moments": [
+        {
+          "start": 0.0,
+          "end": 2.0,
+          "duration": 2.0,
+          "type": "sharp_detail",
+          "description": "footage_46 [0.0s–2.0s] sharp_detail",
+          "score": 12.0,
+          "sharpness": 20.71
+        },
+        {
+          "start": 1.5,
+          "end": 3.5,
+          "duration": 2.0,
+          "type": "sharp_detail",
+          "description": "footage_46 [1.5s–3.5s] sharp_detail",
+          "score": 12.0,
+          "sharpness": 20.18
+        },
+        {
+          "start": 3.0,
+          "end": 3.798,
+          "duration": 0.798,
+          "type": "sharp_detail",
+          "description": "footage_46 [3.0s–3.8s] sharp_detail",
+          "score": 10.8,
+          "sharpness": 20.94
+        }
+      ]
+    }
+  },
+  {
+    "asset_id": "footage_47",
+    "file_path": "/Users/mmj13/Downloads/IMG_0866.MOV",
+    "duration": 7.83,
+    "moments": [
+      {
+        "start": 0.0,
+        "end": 2.0,
+        "duration": 2.0,
+        "type": "sharp_detail",
+        "description": "footage_47 [0.0s–2.0s] sharp_detail",
+        "score": 12.0,
+        "sharpness": 22.12
+      },
+      {
+        "start": 1.5,
+        "end": 3.5,
+        "duration": 2.0,
+        "type": "sharp_detail",
+        "description": "footage_47 [1.5s–3.5s] sharp_detail",
+        "score": 12.0,
+        "sharpness": 23.06
+      },
+      {
+        "start": 3.0,
+        "end": 5.0,
+        "duration": 2.0,
+        "type": "sharp_detail",
+        "description": "footage_47 [3.0s–5.0s] sharp_detail",
+        "score": 12.0,
+        "sharpness": 20.2
+      },
+      {
+        "start": 4.5,
+        "end": 6.5,
+        "duration": 2.0,
+        "type": "sharp_detail",
+        "description": "footage_47 [4.5s–6.5s] sharp_detail",
+        "score": 12.0,
+        "sharpness": 23.18
+      },
+      {
+        "start": 6.0,
+        "end": 7.835,
+        "duration": 1.835,
+        "type": "sharp_detail",
+        "description": "footage_47 [6.0s–7.8s] sharp_detail",
+        "score": 11.84,
+        "sharpness": 24.14
+      }
+    ],
+    "scene_changes": [],
+    "has_speech": true,
+    "speech_segments": [
+      {
+        "start": 0.0,
+        "end": 7.835
+      }
+    ],
+    "_summary": {
+      "clip": "footage_47",
+      "duration_sec": 7.83,
+      "total_moments": 5,
+      "sharp_moments": 5,
+      "has_speech": true,
+      "speech_segments": [
+        {
+          "start": 0.0,
+          "end": 7.835
+        }
+      ],
+      "scene_change_count": 0,
+      "top_moments": [
+        {
+          "start": 0.0,
+          "end": 2.0,
+          "duration": 2.0,
+          "type": "sharp_detail",
+          "description": "footage_47 [0.0s–2.0s] sharp_detail",
+          "score": 12.0,
+          "sharpness": 22.12
+        },
+        {
+          "start": 1.5,
+          "end": 3.5,
+          "duration": 2.0,
+          "type": "sharp_detail",
+          "description": "footage_47 [1.5s–3.5s] sharp_detail",
+          "score": 12.0,
+          "sharpness": 23.06
+        },
+        {
+          "start": 3.0,
+          "end": 5.0,
+          "duration": 2.0,
+          "type": "sharp_detail",
+          "description": "footage_47 [3.0s–5.0s] sharp_detail",
+          "score": 12.0,
+          "sharpness": 20.2
+        },
+        {
+          "start": 4.5,
+          "end": 6.5,
+          "duration": 2.0,
+          "type": "sharp_detail",
+          "description": "footage_47 [4.5s–6.5s] sharp_detail",
+          "score": 12.0,
+          "sharpness": 23.18
+        },
+        {
+          "start": 6.0,
+          "end": 7.835,
+          "duration": 1.835,
+          "type": "sharp_detail",
+          "description": "footage_47 [6.0s–7.8s] sharp_detail",
+          "score": 11.84,
+          "sharpness": 24.14
+        }
+      ]
+    }
+  }
+]

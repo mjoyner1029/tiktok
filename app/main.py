@@ -95,6 +95,7 @@ from app.api.presets import router as presets_router
 from app.api.batch import router as batch_router
 from app.api.downloads import router as downloads_router
 from app.api.chat import router as chat_router
+from app.api.pipeline import router as pipeline_router
 
 app.include_router(auth_router, prefix="/api/v1")
 app.include_router(billing_router, prefix="/api/v1")
@@ -106,6 +107,7 @@ app.include_router(presets_router, prefix="/api/v1")
 app.include_router(batch_router, prefix="/api/v1")
 app.include_router(downloads_router, prefix="/api/v1")
 app.include_router(chat_router, prefix="/api/v1")
+app.include_router(pipeline_router, prefix="/api/v1")
 
 # ── Health & Metrics ──────────────────────────────────────────────
 

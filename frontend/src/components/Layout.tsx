@@ -3,6 +3,7 @@ import {
   LayoutDashboard,
   Film,
   Sparkles,
+  Wand2,
 } from "lucide-react";
 
 export default function Layout() {
@@ -20,6 +21,10 @@ export default function Layout() {
           <NavLink to="/" className={({ isActive }) => `nav-link ${isActive && !isProject ? "active" : ""}`}>
             <LayoutDashboard size={18} />
             Dashboard
+          </NavLink>
+          <NavLink to="/pipeline" className={({ isActive }) => `nav-link ${isActive ? "active" : ""}`}>
+            <Wand2 size={18} />
+            Style Cloner
           </NavLink>
           {isProject && (
             <>

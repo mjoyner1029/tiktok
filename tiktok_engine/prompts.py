@@ -145,21 +145,59 @@ Return ONLY a JSON object:
 # ── Combined single-shot prompt (alternative) ──────────────────────────────
 
 COMBINED_PROMPT = """\
-Analyze the reference videos, transform the raw content, and produce a \
-complete TikTok edit plan.
+You are given a pre-extracted editing style from reference TikToks and raw footage \
+descriptions. Create an edit plan that FAITHFULLY REPLICATES the style — same \
+transitions, same pacing, same caption style, same energy.
 
-REFERENCE VIDEOS (style only):
-{references}
+═══════════════════════════════════════════════════════
+EXTRACTED REFERENCE STYLE (treat as law):
+═══════════════════════════════════════════════════════
+{style_json}
 
-RAW USER CONTENT:
+═══════════════════════════════════════════════════════
+FOOTAGE AVAILABLE:
+═══════════════════════════════════════════════════════
 {raw_content}
 
-Return ONE combined JSON object with these top-level keys:
-- "style_analysis"  (hook_style, avg_cut_duration, caption_style, zoom_pattern, structure, tone)
-- "script"          (script: list of lines)
-- "timeline"        (timeline: list of segments with start, end, text, visual, caption, motion)
-- "captions"        (captions: list of {{time, text}})
-- "editing_notes"   (editing_notes: list of strings)
+═══════════════════════════════════════════════════════
+MANDATORY STYLE APPLICATION RULES:
+═══════════════════════════════════════════════════════
+1. TRANSITIONS: Every segment's "transition" field MUST use transition_type from \
+   the style (e.g. if transition_type is "whip_pan_left", use "whip_pan_left" on \
+   every segment unless a specific segment warrants a different cut). Allowed values: \
+   cut, fade, flash_cut, whip_pan_left, whip_pan_right, swipe_left, swipe_right, \
+   swipe_up, swipe_down, dissolve, zoom_transition.
+2. TIMING: Every segment's duration (end - start) MUST equal avg_cut_duration. \
+   No exceptions. Build cumulative timestamps starting from 0.
+3. MOTION: Every segment's "motion" field MUST apply zoom_pattern \
+   (e.g. "slow push in", "zoom in", "static").
+4. CAPTIONS: Apply caption_style EXACTLY — ALL CAPS if specified, correct position, \
+   word count per frame. Write captions as they would appear ON SCREEN, not as narration.
+5. HOOK: Segment 0 must implement hook_style directly (e.g. if hook is \
+   "opens mid-action", segment 0 caption should be a shocking claim or question).
+6. STRUCTURE: Follow the structure arc across ALL segments.
+
+Return ONE combined JSON object with exactly these keys:
+- "style_analysis"  — copy values directly from the extracted style (do NOT change them)
+- "script"          — {{"script": [spoken lines matching the structure]}}
+- "timeline"        — {{"timeline": [segments, see format below]}}
+- "captions"        — {{"captions": [{{"time": "0.5", "text": "ON SCREEN TEXT"}}]}}
+- "editing_notes"   — {{"editing_notes": ["concrete execution note", ...]}}
+
+Each timeline segment MUST have ALL these fields:
+{{
+  "start": "0.00",        ← cumulative seconds from 0
+  "end": "1.50",          ← start + avg_cut_duration
+  "text": "...",          ← spoken words
+  "visual": "footage_03.MOV - brief description of what to show",  ← MUST start with exact filename from the ALL AVAILABLE CLIPS list above
+  "caption": "...",       ← ON-SCREEN TEXT following caption_style
+  "motion": "...",        ← camera motion following zoom_pattern
+  "transition": "..."     ← transition INTO this segment following transition_type
+}}
+
+CRITICAL: The "visual" field MUST begin with the exact filename (e.g. "footage_07.MP4") from
+the ALL AVAILABLE CLIPS list. The renderer uses this to select the right clip. Distribute
+segments across MANY different clips — do not reuse the same clip more than 3 times.
 
 Output ONLY valid JSON. No markdown fences, no commentary.
 """

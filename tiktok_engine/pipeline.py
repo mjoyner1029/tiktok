@@ -4,6 +4,7 @@ from __future__ import annotations
 
 import json
 import logging
+from dataclasses import fields
 from typing import Any, Dict, List, Optional
 
 from .llm_client import LLMClient
@@ -75,7 +76,8 @@ class EditPlanPipeline:
             script_json=json.dumps(asdict(script), indent=2),
         )
         data = self.llm.chat_json(SYSTEM_PROMPT, prompt)
-        segments = [TimelineSegment(**seg) for seg in data.get("timeline", [])]
+        _ts_fields = {f.name for f in fields(TimelineSegment)}
+        segments = [TimelineSegment(**{k: v for k, v in seg.items() if k in _ts_fields}) for seg in data.get("timeline", [])]
         return Timeline(timeline=segments)
 
     def step4_captions(self, timeline: Timeline) -> Captions:
@@ -122,14 +124,34 @@ class EditPlanPipeline:
 
     # ── single-shot mode (one prompt, faster + cheaper) ──────────────────
 
-    def run_combined(self, references: List[str], raw_content: str) -> EditPlan:
-        """Execute in a single LLM call using the combined prompt."""
+    def run_combined(
+        self,
+        references: List[str],
+        raw_content: str,
+        style_dict: Optional[Dict[str, Any]] = None,
+    ) -> EditPlan:
+        """Execute in a single LLM call using the combined prompt.
+
+        If *style_dict* is provided (pre-extracted via Vision) it is embedded
+        as structured JSON so the LLM applies it directly instead of
+        re-deriving style from text descriptions.
+        """
         logger.info("Running combined single-shot generation")
+        if style_dict:
+            style_json = json.dumps(style_dict, indent=2)
+        else:
+            # Fallback: ask LLM to derive style from the text references
+            style_json = json.dumps({
+                "source": "derived from reference descriptions below",
+                "references": self._format_references(references),
+            }, indent=2)
+
         prompt = COMBINED_PROMPT.format(
-            references=self._format_references(references),
+            style_json=style_json,
             raw_content=raw_content,
         )
-        data = self.llm.chat_json(SYSTEM_PROMPT, prompt)
+        # 16 000 tokens: enough for 32+ segments with full field descriptions
+        data = self.llm.chat_json(SYSTEM_PROMPT, prompt, max_tokens=16000)
         return self._parse_combined(data)
 
     @staticmethod
@@ -142,8 +164,9 @@ class EditPlanPipeline:
 
         tl = data.get("timeline", {})
         raw_segs = tl.get("timeline", tl) if isinstance(tl, dict) else tl
+        _ts_fields = {f.name for f in fields(TimelineSegment)}
         segments = [
-            TimelineSegment(**seg) if isinstance(seg, dict) else seg
+            TimelineSegment(**{k: v for k, v in seg.items() if k in _ts_fields}) if isinstance(seg, dict) else seg
             for seg in (raw_segs if isinstance(raw_segs, list) else [])
         ]
         timeline = Timeline(timeline=segments)

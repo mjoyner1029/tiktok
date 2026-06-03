@@ -14,6 +14,7 @@ class Settings(BaseSettings):
         env_file=".env",
         env_file_encoding="utf-8",
         case_sensitive=False,
+        extra="ignore",
     )
 
     # ── app ──────────────────────────────────────────────────────────────
@@ -83,6 +84,14 @@ class Settings(BaseSettings):
     max_output_duration_sec: int = 180
     max_references_per_project: int = 5
     max_raw_clips_per_project: int = 10
+
+    # ── batch footage processing ──────────────────────────────────────────
+    max_input_clips: int = 100              # hard ceiling on how many clips we accept
+    max_segments_per_clip: int = 8          # max usable segments kept per source clip
+    max_selected_segments: int = 120        # global cap on segments fed to EditPlanner
+    target_duration_sec: float = 30.0       # target edit length in seconds
+    min_clip_variety: int = 3               # min distinct source clips in final edit
+    duplicate_similarity_threshold: float = 0.92  # cosine score above which two segs are near-identical
 
     # ── export ───────────────────────────────────────────────────────────
     export_width: int = 1080

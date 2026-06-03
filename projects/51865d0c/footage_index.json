@@ -1,0 +1,2215 @@
+[
+  {
+    "asset_id": "footage_00",
+    "path": "/var/folders/z9/43k359757f55k0ptrt9w6tnr0000gn/T/tiktok_start_d4jzx3bg/footage_00.mov",
+    "file_path": "/var/folders/z9/43k359757f55k0ptrt9w6tnr0000gn/T/tiktok_start_d4jzx3bg/footage_00.mov",
+    "duration_sec": 1.96,
+    "duration": 1.96,
+    "resolution": [
+      1080,
+      1920
+    ],
+    "usable_segments": [],
+    "moments": [],
+    "quality": {
+      "blur_score": 0.0,
+      "brightness": "normal",
+      "stability": "stable"
+    },
+    "has_speech": true,
+    "speech_segments": [
+      {
+        "start": 0.828,
+        "end": 1.963
+      }
+    ],
+    "scene_changes": []
+  },
+  {
+    "asset_id": "footage_01",
+    "path": "/var/folders/z9/43k359757f55k0ptrt9w6tnr0000gn/T/tiktok_start_d4jzx3bg/footage_01.MOV",
+    "file_path": "/var/folders/z9/43k359757f55k0ptrt9w6tnr0000gn/T/tiktok_start_d4jzx3bg/footage_01.MOV",
+    "duration_sec": 3.37,
+    "duration": 3.37,
+    "resolution": [
+      1920,
+      1080
+    ],
+    "usable_segments": [],
+    "moments": [],
+    "quality": {
+      "blur_score": 0.0,
+      "brightness": "normal",
+      "stability": "stable"
+    },
+    "has_speech": true,
+    "speech_segments": [
+      {
+        "start": 0.0,
+        "end": 3.367
+      }
+    ],
+    "scene_changes": []
+  },
+  {
+    "asset_id": "footage_02",
+    "path": "/var/folders/z9/43k359757f55k0ptrt9w6tnr0000gn/T/tiktok_start_d4jzx3bg/footage_02.MOV",
+    "file_path": "/var/folders/z9/43k359757f55k0ptrt9w6tnr0000gn/T/tiktok_start_d4jzx3bg/footage_02.MOV",
+    "duration_sec": 9.0,
+    "duration": 9.0,
+    "resolution": [
+      1920,
+      1080
+    ],
+    "usable_segments": [
+      {
+        "start": 1.5,
+        "end": 3.5,
+        "score": 9.6,
+        "reason": "high sharpness, speech present",
+        "tags": [
+          "sharp_detail",
+          "static",
+          "speech"
+        ],
+        "duration": 2.0,
+        "type": "sharp_detail",
+        "description": "footage_02 [1.5s\u20133.5s] sharp_detail",
+        "sharpness": 20.12,
+        "motion": 0.0,
+        "face_present": false,
+        "face_hash": null,
+        "dominant_color": [
+          187,
+          189,
+          189
+        ],
+        "intensity": 3.0,
+        "clip_quality": {
+          "blur_score": 0.031,
+          "brightness": "normal",
+          "stability": "stable"
+        }
+      },
+      {
+        "start": 3.0,
+        "end": 5.0,
+        "score": 9.6,
+        "reason": "high sharpness, speech present",
+        "tags": [
+          "sharp_detail",
+          "static",
+          "speech"
+        ],
+        "duration": 2.0,
+        "type": "sharp_detail",
+        "description": "footage_02 [3.0s\u20135.0s] sharp_detail",
+        "sharpness": 21.15,
+        "motion": 0.0,
+        "face_present": false,
+        "face_hash": null,
+        "dominant_color": [
+          175,
+          176,
+          175
+        ],
+        "intensity": 3.0,
+        "clip_quality": {
+          "blur_score": 0.031,
+          "brightness": "normal",
+          "stability": "stable"
+        }
+      },
+      {
+        "start": 4.5,
+        "end": 6.5,
+        "score": 9.6,
+        "reason": "high sharpness, speech present",
+        "tags": [
+          "sharp_detail",
+          "static",
+          "speech"
+        ],
+        "duration": 2.0,
+        "type": "sharp_detail",
+        "description": "footage_02 [4.5s\u20136.5s] sharp_detail",
+        "sharpness": 16.02,
+        "motion": 0.0,
+        "face_present": false,
+        "face_hash": null,
+        "dominant_color": [
+          179,
+          181,
+          183
+        ],
+        "intensity": 3.0,
+        "clip_quality": {
+          "blur_score": 0.031,
+          "brightness": "normal",
+          "stability": "stable"
+        }
+      },
+      {
+        "start": 6.0,
+        "end": 8.0,
+        "score": 8.19,
+        "reason": "high sharpness, speech present",
+        "tags": [
+          "sharp_detail",
+          "static",
+          "speech"
+        ],
+        "duration": 2.0,
+        "type": "sharp_detail",
+        "description": "footage_02 [6.0s\u20138.0s] sharp_detail",
+        "sharpness": 12.66,
+        "motion": 0.0,
+        "face_present": false,
+        "face_hash": null,
+        "dominant_color": [
+          191,
+          193,
+          194
+        ],
+        "intensity": 2.53,
+        "clip_quality": {
+          "blur_score": 0.031,
+          "brightness": "normal",
+          "stability": "stable"
+        }
+      }
+    ],
+    "moments": [
+      {
+        "start": 1.5,
+        "end": 3.5,
+        "score": 9.6,
+        "reason": "high sharpness, speech present",
+        "tags": [
+          "sharp_detail",
+          "static",
+          "speech"
+        ],
+        "duration": 2.0,
+        "type": "sharp_detail",
+        "description": "footage_02 [1.5s\u20133.5s] sharp_detail",
+        "sharpness": 20.12,
+        "motion": 0.0,
+        "face_present": false,
+        "face_hash": null,
+        "dominant_color": [
+          187,
+          189,
+          189
+        ],
+        "intensity": 3.0,
+        "clip_quality": {
+          "blur_score": 0.031,
+          "brightness": "normal",
+          "stability": "stable"
+        }
+      },
+      {
+        "start": 3.0,
+        "end": 5.0,
+        "score": 9.6,
+        "reason": "high sharpness, speech present",
+        "tags": [
+          "sharp_detail",
+          "static",
+          "speech"
+        ],
+        "duration": 2.0,
+        "type": "sharp_detail",
+        "description": "footage_02 [3.0s\u20135.0s] sharp_detail",
+        "sharpness": 21.15,
+        "motion": 0.0,
+        "face_present": false,
+        "face_hash": null,
+        "dominant_color": [
+          175,
+          176,
+          175
+        ],
+        "intensity": 3.0,
+        "clip_quality": {
+          "blur_score": 0.031,
+          "brightness": "normal",
+          "stability": "stable"
+        }
+      },
+      {
+        "start": 4.5,
+        "end": 6.5,
+        "score": 9.6,
+        "reason": "high sharpness, speech present",
+        "tags": [
+          "sharp_detail",
+          "static",
+          "speech"
+        ],
+        "duration": 2.0,
+        "type": "sharp_detail",
+        "description": "footage_02 [4.5s\u20136.5s] sharp_detail",
+        "sharpness": 16.02,
+        "motion": 0.0,
+        "face_present": false,
+        "face_hash": null,
+        "dominant_color": [
+          179,
+          181,
+          183
+        ],
+        "intensity": 3.0,
+        "clip_quality": {
+          "blur_score": 0.031,
+          "brightness": "normal",
+          "stability": "stable"
+        }
+      },
+      {
+        "start": 6.0,
+        "end": 8.0,
+        "score": 8.19,
+        "reason": "high sharpness, speech present",
+        "tags": [
+          "sharp_detail",
+          "static",
+          "speech"
+        ],
+        "duration": 2.0,
+        "type": "sharp_detail",
+        "description": "footage_02 [6.0s\u20138.0s] sharp_detail",
+        "sharpness": 12.66,
+        "motion": 0.0,
+        "face_present": false,
+        "face_hash": null,
+        "dominant_color": [
+          191,
+          193,
+          194
+        ],
+        "intensity": 2.53,
+        "clip_quality": {
+          "blur_score": 0.031,
+          "brightness": "normal",
+          "stability": "stable"
+        }
+      }
+    ],
+    "quality": {
+      "blur_score": 0.031,
+      "brightness": "normal",
+      "stability": "stable"
+    },
+    "has_speech": true,
+    "speech_segments": [
+      {
+        "start": 0.0,
+        "end": 8.998
+      }
+    ],
+    "scene_changes": []
+  },
+  {
+    "asset_id": "footage_03",
+    "path": "/var/folders/z9/43k359757f55k0ptrt9w6tnr0000gn/T/tiktok_start_d4jzx3bg/footage_03.MOV",
+    "file_path": "/var/folders/z9/43k359757f55k0ptrt9w6tnr0000gn/T/tiktok_start_d4jzx3bg/footage_03.MOV",
+    "duration_sec": 2.63,
+    "duration": 2.63,
+    "resolution": [
+      1920,
+      1080
+    ],
+    "usable_segments": [],
+    "moments": [],
+    "quality": {
+      "blur_score": 0.0,
+      "brightness": "normal",
+      "stability": "stable"
+    },
+    "has_speech": true,
+    "speech_segments": [
+      {
+        "start": 0.0,
+        "end": 2.632
+      }
+    ],
+    "scene_changes": []
+  },
+  {
+    "asset_id": "footage_04",
+    "path": "/var/folders/z9/43k359757f55k0ptrt9w6tnr0000gn/T/tiktok_start_d4jzx3bg/footage_04.MOV",
+    "file_path": "/var/folders/z9/43k359757f55k0ptrt9w6tnr0000gn/T/tiktok_start_d4jzx3bg/footage_04.MOV",
+    "duration_sec": 1.3,
+    "duration": 1.3,
+    "resolution": [
+      1920,
+      1080
+    ],
+    "usable_segments": [],
+    "moments": [],
+    "quality": {
+      "blur_score": 0.0,
+      "brightness": "normal",
+      "stability": "stable"
+    },
+    "has_speech": false,
+    "speech_segments": [],
+    "scene_changes": []
+  },
+  {
+    "asset_id": "footage_05",
+    "path": "/var/folders/z9/43k359757f55k0ptrt9w6tnr0000gn/T/tiktok_start_d4jzx3bg/footage_05.MOV",
+    "file_path": "/var/folders/z9/43k359757f55k0ptrt9w6tnr0000gn/T/tiktok_start_d4jzx3bg/footage_05.MOV",
+    "duration_sec": 2.2,
+    "duration": 2.2,
+    "resolution": [
+      1920,
+      1080
+    ],
+    "usable_segments": [],
+    "moments": [],
+    "quality": {
+      "blur_score": 0.0,
+      "brightness": "normal",
+      "stability": "stable"
+    },
+    "has_speech": true,
+    "speech_segments": [
+      {
+        "start": 0.0,
+        "end": 2.2
+      }
+    ],
+    "scene_changes": []
+  },
+  {
+    "asset_id": "footage_06",
+    "path": "/var/folders/z9/43k359757f55k0ptrt9w6tnr0000gn/T/tiktok_start_d4jzx3bg/footage_06.MOV",
+    "file_path": "/var/folders/z9/43k359757f55k0ptrt9w6tnr0000gn/T/tiktok_start_d4jzx3bg/footage_06.MOV",
+    "duration_sec": 6.43,
+    "duration": 6.43,
+    "resolution": [
+      1920,
+      1080
+    ],
+    "usable_segments": [],
+    "moments": [],
+    "quality": {
+      "blur_score": 0.0,
+      "brightness": "normal",
+      "stability": "stable"
+    },
+    "has_speech": true,
+    "speech_segments": [
+      {
+        "start": 0.0,
+        "end": 6.432
+      }
+    ],
+    "scene_changes": []
+  },
+  {
+    "asset_id": "footage_07",
+    "path": "/var/folders/z9/43k359757f55k0ptrt9w6tnr0000gn/T/tiktok_start_d4jzx3bg/footage_07.MOV",
+    "file_path": "/var/folders/z9/43k359757f55k0ptrt9w6tnr0000gn/T/tiktok_start_d4jzx3bg/footage_07.MOV",
+    "duration_sec": 1.06,
+    "duration": 1.06,
+    "resolution": [
+      1920,
+      1080
+    ],
+    "usable_segments": [],
+    "moments": [],
+    "quality": {
+      "blur_score": 0.0,
+      "brightness": "normal",
+      "stability": "stable"
+    },
+    "has_speech": true,
+    "speech_segments": [
+      {
+        "start": 0.0,
+        "end": 1.065
+      }
+    ],
+    "scene_changes": []
+  },
+  {
+    "asset_id": "footage_08",
+    "path": "/var/folders/z9/43k359757f55k0ptrt9w6tnr0000gn/T/tiktok_start_d4jzx3bg/footage_08.MOV",
+    "file_path": "/var/folders/z9/43k359757f55k0ptrt9w6tnr0000gn/T/tiktok_start_d4jzx3bg/footage_08.MOV",
+    "duration_sec": 6.03,
+    "duration": 6.03,
+    "resolution": [
+      1920,
+      1080
+    ],
+    "usable_segments": [
+      {
+        "start": 0.0,
+        "end": 2.0,
+        "score": 9.6,
+        "reason": "high sharpness, speech present",
+        "tags": [
+          "sharp_detail",
+          "static",
+          "speech"
+        ],
+        "duration": 2.0,
+        "type": "sharp_detail",
+        "description": "footage_08 [0.0s\u20132.0s] sharp_detail",
+        "sharpness": 24.97,
+        "motion": 0.0,
+        "face_present": false,
+        "face_hash": null,
+        "dominant_color": [
+          68,
+          59,
+          43
+        ],
+        "intensity": 3.0,
+        "clip_quality": {
+          "blur_score": 0.023,
+          "brightness": "underexposed",
+          "stability": "stable"
+        }
+      }
+    ],
+    "moments": [
+      {
+        "start": 0.0,
+        "end": 2.0,
+        "score": 9.6,
+        "reason": "high sharpness, speech present",
+        "tags": [
+          "sharp_detail",
+          "static",
+          "speech"
+        ],
+        "duration": 2.0,
+        "type": "sharp_detail",
+        "description": "footage_08 [0.0s\u20132.0s] sharp_detail",
+        "sharpness": 24.97,
+        "motion": 0.0,
+        "face_present": false,
+        "face_hash": null,
+        "dominant_color": [
+          68,
+          59,
+          43
+        ],
+        "intensity": 3.0,
+        "clip_quality": {
+          "blur_score": 0.023,
+          "brightness": "underexposed",
+          "stability": "stable"
+        }
+      }
+    ],
+    "quality": {
+      "blur_score": 0.023,
+      "brightness": "underexposed",
+      "stability": "stable"
+    },
+    "has_speech": true,
+    "speech_segments": [
+      {
+        "start": 0.0,
+        "end": 6.033
+      }
+    ],
+    "scene_changes": []
+  },
+  {
+    "asset_id": "footage_09",
+    "path": "/var/folders/z9/43k359757f55k0ptrt9w6tnr0000gn/T/tiktok_start_d4jzx3bg/footage_09.MOV",
+    "file_path": "/var/folders/z9/43k359757f55k0ptrt9w6tnr0000gn/T/tiktok_start_d4jzx3bg/footage_09.MOV",
+    "duration_sec": 2.13,
+    "duration": 2.13,
+    "resolution": [
+      1920,
+      1080
+    ],
+    "usable_segments": [],
+    "moments": [],
+    "quality": {
+      "blur_score": 0.0,
+      "brightness": "normal",
+      "stability": "stable"
+    },
+    "has_speech": true,
+    "speech_segments": [
+      {
+        "start": 0.0,
+        "end": 2.132
+      }
+    ],
+    "scene_changes": []
+  },
+  {
+    "asset_id": "footage_10",
+    "path": "/var/folders/z9/43k359757f55k0ptrt9w6tnr0000gn/T/tiktok_start_d4jzx3bg/footage_10.mov",
+    "file_path": "/var/folders/z9/43k359757f55k0ptrt9w6tnr0000gn/T/tiktok_start_d4jzx3bg/footage_10.mov",
+    "duration_sec": 3.08,
+    "duration": 3.08,
+    "resolution": [
+      1920,
+      1080
+    ],
+    "usable_segments": [],
+    "moments": [],
+    "quality": {
+      "blur_score": 0.0,
+      "brightness": "normal",
+      "stability": "stable"
+    },
+    "has_speech": true,
+    "speech_segments": [
+      {
+        "start": 0.0,
+        "end": 3.083
+      }
+    ],
+    "scene_changes": []
+  },
+  {
+    "asset_id": "footage_11",
+    "path": "/var/folders/z9/43k359757f55k0ptrt9w6tnr0000gn/T/tiktok_start_d4jzx3bg/footage_11.MOV",
+    "file_path": "/var/folders/z9/43k359757f55k0ptrt9w6tnr0000gn/T/tiktok_start_d4jzx3bg/footage_11.MOV",
+    "duration_sec": 1.6,
+    "duration": 1.6,
+    "resolution": [
+      1920,
+      1080
+    ],
+    "usable_segments": [],
+    "moments": [],
+    "quality": {
+      "blur_score": 0.0,
+      "brightness": "normal",
+      "stability": "stable"
+    },
+    "has_speech": true,
+    "speech_segments": [
+      {
+        "start": 0.0,
+        "end": 1.6
+      }
+    ],
+    "scene_changes": []
+  },
+  {
+    "asset_id": "footage_12",
+    "path": "/var/folders/z9/43k359757f55k0ptrt9w6tnr0000gn/T/tiktok_start_d4jzx3bg/footage_12.MOV",
+    "file_path": "/var/folders/z9/43k359757f55k0ptrt9w6tnr0000gn/T/tiktok_start_d4jzx3bg/footage_12.MOV",
+    "duration_sec": 1.67,
+    "duration": 1.67,
+    "resolution": [
+      1920,
+      1080
+    ],
+    "usable_segments": [],
+    "moments": [],
+    "quality": {
+      "blur_score": 0.0,
+      "brightness": "normal",
+      "stability": "stable"
+    },
+    "has_speech": true,
+    "speech_segments": [
+      {
+        "start": 0.0,
+        "end": 1.665
+      }
+    ],
+    "scene_changes": []
+  },
+  {
+    "asset_id": "footage_13",
+    "path": "/var/folders/z9/43k359757f55k0ptrt9w6tnr0000gn/T/tiktok_start_d4jzx3bg/footage_13.MOV",
+    "file_path": "/var/folders/z9/43k359757f55k0ptrt9w6tnr0000gn/T/tiktok_start_d4jzx3bg/footage_13.MOV",
+    "duration_sec": 1.47,
+    "duration": 1.47,
+    "resolution": [
+      1920,
+      1080
+    ],
+    "usable_segments": [],
+    "moments": [],
+    "quality": {
+      "blur_score": 0.0,
+      "brightness": "normal",
+      "stability": "stable"
+    },
+    "has_speech": true,
+    "speech_segments": [
+      {
+        "start": 0.0,
+        "end": 1.465
+      }
+    ],
+    "scene_changes": []
+  },
+  {
+    "asset_id": "footage_14",
+    "path": "/var/folders/z9/43k359757f55k0ptrt9w6tnr0000gn/T/tiktok_start_d4jzx3bg/footage_14.MOV",
+    "file_path": "/var/folders/z9/43k359757f55k0ptrt9w6tnr0000gn/T/tiktok_start_d4jzx3bg/footage_14.MOV",
+    "duration_sec": 4.7,
+    "duration": 4.7,
+    "resolution": [
+      1920,
+      1080
+    ],
+    "usable_segments": [],
+    "moments": [],
+    "quality": {
+      "blur_score": 0.0,
+      "brightness": "normal",
+      "stability": "stable"
+    },
+    "has_speech": true,
+    "speech_segments": [
+      {
+        "start": 0.0,
+        "end": 4.7
+      }
+    ],
+    "scene_changes": []
+  },
+  {
+    "asset_id": "footage_15",
+    "path": "/var/folders/z9/43k359757f55k0ptrt9w6tnr0000gn/T/tiktok_start_d4jzx3bg/footage_15.MOV",
+    "file_path": "/var/folders/z9/43k359757f55k0ptrt9w6tnr0000gn/T/tiktok_start_d4jzx3bg/footage_15.MOV",
+    "duration_sec": 3.37,
+    "duration": 3.37,
+    "resolution": [
+      1920,
+      1080
+    ],
+    "usable_segments": [],
+    "moments": [],
+    "quality": {
+      "blur_score": 0.059,
+      "brightness": "normal",
+      "stability": "stable"
+    },
+    "has_speech": true,
+    "speech_segments": [
+      {
+        "start": 0.0,
+        "end": 3.367
+      }
+    ],
+    "scene_changes": []
+  },
+  {
+    "asset_id": "footage_16",
+    "path": "/var/folders/z9/43k359757f55k0ptrt9w6tnr0000gn/T/tiktok_start_d4jzx3bg/footage_16.MOV",
+    "file_path": "/var/folders/z9/43k359757f55k0ptrt9w6tnr0000gn/T/tiktok_start_d4jzx3bg/footage_16.MOV",
+    "duration_sec": 3.73,
+    "duration": 3.73,
+    "resolution": [
+      1920,
+      1080
+    ],
+    "usable_segments": [],
+    "moments": [],
+    "quality": {
+      "blur_score": 0.0,
+      "brightness": "normal",
+      "stability": "stable"
+    },
+    "has_speech": true,
+    "speech_segments": [
+      {
+        "start": 0.0,
+        "end": 1.243
+      }
+    ],
+    "scene_changes": []
+  },
+  {
+    "asset_id": "footage_17",
+    "path": "/var/folders/z9/43k359757f55k0ptrt9w6tnr0000gn/T/tiktok_start_d4jzx3bg/footage_17.MOV",
+    "file_path": "/var/folders/z9/43k359757f55k0ptrt9w6tnr0000gn/T/tiktok_start_d4jzx3bg/footage_17.MOV",
+    "duration_sec": 3.17,
+    "duration": 3.17,
+    "resolution": [
+      1920,
+      1080
+    ],
+    "usable_segments": [],
+    "moments": [],
+    "quality": {
+      "blur_score": 0.0,
+      "brightness": "normal",
+      "stability": "stable"
+    },
+    "has_speech": true,
+    "speech_segments": [
+      {
+        "start": 0.0,
+        "end": 3.167
+      }
+    ],
+    "scene_changes": []
+  },
+  {
+    "asset_id": "footage_18",
+    "path": "/var/folders/z9/43k359757f55k0ptrt9w6tnr0000gn/T/tiktok_start_d4jzx3bg/footage_18.MOV",
+    "file_path": "/var/folders/z9/43k359757f55k0ptrt9w6tnr0000gn/T/tiktok_start_d4jzx3bg/footage_18.MOV",
+    "duration_sec": 2.37,
+    "duration": 2.37,
+    "resolution": [
+      1920,
+      1080
+    ],
+    "usable_segments": [],
+    "moments": [],
+    "quality": {
+      "blur_score": 0.0,
+      "brightness": "normal",
+      "stability": "stable"
+    },
+    "has_speech": true,
+    "speech_segments": [
+      {
+        "start": 0.0,
+        "end": 2.367
+      }
+    ],
+    "scene_changes": []
+  },
+  {
+    "asset_id": "footage_19",
+    "path": "/var/folders/z9/43k359757f55k0ptrt9w6tnr0000gn/T/tiktok_start_d4jzx3bg/footage_19.MOV",
+    "file_path": "/var/folders/z9/43k359757f55k0ptrt9w6tnr0000gn/T/tiktok_start_d4jzx3bg/footage_19.MOV",
+    "duration_sec": 7.57,
+    "duration": 7.57,
+    "resolution": [
+      1920,
+      1080
+    ],
+    "usable_segments": [],
+    "moments": [],
+    "quality": {
+      "blur_score": 0.0,
+      "brightness": "normal",
+      "stability": "stable"
+    },
+    "has_speech": true,
+    "speech_segments": [
+      {
+        "start": 0.0,
+        "end": 7.565
+      }
+    ],
+    "scene_changes": []
+  },
+  {
+    "asset_id": "footage_20",
+    "path": "/var/folders/z9/43k359757f55k0ptrt9w6tnr0000gn/T/tiktok_start_d4jzx3bg/footage_20.MOV",
+    "file_path": "/var/folders/z9/43k359757f55k0ptrt9w6tnr0000gn/T/tiktok_start_d4jzx3bg/footage_20.MOV",
+    "duration_sec": 2.13,
+    "duration": 2.13,
+    "resolution": [
+      1920,
+      1080
+    ],
+    "usable_segments": [],
+    "moments": [],
+    "quality": {
+      "blur_score": 0.0,
+      "brightness": "normal",
+      "stability": "stable"
+    },
+    "has_speech": true,
+    "speech_segments": [
+      {
+        "start": 0.0,
+        "end": 2.132
+      }
+    ],
+    "scene_changes": []
+  },
+  {
+    "asset_id": "footage_21",
+    "path": "/var/folders/z9/43k359757f55k0ptrt9w6tnr0000gn/T/tiktok_start_d4jzx3bg/footage_21.MOV",
+    "file_path": "/var/folders/z9/43k359757f55k0ptrt9w6tnr0000gn/T/tiktok_start_d4jzx3bg/footage_21.MOV",
+    "duration_sec": 3.83,
+    "duration": 3.83,
+    "resolution": [
+      1080,
+      1920
+    ],
+    "usable_segments": [],
+    "moments": [],
+    "quality": {
+      "blur_score": 0.0,
+      "brightness": "normal",
+      "stability": "stable"
+    },
+    "has_speech": true,
+    "speech_segments": [
+      {
+        "start": 0.0,
+        "end": 3.833
+      }
+    ],
+    "scene_changes": []
+  },
+  {
+    "asset_id": "footage_22",
+    "path": "/var/folders/z9/43k359757f55k0ptrt9w6tnr0000gn/T/tiktok_start_d4jzx3bg/footage_22.MOV",
+    "file_path": "/var/folders/z9/43k359757f55k0ptrt9w6tnr0000gn/T/tiktok_start_d4jzx3bg/footage_22.MOV",
+    "duration_sec": 1.07,
+    "duration": 1.07,
+    "resolution": [
+      1920,
+      1080
+    ],
+    "usable_segments": [],
+    "moments": [],
+    "quality": {
+      "blur_score": 0.0,
+      "brightness": "normal",
+      "stability": "stable"
+    },
+    "has_speech": true,
+    "speech_segments": [
+      {
+        "start": 0.0,
+        "end": 1.067
+      }
+    ],
+    "scene_changes": []
+  },
+  {
+    "asset_id": "footage_23",
+    "path": "/var/folders/z9/43k359757f55k0ptrt9w6tnr0000gn/T/tiktok_start_d4jzx3bg/footage_23.MOV",
+    "file_path": "/var/folders/z9/43k359757f55k0ptrt9w6tnr0000gn/T/tiktok_start_d4jzx3bg/footage_23.MOV",
+    "duration_sec": 1.6,
+    "duration": 1.6,
+    "resolution": [
+      1920,
+      1080
+    ],
+    "usable_segments": [],
+    "moments": [],
+    "quality": {
+      "blur_score": 0.0,
+      "brightness": "normal",
+      "stability": "stable"
+    },
+    "has_speech": true,
+    "speech_segments": [
+      {
+        "start": 0.0,
+        "end": 1.6
+      }
+    ],
+    "scene_changes": []
+  },
+  {
+    "asset_id": "footage_24",
+    "path": "/var/folders/z9/43k359757f55k0ptrt9w6tnr0000gn/T/tiktok_start_d4jzx3bg/footage_24.MOV",
+    "file_path": "/var/folders/z9/43k359757f55k0ptrt9w6tnr0000gn/T/tiktok_start_d4jzx3bg/footage_24.MOV",
+    "duration_sec": 2.13,
+    "duration": 2.13,
+    "resolution": [
+      1920,
+      1080
+    ],
+    "usable_segments": [],
+    "moments": [],
+    "quality": {
+      "blur_score": 0.076,
+      "brightness": "underexposed",
+      "stability": "stable"
+    },
+    "has_speech": true,
+    "speech_segments": [
+      {
+        "start": 0.0,
+        "end": 2.132
+      }
+    ],
+    "scene_changes": []
+  },
+  {
+    "asset_id": "footage_25",
+    "path": "/var/folders/z9/43k359757f55k0ptrt9w6tnr0000gn/T/tiktok_start_d4jzx3bg/footage_25.MOV",
+    "file_path": "/var/folders/z9/43k359757f55k0ptrt9w6tnr0000gn/T/tiktok_start_d4jzx3bg/footage_25.MOV",
+    "duration_sec": 4.53,
+    "duration": 4.53,
+    "resolution": [
+      1920,
+      1080
+    ],
+    "usable_segments": [],
+    "moments": [],
+    "quality": {
+      "blur_score": 0.0,
+      "brightness": "underexposed",
+      "stability": "stable"
+    },
+    "has_speech": true,
+    "speech_segments": [
+      {
+        "start": 0.0,
+        "end": 4.532
+      }
+    ],
+    "scene_changes": []
+  },
+  {
+    "asset_id": "footage_26",
+    "path": "/var/folders/z9/43k359757f55k0ptrt9w6tnr0000gn/T/tiktok_start_d4jzx3bg/footage_26.MOV",
+    "file_path": "/var/folders/z9/43k359757f55k0ptrt9w6tnr0000gn/T/tiktok_start_d4jzx3bg/footage_26.MOV",
+    "duration_sec": 1.73,
+    "duration": 1.73,
+    "resolution": [
+      1920,
+      1080
+    ],
+    "usable_segments": [],
+    "moments": [],
+    "quality": {
+      "blur_score": 0.0,
+      "brightness": "normal",
+      "stability": "stable"
+    },
+    "has_speech": true,
+    "speech_segments": [
+      {
+        "start": 0.0,
+        "end": 1.733
+      }
+    ],
+    "scene_changes": []
+  },
+  {
+    "asset_id": "footage_27",
+    "path": "/var/folders/z9/43k359757f55k0ptrt9w6tnr0000gn/T/tiktok_start_d4jzx3bg/footage_27.MOV",
+    "file_path": "/var/folders/z9/43k359757f55k0ptrt9w6tnr0000gn/T/tiktok_start_d4jzx3bg/footage_27.MOV",
+    "duration_sec": 7.03,
+    "duration": 7.03,
+    "resolution": [
+      1920,
+      1080
+    ],
+    "usable_segments": [],
+    "moments": [],
+    "quality": {
+      "blur_score": 0.0,
+      "brightness": "normal",
+      "stability": "stable"
+    },
+    "has_speech": true,
+    "speech_segments": [
+      {
+        "start": 0.0,
+        "end": 7.032
+      }
+    ],
+    "scene_changes": []
+  },
+  {
+    "asset_id": "footage_28",
+    "path": "/var/folders/z9/43k359757f55k0ptrt9w6tnr0000gn/T/tiktok_start_d4jzx3bg/footage_28.MOV",
+    "file_path": "/var/folders/z9/43k359757f55k0ptrt9w6tnr0000gn/T/tiktok_start_d4jzx3bg/footage_28.MOV",
+    "duration_sec": 2.37,
+    "duration": 2.37,
+    "resolution": [
+      1920,
+      1080
+    ],
+    "usable_segments": [],
+    "moments": [],
+    "quality": {
+      "blur_score": 0.0,
+      "brightness": "normal",
+      "stability": "stable"
+    },
+    "has_speech": true,
+    "speech_segments": [
+      {
+        "start": 0.0,
+        "end": 2.365
+      }
+    ],
+    "scene_changes": []
+  },
+  {
+    "asset_id": "footage_29",
+    "path": "/var/folders/z9/43k359757f55k0ptrt9w6tnr0000gn/T/tiktok_start_d4jzx3bg/footage_29.MOV",
+    "file_path": "/var/folders/z9/43k359757f55k0ptrt9w6tnr0000gn/T/tiktok_start_d4jzx3bg/footage_29.MOV",
+    "duration_sec": 4.2,
+    "duration": 4.2,
+    "resolution": [
+      1920,
+      1080
+    ],
+    "usable_segments": [],
+    "moments": [],
+    "quality": {
+      "blur_score": 0.0,
+      "brightness": "normal",
+      "stability": "stable"
+    },
+    "has_speech": true,
+    "speech_segments": [
+      {
+        "start": 0.0,
+        "end": 4.198
+      }
+    ],
+    "scene_changes": []
+  },
+  {
+    "asset_id": "footage_30",
+    "path": "/var/folders/z9/43k359757f55k0ptrt9w6tnr0000gn/T/tiktok_start_d4jzx3bg/footage_30.MOV",
+    "file_path": "/var/folders/z9/43k359757f55k0ptrt9w6tnr0000gn/T/tiktok_start_d4jzx3bg/footage_30.MOV",
+    "duration_sec": 4.26,
+    "duration": 4.26,
+    "resolution": [
+      1920,
+      1080
+    ],
+    "usable_segments": [],
+    "moments": [],
+    "quality": {
+      "blur_score": 0.0,
+      "brightness": "normal",
+      "stability": "stable"
+    },
+    "has_speech": true,
+    "speech_segments": [
+      {
+        "start": 0.0,
+        "end": 4.265
+      }
+    ],
+    "scene_changes": []
+  },
+  {
+    "asset_id": "footage_31",
+    "path": "/var/folders/z9/43k359757f55k0ptrt9w6tnr0000gn/T/tiktok_start_d4jzx3bg/footage_31.MOV",
+    "file_path": "/var/folders/z9/43k359757f55k0ptrt9w6tnr0000gn/T/tiktok_start_d4jzx3bg/footage_31.MOV",
+    "duration_sec": 3.5,
+    "duration": 3.5,
+    "resolution": [
+      1920,
+      1080
+    ],
+    "usable_segments": [],
+    "moments": [],
+    "quality": {
+      "blur_score": 0.0,
+      "brightness": "normal",
+      "stability": "stable"
+    },
+    "has_speech": true,
+    "speech_segments": [
+      {
+        "start": 0.0,
+        "end": 3.5
+      }
+    ],
+    "scene_changes": []
+  },
+  {
+    "asset_id": "footage_32",
+    "path": "/var/folders/z9/43k359757f55k0ptrt9w6tnr0000gn/T/tiktok_start_d4jzx3bg/footage_32.MOV",
+    "file_path": "/var/folders/z9/43k359757f55k0ptrt9w6tnr0000gn/T/tiktok_start_d4jzx3bg/footage_32.MOV",
+    "duration_sec": 2.63,
+    "duration": 2.63,
+    "resolution": [
+      1920,
+      1080
+    ],
+    "usable_segments": [],
+    "moments": [],
+    "quality": {
+      "blur_score": 0.0,
+      "brightness": "normal",
+      "stability": "stable"
+    },
+    "has_speech": true,
+    "speech_segments": [
+      {
+        "start": 0.0,
+        "end": 2.632
+      }
+    ],
+    "scene_changes": []
+  },
+  {
+    "asset_id": "footage_33",
+    "path": "/var/folders/z9/43k359757f55k0ptrt9w6tnr0000gn/T/tiktok_start_d4jzx3bg/footage_33.MOV",
+    "file_path": "/var/folders/z9/43k359757f55k0ptrt9w6tnr0000gn/T/tiktok_start_d4jzx3bg/footage_33.MOV",
+    "duration_sec": 2.87,
+    "duration": 2.87,
+    "resolution": [
+      1920,
+      1080
+    ],
+    "usable_segments": [],
+    "moments": [],
+    "quality": {
+      "blur_score": 0.0,
+      "brightness": "normal",
+      "stability": "stable"
+    },
+    "has_speech": true,
+    "speech_segments": [
+      {
+        "start": 0.0,
+        "end": 2.867
+      }
+    ],
+    "scene_changes": []
+  },
+  {
+    "asset_id": "footage_34",
+    "path": "/var/folders/z9/43k359757f55k0ptrt9w6tnr0000gn/T/tiktok_start_d4jzx3bg/footage_34.MOV",
+    "file_path": "/var/folders/z9/43k359757f55k0ptrt9w6tnr0000gn/T/tiktok_start_d4jzx3bg/footage_34.MOV",
+    "duration_sec": 2.77,
+    "duration": 2.77,
+    "resolution": [
+      1920,
+      1080
+    ],
+    "usable_segments": [],
+    "moments": [],
+    "quality": {
+      "blur_score": 0.0,
+      "brightness": "normal",
+      "stability": "stable"
+    },
+    "has_speech": true,
+    "speech_segments": [
+      {
+        "start": 0.0,
+        "end": 2.765
+      }
+    ],
+    "scene_changes": []
+  },
+  {
+    "asset_id": "footage_35",
+    "path": "/var/folders/z9/43k359757f55k0ptrt9w6tnr0000gn/T/tiktok_start_d4jzx3bg/footage_35.MOV",
+    "file_path": "/var/folders/z9/43k359757f55k0ptrt9w6tnr0000gn/T/tiktok_start_d4jzx3bg/footage_35.MOV",
+    "duration_sec": 6.63,
+    "duration": 6.63,
+    "resolution": [
+      1920,
+      1080
+    ],
+    "usable_segments": [],
+    "moments": [],
+    "quality": {
+      "blur_score": 0.0,
+      "brightness": "normal",
+      "stability": "stable"
+    },
+    "has_speech": true,
+    "speech_segments": [
+      {
+        "start": 0.0,
+        "end": 6.632
+      }
+    ],
+    "scene_changes": []
+  },
+  {
+    "asset_id": "footage_36",
+    "path": "/var/folders/z9/43k359757f55k0ptrt9w6tnr0000gn/T/tiktok_start_d4jzx3bg/footage_36.MOV",
+    "file_path": "/var/folders/z9/43k359757f55k0ptrt9w6tnr0000gn/T/tiktok_start_d4jzx3bg/footage_36.MOV",
+    "duration_sec": 3.0,
+    "duration": 3.0,
+    "resolution": [
+      1920,
+      1080
+    ],
+    "usable_segments": [],
+    "moments": [],
+    "quality": {
+      "blur_score": 0.0,
+      "brightness": "normal",
+      "stability": "stable"
+    },
+    "has_speech": true,
+    "speech_segments": [
+      {
+        "start": 0.0,
+        "end": 2.998
+      }
+    ],
+    "scene_changes": []
+  },
+  {
+    "asset_id": "footage_37",
+    "path": "/var/folders/z9/43k359757f55k0ptrt9w6tnr0000gn/T/tiktok_start_d4jzx3bg/footage_37.MOV",
+    "file_path": "/var/folders/z9/43k359757f55k0ptrt9w6tnr0000gn/T/tiktok_start_d4jzx3bg/footage_37.MOV",
+    "duration_sec": 7.8,
+    "duration": 7.8,
+    "resolution": [
+      1920,
+      1080
+    ],
+    "usable_segments": [],
+    "moments": [],
+    "quality": {
+      "blur_score": 0.0,
+      "brightness": "normal",
+      "stability": "stable"
+    },
+    "has_speech": true,
+    "speech_segments": [
+      {
+        "start": 0.0,
+        "end": 7.8
+      }
+    ],
+    "scene_changes": []
+  },
+  {
+    "asset_id": "footage_38",
+    "path": "/var/folders/z9/43k359757f55k0ptrt9w6tnr0000gn/T/tiktok_start_d4jzx3bg/footage_38.MOV",
+    "file_path": "/var/folders/z9/43k359757f55k0ptrt9w6tnr0000gn/T/tiktok_start_d4jzx3bg/footage_38.MOV",
+    "duration_sec": 2.73,
+    "duration": 2.73,
+    "resolution": [
+      1920,
+      1080
+    ],
+    "usable_segments": [],
+    "moments": [],
+    "quality": {
+      "blur_score": 0.0,
+      "brightness": "normal",
+      "stability": "stable"
+    },
+    "has_speech": true,
+    "speech_segments": [
+      {
+        "start": 0.0,
+        "end": 2.732
+      }
+    ],
+    "scene_changes": []
+  },
+  {
+    "asset_id": "footage_39",
+    "path": "/var/folders/z9/43k359757f55k0ptrt9w6tnr0000gn/T/tiktok_start_d4jzx3bg/footage_39.MOV",
+    "file_path": "/var/folders/z9/43k359757f55k0ptrt9w6tnr0000gn/T/tiktok_start_d4jzx3bg/footage_39.MOV",
+    "duration_sec": 2.3,
+    "duration": 2.3,
+    "resolution": [
+      1920,
+      1080
+    ],
+    "usable_segments": [],
+    "moments": [],
+    "quality": {
+      "blur_score": 0.0,
+      "brightness": "normal",
+      "stability": "stable"
+    },
+    "has_speech": true,
+    "speech_segments": [
+      {
+        "start": 0.0,
+        "end": 2.3
+      }
+    ],
+    "scene_changes": []
+  },
+  {
+    "asset_id": "footage_40",
+    "path": "/var/folders/z9/43k359757f55k0ptrt9w6tnr0000gn/T/tiktok_start_d4jzx3bg/footage_40.MOV",
+    "file_path": "/var/folders/z9/43k359757f55k0ptrt9w6tnr0000gn/T/tiktok_start_d4jzx3bg/footage_40.MOV",
+    "duration_sec": 3.8,
+    "duration": 3.8,
+    "resolution": [
+      1920,
+      1080
+    ],
+    "usable_segments": [
+      {
+        "start": 0.0,
+        "end": 2.0,
+        "score": 9.6,
+        "reason": "high sharpness, speech present",
+        "tags": [
+          "sharp_detail",
+          "static",
+          "speech"
+        ],
+        "duration": 2.0,
+        "type": "sharp_detail",
+        "description": "footage_40 [0.0s\u20132.0s] sharp_detail",
+        "sharpness": 20.71,
+        "motion": 0.0,
+        "face_present": false,
+        "face_hash": null,
+        "dominant_color": [
+          60,
+          55,
+          45
+        ],
+        "intensity": 3.0,
+        "clip_quality": {
+          "blur_score": 0.0,
+          "brightness": "dark",
+          "stability": "stable"
+        }
+      }
+    ],
+    "moments": [
+      {
+        "start": 0.0,
+        "end": 2.0,
+        "score": 9.6,
+        "reason": "high sharpness, speech present",
+        "tags": [
+          "sharp_detail",
+          "static",
+          "speech"
+        ],
+        "duration": 2.0,
+        "type": "sharp_detail",
+        "description": "footage_40 [0.0s\u20132.0s] sharp_detail",
+        "sharpness": 20.71,
+        "motion": 0.0,
+        "face_present": false,
+        "face_hash": null,
+        "dominant_color": [
+          60,
+          55,
+          45
+        ],
+        "intensity": 3.0,
+        "clip_quality": {
+          "blur_score": 0.0,
+          "brightness": "dark",
+          "stability": "stable"
+        }
+      }
+    ],
+    "quality": {
+      "blur_score": 0.0,
+      "brightness": "dark",
+      "stability": "stable"
+    },
+    "has_speech": true,
+    "speech_segments": [
+      {
+        "start": 0.0,
+        "end": 3.798
+      }
+    ],
+    "scene_changes": []
+  },
+  {
+    "asset_id": "footage_41",
+    "path": "/var/folders/z9/43k359757f55k0ptrt9w6tnr0000gn/T/tiktok_start_d4jzx3bg/footage_41.MOV",
+    "file_path": "/var/folders/z9/43k359757f55k0ptrt9w6tnr0000gn/T/tiktok_start_d4jzx3bg/footage_41.MOV",
+    "duration_sec": 4.53,
+    "duration": 4.53,
+    "resolution": [
+      1920,
+      1080
+    ],
+    "usable_segments": [],
+    "moments": [],
+    "quality": {
+      "blur_score": 0.0,
+      "brightness": "normal",
+      "stability": "stable"
+    },
+    "has_speech": true,
+    "speech_segments": [
+      {
+        "start": 0.0,
+        "end": 4.532
+      }
+    ],
+    "scene_changes": []
+  },
+  {
+    "asset_id": "footage_42",
+    "path": "/var/folders/z9/43k359757f55k0ptrt9w6tnr0000gn/T/tiktok_start_d4jzx3bg/footage_42.MOV",
+    "file_path": "/var/folders/z9/43k359757f55k0ptrt9w6tnr0000gn/T/tiktok_start_d4jzx3bg/footage_42.MOV",
+    "duration_sec": 7.83,
+    "duration": 7.83,
+    "resolution": [
+      1080,
+      1920
+    ],
+    "usable_segments": [],
+    "moments": [],
+    "quality": {
+      "blur_score": 0.0,
+      "brightness": "normal",
+      "stability": "stable"
+    },
+    "has_speech": true,
+    "speech_segments": [
+      {
+        "start": 0.0,
+        "end": 7.835
+      }
+    ],
+    "scene_changes": []
+  },
+  {
+    "asset_id": "footage_43",
+    "path": "/var/folders/z9/43k359757f55k0ptrt9w6tnr0000gn/T/tiktok_start_d4jzx3bg/footage_43.MOV",
+    "file_path": "/var/folders/z9/43k359757f55k0ptrt9w6tnr0000gn/T/tiktok_start_d4jzx3bg/footage_43.MOV",
+    "duration_sec": 10.83,
+    "duration": 10.83,
+    "resolution": [
+      1920,
+      1080
+    ],
+    "usable_segments": [],
+    "moments": [],
+    "quality": {
+      "blur_score": 0.0,
+      "brightness": "normal",
+      "stability": "stable"
+    },
+    "has_speech": true,
+    "speech_segments": [
+      {
+        "start": 0.0,
+        "end": 10.833
+      }
+    ],
+    "scene_changes": []
+  },
+  {
+    "asset_id": "footage_44",
+    "path": "/var/folders/z9/43k359757f55k0ptrt9w6tnr0000gn/T/tiktok_start_d4jzx3bg/footage_44.MOV",
+    "file_path": "/var/folders/z9/43k359757f55k0ptrt9w6tnr0000gn/T/tiktok_start_d4jzx3bg/footage_44.MOV",
+    "duration_sec": 3.43,
+    "duration": 3.43,
+    "resolution": [
+      1920,
+      1080
+    ],
+    "usable_segments": [],
+    "moments": [],
+    "quality": {
+      "blur_score": 0.0,
+      "brightness": "normal",
+      "stability": "stable"
+    },
+    "has_speech": true,
+    "speech_segments": [
+      {
+        "start": 0.0,
+        "end": 3.433
+      }
+    ],
+    "scene_changes": []
+  },
+  {
+    "asset_id": "footage_45",
+    "path": "/var/folders/z9/43k359757f55k0ptrt9w6tnr0000gn/T/tiktok_start_d4jzx3bg/footage_45.MOV",
+    "file_path": "/var/folders/z9/43k359757f55k0ptrt9w6tnr0000gn/T/tiktok_start_d4jzx3bg/footage_45.MOV",
+    "duration_sec": 8.43,
+    "duration": 8.43,
+    "resolution": [
+      1920,
+      1080
+    ],
+    "usable_segments": [],
+    "moments": [],
+    "quality": {
+      "blur_score": 0.0,
+      "brightness": "normal",
+      "stability": "stable"
+    },
+    "has_speech": true,
+    "speech_segments": [
+      {
+        "start": 0.0,
+        "end": 8.432
+      }
+    ],
+    "scene_changes": []
+  },
+  {
+    "asset_id": "footage_46",
+    "path": "/var/folders/z9/43k359757f55k0ptrt9w6tnr0000gn/T/tiktok_start_d4jzx3bg/footage_46.MOV",
+    "file_path": "/var/folders/z9/43k359757f55k0ptrt9w6tnr0000gn/T/tiktok_start_d4jzx3bg/footage_46.MOV",
+    "duration_sec": 2.77,
+    "duration": 2.77,
+    "resolution": [
+      1920,
+      1080
+    ],
+    "usable_segments": [],
+    "moments": [],
+    "quality": {
+      "blur_score": 0.0,
+      "brightness": "normal",
+      "stability": "stable"
+    },
+    "has_speech": true,
+    "speech_segments": [
+      {
+        "start": 0.0,
+        "end": 2.767
+      }
+    ],
+    "scene_changes": []
+  },
+  {
+    "asset_id": "footage_47",
+    "path": "/var/folders/z9/43k359757f55k0ptrt9w6tnr0000gn/T/tiktok_start_d4jzx3bg/footage_47.mov",
+    "file_path": "/var/folders/z9/43k359757f55k0ptrt9w6tnr0000gn/T/tiktok_start_d4jzx3bg/footage_47.mov",
+    "duration_sec": 1.98,
+    "duration": 1.98,
+    "resolution": [
+      1920,
+      1080
+    ],
+    "usable_segments": [],
+    "moments": [],
+    "quality": {
+      "blur_score": 0.0,
+      "brightness": "normal",
+      "stability": "stable"
+    },
+    "has_speech": true,
+    "speech_segments": [
+      {
+        "start": 0.0,
+        "end": 1.982
+      }
+    ],
+    "scene_changes": []
+  },
+  {
+    "asset_id": "__batch_report__",
+    "total_clips": 48,
+    "total_segments_before_dedup": 107,
+    "total_segments_after_cap": 107,
+    "total_segments_after_dedup": 6,
+    "total_selected": 6,
+    "rejection_log": [
+      {
+        "asset_id": "footage_01",
+        "start": 0.0,
+        "score": 9.33,
+        "reason": "near-duplicate of footage_00@0.00s (sim=0.993\u22650.92)"
+      },
+      {
+        "asset_id": "footage_02",
+        "start": 0.0,
+        "score": 9.31,
+        "reason": "near-duplicate of footage_00@0.00s (sim=0.983\u22650.92)"
+      },
+      {
+        "asset_id": "footage_00",
+        "start": 0.0,
+        "score": 9.59,
+        "reason": "near-duplicate of footage_02@1.50s (sim=0.994\u22650.92); replaced by higher-scored segment"
+      },
+      {
+        "asset_id": "footage_03",
+        "start": 0.0,
+        "score": 9.47,
+        "reason": "near-duplicate of footage_02@1.50s (sim=0.976\u22650.92)"
+      },
+      {
+        "asset_id": "footage_04",
+        "start": 0.0,
+        "score": 9.46,
+        "reason": "near-duplicate of footage_02@1.50s (sim=0.987\u22650.92)"
+      },
+      {
+        "asset_id": "footage_05",
+        "start": 0.0,
+        "score": 9.56,
+        "reason": "near-duplicate of footage_02@1.50s (sim=0.992\u22650.92)"
+      },
+      {
+        "asset_id": "footage_06",
+        "start": 0.0,
+        "score": 9.6,
+        "reason": "near-duplicate of footage_02@1.50s (sim=0.994\u22650.92)"
+      },
+      {
+        "asset_id": "footage_06",
+        "start": 1.5,
+        "score": 9.6,
+        "reason": "near-duplicate of footage_02@1.50s (sim=0.974\u22650.92)"
+      },
+      {
+        "asset_id": "footage_06",
+        "start": 3.0,
+        "score": 9.6,
+        "reason": "near-duplicate of footage_02@1.50s (sim=0.982\u22650.92)"
+      },
+      {
+        "asset_id": "footage_06",
+        "start": 4.5,
+        "score": 9.59,
+        "reason": "near-duplicate of footage_02@1.50s (sim=0.986\u22650.92)"
+      },
+      {
+        "asset_id": "footage_06",
+        "start": 6.0,
+        "score": 9.29,
+        "reason": "near-duplicate of footage_02@1.50s (sim=0.984\u22650.92)"
+      },
+      {
+        "asset_id": "footage_07",
+        "start": 0.0,
+        "score": 9.41,
+        "reason": "near-duplicate of footage_02@1.50s (sim=0.982\u22650.92)"
+      },
+      {
+        "asset_id": "footage_08",
+        "start": 1.5,
+        "score": 8.77,
+        "reason": "near-duplicate of footage_02@1.50s (sim=0.922\u22650.92)"
+      },
+      {
+        "asset_id": "footage_08",
+        "start": 3.0,
+        "score": 9.6,
+        "reason": "near-duplicate of footage_02@1.50s (sim=0.920\u22650.92)"
+      },
+      {
+        "asset_id": "footage_08",
+        "start": 4.5,
+        "score": 9.51,
+        "reason": "near-duplicate of footage_02@1.50s (sim=0.920\u22650.92)"
+      },
+      {
+        "asset_id": "footage_09",
+        "start": 0.0,
+        "score": 9.57,
+        "reason": "near-duplicate of footage_02@1.50s (sim=0.962\u22650.92)"
+      },
+      {
+        "asset_id": "footage_10",
+        "start": 0.0,
+        "score": 9.38,
+        "reason": "near-duplicate of footage_02@1.50s (sim=0.984\u22650.92)"
+      },
+      {
+        "asset_id": "footage_11",
+        "start": 0.0,
+        "score": 9.52,
+        "reason": "near-duplicate of footage_02@1.50s (sim=0.998\u22650.92)"
+      },
+      {
+        "asset_id": "footage_12",
+        "start": 0.0,
+        "score": 9.53,
+        "reason": "near-duplicate of footage_02@1.50s (sim=0.983\u22650.92)"
+      },
+      {
+        "asset_id": "footage_13",
+        "start": 0.0,
+        "score": 9.49,
+        "reason": "near-duplicate of footage_02@1.50s (sim=1.000\u22650.92)"
+      },
+      {
+        "asset_id": "footage_14",
+        "start": 0.0,
+        "score": 9.6,
+        "reason": "near-duplicate of footage_02@1.50s (sim=0.998\u22650.92)"
+      },
+      {
+        "asset_id": "footage_14",
+        "start": 1.5,
+        "score": 9.6,
+        "reason": "near-duplicate of footage_02@1.50s (sim=0.986\u22650.92)"
+      },
+      {
+        "asset_id": "footage_14",
+        "start": 3.0,
+        "score": 9.54,
+        "reason": "near-duplicate of footage_02@1.50s (sim=0.988\u22650.92)"
+      },
+      {
+        "asset_id": "footage_15",
+        "start": 0.0,
+        "score": 8.79,
+        "reason": "near-duplicate of footage_02@1.50s (sim=0.998\u22650.92)"
+      },
+      {
+        "asset_id": "footage_16",
+        "start": 0.0,
+        "score": 9.6,
+        "reason": "near-duplicate of footage_02@1.50s (sim=0.996\u22650.92)"
+      },
+      {
+        "asset_id": "footage_16",
+        "start": 1.5,
+        "score": 9.6,
+        "reason": "near-duplicate of footage_02@1.50s (sim=1.000\u22650.92)"
+      },
+      {
+        "asset_id": "footage_16",
+        "start": 3.0,
+        "score": 9.35,
+        "reason": "near-duplicate of footage_02@1.50s (sim=0.999\u22650.92)"
+      },
+      {
+        "asset_id": "footage_17",
+        "start": 0.0,
+        "score": 9.37,
+        "reason": "near-duplicate of footage_02@1.50s (sim=0.968\u22650.92)"
+      },
+      {
+        "asset_id": "footage_18",
+        "start": 0.0,
+        "score": 9.53,
+        "reason": "near-duplicate of footage_02@1.50s (sim=0.930\u22650.92)"
+      },
+      {
+        "asset_id": "footage_19",
+        "start": 0.0,
+        "score": 9.6,
+        "reason": "near-duplicate of footage_02@1.50s (sim=0.990\u22650.92)"
+      },
+      {
+        "asset_id": "footage_19",
+        "start": 1.5,
+        "score": 9.6,
+        "reason": "near-duplicate of footage_02@1.50s (sim=0.991\u22650.92)"
+      },
+      {
+        "asset_id": "footage_19",
+        "start": 3.0,
+        "score": 9.6,
+        "reason": "near-duplicate of footage_02@1.50s (sim=0.985\u22650.92)"
+      },
+      {
+        "asset_id": "footage_19",
+        "start": 4.5,
+        "score": 9.6,
+        "reason": "near-duplicate of footage_02@1.50s (sim=0.990\u22650.92)"
+      },
+      {
+        "asset_id": "footage_19",
+        "start": 6.0,
+        "score": 9.51,
+        "reason": "near-duplicate of footage_02@1.50s (sim=0.990\u22650.92)"
+      },
+      {
+        "asset_id": "footage_20",
+        "start": 0.0,
+        "score": 9.57,
+        "reason": "near-duplicate of footage_02@1.50s (sim=0.990\u22650.92)"
+      },
+      {
+        "asset_id": "footage_21",
+        "start": 0.0,
+        "score": 9.6,
+        "reason": "near-duplicate of footage_02@1.50s (sim=0.942\u22650.92)"
+      },
+      {
+        "asset_id": "footage_21",
+        "start": 1.5,
+        "score": 9.6,
+        "reason": "near-duplicate of footage_02@1.50s (sim=0.951\u22650.92)"
+      },
+      {
+        "asset_id": "footage_21",
+        "start": 3.0,
+        "score": 9.37,
+        "reason": "near-duplicate of footage_02@3.00s (sim=0.930\u22650.92)"
+      },
+      {
+        "asset_id": "footage_22",
+        "start": 0.0,
+        "score": 9.41,
+        "reason": "near-duplicate of footage_02@1.50s (sim=0.981\u22650.92)"
+      },
+      {
+        "asset_id": "footage_23",
+        "start": 0.0,
+        "score": 9.52,
+        "reason": "near-duplicate of footage_02@1.50s (sim=0.983\u22650.92)"
+      },
+      {
+        "asset_id": "footage_24",
+        "start": 0.0,
+        "score": 8.89,
+        "reason": "near-duplicate of footage_02@1.50s (sim=0.932\u22650.92)"
+      },
+      {
+        "asset_id": "footage_25",
+        "start": 0.0,
+        "score": 9.6,
+        "reason": "near-duplicate of footage_08@0.00s (sim=1.000\u22650.92)"
+      },
+      {
+        "asset_id": "footage_25",
+        "start": 1.5,
+        "score": 9.6,
+        "reason": "near-duplicate of footage_08@0.00s (sim=0.999\u22650.92)"
+      },
+      {
+        "asset_id": "footage_02",
+        "start": 7.5,
+        "score": 9.5,
+        "reason": "near-duplicate of footage_25@3.00s (sim=0.924\u22650.92); replaced by higher-scored segment"
+      },
+      {
+        "asset_id": "footage_26",
+        "start": 0.0,
+        "score": 9.55,
+        "reason": "near-duplicate of footage_02@1.50s (sim=0.991\u22650.92)"
+      },
+      {
+        "asset_id": "footage_27",
+        "start": 0.0,
+        "score": 9.6,
+        "reason": "near-duplicate of footage_02@1.50s (sim=0.960\u22650.92)"
+      },
+      {
+        "asset_id": "footage_27",
+        "start": 1.5,
+        "score": 9.6,
+        "reason": "near-duplicate of footage_02@1.50s (sim=0.978\u22650.92)"
+      },
+      {
+        "asset_id": "footage_27",
+        "start": 3.0,
+        "score": 9.6,
+        "reason": "near-duplicate of footage_02@1.50s (sim=0.983\u22650.92)"
+      },
+      {
+        "asset_id": "footage_27",
+        "start": 4.5,
+        "score": 9.6,
+        "reason": "near-duplicate of footage_02@1.50s (sim=0.991\u22650.92)"
+      },
+      {
+        "asset_id": "footage_27",
+        "start": 6.0,
+        "score": 9.41,
+        "reason": "near-duplicate of footage_02@1.50s (sim=0.995\u22650.92)"
+      },
+      {
+        "asset_id": "footage_28",
+        "start": 0.0,
+        "score": 9.53,
+        "reason": "near-duplicate of footage_02@1.50s (sim=0.982\u22650.92)"
+      },
+      {
+        "asset_id": "footage_29",
+        "start": 0.0,
+        "score": 9.6,
+        "reason": "near-duplicate of footage_02@1.50s (sim=0.981\u22650.92)"
+      },
+      {
+        "asset_id": "footage_29",
+        "start": 1.5,
+        "score": 9.6,
+        "reason": "near-duplicate of footage_02@1.50s (sim=0.989\u22650.92)"
+      },
+      {
+        "asset_id": "footage_29",
+        "start": 3.0,
+        "score": 9.44,
+        "reason": "near-duplicate of footage_02@1.50s (sim=0.988\u22650.92)"
+      },
+      {
+        "asset_id": "footage_30",
+        "start": 0.0,
+        "score": 9.6,
+        "reason": "near-duplicate of footage_02@1.50s (sim=0.984\u22650.92)"
+      },
+      {
+        "asset_id": "footage_30",
+        "start": 1.5,
+        "score": 9.6,
+        "reason": "near-duplicate of footage_02@1.50s (sim=0.984\u22650.92)"
+      },
+      {
+        "asset_id": "footage_30",
+        "start": 3.0,
+        "score": 9.45,
+        "reason": "near-duplicate of footage_02@1.50s (sim=0.984\u22650.92)"
+      },
+      {
+        "asset_id": "footage_31",
+        "start": 0.0,
+        "score": 9.3,
+        "reason": "near-duplicate of footage_02@1.50s (sim=0.969\u22650.92)"
+      },
+      {
+        "asset_id": "footage_32",
+        "start": 0.0,
+        "score": 9.47,
+        "reason": "near-duplicate of footage_02@1.50s (sim=0.985\u22650.92)"
+      },
+      {
+        "asset_id": "footage_33",
+        "start": 0.0,
+        "score": 9.43,
+        "reason": "near-duplicate of footage_02@1.50s (sim=0.989\u22650.92)"
+      },
+      {
+        "asset_id": "footage_34",
+        "start": 0.0,
+        "score": 9.45,
+        "reason": "near-duplicate of footage_02@1.50s (sim=0.995\u22650.92)"
+      },
+      {
+        "asset_id": "footage_35",
+        "start": 0.0,
+        "score": 9.6,
+        "reason": "near-duplicate of footage_02@1.50s (sim=0.986\u22650.92)"
+      },
+      {
+        "asset_id": "footage_35",
+        "start": 1.5,
+        "score": 9.6,
+        "reason": "near-duplicate of footage_02@1.50s (sim=0.987\u22650.92)"
+      },
+      {
+        "asset_id": "footage_35",
+        "start": 3.0,
+        "score": 9.6,
+        "reason": "near-duplicate of footage_02@1.50s (sim=0.990\u22650.92)"
+      },
+      {
+        "asset_id": "footage_35",
+        "start": 4.5,
+        "score": 9.6,
+        "reason": "near-duplicate of footage_02@1.50s (sim=0.992\u22650.92)"
+      },
+      {
+        "asset_id": "footage_35",
+        "start": 6.0,
+        "score": 9.33,
+        "reason": "near-duplicate of footage_02@1.50s (sim=0.992\u22650.92)"
+      },
+      {
+        "asset_id": "footage_36",
+        "start": 0.0,
+        "score": 9.4,
+        "reason": "near-duplicate of footage_02@1.50s (sim=0.994\u22650.92)"
+      },
+      {
+        "asset_id": "footage_37",
+        "start": 0.0,
+        "score": 9.6,
+        "reason": "near-duplicate of footage_02@1.50s (sim=0.997\u22650.92)"
+      },
+      {
+        "asset_id": "footage_37",
+        "start": 1.5,
+        "score": 9.6,
+        "reason": "near-duplicate of footage_02@1.50s (sim=0.999\u22650.92)"
+      },
+      {
+        "asset_id": "footage_37",
+        "start": 3.0,
+        "score": 9.6,
+        "reason": "near-duplicate of footage_02@1.50s (sim=0.997\u22650.92)"
+      },
+      {
+        "asset_id": "footage_37",
+        "start": 4.5,
+        "score": 9.6,
+        "reason": "near-duplicate of footage_02@1.50s (sim=0.996\u22650.92)"
+      },
+      {
+        "asset_id": "footage_37",
+        "start": 6.0,
+        "score": 9.56,
+        "reason": "near-duplicate of footage_02@1.50s (sim=0.994\u22650.92)"
+      },
+      {
+        "asset_id": "footage_38",
+        "start": 0.0,
+        "score": 9.45,
+        "reason": "near-duplicate of footage_02@1.50s (sim=0.975\u22650.92)"
+      },
+      {
+        "asset_id": "footage_39",
+        "start": 0.0,
+        "score": 9.54,
+        "reason": "near-duplicate of footage_02@1.50s (sim=0.988\u22650.92)"
+      },
+      {
+        "asset_id": "footage_25",
+        "start": 3.0,
+        "score": 9.51,
+        "reason": "near-duplicate of footage_40@0.00s (sim=0.997\u22650.92); replaced by higher-scored segment"
+      },
+      {
+        "asset_id": "footage_40",
+        "start": 1.5,
+        "score": 9.6,
+        "reason": "near-duplicate of footage_08@0.00s (sim=1.000\u22650.92)"
+      },
+      {
+        "asset_id": "footage_40",
+        "start": 3.0,
+        "score": 9.36,
+        "reason": "near-duplicate of footage_08@0.00s (sim=1.000\u22650.92)"
+      },
+      {
+        "asset_id": "footage_41",
+        "start": 0.0,
+        "score": 9.6,
+        "reason": "near-duplicate of footage_02@1.50s (sim=0.986\u22650.92)"
+      },
+      {
+        "asset_id": "footage_41",
+        "start": 1.5,
+        "score": 9.6,
+        "reason": "near-duplicate of footage_02@1.50s (sim=0.989\u22650.92)"
+      },
+      {
+        "asset_id": "footage_41",
+        "start": 3.0,
+        "score": 9.51,
+        "reason": "near-duplicate of footage_02@1.50s (sim=0.995\u22650.92)"
+      },
+      {
+        "asset_id": "footage_42",
+        "start": 0.0,
+        "score": 9.6,
+        "reason": "near-duplicate of footage_02@1.50s (sim=0.999\u22650.92)"
+      },
+      {
+        "asset_id": "footage_42",
+        "start": 1.5,
+        "score": 9.6,
+        "reason": "near-duplicate of footage_02@1.50s (sim=0.998\u22650.92)"
+      },
+      {
+        "asset_id": "footage_42",
+        "start": 3.0,
+        "score": 9.6,
+        "reason": "near-duplicate of footage_02@1.50s (sim=0.999\u22650.92)"
+      },
+      {
+        "asset_id": "footage_42",
+        "start": 4.5,
+        "score": 9.6,
+        "reason": "near-duplicate of footage_02@1.50s (sim=1.000\u22650.92)"
+      },
+      {
+        "asset_id": "footage_42",
+        "start": 6.0,
+        "score": 9.57,
+        "reason": "near-duplicate of footage_02@1.50s (sim=1.000\u22650.92)"
+      },
+      {
+        "asset_id": "footage_43",
+        "start": 0.0,
+        "score": 9.6,
+        "reason": "near-duplicate of footage_02@1.50s (sim=0.992\u22650.92)"
+      },
+      {
+        "asset_id": "footage_43",
+        "start": 1.5,
+        "score": 9.6,
+        "reason": "near-duplicate of footage_02@1.50s (sim=0.997\u22650.92)"
+      },
+      {
+        "asset_id": "footage_43",
+        "start": 3.0,
+        "score": 9.6,
+        "reason": "near-duplicate of footage_02@1.50s (sim=0.997\u22650.92)"
+      },
+      {
+        "asset_id": "footage_43",
+        "start": 4.5,
+        "score": 9.6,
+        "reason": "near-duplicate of footage_02@1.50s (sim=0.989\u22650.92)"
+      },
+      {
+        "asset_id": "footage_43",
+        "start": 6.0,
+        "score": 9.6,
+        "reason": "near-duplicate of footage_02@1.50s (sim=0.983\u22650.92)"
+      },
+      {
+        "asset_id": "footage_43",
+        "start": 7.5,
+        "score": 9.6,
+        "reason": "near-duplicate of footage_02@1.50s (sim=0.999\u22650.92)"
+      },
+      {
+        "asset_id": "footage_43",
+        "start": 9.0,
+        "score": 9.57,
+        "reason": "near-duplicate of footage_02@1.50s (sim=0.992\u22650.92)"
+      },
+      {
+        "asset_id": "footage_44",
+        "start": 0.0,
+        "score": 9.31,
+        "reason": "near-duplicate of footage_02@1.50s (sim=0.997\u22650.92)"
+      },
+      {
+        "asset_id": "footage_45",
+        "start": 0.0,
+        "score": 9.6,
+        "reason": "near-duplicate of footage_02@1.50s (sim=1.000\u22650.92)"
+      },
+      {
+        "asset_id": "footage_45",
+        "start": 1.5,
+        "score": 9.6,
+        "reason": "near-duplicate of footage_02@1.50s (sim=1.000\u22650.92)"
+      },
+      {
+        "asset_id": "footage_45",
+        "start": 3.0,
+        "score": 9.6,
+        "reason": "near-duplicate of footage_02@1.50s (sim=1.000\u22650.92)"
+      },
+      {
+        "asset_id": "footage_45",
+        "start": 4.5,
+        "score": 9.6,
+        "reason": "near-duplicate of footage_02@1.50s (sim=0.999\u22650.92)"
+      },
+      {
+        "asset_id": "footage_45",
+        "start": 6.0,
+        "score": 9.6,
+        "reason": "near-duplicate of footage_02@1.50s (sim=1.000\u22650.92)"
+      },
+      {
+        "asset_id": "footage_45",
+        "start": 7.5,
+        "score": 9.39,
+        "reason": "near-duplicate of footage_02@1.50s (sim=1.000\u22650.92)"
+      },
+      {
+        "asset_id": "footage_46",
+        "start": 0.0,
+        "score": 9.45,
+        "reason": "near-duplicate of footage_02@1.50s (sim=0.992\u22650.92)"
+      },
+      {
+        "asset_id": "footage_47",
+        "start": 0.0,
+        "score": 9.6,
+        "reason": "near-duplicate of footage_02@1.50s (sim=0.997\u22650.92)"
+      }
+    ]
+  }
+]

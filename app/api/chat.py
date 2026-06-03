@@ -56,8 +56,14 @@ async def create_conversation(
     )
     db.add(system_msg)
     await db.commit()
-    
-    return conversation
+
+    # Re-fetch with messages eagerly loaded
+    result = await db.execute(
+        select(ChatConversation)
+        .where(ChatConversation.id == conversation.id)
+        .options(selectinload(ChatConversation.messages))
+    )
+    return result.scalar_one()
 
 
 @router.get("/conversations", response_model=List[ChatConversationOut])
@@ -69,6 +75,7 @@ async def list_conversations(
     result = await db.execute(
         select(ChatConversation)
         .where(ChatConversation.user_id == current_user.id)
+        .options(selectinload(ChatConversation.messages))
         .order_by(ChatConversation.updated_at.desc())
     )
     return result.scalars().all()

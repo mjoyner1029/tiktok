@@ -1,0 +1,280 @@
+{
+  "project_id": "51865d0c",
+  "saved_at": "2026-05-26T00:06:49.998196+00:00",
+  "timeline_version": 1,
+  "fingerprint_summary": {
+    "num_cuts": 170,
+    "avg_shot_duration": 0.297,
+    "pace": "ultra-fast",
+    "dominant_transition": "hard_cut",
+    "energy_level": "medium",
+    "tempo_bpm": null,
+    "beat_points_count": 0
+  },
+  "footage_summary": {
+    "num_clips": 49,
+    "total_segments": 6,
+    "clips": [
+      {
+        "asset_id": "footage_00",
+        "duration_sec": 1.96,
+        "segments": 0
+      },
+      {
+        "asset_id": "footage_01",
+        "duration_sec": 3.37,
+        "segments": 0
+      },
+      {
+        "asset_id": "footage_02",
+        "duration_sec": 9.0,
+        "segments": 4
+      },
+      {
+        "asset_id": "footage_03",
+        "duration_sec": 2.63,
+        "segments": 0
+      },
+      {
+        "asset_id": "footage_04",
+        "duration_sec": 1.3,
+        "segments": 0
+      },
+      {
+        "asset_id": "footage_05",
+        "duration_sec": 2.2,
+        "segments": 0
+      },
+      {
+        "asset_id": "footage_06",
+        "duration_sec": 6.43,
+        "segments": 0
+      },
+      {
+        "asset_id": "footage_07",
+        "duration_sec": 1.06,
+        "segments": 0
+      },
+      {
+        "asset_id": "footage_08",
+        "duration_sec": 6.03,
+        "segments": 1
+      },
+      {
+        "asset_id": "footage_09",
+        "duration_sec": 2.13,
+        "segments": 0
+      },
+      {
+        "asset_id": "footage_10",
+        "duration_sec": 3.08,
+        "segments": 0
+      },
+      {
+        "asset_id": "footage_11",
+        "duration_sec": 1.6,
+        "segments": 0
+      },
+      {
+        "asset_id": "footage_12",
+        "duration_sec": 1.67,
+        "segments": 0
+      },
+      {
+        "asset_id": "footage_13",
+        "duration_sec": 1.47,
+        "segments": 0
+      },
+      {
+        "asset_id": "footage_14",
+        "duration_sec": 4.7,
+        "segments": 0
+      },
+      {
+        "asset_id": "footage_15",
+        "duration_sec": 3.37,
+        "segments": 0
+      },
+      {
+        "asset_id": "footage_16",
+        "duration_sec": 3.73,
+        "segments": 0
+      },
+      {
+        "asset_id": "footage_17",
+        "duration_sec": 3.17,
+        "segments": 0
+      },
+      {
+        "asset_id": "footage_18",
+        "duration_sec": 2.37,
+        "segments": 0
+      },
+      {
+        "asset_id": "footage_19",
+        "duration_sec": 7.57,
+        "segments": 0
+      },
+      {
+        "asset_id": "footage_20",
+        "duration_sec": 2.13,
+        "segments": 0
+      },
+      {
+        "asset_id": "footage_21",
+        "duration_sec": 3.83,
+        "segments": 0
+      },
+      {
+        "asset_id": "footage_22",
+        "duration_sec": 1.07,
+        "segments": 0
+      },
+      {
+        "asset_id": "footage_23",
+        "duration_sec": 1.6,
+        "segments": 0
+      },
+      {
+        "asset_id": "footage_24",
+        "duration_sec": 2.13,
+        "segments": 0
+      },
+      {
+        "asset_id": "footage_25",
+        "duration_sec": 4.53,
+        "segments": 0
+      },
+      {
+        "asset_id": "footage_26",
+        "duration_sec": 1.73,
+        "segments": 0
+      },
+      {
+        "asset_id": "footage_27",
+        "duration_sec": 7.03,
+        "segments": 0
+      },
+      {
+        "asset_id": "footage_28",
+        "duration_sec": 2.37,
+        "segments": 0
+      },
+      {
+        "asset_id": "footage_29",
+        "duration_sec": 4.2,
+        "segments": 0
+      },
+      {
+        "asset_id": "footage_30",
+        "duration_sec": 4.26,
+        "segments": 0
+      },
+      {
+        "asset_id": "footage_31",
+        "duration_sec": 3.5,
+        "segments": 0
+      },
+      {
+        "asset_id": "footage_32",
+        "duration_sec": 2.63,
+        "segments": 0
+      },
+      {
+        "asset_id": "footage_33",
+        "duration_sec": 2.87,
+        "segments": 0
+      },
+      {
+        "asset_id": "footage_34",
+        "duration_sec": 2.77,
+        "segments": 0
+      },
+      {
+        "asset_id": "footage_35",
+        "duration_sec": 6.63,
+        "segments": 0
+      },
+      {
+        "asset_id": "footage_36",
+        "duration_sec": 3.0,
+        "segments": 0
+      },
+      {
+        "asset_id": "footage_37",
+        "duration_sec": 7.8,
+        "segments": 0
+      },
+      {
+        "asset_id": "footage_38",
+        "duration_sec": 2.73,
+        "segments": 0
+      },
+      {
+        "asset_id": "footage_39",
+        "duration_sec": 2.3,
+        "segments": 0
+      },
+      {
+        "asset_id": "footage_40",
+        "duration_sec": 3.8,
+        "segments": 1
+      },
+      {
+        "asset_id": "footage_41",
+        "duration_sec": 4.53,
+        "segments": 0
+      },
+      {
+        "asset_id": "footage_42",
+        "duration_sec": 7.83,
+        "segments": 0
+      },
+      {
+        "asset_id": "footage_43",
+        "duration_sec": 10.83,
+        "segments": 0
+      },
+      {
+        "asset_id": "footage_44",
+        "duration_sec": 3.43,
+        "segments": 0
+      },
+      {
+        "asset_id": "footage_45",
+        "duration_sec": 8.43,
+        "segments": 0
+      },
+      {
+        "asset_id": "footage_46",
+        "duration_sec": 2.77,
+        "segments": 0
+      },
+      {
+        "asset_id": "footage_47",
+        "duration_sec": 1.98,
+        "segments": 0
+      },
+      {
+        "asset_id": "__batch_report__",
+        "duration_sec": null,
+        "segments": 0
+      }
+    ]
+  },
+  "timeline_summary": {
+    "duration_sec": 24.857,
+    "num_clips": 120,
+    "num_captions": 69,
+    "width": 1080,
+    "height": 1920,
+    "fps": 30
+  },
+  "validation_errors": [],
+  "embedding_status": {
+    "clip_available": false,
+    "reference_embedded": false,
+    "footage_segments_embedded": 0,
+    "fallback_used": true
+  }
+}

@@ -430,7 +430,10 @@ def render_project(self, render_id: str, job_id: str):
 
 @celery_app.task(bind=True, name="app.workers.tasks.full_pipeline")
 def full_pipeline(self, project_id: str, job_id: str):
-    """Run the entire pipeline: transcribe all assets → AI → render."""
+    """Run the entire pipeline: transcribe all assets → AI → render.
+
+    Audio settings are read from the job payload written by the API route.
+    """
     session = _get_sync_session()
     try:
         _update_job_status(session, job_id, "running")
@@ -439,6 +442,16 @@ def full_pipeline(self, project_id: str, job_id: str):
             Asset, AssetType, Job, JobType, JobStatus,
             EditSpec, Render, RenderStatus,
         )
+
+        # ── Read audio settings from job payload ─────────────────────────
+        job_obj = session.get(Job, uuid.UUID(job_id))
+        payload = (job_obj.payload or {}) if job_obj else {}
+        audio_mode            = payload.get("audio_mode", "reference_audio")
+        music_asset_id        = payload.get("music_asset_id")
+        audio_volume          = float(payload.get("audio_volume", -18.0))
+        original_audio_volume = float(payload.get("original_audio_volume", 0.0))
+        rhythm_preset         = payload.get("rhythm_preset", "loose_sync")
+        content_hint          = payload.get("content_hint", "")
 
         # 1. Find all assets needing transcription
         assets = session.execute(
@@ -481,22 +494,24 @@ def full_pipeline(self, project_id: str, job_id: str):
         from app.services.ai_orchestrator import AIOrchestrator
 
         refs = [a for a in assets if a.type == AssetType.reference_video]
-        raw = [a for a in assets if a.type == AssetType.raw_video]
+        raw  = [a for a in assets if a.type == AssetType.raw_video]
 
         ref_transcripts = [a.transcript for a in refs if a.transcript]
         clips_data = [
             {
-                "asset_id": str(a.id),
+                "asset_id":    str(a.id),
                 "duration_sec": a.duration_sec or 0,
-                "transcript": a.transcript or "",
-                "sentences": (a.metadata_extra or {}).get("sentences", []),
-                "silences": (a.silence_map or {}).get("silences", []),
+                "transcript":  a.transcript or "",
+                "sentences":   (a.metadata_extra or {}).get("sentences", []),
+                "silences":    (a.silence_map or {}).get("silences", []),
             }
             for a in raw
         ]
 
         # Extract visual style from each reference video
         visual_analyses = []
+        fingerprint_beat_data: dict = {}
+
         for ref in refs:
             try:
                 from app.services.storage import get_storage
@@ -507,10 +522,48 @@ def full_pipeline(self, project_id: str, job_id: str):
                 visual_analyses.append(visual)
                 logger.info("Visual style extracted for ref %s: cuts=%d, avg_cut=%.2fs",
                             ref.id, visual["num_cuts"], visual["avg_cut_duration_sec"])
+                # Keep beat data from the first reference that has it
+                if not fingerprint_beat_data and visual.get("beat_grid"):
+                    fingerprint_beat_data = {k: visual[k] for k in (
+                        "beat_grid", "beat_points", "downbeats", "phrase_boundaries",
+                        "energy_curve", "intensity_curve", "transient_peaks", "tempo_bpm",
+                    ) if k in visual}
             except Exception as e:
                 logger.warning("Visual style extraction failed for ref %s: %s", ref.id, e)
 
         aggregated_visual = _aggregate_visual_analyses(visual_analyses) if visual_analyses else None
+
+        # ── Music analysis for uploaded_audio mode ────────────────────────
+        music_file_path: str | None = None
+        music_analysis_result: dict = {}
+        fallback_used = False
+
+        if audio_mode == "uploaded_audio" and music_asset_id:
+            try:
+                from app.services.storage import get_storage
+                from app.services.music_analysis import MusicAnalyzer
+                storage = get_storage()
+                music_asset = session.get(Asset, uuid.UUID(music_asset_id))
+                if music_asset:
+                    music_file_path = storage.get_local_path(music_asset.storage_url)
+                    music_analysis_result = MusicAnalyzer().analyze_safe(music_file_path)
+                    if music_analysis_result:
+                        # Uploaded music beats take precedence over reference beats
+                        fingerprint_beat_data = music_analysis_result
+                        logger.info(
+                            "Music analysis: bpm=%.1f beats=%d",
+                            music_analysis_result.get("tempo_bpm", 0),
+                            music_analysis_result.get("beat_count", 0),
+                        )
+                    else:
+                        fallback_used = True
+                        logger.warning("Music analysis returned empty; using reference beats")
+            except Exception as exc:
+                fallback_used = True
+                logger.warning("Music analysis failed: %s", exc)
+        elif audio_mode == "reference_audio" and fingerprint_beat_data:
+            music_analysis_result = fingerprint_beat_data
+        # original_audio / silent: no beat analysis
 
         ai = AIOrchestrator()
         from app.models.db import Project as ProjectModel
@@ -529,6 +582,11 @@ def full_pipeline(self, project_id: str, job_id: str):
         if aggregated_visual and "color_grade" in aggregated_visual:
             style_profile.setdefault("color_grade", aggregated_visual["color_grade"])
 
+        # Merge beat data into fingerprint / style profile
+        if fingerprint_beat_data:
+            for k, v in fingerprint_beat_data.items():
+                style_profile.setdefault(k, v)
+
         from app.models.db import StyleProfile, EditSpecSource
         sp = StyleProfile(
             project_id=uuid.UUID(project_id),
@@ -538,12 +596,71 @@ def full_pipeline(self, project_id: str, job_id: str):
         )
         session.add(sp)
 
-        es = EditSpec(
-            project_id=uuid.UUID(project_id),
-            version=1,
-            spec_json=edit_spec,
-            source=EditSpecSource.ai,
-        )
+        # ── Re-run EditPlanner with beat sync + rhythm preset ────────────
+        try:
+            from app.services.edit_planner import EditPlanner
+            from app.services.reference_analyzer import ReferenceAnalyzer
+
+            # Build footage_index from raw clips
+            footage_index_data = clips_data  # already has asset_id, duration_sec, etc.
+
+            planner = EditPlanner(llm=None)  # LLM not needed for re-plan (AI spec already done)
+            # Only re-plan if beat data is available; otherwise use AI edit_spec as-is
+            if fingerprint_beat_data and fingerprint_beat_data.get("beat_grid"):
+                beat_fingerprint = {**style_profile, **fingerprint_beat_data}
+                timeline = planner.plan(
+                    fingerprint=beat_fingerprint,
+                    footage_index=footage_index_data,
+                    content_hint=content_hint,
+                    project_id=project_id,
+                    rhythm_preset=rhythm_preset,
+                )
+                # Apply audio settings
+                timeline.audio_mode = audio_mode
+                if music_file_path:
+                    timeline.music_path = music_file_path
+                elif audio_mode == "reference_audio" and refs:
+                    from app.services.storage import get_storage as _gs
+                    timeline.music_path = _gs().get_local_path(refs[0].storage_url)
+                timeline.audio_mix_settings = {
+                    "music_volume":          audio_volume,
+                    "original_audio_volume": original_audio_volume,
+                    "duck_under_speech":     True,
+                }
+                beat_sync_edit_spec = timeline.to_render_spec()
+                es = EditSpec(
+                    project_id=uuid.UUID(project_id),
+                    version=1,
+                    spec_json=beat_sync_edit_spec,
+                    source=EditSpecSource.ai,
+                )
+            else:
+                # No beat data — use the original AI spec but inject audio settings
+                if isinstance(edit_spec, dict):
+                    edit_spec["audio_mode"]         = audio_mode
+                    edit_spec["audio_mix_settings"] = {
+                        "music_volume":          audio_volume,
+                        "original_audio_volume": original_audio_volume,
+                        "duck_under_speech":     True,
+                    }
+                    if music_file_path:
+                        edit_spec["music_path"] = music_file_path
+                es = EditSpec(
+                    project_id=uuid.UUID(project_id),
+                    version=1,
+                    spec_json=edit_spec,
+                    source=EditSpecSource.ai,
+                )
+        except Exception as plan_exc:
+            logger.warning("Beat-sync re-plan failed (%s), using original AI spec", plan_exc)
+            fallback_used = True
+            es = EditSpec(
+                project_id=uuid.UUID(project_id),
+                version=1,
+                spec_json=edit_spec,
+                source=EditSpecSource.ai,
+            )
+
         session.add(es)
         session.flush()
 
@@ -569,7 +686,7 @@ def full_pipeline(self, project_id: str, job_id: str):
 
         engine = RenderEngine(asset_resolver=resolve_asset)
         color_grade = style_profile.get("color_grade")
-        result = engine.render(edit_spec, color_grade=color_grade)
+        result = engine.render(es.spec_json, color_grade=color_grade)
 
         # Save outputs
         output_key = f"renders/{project_id}/{render.id}/final.mp4"
@@ -585,9 +702,33 @@ def full_pipeline(self, project_id: str, job_id: str):
 
         session.commit()
 
+        # ── Write logs.json ───────────────────────────────────────────────
+        try:
+            import os as _os
+            logs_data = {
+                "project_id":       project_id,
+                "job_id":           job_id,
+                "audio_mode":       audio_mode,
+                "music_file_used":  music_file_path,
+                "bpm":              music_analysis_result.get("tempo_bpm"),
+                "beat_count":       music_analysis_result.get("beat_count"),
+                "rhythm_preset":    rhythm_preset,
+                "fallback_used":    fallback_used,
+                "render_id":        str(render.id),
+                "output_url":       output_key,
+                "finished_at":      datetime.now(timezone.utc).isoformat(),
+            }
+            log_dir = _os.path.join(settings.storage_path, "projects", project_id)
+            _os.makedirs(log_dir, exist_ok=True)
+            log_path = _os.path.join(log_dir, "logs.json")
+            with open(log_path, "w") as lf:
+                json.dump(logs_data, lf, indent=2)
+        except Exception as log_exc:
+            logger.warning("Could not write logs.json: %s", log_exc)
+
         _update_job_status(session, job_id, "completed", result={
-            "render_id": str(render.id),
-            "edit_spec_id": str(es.id),
+            "render_id":       str(render.id),
+            "edit_spec_id":    str(es.id),
             "style_profile_id": str(sp.id),
         })
         logger.info("Full pipeline complete for project %s", project_id)

@@ -3,9 +3,10 @@
 from __future__ import annotations
 
 import uuid
-from typing import List
+from typing import List, Literal, Optional
 
-from fastapi import APIRouter, Depends, HTTPException, status
+from fastapi import APIRouter, Body, Depends, HTTPException, status
+from pydantic import BaseModel, Field
 from sqlalchemy import select
 from sqlalchemy.ext.asyncio import AsyncSession
 
@@ -36,6 +37,21 @@ from app.models.schemas import (
 )
 
 router = APIRouter(prefix="/projects", tags=["projects"])
+
+
+# ── Pipeline request body ────────────────────────────────────────────────
+
+class PipelineStartRequest(BaseModel):
+    """Optional body for POST /{project_id}/pipeline."""
+
+    audio_mode: Literal[
+        "reference_audio", "uploaded_audio", "original_audio", "silent"
+    ] = "reference_audio"
+    music_asset_id: Optional[str] = None   # UUID of a previously uploaded audio asset
+    audio_volume: float = Field(default=-18.0, description="Music gain in dB (negative = quieter)")
+    original_audio_volume: float = Field(default=0.0, description="Footage audio gain (0–2)")
+    rhythm_preset: str = Field(default="loose_sync", description="tight_sync|loose_sync|cinematic|chaotic")
+    content_hint: str = ""
 
 
 # ── helper to get a default workspace (MVP: single user) ─────────────────
@@ -201,7 +217,11 @@ async def start_render(project_id: uuid.UUID, db: AsyncSession = Depends(get_db)
 
 
 @router.post("/{project_id}/pipeline", response_model=JobOut, status_code=status.HTTP_202_ACCEPTED)
-async def start_full_pipeline(project_id: uuid.UUID, db: AsyncSession = Depends(get_db)):
+async def start_full_pipeline(
+    project_id: uuid.UUID,
+    body: PipelineStartRequest = Body(default_factory=PipelineStartRequest),
+    db: AsyncSession = Depends(get_db),
+):
     """Run the full pipeline: transcribe → analyse → render."""
     project = await db.get(Project, project_id)
     if not project:
@@ -211,7 +231,16 @@ async def start_full_pipeline(project_id: uuid.UUID, db: AsyncSession = Depends(
         project_id=project.id,
         type=JobType.render,
         status=JobStatus.pending,
-        payload={"project_id": str(project.id), "mode": "full_pipeline"},
+        payload={
+            "project_id":            str(project.id),
+            "mode":                  "full_pipeline",
+            "audio_mode":            body.audio_mode,
+            "music_asset_id":        body.music_asset_id,
+            "audio_volume":          body.audio_volume,
+            "original_audio_volume": body.original_audio_volume,
+            "rhythm_preset":         body.rhythm_preset,
+            "content_hint":          body.content_hint,
+        },
     )
     db.add(job)
     await db.flush()
