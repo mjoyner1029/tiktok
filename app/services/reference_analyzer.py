@@ -593,7 +593,7 @@ class ReferenceAnalyzer:
 
     def _vision_analyze(self, video_path: str, cuts: list[float], duration: float, avg_shot: float) -> dict[str, Any]:
         try:
-            from tiktok_engine.llm_client import _strip_markdown_fences
+            from app.services.llm_client import _strip_markdown_fences
             from tiktok_engine.prompts import SYSTEM_PROMPT
         except ImportError:
             return {}

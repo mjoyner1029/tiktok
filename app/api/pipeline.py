@@ -43,7 +43,7 @@ def _projects_dir() -> Path:
 # ── LLM factory ──────────────────────────────────────────────────────────
 
 def _build_llm():
-    from tiktok_engine.llm_client import LLMClient
+    from app.services.llm_client import LLMClient
     from app.config import get_settings
     s = get_settings()
     api_key = s.anthropic_api_key or os.getenv("ANTHROPIC_API_KEY") or None

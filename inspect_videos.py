@@ -100,7 +100,7 @@ def _build_parser() -> argparse.ArgumentParser:
 
 def _analyze_references(urls_or_paths: list[str], llm, no_vision: bool) -> dict:
     """Analyze reference URLs/files → merged reference fingerprint dict."""
-    from tiktok_engine.reference_analyzer import ReferenceAnalyzer
+    from app.services.reference_analyzer import ReferenceAnalyzer
 
     analyzer = ReferenceAnalyzer(llm)
     urls = [s for s in urls_or_paths if s.startswith("http://") or s.startswith("https://")]
@@ -133,7 +133,7 @@ def _analyze_references(urls_or_paths: list[str], llm, no_vision: bool) -> dict:
 
 def _analyze_footage(files: list[str]) -> list[dict]:
     """Analyze footage files → footage index (no LLM needed)."""
-    from tiktok_engine.footage_analyzer import FootageAnalyzer
+    from app.services.footage_analyzer import FootageAnalyzer
 
     paths = []
     for f in files:
@@ -179,7 +179,7 @@ def main(argv: list[str] | None = None) -> None:
     # Build LLM client (needed for reference Vision analysis)
     llm = None
     if args.references and not args.no_vision:
-        from tiktok_engine.llm_client import LLMClient
+        from app.services.llm_client import LLMClient
         api_key = os.getenv("ANTHROPIC_API_KEY") or os.getenv("OPENAI_API_KEY")
         if not api_key:
             print(

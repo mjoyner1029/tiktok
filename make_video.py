@@ -91,7 +91,7 @@ def main():
     if args.no_captions:
         llm = _NoOpLLM()
     else:
-        from tiktok_engine.llm_client import LLMClient
+        from app.services.llm_client import LLMClient
         llm = LLMClient(
             api_key=api_key,
             model=os.getenv("TIKTOK_MODEL", "claude-opus-4-5"),

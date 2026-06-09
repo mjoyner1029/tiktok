@@ -304,7 +304,7 @@ class RevisionEngine:
                 response_format="json",
             )
             if not isinstance(raw, dict):
-                from tiktok_engine.llm_client import _strip_markdown_fences
+                from app.services.llm_client import _strip_markdown_fences
                 import json as _json
                 raw = _json.loads(_strip_markdown_fences(str(raw)))
             return EditTimeline.model_validate(raw)

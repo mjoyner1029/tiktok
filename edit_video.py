@@ -152,7 +152,7 @@ def _build_parser() -> argparse.ArgumentParser:
 
 def _analyze_references(refs: list[str], llm, no_vision: bool) -> dict:
     """Download and analyze one or more reference URLs/files → merged fingerprint."""
-    from tiktok_engine.reference_analyzer import ReferenceAnalyzer
+    from app.services.reference_analyzer import ReferenceAnalyzer
 
     analyzer = ReferenceAnalyzer(llm)
     urls = [r for r in refs if r.startswith("http://") or r.startswith("https://")]
@@ -187,7 +187,7 @@ def _analyze_references(refs: list[str], llm, no_vision: bool) -> dict:
 
 def _analyze_footage(footage_files: list[str]) -> list[dict]:
     """Analyze local footage files → footage index list."""
-    from tiktok_engine.footage_analyzer import FootageAnalyzer
+    from app.services.footage_analyzer import FootageAnalyzer
 
     paths = []
     for f in footage_files:
@@ -384,7 +384,7 @@ def main(argv: list[str] | None = None) -> None:
     # Build the real LLM client once (if we have an API key and need it at all)
     _real_llm = None
     if api_key and (not args.no_captions or not args.no_vision):
-        from tiktok_engine.llm_client import LLMClient
+        from app.services.llm_client import LLMClient
         _real_llm = LLMClient(api_key=api_key, model=args.model)
 
     # llm       → used by EditPlanner for caption generation
