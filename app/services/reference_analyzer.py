@@ -95,19 +95,27 @@ You are analyzing frames from a TikTok video sampled at detected cut points.
 
 Cut timestamps: {cut_timestamps}s  |  Duration: {duration}s  |  Avg shot: {avg_shot}s
 
-Analyze the EDITING STYLE from these frames and return ONLY valid JSON:
+Analyze the EDITING STYLE from these frames and return ONLY valid JSON.
+For caption_style, look carefully at ANY on-screen text and describe its exact visual appearance:
 
 {{
     "caption_style": {{
         "uses_text": true,
         "position": "center",
+        "y_position_percent": 75,
         "case": "uppercase",
         "words_per_caption": 3,
         "animation": "pop",
         "font_size_class": "large",
+        "font_family": "Impact",
         "has_stroke": true,
+        "stroke_color": "black",
         "all_caps": true,
-        "max_words": 4
+        "max_words": 4,
+        "text_color": "white",
+        "background_box": false,
+        "background_color": "black",
+        "background_opacity": 0.6
     }},
     "hook_style": "bold statement question over B-roll",
     "transitions": ["hard_cut", "flash_cut"],
@@ -120,7 +128,9 @@ Analyze the EDITING STYLE from these frames and return ONLY valid JSON:
 }}
 
 Pick caption position from: top / center / bottom
+Pick y_position_percent: 0 = very top, 50 = center, 75 = lower-center (most common for TikTok), 90 = near bottom
 Pick animation from: pop / slide_up / fade / none
+Pick font_family from: Impact / Arial-Black / bold-sans / serif / handwritten / unknown
 Pick dominant_transition from: hard_cut / flash_cut / whip_pan_left / whip_pan_right / dissolve / fade / zoom_transition
 Pick motion primary from: static / slow_push / zoom_in / zoom_out / shake
 Pick energy_level from: low / medium / high
@@ -517,13 +527,20 @@ class ReferenceAnalyzer:
         caption_style = {
             "uses_text": cap_style_raw.get("uses_text", True),
             "position": cap_style_raw.get("position", "center"),
+            "y_position_percent": cap_style_raw.get("y_position_percent", 75),
             "case": cap_style_raw.get("case", "uppercase"),
             "words_per_caption": cap_style_raw.get("words_per_caption", 3),
             "animation": cap_style_raw.get("animation", "pop"),
             "font_size_class": cap_style_raw.get("font_size_class", "large"),
+            "font_family": cap_style_raw.get("font_family", "Arial-Black"),
             "has_stroke": cap_style_raw.get("has_stroke", True),
+            "stroke_color": cap_style_raw.get("stroke_color", "black"),
             "all_caps": cap_style_raw.get("all_caps", True),
             "max_words": cap_style_raw.get("max_words", 4),
+            "text_color": cap_style_raw.get("text_color", "white"),
+            "background_box": cap_style_raw.get("background_box", False),
+            "background_color": cap_style_raw.get("background_color", "black"),
+            "background_opacity": cap_style_raw.get("background_opacity", 0.6),
         }
 
         motion_raw = qualitative.get("motion_style", {})

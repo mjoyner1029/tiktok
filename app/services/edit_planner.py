@@ -90,6 +90,28 @@ _CAPTION_POSITION_MAP = {
     "center": "center",
 }
 
+# Map font_size_class strings to concrete pixel sizes at 1080×1920
+_FONT_SIZE_CLASS_PX = {
+    "small": 52,
+    "medium": 64,
+    "large": 80,
+    "xlarge": 96,
+}
+
+# Normalize font_family labels Claude Vision may return → ASS-compatible family names
+_FONT_FAMILY_MAP = {
+    "Impact": "Impact",
+    "impact": "Impact",
+    "Arial-Black": "Arial Black",
+    "arial-black": "Arial Black",
+    "Arial Black": "Arial Black",
+    "bold-sans": "Arial Black",
+    "bold_sans": "Arial Black",
+    "serif": "Georgia",
+    "handwritten": "Marker Felt",
+    "unknown": "Arial Black",
+}
+
 
 class EditPlanner:
     """Turn fingerprint + footage_index into a validated EditTimeline."""
@@ -284,6 +306,19 @@ class EditPlanner:
                 if animation not in ("none", "fade", "pop", "slide_up", "typewriter"):
                     animation = "pop"
                 anim_dur = int(cap_preset.get("animation_duration", 200))
+                # font_family: cap_preset wins; fall back to fingerprint's
+                # font_family (normalized via _FONT_FAMILY_MAP); then Arial Black
+                fp_font_raw = cap_style.get("font_family", "Arial-Black")
+                fp_font = _FONT_FAMILY_MAP.get(fp_font_raw, fp_font_raw)
+                resolved_font = str(cap_preset.get("font_family") or fp_font or "Arial Black")
+
+                # font_size: cap_preset wins; fall back to fingerprint's
+                # font_size_class (e.g. "large" → 80px) then 72
+                fp_size = _FONT_SIZE_CLASS_PX.get(
+                    cap_style.get("font_size_class", "large"), 72
+                )
+                resolved_size = int(cap_preset.get("font_size") or fp_size or 72)
+
                 captions.append(CaptionEvent(
                     text=cap_text,
                     start=cap_start,
@@ -292,16 +327,21 @@ class EditPlanner:
                     animation=animation,
                     case=tc if tc in ("uppercase", "titlecase", "asis") else "titlecase",
                     stroke=cap_style.get("has_stroke", True),
-                    # Advanced typography from caption_preset
-                    font_family=str(cap_preset.get("font_family", "Arial Black")),
+                    # Advanced typography — fingerprint is the fallback source
+                    font_family=resolved_font,
                     font_weight=str(cap_preset.get("font_weight", "bold")),
                     text_case=tc,
                     stroke_width=float(cap_preset.get("stroke_width", 3.0)),
                     shadow=bool(cap_preset.get("shadow", False)),
                     tracking=float(cap_preset.get("tracking", 1.0)),
                     animation_duration=anim_dur,
-                    font_size=int(cap_preset.get("font_size",
-                                  cap_style.get("font_size", 72))),
+                    font_size=resolved_size,
+                    # Reference-matched visual style
+                    text_color=str(cap_style.get("text_color", "white")),
+                    background_box=bool(cap_style.get("background_box", False)),
+                    background_color=str(cap_style.get("background_color", "black")),
+                    background_opacity=float(cap_style.get("background_opacity", 0.6)),
+                    y_position_percent=int(cap_style.get("y_position_percent", 75)),
                 ))
 
             timeline_pos += shot_dur

@@ -401,6 +401,13 @@ Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
                                       cap_preset.get("animation_duration", 200)))
         emphasis_words = clip.get("emphasis_words") or []
 
+        # ── Reference-matched visual style fields ─────────────────────────
+        c_text_color      = clip.get("text_color", "white")
+        c_background_box  = bool(clip.get("background_box", False))
+        c_bg_color        = clip.get("background_color", "black")
+        c_bg_opacity      = float(clip.get("background_opacity", 0.6))
+        c_y_pct           = clip.get("y_position_percent")
+
         # text_case is already applied by to_render_spec; re-apply only for
         # clips that arrive without pre-processing (e.g. legacy callers).
         tc = clip.get("text_case", "asis")
@@ -426,6 +433,36 @@ Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
         if c_shadow != p_shadow:
             override_tags += f"\\shad{1 if c_shadow else 0}"
 
+        # ── Text color override ───────────────────────────────────────────
+        _TEXT_COLOR_MAP = {
+            "white": "FFFFFF", "yellow": "00FFFF", "black": "000000",
+            "red": "0000FF", "blue": "FF0000", "green": "00FF00",
+        }
+        hex_color = _TEXT_COLOR_MAP.get(c_text_color.lower(), "FFFFFF")
+        if hex_color != "FFFFFF":  # only emit tag when non-default
+            # ASS color is &H00BBGGRR (note: BGR order)
+            r = hex_color[0:2]; g = hex_color[2:4]; b = hex_color[4:6]
+            ass_primary = f"&H00{b}{g}{r}"
+            override_tags += f"\\1c{ass_primary}"
+
+        # ── Background box ────────────────────────────────────────────────
+        # BorderStyle 3 = opaque box, 4 = shadow box.
+        # We switch per-event by writing an \shad override and emitting a
+        # {\bord0\shad0\3c<color>\4a<alpha>} prefix that simulates a box.
+        if c_background_box:
+            alpha_hex = format(max(0, min(255, int(255 * (1 - c_bg_opacity)))), "02X")
+            bg_hex = _TEXT_COLOR_MAP.get(c_bg_color.lower(), "000000")
+            r2 = bg_hex[0:2]; g2 = bg_hex[2:4]; b2 = bg_hex[4:6]
+            override_tags += f"\\3c&H{b2}{g2}{r2}&\\4c&H{b2}{g2}{r2}&\\3a&H{alpha_hex}&\\4a&H{alpha_hex}&"
+
+        # ── Precise vertical positioning via y_position_percent ──────────
+        pos_tag = ""
+        if c_y_pct is not None:
+            cx = video_width // 2
+            cy = int(video_height * int(c_y_pct) / 100)
+            pos_tag = r"{\an5\pos(" + f"{cx},{cy}" + r")}"
+            style_name = "Center"   # use centered alignment for \pos override
+
         # ── Emphasis: bold-highlight listed words ─────────────────────────
         if emphasis_words:
             for word in emphasis_words:
@@ -450,15 +487,15 @@ Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
         elif animation == "slide_up":
             # Move from 100 px below final Y to final Y over anim_dur ms
             cx = video_width // 2
-            if position in ("lower_third", "bottom"):
+            if c_y_pct is not None:
+                y_final = int(video_height * int(c_y_pct) / 100)
+            elif position in ("lower_third", "bottom"):
                 y_final = video_height - margin_v_edge
-                y_start = y_final + 100
             elif position in ("upper_third", "top"):
                 y_final = margin_v_edge
-                y_start = y_final + 80
             else:
                 y_final = video_height // 2
-                y_start = y_final + 80
+            y_start = y_final + 100
             anim_tag = r"{\move(" + f"{cx},{y_start},{cx},{y_final},0,{anim_dur}" + r")}"
         elif animation == "typewriter":
             anim_tag = r"{\fad(0,0)\alpha&HFF\t(0," + str(anim_dur) + r",\alpha&H00)}"
@@ -468,7 +505,7 @@ Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
             prefix = "{" + override_tags + "}"
         else:
             prefix = ""
-        full_text = anim_tag + prefix + text
+        full_text = pos_tag + anim_tag + prefix + text
 
         events.append(f"Dialogue: 0,{start},{end},{style_name},,0,0,0,,{full_text}")
 

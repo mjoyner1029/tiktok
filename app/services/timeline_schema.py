@@ -46,6 +46,13 @@ class CaptionEvent(BaseModel):
     animation_duration: int = 200        # ms; enter-animation duration
     emphasis_words: List[str] = []       # words to render in a highlighted style
 
+    # ── Reference-matched visual style ───────────────────────────────────
+    text_color: str = "white"            # white / yellow / black / other hex
+    background_box: bool = False         # draw a filled box behind the text
+    background_color: str = "black"      # box color (name or hex without #)
+    background_opacity: float = 0.6      # 0.0–1.0; only used when background_box=True
+    y_position_percent: int = 75         # 0=top 50=center 75=lower-center 90=bottom
+
     @model_validator(mode="after")
     def _check_times(self) -> "CaptionEvent":
         if self.start >= self.end:
