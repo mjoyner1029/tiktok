@@ -868,60 +868,168 @@ def _ass_ts_to_secs(ts: str) -> float:
     return int(h) * 3600 + int(m) * 60 + int(s) + int(cs) / 100.0
 
 
+# Font name → macOS file paths (used by _ass_to_drawtext_filter)
+_FONT_FILES: Dict[str, str] = {
+    "Impact":         "/System/Library/Fonts/Supplemental/Impact.ttf",
+    "Arial Black":    "/System/Library/Fonts/Supplemental/Arial Black.ttf",
+    "Arial":          "/System/Library/Fonts/Supplemental/Arial.ttf",
+    "Helvetica":      "/System/Library/Fonts/Helvetica.ttc",
+    "Georgia":        "/System/Library/Fonts/Supplemental/Georgia.ttf",
+    "Futura":         "/System/Library/Fonts/Supplemental/Futura.ttc",
+    "Marker Felt":    "/System/Library/Fonts/Supplemental/Marker Felt.ttc",
+    "Verdana":        "/System/Library/Fonts/Supplemental/Verdana.ttf",
+    "Trebuchet MS":   "/System/Library/Fonts/Supplemental/Trebuchet MS.ttf",
+    "Copperplate":    "/System/Library/Fonts/Supplemental/Copperplate.ttc",
+}
+_FALLBACK_FONT_FILE = "/System/Library/Fonts/Supplemental/Impact.ttf"
+
+
+def _resolve_font_file(name: str) -> str:
+    """Return fontfile='...' prefix for drawtext, or '' if not found."""
+    path = _FONT_FILES.get(name)
+    if not path:
+        # case-insensitive fallback
+        lower = name.lower()
+        for k, v in _FONT_FILES.items():
+            if k.lower() == lower:
+                path = v
+                break
+    if path and os.path.exists(path):
+        return f"fontfile='{path}':"
+    if os.path.exists(_FALLBACK_FONT_FILE):
+        return f"fontfile='{_FALLBACK_FONT_FILE}':"
+    return ""
+
+
 def _ass_to_drawtext_filter(ass_path: str) -> str:
     """Parse ASS subtitles → FFmpeg drawtext filter chain.
 
     Uses drawtext instead of ass= because libass rasterizes per-frame on
     macOS (~0.2 fps), while drawtext runs at ~30-100 fps.
+
+    Reads per-style font/size/alignment from [V4+ Styles] and honours
+    per-event inline overrides: \\fn (font), \\fs (size), \\pos (position),
+    \\an (alignment), \\1c (color).
     """
     import re as _re
-    IMPACT = "/System/Library/Fonts/Supplemental/Impact.ttf"
-    font_part = f"fontfile='{IMPACT}':" if os.path.exists(IMPACT) else ""
 
     with open(ass_path, encoding="utf-8") as f:
         content = f.read()
 
-    # Extract default font size from the first Style line
-    fontsize = 88
+    # ── Parse Style definitions ───────────────────────────────────────────
+    # Format: Style: Name,Fontname,Fontsize,...,Alignment,MarginL,MarginR,MarginV,Encoding
+    styles: Dict[str, Dict[str, Any]] = {}
     for line in content.splitlines():
-        if line.startswith("Style:"):
-            parts = line.split(",")
-            try:
-                fontsize = int(float(parts[2]))
-            except (ValueError, IndexError):
-                pass
-            break
+        if not line.startswith("Style:"):
+            continue
+        parts = line[len("Style:"):].strip().split(",")
+        if len(parts) < 22:
+            continue
+        try:
+            styles[parts[0].strip()] = {
+                "fontname":  parts[1].strip(),
+                "fontsize":  int(float(parts[2].strip())),
+                "alignment": int(parts[18].strip()),
+                "margin_v":  int(parts[21].strip()),
+            }
+        except (ValueError, IndexError):
+            pass
 
+    _DEFAULT_STYLE: Dict[str, Any] = {
+        "fontname": "Impact", "fontsize": 88, "alignment": 2, "margin_v": 180,
+    }
+    default_style = styles.get("Default") or (
+        next(iter(styles.values())) if styles else _DEFAULT_STYLE
+    )
+
+    # ── Parse Dialogue events ─────────────────────────────────────────────
     dialogue_re = _re.compile(
         r"^Dialogue:\s*\d+,"
         r"(\d+:\d+:\d+\.\d+),"   # start
         r"(\d+:\d+:\d+\.\d+),"   # end
-        r"[^,]*,[^,]*,\d+,\d+,\d+,[^,]*,"
+        r"([^,]*),[^,]*,\d+,\d+,\d+,[^,]*,"  # style name
         r"(.+)$",
         _re.MULTILINE,
     )
     filters: List[str] = []
     for m in dialogue_re.finditer(content):
-        start_ts, end_ts, raw = m.groups()
+        start_ts, end_ts, style_name, raw = m.groups()
         start = _ass_ts_to_secs(start_ts)
         end   = _ass_ts_to_secs(end_ts)
-        # Strip ASS inline tags ({...})
+
+        style = styles.get(style_name.strip(), default_style)
+        s_fontname  = style["fontname"]
+        s_fontsize  = style["fontsize"]
+        s_alignment = style["alignment"]
+        s_margin_v  = style["margin_v"]
+
+        # ── Extract inline tag overrides ──────────────────────────────────
+        # \fn<name>  — font name (ends at next \ or })
+        fn_m = _re.search(r"\\fn([^\\}]+?)(?=[\\}])", raw)
+        ev_fontname = fn_m.group(1).strip() if fn_m else s_fontname
+
+        # \fs<digits>  — font size
+        fs_m = _re.search(r"\\fs(\d+)", raw)
+        ev_fontsize = int(fs_m.group(1)) if fs_m else s_fontsize
+
+        # \pos(x,y)  — explicit screen position
+        pos_m = _re.search(r"\\pos\((\d+(?:\.\d+)?),(\d+(?:\.\d+)?)\)", raw)
+
+        # \an<n>  — alignment override
+        an_m = _re.search(r"\\an(\d)", raw)
+        ev_alignment = int(an_m.group(1)) if an_m else s_alignment
+
+        # \1c&H<BBGGRR>&  — primary color (ASS stores BGR)
+        color_m = _re.search(r"\\1c&H([0-9A-Fa-f]{6})&", raw)
+
+        # ── Strip all inline tags to get plain text ───────────────────────
         text = _re.sub(r"\{[^}]*\}", "", raw).strip()
         if not text:
             continue
+
         # Escape characters special to drawtext
         esc = (text
                .replace("\\", "\\\\")
                .replace(":", r"\:")
                .replace("%", r"\%")
                .replace("'", r"\'"))
+
+        # ── Font file ─────────────────────────────────────────────────────
+        font_part = _resolve_font_file(ev_fontname)
+
+        # ── Text color ────────────────────────────────────────────────────
+        if color_m:
+            # ASS BBGGRR → RGB for drawtext 0xRRGGBB
+            hex6 = color_m.group(1)
+            b, g, r = hex6[0:2], hex6[2:4], hex6[4:6]
+            fontcolor = f"0x{r}{g}{b}@1.0"
+        else:
+            fontcolor = "white@1.0"
+
+        # ── Position ──────────────────────────────────────────────────────
+        if pos_m:
+            # \pos centers on that pixel when \an5; adjust so text center = pos
+            px = int(float(pos_m.group(1)))
+            py = int(float(pos_m.group(2)))
+            x_expr = f"{px}-text_w/2"
+            y_expr = f"{py}-text_h/2"
+        else:
+            x_expr = "(w-text_w)/2"
+            align = ev_alignment
+            if align in (1, 2, 3):       # bottom row
+                y_expr = f"h-text_h-{s_margin_v}"
+            elif align in (7, 8, 9):     # top row
+                y_expr = str(s_margin_v)
+            else:                        # middle row (4, 5, 6)
+                y_expr = "(h-text_h)/2"
+
         filters.append(
             f"drawtext={font_part}"
             f"text='{esc}':"
-            f"fontsize={fontsize}:"
-            f"fontcolor=white@1.0:"
-            f"x=(w-text_w)/2:"
-            f"y=(h-text_h)/2:"
+            f"fontsize={ev_fontsize}:"
+            f"fontcolor={fontcolor}:"
+            f"x={x_expr}:"
+            f"y={y_expr}:"
             f"shadowcolor=black@0.6:"
             f"shadowx=3:shadowy=3:"
             f"enable='between(t,{start:.3f},{end:.3f})'"
